@@ -8,7 +8,7 @@ Key references:
 
 ## Structure
 - `Charter.md` – approved scope, objectives, governance
-- `16-Week-Implementation-Plan.md` – timeboxed workplan
+- `Implementation-Plan.md` – timeboxed workplan
 - `Governance-&-Policies.md` – COI, ethics, data, appeals
 - `Evaluation-Framework.md` – criteria, weights, scoring descriptors
 - `Jury-Management-Guide.md` – selection, onboarding, moderation

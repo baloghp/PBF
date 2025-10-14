@@ -32,7 +32,7 @@ Establish a credible, transparent annual awards program that positions the Proje
 - Category Chairs: R for jury recruitment, moderation, consensus
 
 ## Timeline
-Standard 16-week implementation cycle; see `16-Week-Implementation-Plan.md`.
+Standard 16-week implementation cycle; see `Implementation-Plan.md`.
 
 ### Annual Cycle (Pilot Year)
 - Awards Year: 2025
