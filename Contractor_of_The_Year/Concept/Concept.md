@@ -15,9 +15,56 @@ The implementation follows a structured 16-week cycle designed for annual repeti
 - Others
 
 **Other Categories**
-- Startups (<3y )
-- Established Organisation (<3-15)
-- Enterpise (<15+ )
+- Start-ups (0 – 5 years)
+Traits:
+
+Founder-driven, improvisational, often undercapitalized.
+High innovation, low process maturity.
+Strong individual accountability, weak governance.
+
+Fragile: survival > growth.
+
+Project relevance:
+Projects are exploratory, defining products, markets, and even identity.
+
+- Growth organizations (6 – 15 years)
+
+Traits:
+Expanding customer base and workforce.
+Beginning formalization: processes, roles, and controls emerge.
+Strong drive for scaling and market capture.
+Often experience the “growing pains” of structure vs. agility.
+
+Project relevance:
+Projects aim to build systems, infrastructure, and brand presence.
+Often under time pressure; governance still catching up.
+
+- Mature organizations (16 – 49 years)
+
+Traits:
+Stable core business, institutionalized knowledge, predictable cash flow.
+Bureaucracy and inertia creeping in.
+Risk aversion and process dominance increase.
+May struggle with innovation and adaptability.
+
+Project relevance:
+Projects are controlled, methodical — but sometimes slow and siloed.
+Cross-corporate collaboration often becomes necessary to stay relevant.
+
+
+- Legacy organizations (50 + years)
+Traits:
+
+Deep-rooted culture, often family or state-influenced.
+Heavy legacy systems and traditions.
+Market power or prestige compensates for reduced flexibility.
+Succession and modernization are recurring challenges.
+
+Project relevance:
+Projects are often about renewal: digital transformation, restructuring, or cultural rejuvenation.
+Change management is harder than the technical work itself.
+
+
 
 
 The award concept builds on your original vision while incorporating industry best practices for credible, transparent evaluation processes.[1][2][3]
