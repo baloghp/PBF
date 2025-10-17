@@ -12,7 +12,13 @@ The implementation follows a structured 16-week cycle designed for annual repeti
 - IT, Software & Digital  
 - Engineering & Manufacturing
 - Consulting & Education
-- Special Prize (cross-industry excellence)
+- Others
+
+**Other Categories**
+- Startups (<3y )
+- Established Organisation (<3-15)
+- Enterpise (<15+ )
+
 
 The award concept builds on your original vision while incorporating industry best practices for credible, transparent evaluation processes.[1][2][3]
 
