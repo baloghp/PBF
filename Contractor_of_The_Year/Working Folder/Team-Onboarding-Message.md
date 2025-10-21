@@ -26,23 +26,18 @@ I'd love to have a brief 15-30 minute conversation with you to:
 
 **Please schedule a convenient time using this link: [Calendly Link](https://calendly.com/baloghp/talk-to-me)**
 
+Please also read the initial project concept and the charter from Oliver here: https://github.com/baloghp/PBF/tree/main/Contractor_of_The_Year/Charter
+
 ## What to Expect
 - This is an exploratory conversation - no commitment required yet
 - We'll discuss the project vision, timeline, and team structure
-- I'll share access to our project documentation (Jira/Confluence)
+- I'll show you our project documentation (Jira/Confluence)
 - We'll identify the best way for you to contribute
-
-## Project Timeline
-- **Week 1-2**: Team formation and individual onboarding
-- **Week 3**: Team onboarding meeting
-- **Week 4**: Project kickoff
-- **Weeks 5-20**: Implementation sprints leading to the 2025 awards cycle
 
 I'm looking forward to our conversation and the opportunity to work together on this exciting initiative.
 
 Best regards,
-[Your Name]
-Program Lead, PBF Contractor of the Year Award
+Peter Balogh
 
 ---
-*P.S. If you have any immediate questions, feel free to reply to this email. I'll also be sharing project documentation access after our call.*
+*P.S. If you have any immediate questions, feel free to reply to this email. I'll also be sharing further project documentation access after our call.*

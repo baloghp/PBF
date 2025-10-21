@@ -1,5 +1,7 @@
 # 1
-
+[x] Call sent
+[ ] Commitment
+[ ] Onboarding - Access
 
 ![Jumoke Ademola, PBP](https://media.licdn.com/dms/image/v2/D4D03AQFYKTiu44d7MQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1695973597027?e=1762387200&v=beta&t=ajwbr2Dw9p2Ok5q8m5vik2FAN8aUrjs1Ee1xGdZ885k "Jumoke Ademola, PBP")
 Nigeria, +
@@ -14,7 +16,9 @@ Nigeria, +
 ---
 
 # 2
-
+[x] Call sent
+[ ] Commitment
+[ ] Onboarding - Access
 ![Chris Kelly, (PBP®)](https://media.licdn.com/dms/image/v2/D5603AQHmnR8CvFCw2Q/profile-displayphoto-scale_200_200/B56ZlskaIMHkAY-/0/1758463108111?e=1762387200&v=beta&t=rDl14BB8SAfIwB1ehpYdvTb17DG_FGvDnLsPShG0K3o "Chris Kelly, (PBP®)")
 France, Britanny +
 [# Chris Kelly, (PBP®)](https://www.linkedin.com/in/chris-kelly-pbp%C2%AE-99b9a03/overlay/about-this-profile/)  He/Him  2nd degree connection2nd
@@ -25,7 +29,9 @@ France, Britanny +
 
 ---
 # 3
-
+[x] Call sent
+[ ] Commitment
+[ ] Onboarding - Access
 ![Mercy Engesia, PMP®](https://media.licdn.com/dms/image/v2/C4D03AQHwE-moVxLqSg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517227349880?e=1762387200&v=beta&t=SD6X-W32jJQ_dnPWZra7YkwDgehadYnYAYqQCn1_uEk "Mercy Engesia, PMP®")
 Kenya
 
@@ -38,6 +44,9 @@ Mercy Engesia, PMP®
 ---
 
 # 4 
+[x] Call sent
+[ ] Commitment
+[ ] Onboarding - Access
 ![Salim CHETTAH](https://media.licdn.com/dms/image/v2/C4D03AQFVpTxEdG4mnA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1648790496586?e=1762387200&v=beta&t=27pc-tGMZq6mjUriZ0CFUzFUSUFfVxJUtvavynC61WQ "Salim CHETTAH")
 France, Paris +/-
 [# Salim CHETTAH](https://www.linkedin.com/in/salim-chettah-a719087/overlay/about-this-profile/)   2nd degree connection
@@ -47,7 +56,9 @@ France, Paris +/-
 - He appears to have deeper exposure to the “project business” domain (via PBP) than some others.
 ---
 # 5
-
+[ ] Call sent
+[ ] Commitment
+[ ] Onboarding - Access
 ![Ranjit Rai, PBP®](https://media.licdn.com/dms/image/v2/D5603AQEC3YW9UC3zXQ/profile-displayphoto-scale_200_200/B56ZiljAJ2HMAc-/0/1755124073863?e=1762387200&v=beta&t=7HpifQnFVdk5uQHex7XlCwJvivSQg-L9vwysTrrKG8o "Ranjit Rai, PBP®")
 
 India
@@ -59,7 +70,9 @@ India
 
 ---
 # 6
-
+[x] Call sent
+[ ] Commitment
+[ ] Onboarding - Access
 ![Kristin Daniel, PMP, PBP Profile](https://media.licdn.com/dms/image/v2/D5603AQHCtHcwYaO36g/profile-displayphoto-scale_100_100/B56Zm_pYahI4Ac-/0/1759856920839?e=1762387200&v=beta&t=WkBGhNQP-ft1Ck_KB4mI4-xqHgQyg2XA0rV5hjVsVuE)
 
 US, Austin, Texas
@@ -84,3 +97,31 @@ US, Texas +
 - Her LinkedIn profile indicates: “Dr. Kris Lea is a global project manager and organizational development consultant… PMP, PBP, PCCP (Professional Certified Coach-Practitioner), PsyD.” 
 - Based in Texas, USA.
 - Strengths: Very strong credentials — advanced degree (PsyD), coaching qualification, global project management experience, PBP certification. She likely brings high-level thinking, change/organizational design, leadership development — which could be valuable for the award’s design, stakeholder engagement, judging framework, communications.
+
+# 8
+[ ] Call sent
+[ ] Commitment
+[ ] Onboarding - Access
+
+![Leila Allahham, MBA, MSc, PMP®](https://media.licdn.com/dms/image/v2/C5603AQFZ0bR6a-rRHw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1629295865631?e=1762387200&v=beta&t=kZ5cIYCD1H1dSv9aOAY81dkLDI76sOfY6cXbt4FD5Ww "Leila Allahham, MBA, MSc, PMP®")
+
+[# Leila Allahham, MBA, MSc, PMP®](https://www.linkedin.com/in/leila-lahham/overlay/about-this-profile/)   1st degree connection
+
+**Summary:**
+- ICT Project Manager with advanced educational credentials (MBA, MSc) and PMP certification
+- Strong background in information and communication technology project management
+- **Strengths** relative to your project: Her ICT expertise and project management credentials make her valuable for technology platform requirements, digital transformation aspects of the awards program, and understanding contractor technology implementations. Her advanced degrees suggest strong analytical and strategic thinking capabilities.
+
+# 9
+[ ] Call sent
+[ ] Commitment
+[ ] Onboarding - Access
+
+![Pasha Said Mohamed, PMP®, PBP®, LSS](https://media.licdn.com/dms/image/v2/C4D03AQGmik245lUNOg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517628818281?e=1762387200&v=beta&t=uEEFTO1icpgMRkErFeNuaCK1ILmcMel0lVq0sSUlbng "Pasha Said Mohamed, PMP®, PBP®, LSS")
+
+[# Pasha Said Mohamed, PMP®, PBP®, LSS](https://www.linkedin.com/in/pashamohamed/overlay/about-this-profile/)   1st degree connection
+
+**Summary:**
+- Global Product Digitalization Project Lead at Syngenta (multinational agricultural company)
+- Holds multiple prestigious certifications: PMP®, PBP®, and LSS (Lean Six Sigma)
+- **Strengths** relative to your project: His role at Syngenta suggests experience with large-scale, global digital transformation projects. The combination of PMP, PBP, and LSS certifications indicates expertise in project management, project business methodology, and process optimization. This makes him valuable for understanding contractor performance metrics, process standardization, and global project delivery excellence. His agricultural/agribusiness background could provide insights into contractor performance in specialized industries.
