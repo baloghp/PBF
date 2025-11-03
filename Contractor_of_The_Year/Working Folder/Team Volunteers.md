@@ -1,11 +1,12 @@
 # 1
 [x] Call sent
-[ ] Commitment
+[x] Commitment
 [ ] Onboarding - Access
 
 ![Jumoke Ademola, PBP](https://media.licdn.com/dms/image/v2/D4D03AQFYKTiu44d7MQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1695973597027?e=1762387200&v=beta&t=ajwbr2Dw9p2Ok5q8m5vik2FAN8aUrjs1Ee1xGdZ885k "Jumoke Ademola, PBP")
 Nigeria, +
 [# Jumoke Ademola, PBP] (https://www.linkedin.com/in/jumoke-a-795032b9/overlay/about-this-profile/)
+Confluence page: https://ittd.atlassian.net/wiki/spaces/PBF/pages/97550337/Jumoke+Ademola+Volunteer
 **Summary:**
 
 - Legal professional by background, with a strong interest in technology and transformation: her LinkedIn headline indicates she is a “Legal Professional | Project Manager | Bridging Law, Technology and Sustainable Strategy”. [LinkedIn+2LinkedIn+2](https://ng.linkedin.com/in/jumokeademolatech?utm_source=chatgpt.com)
@@ -71,7 +72,7 @@ India
 ---
 # 6
 [x] Call sent
-[ ] Commitment
+[x] Commitment
 [ ] Onboarding - Access
 ![Kristin Daniel, PMP, PBP Profile](https://media.licdn.com/dms/image/v2/D5603AQHCtHcwYaO36g/profile-displayphoto-scale_100_100/B56Zm_pYahI4Ac-/0/1759856920839?e=1762387200&v=beta&t=WkBGhNQP-ft1Ck_KB4mI4-xqHgQyg2XA0rV5hjVsVuE)
 
@@ -81,6 +82,8 @@ US, Austin, Texas
 
 [Kristin Daniel, PMP, PBP](https://www.linkedin.com/in/ACoAAAHpMwgB1-4DNLPRCqzwJJ6AcF41le4NVgI?lipi=urn%3Ali%3Apage%3Ad_flagship3_job_details%3B5n4M2mpMRTaM2nca3DbyGQ%3D%3D)
 
+Confluence page: https://ittd.atlassian.net/wiki/spaces/PBF/pages/97583105/Kristin+Daniel+Volunteer
+
 - Her LinkedIn summary: “Senior Project Leader with extensive experience managing enterprise-level initiatives across government, education, and commercial sectors.” [LinkedIn](https://www.linkedin.com/in/kristin-daniel-pmp-pbp-4088a1a?utm_source=chatgpt.com)
 - Certifications: PMP and PBP.
 - Based in Austin, Texas, United States.
@@ -88,24 +91,30 @@ US, Austin, Texas
 
 ---
 # 7
-
+[x] Call sent
+[x] Commitment
+[ ] Onboarding - Access
 ![Dr. Kris Lea, PsyD, PCCP, PMP, PBP](https://media.licdn.com/dms/image/v2/C5603AQFNnu2AeY46FA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1566605373527?e=1762387200&v=beta&t=yg3TyxmctIMIXuyIRVwyzG9mn2IQHq-5J_r2wWan0_8 "Dr. Kris Lea, PsyD, PCCP, PMP, PBP")
 
 US, Texas +
 [# Dr. Kris Lea, PsyD, PCCP, PMP, PBP](https://www.linkedin.com/in/krislea/overlay/about-this-profile/)
+
+Confluence page: https://ittd.atlassian.net/wiki/spaces/PBF/pages/97615873/Dr.+Kris+Lea+Volunteer
 
 - Her LinkedIn profile indicates: “Dr. Kris Lea is a global project manager and organizational development consultant… PMP, PBP, PCCP (Professional Certified Coach-Practitioner), PsyD.” 
 - Based in Texas, USA.
 - Strengths: Very strong credentials — advanced degree (PsyD), coaching qualification, global project management experience, PBP certification. She likely brings high-level thinking, change/organizational design, leadership development — which could be valuable for the award’s design, stakeholder engagement, judging framework, communications.
 
 # 8
-[ ] Call sent
-[ ] Commitment
+[x] Call sent
+[x] Commitment
 [ ] Onboarding - Access
 
 ![Leila Allahham, MBA, MSc, PMP®](https://media.licdn.com/dms/image/v2/C5603AQFZ0bR6a-rRHw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1629295865631?e=1762387200&v=beta&t=kZ5cIYCD1H1dSv9aOAY81dkLDI76sOfY6cXbt4FD5Ww "Leila Allahham, MBA, MSc, PMP®")
 
 [# Leila Allahham, MBA, MSc, PMP®](https://www.linkedin.com/in/leila-lahham/overlay/about-this-profile/)   1st degree connection
+
+Confluence page: https://ittd.atlassian.net/wiki/spaces/PBF/pages/97452034/Leila+Allahham+Volunteer
 
 **Summary:**
 - ICT Project Manager with advanced educational credentials (MBA, MSc) and PMP certification
@@ -113,13 +122,15 @@ US, Texas +
 - **Strengths** relative to your project: Her ICT expertise and project management credentials make her valuable for technology platform requirements, digital transformation aspects of the awards program, and understanding contractor technology implementations. Her advanced degrees suggest strong analytical and strategic thinking capabilities.
 
 # 9
-[ ] Call sent
-[ ] Commitment
+[x] Call sent
+[x] Commitment
 [ ] Onboarding - Access
 
 ![Pasha Said Mohamed, PMP®, PBP®, LSS](https://media.licdn.com/dms/image/v2/C4D03AQGmik245lUNOg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517628818281?e=1762387200&v=beta&t=uEEFTO1icpgMRkErFeNuaCK1ILmcMel0lVq0sSUlbng "Pasha Said Mohamed, PMP®, PBP®, LSS")
 
 [# Pasha Said Mohamed, PMP®, PBP®, LSS](https://www.linkedin.com/in/pashamohamed/overlay/about-this-profile/)   1st degree connection
+
+Confluence page: https://ittd.atlassian.net/wiki/spaces/PBF/pages/97648641/Pasha+Said+Mohamed+Volunteer
 
 **Summary:**
 - Global Product Digitalization Project Lead at Syngenta (multinational agricultural company)

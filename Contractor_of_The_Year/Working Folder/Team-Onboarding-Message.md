@@ -41,3 +41,29 @@ Peter Balogh
 
 ---
 *P.S. If you have any immediate questions, feel free to reply to this email. I'll also be sharing further project documentation access after our call.*
+
+---
+
+## LinkedIn Group – Kickoff Message (paste into group chat)
+
+Hi everyone! Welcome to the PBF Contractor of the Year volunteer group – great to have you with us.
+I have already spoken to each of you now it is time to get to know each other a bit.
+As I mentioned on our call we will wokr on JIra nad Confluence as the main work spaces.
+I think using LInked in as the primary asynch messaging platform would also suffice.
+Before the onboarding call here are some important information:
+
+Quick links:
+- Main Confluence page (project overview): https://ittd.atlassian.net/wiki/spaces/PBF/pages/97419265/Contractor+Of+The+Year+Award
+- Team Directory (add your timezone & commitment): https://ittd.atlassian.net/wiki/spaces/PBF/pages/97484801/Team+Directory
+- COI Declaration: https://ittd.atlassian.net/wiki/spaces/PBF/pages/97681409/Conflict+of+Interest+COI+Declaration+Volunteers
+- Volunteer NDA: https://ittd.atlassian.net/wiki/spaces/PBF/pages/97714177/Volunteer+Non+Disclosure+Agreement+NDA+PBF
+- Jira project (PBF): https://ittd.atlassian.net/browse/PBF
+- Key milestones epic: https://ittd.atlassian.net/browse/PBF-17
+
+Action items (5–10 minutes):
+1) Drop your preferred email here (or DM me) so I can grant Jira/Confluence access.
+2) Open the Team Directory and complete your member page (timezone, commitment, preferred contact).
+3) Review and acknowledge the COI and NDA pages (type your name and date in the signature tables).
+
+Thanks again for contributing – looking forward to building something impactful together.
+
