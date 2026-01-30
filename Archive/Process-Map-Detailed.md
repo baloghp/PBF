@@ -40,7 +40,7 @@ This process map covers the complete lifecycle from Submission â†’ Assessment â†
 3. **Upload evidence artifacts**
    - Draft contract matrix (obligations, applicable law, jurisdiction, warranties/liability, notice and change mechanisms)
    - Customer-contractor interface RACI (provisions and enabling services)
-   - Payment schedule vs cost-burn cash-flow curve (demonstrating liquidity adequacy)
+   - People Development metric: Percentage of net income/profit invested in staff development (0%, 0-5%, or 5%+)
    - Code of conduct acknowledgment
    - Integrity plan (aligned to cross-corporate template)
 
