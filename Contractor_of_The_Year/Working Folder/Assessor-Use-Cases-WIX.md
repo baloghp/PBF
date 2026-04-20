@@ -149,6 +149,14 @@
 
 ---
 
+## Revised scope note (2026-04)
+
+- Assessor assignments are **managed by Admins** (not by coaches).
+- Assessor communication/reminders are handled **outside WIX** (Discord).
+- Moderation workflow is currently **optional** and may be skipped if operationally handled outside WIX.
+
+---
+
 ## Assessor Portal Structure
 
 **Recommended Pages:**

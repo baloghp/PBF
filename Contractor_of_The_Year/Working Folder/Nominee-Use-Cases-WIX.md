@@ -4,13 +4,16 @@
 ## Nominee Portal — Page Sitemap (Wix)
 
 - **Public / marketing layer**
-  - **Nominee Info & Call-to-Action page**  
+  - **Award Main Page** (public)  
     - Explains the award, eligibility, and process for nominees.  
-    - Primary CTAs: **Register / Sign Up** and **Log In** (link to WIX Members pages).
+    - Primary CTA: **Single Smart Button** (`#mainActionBtn`) with 3 states:
+      - **GUEST state**: "Log In to Submit Nomination" → Opens Wix login popup
+      - **MEMBER state**: "Start New Nomination" → Assigns Nominee role, refreshes page
+      - **NOMINEE state**: "View Nomination Status" → Redirects to Nominee Dashboard
 
 - **Members Area (Nominee role only)**
-  - **Nominee Dashboard** (members-only, role: Nominee)  
-    - Landing page after login / registration.  
+  - **Nominee Dashboard** (`/nominee-dashboard`, members-only, role: Nominee)  
+    - Landing page after role assignment.  
     - Shows list of nominations with status (Draft / Submitted / Under Review / Outcome).  
     - Actions covered by use cases: **Start nomination**, **Save draft nomination** (resume drafts), **View nomination status**, **Respond to completion request**, **Withdraw nomination**, **Receive Stage 1 outcome notification / feedback** (via status, messages, and links).
   - **Nomination Form** (dynamic page bound to `Nominations` collection)  
@@ -20,10 +23,6 @@
     - Lets nominees manage basic account info (name, email, password, profile details).
 
 - **System / Wix member pages**
-  - **Sign Up / Register page**  
-    - Wix Members Area signup; assigns **Nominee** member role and redirects to **Nominee Dashboard**.
-  - **Login page**  
-    - Wix Members login; redirects to **Nominee Dashboard** on success.
   - **Password reset / email verification pages**  
     - Handled by Wix; linked from login and email notifications (no custom build required).
 
@@ -37,40 +36,137 @@
 
 ## Use Cases & Implementation
 
-### Register account
-**Goal:** Enable authenticated access and ownership of submissions.
+### Register account / Become Nominee
+**Goal:** Enable authenticated access and ownership of submissions via a single smart button.
 
 **Wix implementation:**
-- Use the **Wix Members Area / Site Members** app with a "Nominee" member role
-- Self-registration form with email verification
+- **Single Smart Button** on Award Main Page with 3 states (GUEST → MEMBER → NOMINEE)
+- Backend module (`multiRole.web.js`) handles role checking and assignment
+- Wix login popup triggered for unauthenticated users
+- Automatic Nominee role assignment for authenticated members
 - Member profile stored in the Wix Site Members database
-- Access controlled via member role permissions
+
+**Architecture:**
+
+**Backend: `backend/multiRole.web.js`**
+```javascript
+import { Permissions, webMethod } from "wix-web-module";
+import wixUsersBackend from 'wix-users-backend';
+import { authorization } from 'wix-members-backend';
+
+// Check if user is logged in AND has the specific role
+export const checkMyRoleStatus = webMethod(Permissions.Anyone, async (targetRoleTitle) => {
+    const user = wixUsersBackend.currentUser;
+    if (!user.loggedIn) return { loggedIn: false };
+
+    const roles = await user.getRoles();
+    const hasRole = roles.some(r => r.name === targetRoleTitle);
+
+    return { loggedIn: true, hasRole: hasRole };
+});
+
+// Assign the Nominee role to the currently logged-in user
+export const assignRoleToCurrentUser = webMethod(Permissions.Anyone, async () => {
+    const user = wixUsersBackend.currentUser;
+    if (!user.loggedIn) throw new Error("Must be logged in.");
+
+    // Assign Nominee Role (replace with your actual role ID)
+    await authorization.assignRole("b7fc44e8-e5a8-4035-9a99-875f0f85bd4e", user.id, { suppressAuth: true });
+});
+```
+
+**Frontend: Award Main Page**
+```javascript
+import { authentication } from 'wix-members-frontend';
+import { checkMyRoleStatus, assignRoleToCurrentUser } from 'backend/multiRole.web';
+import wixLocation from 'wix-location';
+
+let currentState = "LOADING"; // Options: GUEST, MEMBER, NOMINEE
+
+$w.onReady(async function () {
+    $w('#mainActionBtn').hide();
+    await updateButtonState();
+
+    $w('#mainActionBtn').onClick(async () => {
+        // GUEST: Needs to Log In
+        if (currentState === "GUEST") {
+            try {
+                await authentication.promptLogin(); 
+                await updateButtonState();
+            } catch (err) {
+                console.log("Login cancelled");
+            }
+        }
+        // MEMBER: Needs to "Upgrade" to Nominee
+        else if (currentState === "MEMBER") {
+            $w('#mainActionBtn').label = "Processing...";
+            $w('#mainActionBtn').disable();
+            try {
+                await assignRoleToCurrentUser();
+                wixLocation.to(wixLocation.url); // Refresh page
+            } catch (error) {
+                console.error(error);
+                $w('#mainActionBtn').label = "Error. Try Again.";
+                $w('#mainActionBtn').enable();
+            }
+        }
+        // NOMINEE: Already has role
+        else if (currentState === "NOMINEE") {
+            wixLocation.to('/nominee-dashboard');
+        }
+    });
+});
+
+async function updateButtonState() {
+    currentState = "GUEST";
+    $w('#mainActionBtn').label = "Log In to Submit Nomination";
+    try {
+        const status = await checkMyRoleStatus("Nominee");
+        if (status.loggedIn && !status.hasRole) {
+            currentState = "MEMBER";
+            $w('#mainActionBtn').label = "Start New Nomination";
+        } 
+        else if (status.loggedIn && status.hasRole) {
+            currentState = "NOMINEE";
+            $w('#mainActionBtn').label = "View Nomination Status";
+        }
+    } catch (error) {
+        console.error("Status check failed", error);
+    }
+    $w('#mainActionBtn').show();
+    $w('#mainActionBtn').enable();
+}
+```
 
 **How-to / To-do:**
 1. **Enable the Members Area / Site Members app:**
-   - In the editor, go to **Settings** → **Site Members** (or **Members Area** depending on your editor).
-   - If prompted, **add the Members Area app** so Wix creates the default member pages (Login / Sign Up / My Account).
+   - In the editor, go to **Settings** → **Site Members**.
    - Ensure your site plan supports the **Members Area / Site Members** feature.
 
-2. **Create "Nominee" member role:**
-   - In the editor, open the **Members** panel → **Site Members** → **Roles** (names may vary slightly by editor).
+2. **Create "Nominee" member role and get Role ID:**
+   - In the editor, open the **Members** panel → **Site Members** → **Roles**.
    - Click **+ New Role** and name it **"Nominee"**.
-   - Set permissions so this role can access only the nominee portal pages (e.g., Nominee Dashboard, Nomination Form, Results).
+   - Copy the Role ID (found in role settings or via Wix API) for use in `assignRoleToCurrentUser()`.
+   - Set permissions so this role can access nominee portal pages.
 
-3. **Create Registration / Sign Up entry point:**
-   - Add a new page: **"Register"** or **"Sign Up"** (or use your existing marketing / CTA page).
-   - Option A (recommended): Add a **Login Bar / Member Login** element from **Add → Members**, then in its settings **enable sign up for new visitors** and set the **post-signup redirect** to the **Nominee Dashboard**.
-   - Option B: Add a **Button** and set its link to the built-in **Members Sign Up / Login page** created by Wix, with redirect to the **Nominee Dashboard** configured in Site Member Settings.
+3. **Create backend module:**
+   - In **Dev Mode** → **Backend**, create file: `multiRole.web.js`
+   - Add the `checkMyRoleStatus` and `assignRoleToCurrentUser` functions (see code above).
+   - Replace the hardcoded role ID with your actual Nominee role ID.
 
-4. **Configure email verification:**
+4. **Add Smart Button to Award Main Page:**
+   - Add a **Button** element with ID `#mainActionBtn`.
+   - Add the frontend code to the page (see code above).
+   - Button will automatically show correct label based on user state.
+
+5. **Configure email verification (optional):**
    - Go to **Settings** → **Email Notifications**
    - Enable "Email Verification" for new members
-   - Customize verification email template (optional)
 
-5. **Test registration:**
-   - Test signup flow end-to-end
-   - Verify email verification works
-   - Confirm member type assignment is automatic
+6. **Test the 3-state flow:**
+   - **As guest**: Button shows "Log In to Submit Nomination" → Click opens login popup
+   - **After login (no role)**: Button shows "Start New Nomination" → Click assigns Nominee role
+   - **After role assigned**: Button shows "View Nomination Status" → Click redirects to dashboard
 
 ---
 
@@ -78,37 +174,35 @@
 **Goal:** Secure access to nominee features.
 
 **Wix implementation:**
-- **Member Login / Login Bar** element on nominee portal pages
-- Members Area authentication system (built-in)
-- Session management handled by Wix
-- Logout button/functionality
+- **Login**: Handled by Smart Button on Award Main Page (calls `authentication.promptLogin()`)
+- **Session management**: Handled by Wix Members Area (built-in)
+- **Logout**: Standard Wix Member Menu or logout button on protected pages
 
 **How-to / To-do:**
-1. **Add Login Element:**
-   - On nominee portal pages, add **Member Login** element
-   - Go to **Add** → **Members** → **Member Login**
-   - Place on login page or header (if public access needed)
+1. **Login via Smart Button:**
+   - Login is triggered by the Smart Button when user is in GUEST state.
+   - Uses `authentication.promptLogin()` from `wix-members-frontend`.
+   - After login, button state automatically updates via `updateButtonState()`.
+   - See "Register account / Become Nominee" section for full implementation.
 
-2. **Configure login settings:**
-   - Set redirect after login: Nominee Dashboard
-   - Enable "Remember Me" option (optional)
-   - Configure password reset link (Settings → Email Notifications)
+2. **Add Logout Button (on protected pages):**
+   - On Nominee Dashboard and other member pages, add **Member Menu** element (includes logout option).
+   - Or add a **Button** element with action: **Member Logout** (in button settings).
 
-3. **Add Logout Button:**
-   - Add **Button** element on nominee pages
-   - Set action: **Member Logout** (in button settings)
-   - Or use **Member Menu** element (includes logout option)
-
-4. **Set page permissions:**
+3. **Set page permissions:**
    - For each nominee portal page: **Page Settings** → **Permissions**
    - Set to **"Members Only"** → choose the **"Nominee"** member role
-   - This ensures only logged-in nominees can access
+   - This ensures only logged-in nominees with Nominee role can access
+
+4. **Configure password reset:**
+   - Go to **Settings** → **Email Notifications**
+   - Configure password reset link and email template
 
 5. **Test Login/Logout:**
-   - Test login with registered nominee account
-   - Verify redirect to dashboard
-   - Test logout functionality
-   - Verify pages are protected (redirect to login if not authenticated)
+   - Test login via Smart Button on Award Main Page
+   - Verify role assignment and redirect flow
+   - Test logout functionality on protected pages
+   - Verify protected pages redirect to login if not authenticated
 
 ---
 

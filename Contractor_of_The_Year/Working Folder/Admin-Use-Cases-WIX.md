@@ -8,7 +8,7 @@
 
 ## Use Cases & Implementation
 
-### Register admin account
+### [x] Register admin account
 **Goal:** Enable privileged access to administration features.
 
 **WIX Implementation:**
@@ -20,7 +20,7 @@
 
 ---
 
-### Create/manage assessor accounts
+### [x] Create/manage assessor accounts
 **Goal:** Maintain reviewer roster and access control.
 
 **WIX Implementation:**
@@ -35,7 +35,7 @@
 
 ---
 
-### Create/manage nominee coach accounts
+### [x] Create/manage nominee coach accounts
 **Goal:** Maintain coach roster and access control.
 
 **WIX Implementation:**
@@ -88,7 +88,7 @@
 
 ---
 
-### Override assignments (if needed)
+### [x] Override assignments (if needed)
 **Goal:** Operational continuity.
 
 **WIX Implementation:**
@@ -176,3 +176,30 @@
 - All admin actions logged in audit trail
 - Sensitive operations require confirmation (delete, override)
 - Secure admin pages (WIX Member Areas with Admin-only permissions)
+
+---
+
+## Revised scope note (2026-04)
+
+The following are **handled directly via WIX built-ins** and are **not implemented as custom Velo features**:
+- Settings management (weights, thresholds, deadlines, limits, categories)
+- Intake exception handling tooling
+- Template management / email marketing administration
+- Data retention / deletion tooling
+- Audit log UI
+
+The only custom admin capability still required beyond user/assignment management is **reporting/export**.
+
+---
+
+### Export reporting (required)
+**Goal:** Provide operational visibility (Stage 1 status + assignments + customer evaluations).
+
+**WIX Implementation (planned):**
+- Admin dashboard button(s) to export CSV (or view tables) for:
+  - Nominations (status, dates, nominee, project, category)
+  - Assignments (coachAssignedId, assessors, COI flags if used)
+  - Customer evaluations (draft/submitted, scores/fields as needed)
+- Export can be either:
+  - Client-side CSV generation from queried collections (admin-only UI), or
+  - Backend Velo method that returns an export payload for download.

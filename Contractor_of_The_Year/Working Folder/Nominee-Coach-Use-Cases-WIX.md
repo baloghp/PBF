@@ -6,7 +6,7 @@
 
 ---
 
-## Use Cases & Implementation
+## Use Cases & Implementation (revised)
 
 ### Log in / log out
 **Goal:** Secure access to coach tools.
@@ -58,46 +58,28 @@
 
 ---
 
-### Request completion from nominee
-**Goal:** Remediate incomplete submissions.
+### Coach diary (completeness & eligibility workflow)
+**Goal:** Guide the coach through Stage 1 with a single working record: checks, guidance, and placeholders.
 
 **WIX Implementation:**
-- "Request Completion" button on nomination detail page
-- Form/modal to specify missing items
-- Set deadline date picker
-- **WIX Email Marketing** template triggered (WIX Velo)
-- Update nomination status to "Incomplete"
-- Store request details in Nominations Collection
-- Deadline tracking and reminders
-
----
-
-### Mark ineligible / reject
-**Goal:** Enforce rules with auditability.
-
-**WIX Implementation:**
-- "Mark Ineligible" button on nomination detail page
-- Form to record rejection reason (required)
-- Update status to "Ineligible" or "Rejected" in Nominations Collection
-- Store rejection reason and timestamp
-- **WIX Velo** to send notification to nominee
-- Lock nomination from further processing
-- Audit trail entry
+- Add **Coach diary** to Nominations Collection (or linked CoachDiary collection): **Rich Text** field, one per nomination.
+- When the coach first opens the diary for a nomination (or when nomination is assigned to coach), pre-populate the field with the **default template** (see **Coach-Diary-Default-Template.md**). The template includes:
+  - Eligibility checklist (project type, contractor status, completion window, category)
+  - Completeness checklist (written submission, Exemplary / Impact / Lessons sections, artifacts, Client Assessment Form)
+  - Placeholders for nominee name, dates, assessor names, notes
+  - Guidance and checklists for: assign assessors, COI recusals, monitor progress, moderation, final score & shortlisting, notify nominee
+- Coach edits the diary in place (tick off checks, replace placeholders, add notes). No separate "completeness/eligibility form" is required; the diary encapsulates the process.
+- Optional: when coach marks "Ready for assessment: Yes" in the diary (or via a separate checkbox/action), set `completenessVerified` and `eligibilityVerified` in Nominations Collection for workflow/display purposes.
 
 ---
 
 ### Assign assessors
 **Goal:** Start independent Stage 1 reviews.
 
-**WIX Implementation:**
-- "Assign Assessors" interface on nomination detail page
-- **Dropdown** or multi-select showing available assessors (from Members Collection, filtered by Assessor role)
-- Select 2-3 assessors
-- Set deadline date picker
-- Create records in **Assignments Collection** (WIX Velo)
-- Link assignment to nomination and assessor
-- Trigger assignment notifications (WIX Velo + Email Marketing)
-- Update nomination status to "Under Review"
+**WIX Implementation (revised decision):**
+- **Admins handle all assignments** (coach does not self-assign assessors in-app).
+- Communication and reminders are handled **outside WIX** (Discord).
+- In-app coach workflow does not include assignment UI.
 
 ---
 
@@ -129,76 +111,6 @@
 
 ---
 
-### Initiate moderation
-**Goal:** Resolve major scoring divergence.
-
-**WIX Implementation:**
-- View all assessments for a nomination side-by-side
-- **WIX Velo** detects discrepancies (>2 points variance)
-- "Initiate Moderation" button when discrepancies flagged
-- Create moderation record in **Moderation Collection** (optional)
-- Notify assessors of moderation request (WIX Velo + Email)
-- Provide moderation interface (see next use case)
-
----
-
-### Record moderated result
-**Goal:** Produce final Stage 1 scoring output.
-
-**WIX Implementation:**
-- Moderation interface showing all assessor scores
-- Coach can adjust scores with justification
-- Calculate moderated average (WIX Velo)
-- Store final moderated scores in Nominations Collection or separate **ModeratedScores Collection**
-- Update nomination with final score
-- Lock assessments from further changes
-- Audit trail of moderation decisions
-
----
-
-### Shortlist nominations (per category)
-**Goal:** Advance candidates to Stage 2.
-
-**WIX Implementation:**
-- Shortlisting dashboard filtered by category
-- View all nominations with moderated scores
-- Sort by total score and Criterion 9 (Innovation) score
-- **Data Table** or **Repeater** with checkboxes
-- Select top N nominations per category
-- "Shortlist Selected" button
-- Update status to "Shortlisted" in Nominations Collection
-- Store shortlist decision with timestamp
-- Trigger notifications (WIX Velo)
-
----
-
-### Trigger Stage 1 notifications
-**Goal:** Communicate outcomes consistently.
-
-**WIX Implementation:**
-- "Send Notifications" button after shortlisting complete
-- **WIX Email Marketing** templates for:
-  - Shortlisted nominees
-  - Not shortlisted nominees (with feedback)
-- **WIX Velo** function to batch send notifications
-- Track notification status (sent/pending/failed)
-- Store notification timestamp in Nominations Collection
-
----
-
-### Export Stage 1 reporting
-**Goal:** Operational visibility and audit trail.
-
-**WIX Implementation:**
-- "Export Report" button on dashboard
-- **WIX Velo** function to generate CSV/Excel export
-- Include: nominations, scores, assignments, decisions, timelines
-- Download file or email export
-- Filter by date range, category, status
-- Scheduled exports (optional, WIX Velo scheduled functions)
-
----
-
 ## Nominee Coach Portal Structure
 
 **Recommended Pages:**
@@ -206,9 +118,7 @@
 2. **Intake Queue** - Newly submitted nominations
 3. **Nomination Detail** - Review, check completeness/eligibility, assign assessors
 4. **Assessment Monitor** - Track assessment progress and deadlines
-5. **Moderation** - Resolve scoring discrepancies
-6. **Shortlisting** - Select top nominations per category
-7. **Reporting** - Export dashboards and metrics
+5. (Optional) **Reporting** - View dashboards and metrics (if needed)
 
 **WIX Components:**
 - Member Areas (authentication, role-based access)

@@ -1,0 +1,591 @@
+drkrislea | 00:33
+GA. Mre. One of the lo.
+Peter Balogh | 07:26
+Well, it should be okay, so Chris le is in the other of course she's in the so a cris.
+drkrislea | 07:43
+Hi, I was just sending you a note saying I'm on Google, but should I be on Discord?
+Peter Balogh | 07:47
+Yes, you should be. Can you join there? I'm waiting for you there with the Chris other Chris. 
+Okay.
+drkrislea | 07:56
+Okay, hold on, let me try. I've never used it this way, but let me try. Okay, let me see here. I don't know what's going to happen if I click both links at the same time. Are you. 
+Okay? Okay, yeah, and it's, it took me to, a list of friends, and then it says Chris Kelly is online.
+Peter Balogh | 08:30
+In just a moment, because, I actually have two screens, two people, Christopher here and then Chris over here. So did you manage to click on the Discord links? 
+Yes. So can you.
+drkrislea | 09:00
+Do I click on that?
+Peter Balogh | 09:02
+Can you see on. On the side. There is something called voice channels. And then can you see that?
+drkrislea | 09:20
+Is it on the left?
+kelly_christopher | 09:21
+N.
+Peter Balogh | 09:23
+Yes, maybe you can share your screen, can you share your screen and I can guide you through. 
+Okay, great. Okay, super. Yes, you are in so you can see Chris Kelly, but I'm not seeing our server. You're not joined to our server. Can I can Chris, can you invite her? 
+Okay, there's no message. It looks like she didn't join our server. That I don't see the server I okay, can you click on that you received an a message on LinkedIn I guess yes, or I can send you it over here.
+kelly_christopher | 10:53
+On LinkedIn.
+Peter Balogh | 11:01
+Just give me a moment. 
+So here. This is the link. Can you click on this one? Y yep that's the one okay except in white. Super this is it okay great yes you're a human jeez human testing please click on the shape that is different okay that's the one yeah cool that is different okay click on the different one okay something is happening okay super there you are okay let's close the google and continue over here.
+drkrislea | 11:30
+Maybe. Is. Okay. 
+Okay.
+Peter Balogh | 12:08
+Hey, Chris. Can you hear us? You need to unmute yourself.
+drkrislea | 12:16
+Let's see, we can hear it now.
+Peter Balogh | 12:19
+And then.
+kelly_christopher | 12:22
+Fantastic, I can hear you, but we can't see you.
+drkrislea | 12:24
+Access is denied. It says camera access is denied. I think it was using my camera from the Google meeting. Maybe I did.
+Peter Balogh | 12:36
+Just close that Google meeting tab and it should be okay.
+drkrislea | 12:44
+Okay, here we go.
+Peter Balogh | 12:58
+We are in our.
+drkrislea | 12:58
+How many project managers does it take to start a meeting?
+Peter Balogh | 13:02
+[Laughter] No, but this is good.
+drkrislea | 13:05
+Apparently.
+kelly_christopher | 13:08
+I've seen a lot more.
+Peter Balogh | 13:12
+This is fine, because it's a new thing, and we need to get into it. And. But the good thing is that there is no limit here. There is, yeah, basically, and this is our little place to do whatever we want. 
+Okay, so, to your question about JD. Wents. I'm not following. To be perfectly honest, I.
+kelly_christopher | 13:46
+I have a morbid curiosity in the politics of the world, and it's. Yeah, I was just commenting. It's interesting. Had dances across in Hungary at the moment, but it was, giving a rousing inspirational talk to the current party. Meanwhile, back in America, all the stuff is happening in Iran and all that. 
+But. Yeah. Yeah. Interesting times.
+Peter Balogh | 14:10
+Look, I mean, I think I maybe I'm just in my own bubble. That's. That is totally possible. But, there is a very high chance that we will chase Orurban away on Sunday.
+kelly_christopher | 14:31
+I hope so.
+Peter Balogh | 14:33
+And from friends whose friends are more into politics. I heard that JD. Wes made the first contact basically with the opposition. 
+So that's a sign, that's a signal that. And. Yeah, and he said on the news or on the press, release or whatever they did. He said that the relationship is with the Hungarian people and not with the Hungarian government, you know. 
+So I think this was less positive for Orurban that he actually hoped. 
+And I don't know. We see, I'm no.
+kelly_christopher | 15:30
+Yes, I agree with that synopsis. I think the he would want to have VS in his pocket all the way through the next week, but for him to lose that grip is telling. And it's interesting America has done that. 
+That's really that is heartening. So hopefully good times as a result.
+Peter Balogh | 15:48
+Yes. I'll be there on Sunday. I will do the exit poll. At least here in Munich. So, yeah, they already said that they were called the police on us. So because we sent, information we sent the information to the embassy that. 
+Look, this is going to happen. We're going to keep all the laws and so on, but we have a right to do this. And the embassy said that. Okay, fine, they will call the police.
+kelly_christopher | 16:21
+But there's nothing the police can do.
+Peter Balogh | 16:22
+Okay?
+kelly_christopher | 16:24
+There's absolutely nothing.
+Peter Balogh | 16:24
+No. Absolutely nothing. 
+But this is. How can I say this? This is telling you like they still tried to scare you.
+kelly_christopher | 16:37
+So good for you.
+Peter Balogh | 16:37
+Okay.
+kelly_christopher | 16:37
+Big. Please. Yeah, good luck.
+Peter Balogh | 16:41
+Anyways, so let's talk about the UAT. I did some background work in the, yesterday. I didn't have too much time and I didn't have time to upload it to the portal. Just make a little conversation with a I. 
+And, yes. So I don't know if you already have ideas you want to start or I can start here, you or both of you.
+drkrislea | 17:21
+Are you talking to me? Okay, I have some ideas, Christopher, do you have ideas too?
+Peter Balogh | 17:30
+Okay, great.
+kelly_christopher | 17:33
+I do, but I'm going to step in for the specifically the Discord. So how are we going to be doing the communication side?
+Peter Balogh | 17:39
+Okay, cool.
+kelly_christopher | 17:39
+So I'll step back until you're finished.
+drkrislea | 17:43
+Okay. Do we have a note taker on this Discord meeting?
+Peter Balogh | 17:49
+It is running on the background. Yes, it is running on the background for me already.
+drkrislea | 17:56
+Will we get notes? So we'll.
+Peter Balogh | 17:58
+We will get notes.
+drkrislea | 18:00
+Okay, right.
+Peter Balogh | 18:00
+Yes, no screen recording, but notes. Yes.
+drkrislea | 18:05
+Okay, so, last time we talked, I was sharing that I was getting a quite a large list of names of people around the world. I'd say, not too many people in the Pacific Standard time zone, but like, there was one other person in Central or maybe two. Not everyone's given me their time zone. 
+But.
+Peter Balogh | 18:33
+Okay.
+drkrislea | 18:33
+So we have. It's sort of my time zone. Central and then around the globe. So, I was looking at my calendar to try to find two times that we could run the same meeting. We'll run the same meeting twice. 
+And the invitation would be to that list of 40, whatever it is. I'll say 40 for now. Telling them they can come to one or the other meeting. And so that's that was what I was going to do in terms of inviting them. 
+And last time we talked, I thought we were going to use my personal Zoom account, so that was. I wanted to put that into the conversation just to start with.
+Peter Balogh | 19:23
+Okay.
+drkrislea | 19:28
+Any thoughts on that?
+Peter Balogh | 19:32
+So regarding the zoom, it's up to you. I mean, if it's okay for you that we use your zoom account, it's fine, if not, we will ask Oliver. So it has to be on zoom. I don't think, Discord is good for that. We do it on zoom if you can use it on your account, that would be wonderful. Then we don't have to bother Oliver. So.
+drkrislea | 20:00
+Okay, yeah, I'm happy to do it. I've got up to a hundred people, and we won't need that many, but, I've got all the zoom features that we need to do a presentation and, you know, record it and everything. 
+So we. But we might want to record the delivery of this particular orientation. I don't know, maybe. Maybe we want to reference it at some point, but. So two meetings, one meeting scheduled twice, and all these 40 people would be asked to come to one or the other.
+Peter Balogh | 20:40
+Eight.
+drkrislea | 20:40
+And I do have some dates and times to propose to the two of you.
+Peter Balogh | 20:44
+Okay.
+drkrislea | 20:48
+I have. I have. April because we need a little time to prepare the materials. Because I see us doing a presentation that would cover the agenda, including a Discord if we want them to use Discord for the U8T Christopher, I was thinking you could do a Discord demo and then you would be introduced to them as a person that is going to collect their Discord user IDS.
+Peter Balogh | 21:07
+Yes.
+drkrislea | 21:25
+Yes, that is that accurate?
+kelly_christopher | 21:30
+Yeah, we'd have to create that. I suppose if I could just my two cents worth once we've done this onboarding, what's there's a bit of a gap, as I see it, between giving that presentation before they get access onto Discord. 
+I think I see the Discord as being more of a tool for the chat about how they're getting on and that feedback loop.
+Peter Balogh | 21:48
+Yes.
+kelly_christopher | 21:57
+I' correct me if I'm wrong there. Or we certainly can evolve it into other things as well, but for that UT it's a feed. I see. 
+It's been a feedback loop and a questions and answers so they can pose questions theyre not sure about and we can track where things are going through UA through Discord. But I don't think, there's still a gap between getting them onto disc. 
+So I think with that presentation of onboarding, I think there's a little bit more that we need to go into. I think we. I think we need to you know, whether we want to create use cases for them to follow have a you know, leverage the table that Lela kind of put together about tracking what went wrong and how it went on there. 
+So there's just elements that I think we need to supplement their testing, and I see Discord as being one of those elements, but not necessarily the main portion. If that's sure if that if you're all.
+drkrislea | 23:02
+Makes sense that yeah, that makes sense. And there is a sequence of things that are going to happen. So one one step for them is they come to the orientation meeting and we know that they've had the orientation. The second thing is that they sign the NDA and that's going to become sort of a funnel where people are going to drop off. 
+And for the people that go to the orientation and they do the NDA, then we have a list of people that seem to be serious. Then after that, I think we are going to assign them different roles. And from that assignment, we'll be giving them the test scripts and then the Discord access and give them another.
+Peter Balogh | 23:48
+Yes.
+drkrislea | 23:57
+Maybe it's another slight training about what to do within their role. They might need a little bit more. But that's. That's the basic sequence of things that I have in my mind. Am I missing anything?
+Peter Balogh | 24:11
+Okay, yes, so the sequence that I was thinking is basically in four phases. The phase zero is just to check on the readiness like or internal readiness. 
+Okay, an internal checklist and whether our handover materials are ready or not. Okay, so I think yes, internal test environment is stable. That's okay, or in or accounts are created, it's fine. Do we have the scenario packets like we have some and how do they look defects, right, or how do they look bugs? COMS channels are live. This is okay, and this is internal triage and the assigning. 
+So I was thinking we need a kind of a phase zero readiness checklist for ourselves. I think that's okay. Then we can go into the orientations, which is I agree it should be the two Orients. And during these orientations, we need to cover, the goal, the mission and what we want to achieve, we need to cover the concept of how this award is going to happen, right? 
+So nomination stage one, stage two and so on. We need to cover what are the liabilities, right? So GDPR, and so on. And we can do a demo. For example, I can do a demo, of, let's say, for a nomination to happen. 
+But I don't think we need to do a demo for all three roles. So we will have three roles for the people, the nominees, the coaches and the assessors. And this will be the groups. So on the first orientation, probably we can do the first denomination demo more or less. User interface is clear. 
+And let's say that should really cover the two hours plus Q&A it will even blow over two hours probably. And I entered here another phase, which is administration team only. Which is that internally, probably me and Lila or you guys as well. 
+But we still need to test, we will test internally. I think there is plenty to test still on the system. So we can do this. And then phase three, then we do, the actual UE executions. So here we can start by assigning the groups so we can say, let me just. 
+So I was counting 30 people, yes, so it would make sense. So if we have 30 people, it would make sense to have four groups. It would mean that two people for nomination like to like two guys work together to actually submit the nomination. One person would be the coach, and we would have four, as assessors. 
+So it's two for nomination, one for coach and for assessors. Right? So this can be basically one group, and this is seven people, so four times seven is 28. So if we have 3030 volunteers, then we have a, you know, two people. 
+Yeah, we c we can use two people, like, as backups, basically. So I was thinking we can have four groups. Yeah, but that's fine.
+drkrislea | 29:06
+I don't know if we'll have 30 exactly, though. That's sort of the unknown is how many we will actually. Net.
+Peter Balogh | 29:15
+Okay, so we. But what I'm trying to say is that we will have at three or four groups, right? Each group will execute a, one scenario end to end. 
+So there will be a set of people who will act as a nominees, one person who will act as a coach, and a couple of people who will act as assessors.
+drkrislea | 29:39
+Mmhmm.
+Peter Balogh | 29:41
+So we will have three or four groups based on this. One group is around, I would say six to eight people, depending on how much we will have at the end, that will be right. 
+And then, before we do the execution, right, and what actual scenarios we want them to do. Then we need another meeting, kind of a kickoff. And the scenario explanation meeting. Yeah. Where we now go into the actual real demos of what an assessor should be doing, what a coach should be doing and what the nominee should be doing.
+drkrislea | 30:34
+So that's the second orientation?
+kelly_christopher | 30:37
+Yeah, just so yeah, just to step back a bit, that's we're gonna obviously get a lot of data.
+Peter Balogh | 30:37
+Yes. 
+But that is now very specific. Yes.
+kelly_christopher | 30:44
+So I really like that approach. We're gonna be able to get a lot of information coming into the system. Just a all the reservation, I suppose, is knowing what their ability is like on in these sorts of technical roles. When it comes to looking into the system, there's going to be several different projects hopefully that they'll be going needing to classify and look at. 
+And I guess I'm just a little bit wary of people looking at the wrong things. Or if they're in one group. So we've got three or four groups, one group trying to work on their little in their bubble. But that bubble is not impervious. They could c cross pollinate and interrupt possibly or confuse the other areas as well. 
+If we're not very stringent in how we label up the projects, for example. Or yeah, I think just labeling of the projects is gonna be really key. You know? Team one, dash, ABC, Inco, whatever. Team two, dash, whatever. We just need to be really careful on that. 
+Otherwise, there's just, a risk there of things.
+Peter Balogh | 31:51
+No.
+kelly_christopher | 31:53
+You know, we bit unmanaged. That's my only. Only concern with that approach, the alternative, I think would be to split the groups up into role specific. 
+So we've got 1010 and ten. Looking at the nominees. But. But I actually like your way because in my mind that will get a lot more volume in. As opposed to ten people doing one thing first while the other twenty are waiting. Then it comes to the next group, and they're doing their bid and they get to the next group. 
+And what I'm talking about is you've got ten that are nominees. So they all just pump out a couple of projects. Then you've got ten that are assessors, of which maybe some of them going two split assessors and coaches, and then another group, which is the judges. The only fallback on that approach I feel is the length of time it'll take from end to end.
+Peter Balogh | 32:40
+Yeah.
+kelly_christopher | 32:46
+Whereas I like your approach where it's a lot more shorter and it's just a bit more riskier. 
+That's my only feedba.
+Peter Balogh | 32:57
+Yes. So if yeah, I was trying to limit the number of nominations because on the tailland, on the assessors, it becomes really heavy, right? So let's say if I have ten nominations, then it means that I have ten assessors. 
+So one assessor we will have to assess three at least or four four nominations, right? So on their side, it's a lot more time commitment, right? And I want this to be kind of equal so that it's kind of everybody's kind of working the same time. 
+So I don't want to, you know, overburden the assessors. And then, yes.
+kelly_christopher | 33:56
+I definitely see meri in your approach.
+Peter Balogh | 33:56
+So that would that that's what, I was thinking.
+kelly_christopher | 33:58
+I definitely see merit in as approach. Yeah.
+Peter Balogh | 34:06
+But I mean, yes.
+drkrislea | 34:08
+I have to ask a question. So are we creating scenarios, sort of sample or dummy scenarios in which they have they are dependent on one another as they flow through the entire process? Is that what we're talking about here? 
+And that's. Kris, you were wried that we would they would we'd have some delays, potentially.
+kelly_christopher | 34:36
+Just cross, possible confusion. So if we've got three groups and they're all starting at the same time, and that's going to be quite a high volume of nominees going into the system. The next those that have been assigned as coaches, we want to in my mind, we want to try and keep them separate in those three groups just so it's a bit more controlled. 
+But because we don't we haven't really addressed that, there's the risk of them looking at a whole a bigger volume and things getting cross pollinated across the groups. But I do like what you are saying because we've got it. 
+It is. It's a shorter sprint bag. Everyone's going at it. Whereas what I'm suggesting is less risky but will take longer. Will take a lot longer. That's my only Y.
+Peter Balogh | 35:27
+So what I was thinking is we can give them synthesized projects. 
+Okay? So synthesized. I mean, we ask the AI to create, the evidence and like whatever, and we can tell them I think we can simply tell them that we accept AI generated content. This is a UAT. This is not a real. This is not a real competition. 
+So what I was thinking is at least give them, for example, these three pilots that we generated, and we can let them generate their own. That's totally fine. If they don't like any of these as particularly appealing, then they can generate their own or even submit their own.
+kelly_christopher | 36:17
+Yeah I think leaving that up to them completely. I mean, they have the criteria of what we're after, so how?
+Peter Balogh | 36:20
+Okay.
+kelly_christopher | 36:23
+Addit, you know, here's your make your own fake information up.
+Peter Balogh | 36:23
+Yeah.
+kelly_christopher | 36:29
+As long as you've got this criteria there, I think we need to just be careful.
+Peter Balogh | 36:32
+Yeah, okay.
+kelly_christopher | 36:36
+Maybe. We need to. To inform them your group one so everything every project that gets nominated has to be started as project as group one.
+Peter Balogh | 36:41
+Ye as a group one, yes or something then yes, yeah, maybe that's going to be like we will call it like Project a B Circa D or something.
+kelly_christopher | 36:44
+Dash yeah, you have that's it that'll just that'll keep things a bit more cleaner I guess. Other than that at it. 
+And tell us the problems that you encounter.
+Peter Balogh | 37:01
+Yeah, okay, good. So, yes. So basically, this is what I was thinking. 
+Because then we will have three or four actual real nominations, coaches with actual things to do, and the assessors will not be over burdened. Each assessor only has to really assess just one nominations. 
+Because simply, yes, we want to test the system. It's not about, how much work they're supposed to do. When we do the real scenario, then, yes, one assessor will have to do more than one. But here I think one is more or less enough.
+drkrislea | 37:52
+So we.
+Peter Balogh | 37:53
+Okay?
+drkrislea | 37:53
+We have lots of details to figure out before we actually go into ET execution. We have a lot of things to work through, and this is a good discussion. Some of it I understand, by the way, and some of it I'm not completely clear on. 
+That's okay. I'll catch up, but I wanted to ask a question. Peter, you said something about, a two hour meeting. Do you think these. The first orientation will take two hours.
+Peter Balogh | 38:35
+Yes. So what should be on the first orientation? Let's see, right? Sorry, no, I mean, what should be on the first orientation? 
+Let's talk about that. So it should be about, the goal, the reason of the whole award, right? That it will take a couple of minutes, and then, it should be about we can ask him, for example.
+kelly_christopher | 39:10
+Sorry. Do we want Oliver to do that?
+drkrislea | 39:15
+Yeah.
+Peter Balogh | 39:16
+Yeah, yes, then the next okay, yes, and then the next item would be yes, of course we need to introduce the administ, the admint team.
+drkrislea | 39:18
+So I'm taking a note here, this is so this is the agenda for the first orientation. Okay, so this is goal. I want to say welcome and goal.
+Peter Balogh | 39:49
+So admint team intro quickly. Who like us. So that can be the second agenda point. The third one is how the award works. 
+So this is, stage one and stage two, right? So what happens in stage one? What happens in stage two?
+drkrislea | 40:19
+Is this the demo? Is this the demo part?
+Peter Balogh | 40:23
+No, I think this is just a description that we will have two stages, right? The first you do the nomination. Then in the first stage. We will select the top five of each. 
+Right, and then in stage two, we will have a celebrity judges to assess the first three basically, right out of the top five.
+drkrislea | 40:48
+Got it. So this would be slides.
+Peter Balogh | 40:49
+And this would be slides.
+drkrislea | 40:49
+Basically, PowerPoint slides we're showing.
+Peter Balogh | 40:52
+Yes, basically, right. And then we can talk about our ask, then we talk about the UIT what are we going to do the u eight for? 
+And that's going to be stage one, right? So we will go as far as selecting the top five, right? And why do we didn't do UAY? Because it's a brand new system and we don't just want to try the technical side of things, we want to try how it works with the volunteers, because eventually we will run this with volunteers as well. 
+So it's a UT not just for the technical part, but it's a UIT for the organizational part, right? And so this should be the I think the fourth agenda item. So what do U 80 is about? And what is really asked from them. 
+And then I can do a demo of denominations, a little bit of overall system demo, right of the nominations. We will tell them how we want feedback. Sorry, I missed something. We need to own them during the UAT. We have to tell them that. 
+Okay, there will be three type of people, three type of roles, and, yeah, a couple of groups. Yeah. Okay. So. So we can have a UAT orientation. Then I do a demo. I because the demo can take a long time. 
+I think we can we should only do the nomination demo. I mean, if we feel like that, we have enough time. I can do the whole demo for all and everyone. I can try to do it. And then we need to tell them. 
+Okay, this is how you can give feedback. And approximately how much work this is for you. So, I don't know, six to eight hours ish, depending on the role you're going to be playing. So in my mind, this should be the orientation number one.
+drkrislea | 43:17
+I would call that step, but the feedback sort of next steps how to give feedback there, the NDA form, the fact that we'll have another time once they're set and they're definite.
+Peter Balogh | 43:29
+Yes, and I think I know.
+drkrislea | 43:31
+So I'm going to call that last topic next steps with some other subtopics underneath. Okay.
+Peter Balogh | 43:45
+Chris said that the Discord deep dive should come later, but here we should mention that Discord as the communication platform. 
+And maybe you can do a little demo like this is how it looks, and they will see that this is just the standard chat thingy, basically. So, yes.
+kelly_christopher | 44:11
+I think to just to round out that first orientation is obviously to let them know that if they do this won't hold them back from applying if they have any projects that they'd like to submit for the future.
+Peter Balogh | 44:11
+So this can be the first orientation? Y.
+kelly_christopher | 44:23
+The thing this puts them in a good position to know the quality that we're after. 
+So I think this is a great. Yeah, it's another weeke chance for Oliver to get more quality coming through in the real life.
+Peter Balogh | 44:35
+Yes.
+kelly_christopher | 44:35
+So I think letting them know that would get a good buy in and further engagement for the what are we calling it, the onboarding or the or whatever that next session is.
+Peter Balogh | 44:48
+Okay, so what are the okay, so what are the things we need to prepare before this orientation?
+kelly_christopher | 44:48
+Okay.
+drkrislea | 44:50
+Sounds good.
+Peter Balogh | 44:57
+So because I think so, the system will be ready. That's okay, but do we need to have some handouts like, some description that. 
+Okay, if you're a nominee, this is your role, this is your this is the screens you're going to see. If you're a coach, then this is your role, this is the screens you're going to see. These are the tasks you can do. 
+So kind of a role specific handouts?
+kelly_christopher | 45:30
+It was, yeah, because a part of my questions was going to be whether or not we want to give them access to confidence, which just got all our information in there and they can see it. I think. Yeah, I feel that. 
+But it does have the.
+Peter Balogh | 45:40
+No, I only have ten seats, and I think almost we're almost there.
+kelly_christopher | 45:44
+Right.
+Peter Balogh | 45:49
+I mean, not just you guys. I have some other guys, too. So, I only have ten seats, so I don't think that is doable. What is doable is that we give them some P DFS. Basically.
+kelly_christopher | 46:01
+Yeah, from that rolls specific and probably the process as well.
+Peter Balogh | 46:04
+Yes.
+kelly_christopher | 46:05
+We've got a really good process that we've got highlighted there as well. So those two documents would be great.
+Peter Balogh | 46:11
+Yes. Yes.
+drkrislea | 46:12
+Which are the two.
+kelly_christopher | 46:15
+On Confluence, I can't put the title sorry, Chris, but the it's there's the process document and there's a roles as well. Really? Really. Well.
+drkrislea | 46:25
+Both those would be the two handouts. I think so. Yeah, and so. 
+I'm gonna say we can hold off on some of the detail if they have not signed the NDA, they don't need the rolls handout.
+Peter Balogh | 46:48
+Yeah. That's true.
+drkrislea | 46:49
+They don't need it. 
+We need their commitment first and their COM to demonstrate their commitment. They do the NDA so we have to have the NDA ready. 
+That's one thing we have to do is get that ready. But that doesn't have that step doesn't have to happen before we have the orientation, but very close to it because the orientation can be high level. It should be motivating by the way. Everybody that knows Oliver is bending over backwards to do something to help Oliver. 
+So they want to do this and they're chomping at the bit. Believe me, I'm getting emails like, when is this going to happen? When is this going to happen? So, I think. I think we give them enough information in the orientation so they know what it's about and they know that their next step is their commitment is the NDA then they're gonna get more information, they'll get more access later. 
+And then Discord we can we do we can do the other things that they will need, including the second orientation. So I guess I'm encouraging us to keep the first orientation pretty high level to see how many people do we actually have to work with because, yeah, so that's my recommendation.
+Peter Balogh | 48:11
+Okay.
+drkrislea | 48:13
+We keep it high level. 
+And maybe 90 minutes at the most of the meeting. I think two hours is too long.
+Peter Balogh | 48:19
+Okay. Okay. Okay.
+drkrislea | 48:22
+Yeah. So but the.
+kelly_christopher | 48:26
+Chris just on that NDA did Oliver or mention the last meeting that in his email out to people if they accepted it, that was them signing the NDA? Was that not part of the I recall that was a discussion I think something you mentioned that.
+drkrislea | 48:40
+At the last not exactly Christopher that was the if they were giving me their personal e mail that is their willingness to give me the EMA so that's all that was the only implied agreement there.
+Peter Balogh | 48:48
+No.
+kelly_christopher | 48:55
+Fantastic. Thanks.
+drkrislea | 48:57
+Yeah. So we still we can do the NDA, but it doesn't have to be ready before the orientation meeting, but very soon after because once we let's say we have our two meetings and we have maybe we have 40 people come 20 to each meeting and each of those meetings has to be exactly the same, right?
+Peter Balogh | 48:58
+Okay, so. 
+2. 
+Okay, so regarding signing the NDA, do you have any idea how to do it?
+drkrislea | 49:20
+20 peoples, they see exactly the same thing. 
+So once that's done so 40 people have had the orientation, then the message goes out to them all to say if you're interested and we hope you are, sign the NDA and then we have our subset people that really want to participate.
+Peter Balogh | 49:53
+Because what we did for this exit bolting is using this jot form. 
+And if I'm looking at it, the free version offers five forms. We only need one and hundred submissions. So hundred signatures, right?
+kelly_christopher | 50:11
+Two.
+Peter Balogh | 50:13
+So we should fit into this three tier, but we will have the branding.
+kelly_christopher | 50:19
+What do you it what's the tool.
+Peter Balogh | 50:23
+It's an electronic signature. I don't know how to say this. So, you can collect signatures. Electronic signatures. It like Autob. Autob has a service like that, you know, like you have a PDF and you can sign it electronically. You don't have to sign and scan and send and anything, just log in here, upload your signature.
+kelly_christopher | 50:47
+The best.
+Peter Balogh | 50:51
+You can actually sign it in your phone with your finger if you want. Or there are yes, Doc, you sign, you have whatcom on.
+kelly_christopher | 50:59
+Think in America used DocuSign of DocuSign that's another one of those same yeah it's really those are two really good systems. Yeah. They're good as well, because they can be used on your mobile phone. It doesn't matter where you are. You can get that electronic sign off.
+drkrislea | 51:16
+By the way, I have a hard stop at the top of the hour, so I only have a few more minutes.
+Peter Balogh | 51:21
+Okay.
+drkrislea | 51:30
+We might need to have it.
+Peter Balogh | 51:30
+Then let's agree on the dates. Let's agree on the dates.
+drkrislea | 51:33
+Yes.
+Peter Balogh | 51:34
+Okay, I will elect tonish a signature. 
+Okay, I will find the. 
+I will find the, service for this. That's not a big thing. Let's talk about calendar, right? So, I think the first orientation. Yeah, next week is too early, that maybe two weeks from now or.
+drkrislea | 52:14
+I can do it on the 24th, which is April 24, which is a Friday, and then I can do it on the Monday following Monday.
+Peter Balogh | 52:20
+Okay, that works for me as well.
+drkrislea | 52:30
+The 27th.
+Peter Balogh | 52:34
+Yeah, Mondays are not really good for me, to be honest.
+drkrislea | 52:42
+We both think about doing both sessions on the same day. Is that too much?
+Peter Balogh | 52:50
+Like, no, it's okay. What time should we do it?
+drkrislea | 52:58
+I'm thinking of, seven am Central as one time that covers everybody that is, to India.
+Peter Balogh | 52:59
+F for each. 
+Which is what?
+kelly_christopher | 53:25
+That would.
+Peter Balogh | 53:26
+Susims central.
+kelly_christopher | 53:35
+Just a quick.
+Peter Balogh | 53:35
+2.
+drkrislea | 53:38
+Open my. I'm gonna share my screen for a second here.
+Peter Balogh | 53:41
+Okay.
+kelly_christopher | 53:42
+While you're doing that. Yeah. Just had a quick look on the 24th. There's only three countries that have holidays or anything like that. Armenia, Indonesia and Niger.
+drkrislea | 53:50
+So are you seeing my screen?
+Peter Balogh | 53:52
+Good its coming. Yes I can see. Wow, it's super you have a very good calendar setup. Okay, great.
+drkrislea | 54:04
+Okay, so on the 24th, which is the day that I have the most open and I'm available. I can't do the 22nd or 23rd. But the 24th. I can do 07:00 am central time is 2 pm in Munich and France.
+Peter Balogh | 54:29
+Okay, that works. That works at least for me. 22pm Friday, I can make it.
+drkrislea | 54:40
+Christopher, how about you?
+kelly_christopher | 54:41
+YP no problem. On the 24th the stations I will be I am going traveling in may back to Scotland. So just as a heads up, I don't have the specific dates yet, but.
+Peter Balogh | 54:56
+But I think we should not do it on the same day. So if we do one on Friday, then the other one should not be on the same day, even though we can do it. 
+So I you know, like we can do it, but let's give it the chance. Because if some if for somebody the day doesn't work, they can switch to another one.
+drkrislea | 55:15
+Yeah.
+Peter Balogh | 55:17
+But Monday, I'm sorry, I really cannot do it's kids have all kinds of trainings and everything I have to it's basically I feel like a taxi driver every Monday evening.
+drkrislea | 55:23
+Okay. 
+What about the 28th?
+Peter Balogh | 55:38
+In and this time it would be in the evening time for me, right?
+drkrislea | 55:43
+That's what I'm thinking.
+Peter Balogh | 55:43
+Yes, that then it that's working, yeah, that works.
+drkrislea | 55:46
+Stuff this stuff on my calendar. I can. I can. I don't have to attend this. If we picked 01:00 pm or 2pm1 Pm central time is 8 PM in Munich and France.
+Peter Balogh | 55:58
+Fine.
+drkrislea | 56:05
+So how does that work for you both?
+Peter Balogh | 56:05
+Works.
+kelly_christopher | 56:11
+That's okay.
+Peter Balogh | 56:13
+Yeah, that looks good that looks fine, yes.
+kelly_christopher | 56:14
+Okay.
+drkrislea | 56:16
+So I'll check with Oliver to make sure he can do it too.
+Peter Balogh | 56:19
+Okay.
+drkrislea | 56:22
+OOPs, what did I just x out of something? I stop sharing that. Okay, just this chord is Discord is pretty cool, but it's my favorite.
+Peter Balogh | 56:29
+You stop chewing. It's fine.
+drkrislea | 56:36
+My first time. I was gonna say it's my favorite. 
+It's my first time, so.
+Peter Balogh | 56:40
+Two.
+drkrislea | 56:42
+Okay, so far between the three of us, we have two dates. We have April 24 07:00 am central time and April 28 01:00 pm central time, which is you can calculate the times spzone for the your local time zone.
+Peter Balogh | 56:58
+Yes burs.
+drkrislea | 57:06
+And I will double check with Oliver and make sure he can do it because he needs to be there for both. And then Layla
+Peter Balogh | 57:11
+Yes, okay.
+drkrislea | 57:12
+So I'll send. I'll send them both a message to make sure. And then I would like to get this onto calendars for people because they like I said they are jumping at the bit that's an American expression. 
+So I don't know if this is something that you've heard before.
+Peter Balogh | 57:36
+No, but I understand. It's okay.
+drkrislea | 57:39
+They're excited, they're very excit.
+Peter Balogh | 57:41
+They're excited. Okay.
+drkrislea | 57:42
+I mean, a lot of people actually sent me messages, they'd sent me a LinkedIn request, but they wouldn't tell me why, and then I would be like, Then I'd look and go, okay, they know. Allliver. 
+Okay. That's probably why. So then I'd have to. I mean, you know, talk about being a private investigator. I would have to go. Are you did you connect with me because of Oliver? And they're like, yeah. I'm like, okay, thanks for telling me, but, so, I would like to proceed with getting as soon as I know that Oliver and Lela are available, if we have good time for all of us, then I'm going to put that onto calendars just to get it on there. I'm not going to put the agenda out yet. 
+And we'll clarify. We'll clarify the agenda. Make sure that we have it all exactly how we want it before we publish it. And then I recommend one more thing is for the three of us, four of us, five of us to have a dry run to walk through once the POWERPO is ready. 
+And I'll fix the. I'll fix the PowerPoint. We walk through it, we just go through it. We kind of time it out so we know exactly how it's going to flow. So that when we actually do the meeting orientation meeting we have it's smooth. 
+So that is something else that we have to schedule.
+Peter Balogh | 59:16
+The previous week would be fine.
+drkrislea | 59:25
+Wa let me see here. That would be the 15th for the 16th.
+Peter Balogh | 59:35
+15th. Yes, because. So on the 15th next week we have another meeting anyways, but I'm happy to do on the 22nd another meeting, so yes.
+drkrislea | 59:53
+I can't do the 22nd. The 15th, either the 15th or the 16th works for me. Probably the 15th is best, yeah.
+Peter Balogh | 01:00:04
+Okay, so on the 15th we have a meeting anyways. The that's the upcoming Wednesday meeting, so, okay, but I think no, because if we have to do a dry run, then we're not talking about anything else.
+drkrislea | 01:00:14
+Okay, so you want to do it then?
+Peter Balogh | 01:00:26
+Everything else, which we should. 
+So maybe then the 16th is working. Yeah. Let's do the 16th as a drive run. And on the Wednesday we keep the. Is it okay with you, Chris, that next week we meet twice?
+kelly_christopher | 01:00:38
+Up, no brothers.
+Peter Balogh | 01:00:40
+We meet Wednesday, Thursday. 
+Yeah, okay, I just did it.
+kelly_christopher | 01:00:47
+Sorry. I think we need to extend our the calendar invites for these meetings our regular ones because I don't see just that you.
+Peter Balogh | 01:00:52
+I just did it because I realized that it ended on April first, and I so you should have new invites for that somewhere in your calendars. Let me know if you don't have it.
+drkrislea | 01:01:05
+Thanks.
+Peter Balogh | 01:01:07
+And then? 
+And then on the 16th, we can have another meeting. Yes. Okay.
+drkrislea | 01:01:12
+Actually, 16th is difficult for me. Is the 17th possible for the two of you?
+Peter Balogh | 01:01:18
+Yes. Yes.
+drkrislea | 01:01:19
+What time this time?
+Peter Balogh | 01:01:22
+Sim s that would be the best the EE evening for me. Yes, okay if you okay, so if you start the PowerPoint, please share it even if it's empty so that we work in the same thing.
+drkrislea | 01:01:29
+Okay, so that is 01:00 pm central. I'll schedule it. Okay, so I'm going to work on getting, the remaining availability. I'm gonna do the inviations for the entire population of UAT volunteers putting. I'm going to basically send them a message saying here's when the two meetings are. I'm going to send them calendar invice and tell them just attend one so it's gonna hit their time zone at the right time. 
+And then I'm going to schedule a dry run for us, so I'll take care of all of that. And then I will I'll start the PowerPoint and I'll get some feedback from all of you about that.
+Peter Balogh | 01:02:28
+Okay?
+drkrislea | 01:02:28
+Where shall I put it?
+Peter Balogh | 01:02:31
+One drive. If it's a PowerPoint, it should be one drive. Microsoft 1. 
+And then you can cr you can actually share it like, share with people and give us edit rights and you have to paste our email addresses there and it will get to us.
+drkrislea | 01:02:58
+I'll get that started and then everybody can contribute. I have to pop off.
+Peter Balogh | 01:03:03
+Okay, great.
+drkrislea | 01:03:04
+I'm sorry, but this was good. We covered.
+Peter Balogh | 01:03:10
+No. Great. 
+I think I will. I will send a summary. And I will upload it to Confluence. Yeah, right after this one.
+drkrislea | 01:03:20
+Okay?
+Peter Balogh | 01:03:21
+Okay, thank you, thanks.
+drkrislea | 01:03:21
+All right, thank you both very much.
+kelly_christopher | 01:03:24
+All right, take to the rest of your weekend, and good luck on the weekend. Please beter.
+Peter Balogh | 01:03:31
+Yes, thank you very much, chez bye.

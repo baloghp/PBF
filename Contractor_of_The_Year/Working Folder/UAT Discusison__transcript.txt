@@ -1,0 +1,391 @@
+Speaker 2 | 00:01
+With Orban's veto gone, we will get complacent in the EU and will not do anything about reforming it now. I hope I'm wrong, but time will tell. Anyway, thank you so much for watching. I want to give a massive shout-out to all the new patrons that joined us over the last couple of days. You are awesome, and you make all of this possible, especially all of these new patrons on the screen right now. Thank you so much for supporting this channel. Thank you so much for watching.
+If you do want to see our live coverage in Hungary about the election, where we're literally showing you the parties on the street and all of the live takes from all of the people there, make sure you check out one of the two videos linked above. Thank you, and see you in the next video.
+kelly_christopher | 00:50
+Spanish Prime Minister Pedro Sanchez cuts a pretty lonely figure on the European stage.
+leila.lahham | 00:56
+And...
+Peter Balogh | 09:22
+Hey, Chris, how are you? Yes, it was a good weekend.
+Yes.
+Yeah, it's not just the turnout; it's the result, so that's really cool. So yeah, I was doing exit polls here in Munich, like 90% of the people were voting for a change, only 10% were voting for urban.
+So it is really good. Now, let's see that change actually happen. Now it's the part, but it was...
+You don't know the whole... Well, of course, why would you know? This is a whole... I think there will be a Netflix series about this at some point. [Laughter] So look, I don't know if... Nobody else is joining. It looks like we can even talk about that.
+So what happened? Two years ago, yes, there was a presidential pardon. Lina is... Okay, so there was a presidential pardon to a guy who was sentenced to some prison because he was helping to cover up evidence against the pedophile.
+So... And? And there was like, one newspaper. Where there was a one, one reporter who picked up this story and started to ask questions like, why did this guy get a presidential pardon? Like from the president, right?
+And it turns out that this guy was a really good friend of the wife of Urban. So this became a big scandal that basically you pardon the people who actually helped raping children. And it escalated so that the president had to resign and the minister who countersigned this pardon had to resign.
+And this minister was the wife of Peter Mayer. So the next day, this guy, this bitter right there the next day went into a podcast like, I don't know, not it was just a internet podcast. And he was, like, outraged that they did this to his wife because they made his wife sign these things, you know?
+So everybody was made to do all these things just because. And this is how the whole thing started with a pedophile case. And then it's kind of snowballed because then the next week. So after this, the next week, there was a huge, really huge rally against.
+Yeah. Against the regime. And then this is where Peter Mayer thought that. Okay. Maybe if he started this, he might become a politician after all. And, yeah, so this is how this whole thing started. But there are so many, you know, so many side stories like Russian spies and, the, voice recordings from all of the enemies.
+So it was. Yeah, it was it, [Laughter] yes. But anyways, so highly, sorry for, a side story, but we were just talking about the Hungarian elections, which were happening in the over the weekend. Okay, so let me just check the other link if somebody was joining there.
+Okay, no one else is at the Google meetings. Okay, great, then let's talk about because we will have a dry run on Friday, right? Okay, but this drive run is with.
+leila.lahham | 15:20
+Thank you. Just a moment for everything you did. It's amazing. You've done so much work on the platform.
+Peter Balogh | 15:30
+Well, I had a little bit of time, so thank you, but there is still so much to do. So then this is what I want to discuss with you, actually. So...
+There is... It's okay, let me share my screen.
+Okay, so what we discussed, right, that we will have the UAT, and I tried to prepare a little checklist. Can you see my screen?
+Okay, good. I'm still getting used to this core. Okay, so environment is stable? Yes, it's fine. Test accounts, this will be self-registration, which is fine. Scenario packets, I think that's fine. UAT group, naming convention.
+I think we said something about this last time.
+kelly_christopher | 16:58
+Hey, yeah, to pick up.
+Peter Balogh | 17:00
+Chris, if you remember, how should we call that?
+kelly_christopher | 17:05
+No, I agree that...
+Peter Balogh | 17:05
+Yp.
+kelly_christopher | 17:05
+So essentially, what we were discussing is the excellent approach for in groups for the UAT testers. So within each group, they would have the relevant profiles that would oversee the project and the project nomination form being assessed, guides helping, and then assessed all the way through.
+So each group had its own team that would see that work going through. So to try and stop any potential pollination across groups, just thought a naming convention should include the group. An example there. Group 1 and the project name. Group 2 and the project name, obviously. Group 3 and the project name.
+Then each of those members within the group would follow their own project, so there's no cross-contamination, as it were.
+Peter Balogh | 17:52
+Okay.
+kelly_christopher | 17:56
+So we can get some really good feedback on how the testing goes and be able to zero in exactly at exactly what and where it is that they're discussing.
+leila.lahham | 18:06
+Perfect. Are you going to create a channel on Discord? A group like each group.
+kelly_christopher | 18:12
+I've done that. Yeah, it's a good point actually, not as a group so that's a good question. I will do that. I've got just an overarching UAT group but I like what you're saying now so that I can separate it into the groups themselves. As long as we're all happy with this Daman convention,
+then we'll follow on from there.
+Peter Balogh | 18:34
+Yes. I think we should create a file with the names of the people so that they know that they belong together. We can just share that. Yes, that's the second thing.
+leila.lahham | 18:44
+How are we going to collect feedback from them? Like if they ran into bugs, if they run into issues.
+Peter Balogh | 18:54
+So the easiest would be... I don't know how...
+So the easiest would be through a Discord channel. So maybe we can open one channel just for UAT feedback or UAT bugs. Yeah, so one message at a time.
+leila.lahham | 19:11
+Maybe they can in a channel if we're going to give them...
+Peter Balogh | 19:13
+That would be...
+leila.lahham | 19:15
+Let's say the three of us are a group and Peter is the coach. This is the SOR and M the nominee. I went into the initial way I submitted my application. I should just post it to the same channel I'm talking with you guys because we're working together.
+Okay, maybe just a suggestion.
+Peter Balogh | 19:33
+Yes. Yes.
+leila.lahham | 19:36
+I'm not sure.
+kelly_christopher | 19:37
+I like that, I think it keeps it... I might go on Peter sorry.
+Peter Balogh | 19:46
+Nothing, didn't say anything.
+kelly_christopher | 19:48
+Should we instead of having all the channels just put it out there, shall we have a separate server for the UAT groups? Would you want it all to be on the one discourse server for PBF? I would be hard at all.
+Peter Balogh | 20:07
+It's up to you. How hard is it to actually sell it up?
+kelly_christopher | 20:13
+Not hard at all. I just thought maybe by splitting it up would be. Would it be. Would it be easier to manage with it? Yep.
+Peter Balogh | 20:21
+Yes, I definitely think so that it could be easier to manage. But we need to keep in mind that we have done two discourse servers. Yeah, but I think...
+Okay, so separate.
+leila.lahham | 20:53
+Maybe that's good in the long run as well, because once we're done with the UAT, it's done.
+Peter Balogh | 20:53
+Okay.
+leila.lahham | 20:59
+We're not going to go back ever again. So I can...
+Peter Balogh | 21:03
+Exactly.
+Okay, but regarding bugs. So let's say if they find a bug, let's say we find the bug, then how should they report it?
+leila.lahham | 21:17
+I think we should give them a structure. So at my current company, there is a structure that says, "I was doing this."
+Peter Balogh | 21:23
+Yeah.
+leila.lahham | 21:26
+These are the steps I did, like 1234, I took. I did this, I did that. I expected to see this.
+Like this was the expected result and this was the actual result. This is why this is wrong. Okay? So we should give them a framework to follow in reporting bugs because it would be really difficult for us to know what they were doing when they faced an issue.
+Peter Balogh | 21:41
+Yes.
+leila.lahham | 21:49
+Okay? And I faced this difficulty when I reported. When I tested and reported what I found. Okay. Like, how can you. How can I tell you without, like, without a decisions on what I was doing? And when I faced the box, this is why I was taking screenshots. I was saying, "I took step one, I did this, step two, I did that."
+Okay, so maybe we need to give them a framework.
+Peter Balogh | 22:10
+So that's fine, but the problem was that on Jira, I only have ten licenses, right? And we cannot put this on Jira or Confluence.
+leila.lahham | 22:24
+I don't know if it will be this good, but I will write up if you want me, I will write up a guide of how to report a bug.
+Peter Balogh | 22:26
+So...
+leila.lahham | 22:33
+Okay? And we can give them.
+Peter Balogh | 22:35
+Then, yes, okay.
+leila.lahham | 22:35
+Group. Okay, guys. Here is the guide. Let us know if you run into a bug or if you think you are running into a bug.
+Peter Balogh | 22:48
+But then we can. But then we can still use this chord and we can have just one channel for like issue box or issue reporting. And we can say that in this channel, please report it in this format.
+Like, just like you said, what did I do? What did yes, okay. So this will be still a Discord channel. Okay, yes.
+leila.lahham | 23:19
+We are actually a discoverer channel only for bug reporting would be good because if our... Finds a bug, the other group will see that our group found a bug, and they will try to replicate it, which will show us if it's an actual bug or someone did something wrong.
+Peter Balogh | 23:39
+No, I like it. Okay, so then that's ready. Good, yes. So how are we going to, how are we going to assign the people into different roles? Are we asking them of or are we telling them that you are nominee your.
+leila.lahham | 24:18
+Ask. Like what? What role would you like to play?
+Peter Balogh | 24:24
+I don't know, I'm just thinking, right? So now we did all the presentation. It's fine. There are thirty-five people, right? Now we need to create those four groups. Let's say we will have four groups, right? Each group will have two nominees, one coach, and three assessors, for example.
+That's six. So how will people's names be assigned to their role? Are we asking them or are we shuffling, randomizing, or in some volunteer session or maybe is there some sort of... I don't know. On an online form or something where we can...
+We could use...
+leila.lahham | 25:25
+You're on mute, Chris, we didn't hear you.
+kelly_christopher | 25:31
+Thank you. I think if we take a step back for the presentation, not necessarily onboing, but what we're doing and how we're doing it, we're really expecting them to... Chris to go through the profiles, and I think we should probably drop in a little message there that if those of you are very keen on a particular profile to test with, let us know after this session.
+Peter Balogh | 25:49
+YP.
+kelly_christopher | 25:59
+If we don't hear anything, then we will go ahead and assign you a profile just to keep the momentum going because I personally prefer freedom of choice, and you guys all come in, but let's not need that window to open.
+leila.lahham | 26:15
+It might take time for us to go through with everyone. What role would you like to play?
+kelly_christopher | 26:21
+I don't know, I haven't given... So whatever, let's do the presentation. Here are the profiles that we're going to that you're going to be required to see this end to end. If anyone has a preference, let me know at the end of the session. Or buy within four hours or whatever at the end of the session.
+Otherwise, we'll assign you, and we'll still be there to support you through all this. So you're doing this a great big favor. We keep that buy, and I'm engaged with that.
+Peter Balogh | 26:48
+Yes.
+kelly_christopher | 26:51
+At least give them a chance if they're very passionate about an assessor or judge or what have you... Then let them have that go.
+But we need to give them a fine, a closed window for it.
+Peter Balogh | 27:02
+Okay, now so what I'm thinking... So let's say we will have the session with them, right? Will it make sense to actually send out a survey or form even just for simple feedback? In that form, we could ask them...
+Okay, we have presented you with four projects, right? But we agree that we are not going to present a project that they will have to come up with there, right? Okay. So then all we need to ask them is, "Do you which role you prefer to be in? Do you want to be a nominee coach or assessor?"
+Do you want to be together with somebody? Because it may be that two guys want to work together, and then if they want to be together, then we will try to assign them together.
+kelly_christopher | 28:07
+Ye true.
+Peter Balogh | 28:17
+I think this should not be the problem.
+leila.lahham | 28:17
+There is no risk. There is one risk we are doing it this way, that maybe 70% of them will say, "I want to be an assessor, we need nominees." Whereas if you do it like... Tell me, Chris, what Chris mentioned. Tell me if you have a really strong feeling about one of the roles, and I will assign it to you.
+But if not, we will do the assignment. So we have enough people for nominees, we have enough people for assessors, etc.
+kelly_christopher | 28:48
+So perhaps we should refine it. Yeah, I think maybe refine it. How many assessors do we want? So we go... This is for each group, there are going to be four assessors, there's going to be ten nominees or whatever. Let's give those numbers so they know in each group what those numbers are for the profiles and then agree. Layla and... If anyone has a real strong passion for one, let us know afterwards.
+Otherwise you'll be assigned these ones.
+leila.lahham | 29:13
+We can give autonomy as well and say, "These six people... You wouldn't be a group discussed between yourselves and decide who will be an assessor and who will be a nominee." Give them the autonomy to do the assignment on their own.
+Peter Balogh | 29:34
+Yes. So that's the other thing, that I was thinking, like, "Who wants to be in the same group?"
+leila.lahham | 29:41
+Yes, that's...
+Peter Balogh | 29:43
+So you can apply for one group. Okay. So we should...
+leila.lahham | 29:50
+There's a Google form. You're suggesting Peter is a really great idea.
+Peter Balogh | 29:51
+Okay, so...
+leila.lahham | 29:54
+Having a Google form for people to know what their role is, to say what they prefer to be, to say what group they would like to join.
+But, we really need to pick an approach that would minimize our work. Yes, because we don't want to read the Google forms after they fill them and try to say, "Yeah, Peter wants to go with Chris, Lia wants to go with him." [Laughter] That's just extra work for us.
+kelly_christopher | 30:33
+That's... Yeah. I need to define that. What? The criteria is possibly a bit more on that side, but CRK is here as well.
+Peter Balogh | 30:47
+Hiress okay, so what are you saying? Because I just got confused, right? So should we do the form, the Google form or not? After the UT? I mean, after the session.
+leila.lahham | 31:05
+I have one more suggestion. Okay. I don't know what we're going to use to contact the user acceptance testing meeting, but I think it's Zoom based on what I read.
+Peter Balogh | 31:09
+Yes.
+leila.lahham | 31:17
+So when you do Zoom, you are able to create breakout rooms.
+Okay? So we can just break out the people to six, okay?
+Peter Balogh | 31:26
+Okay.
+leila.lahham | 31:28
+Tell them you have five minutes, go meet whatever... Says you have five minutes after the five minutes you will tell us out of a group one or out of breakout a idea.
+Yeah, who wants to be an assessor, who wants to be a nominee, blah. We take note of it. That's it. [Laughter].
+kelly_christopher | 31:46
+Fantastic. Yeah. No. I've really liked that. But...
+Peter Balogh | 31:50
+Yes. Each one of us can be the leader of that group of that room, right? Then we can say that, okay, group A will be Kris, group B will be Lela, group C will be me, and yeah, let's show up.
+I think this is a great idea. That's the best idea.
+kelly_christopher | 32:09
+Agreed.
+Peter Balogh | 32:10
+Super. Thank you.
+leila.lahham | 32:11
+That's the bore of conversation, discussing different ideas.
+Peter Balogh | 32:11
+Thank you very much. Yes. So I want to add RO level. Okay, yes, so that's one thing, and I need a little bit of help because on the slides, we have to tell them how they can join Discord.
+Right? So after the meeting, after the sessions, we can expect them to join the Discord server, right? Okay. Okay.
+kelly_christopher | 33:06
+I could even...
+Peter Balogh | 33:06
+So this should be there. So yes.
+kelly_christopher | 33:11
+I was just wondering because Chris has already got all the email addresses. Is it a good idea to invite them to the server once I've set up? If I can get that ahead of time... But I just got them all set up on Discord already, and all they have to do is be reminded of the meeting that they've been sent an invite, and they just need to accept that.
+Peter Balogh | 33:36
+So not definitely not before we have the NDA ready. This is one of the... That I was in my mind the whole week, and I didn't actually manage to act on this at all.
+leila.lahham | 33:44
+5.
+Peter Balogh | 33:53
+So we need to set up an NDA, and we need to find an online format for this.
+leila.lahham | 34:08
+For the NDA, we can use Google Forms for the NDA.
+Peter Balogh | 34:08
+So I was...
+Do you think Google Forms is... Or do you mean afterwards we can use Google Forms?
+leila.lahham | 34:20
+That is, for the NDA, you want to send them an email and have them sign it, right? Google Forms should be able to do that one minute.
+Peter Balogh | 34:37
+So we can do it lightweight and we can do it hardcore, right? So if we do it hardcore, we will gather actual electronic signatures. Or if we do the light way is that we just put up a document. This is the NDA if you know, if you click the textbook, if you click the checkbox on the Google form, you have signed the NDA basically SE second.
+leila.lahham | 35:03
+I think that's...
+Peter Balogh | 35:06
+Sure.
+Okay, let's not overcomplicate this.
+leila.lahham | 35:14
+It's an in... They are like they volunteered. I don't think it would be like...
+Peter Balogh | 35:23
+Yes, but I am in Europe, sorry, I have to gather their agreement that I can further use their datas, so like, sorry, [Laughter] okay.
+leila.lahham | 35:36
+No, that's great, actually. I prefer to understand where my data is being used or what people are doing with my data than to be like, "Yeah, whatever."
+So it's real.
+Peter Balogh | 35:49
+Yes, exactly. Okay, so Google Forms and simple and the document. Okay, now this I will double-check with Oliver as well because this is going to be his liability as well.
+leila.lahham | 36:11
+Peter on Wix can we do a form as well? Because I remember we are able to do like. We can do it as a page on Wix a separate page on wis.
+Peter Balogh | 36:26
+Yes, we can do it on Wix as well. Yeah. I don't think there's an issue with that.
+leila.lahham | 36:32
+2.
+Peter Balogh | 36:34
+We can. We can do a. We can do a page with a forum, I can.
+Yeah, okay, come on.
+leila.lahham | 36:44
+[Laughter] Confluence. It's slow. It's weird. I have to use it every day, but it kills me.
+Peter Balogh | 36:58
+All I is doing is controlling... They're trying to select the text, and it's not working.
+Okay, fine. Okay, good. Great. Okay, so we're not going to do it. Okay, great. This has solved my problem, a whole chapter of problems.
+Okay, yes, the bug. So I didn't have time to work on it, but I will fix those sparks.
+leila.lahham | 37:37
+Can someone else test as well just to confirm the bug? Do we have someone who hasn't signed up at all? I don't have another email address. I can create a new email,
+but it's not like... Just a test. If.
+Peter Balogh | 37:54
+I mean, I will test it. I will create a new G mail. Actually, I have, three G mail addresses, right? And I will do it. So. And if I don't find it, I will definitely report it to you.
+But. But I think I know what the root cause of this thing is. It's just I need. I need probably two hours where I can just sit down and do it and.
+leila.lahham | 38:18
+Okay.
+Peter Balogh | 38:20
+Yes, okay, good, yes, PowerPoint so that I guess this would be the next big topic.
+So Chris has shared the park, right? Did you guys manage to take a look?
+leila.lahham | 38:39
+Six.
+Peter Balogh | 38:43
+Okay, this is good agenda intro team about the right next steps. Yeah, okay, Oliver can give this text about himself.
+That's fine, we will give an intro to the team. Okay. But it's okay, so yes.
+leila.lahham | 39:14
+It's empty. Okay. So we need to fill it out. Okay, the...
+Peter Balogh | 39:23
+Okay, let me see my calendar. Okay, so I have tomorrow afternoon, so tomorrow afternoon I can fill this out as much as possible.
+Well, if not, we will fix the content on Friday. Yeah, that's what we will do. We will go through the whole thing and fix the content. Okay?
+There was one thing I wanted to check. Lina, I think you have created some actual documents, some guides for each of the roles, right?
+leila.lahham | 40:13
+I need to update them with a new logo because they are using the old logo. So I need to update them.
+Peter Balogh | 40:21
+Okay.
+leila.lahham | 40:21
+I have this on my to-do list. I need to update them and update the links on the weeks' website.
+So if you want to add this action to my action list here, I already have it on my to-do list on my internet to-do list.
+Peter Balogh | 40:38
+Yeah, that's f no, because that's fine, because then I would use that during the presentation, right?
+leila.lahham | 40:45
+You can show it to them so they can access it on the website after we've done it if they need it.
+Peter Balogh | 40:46
+Okay, yes, right.
+leila.lahham | 40:50
+Or we can share it with them. Yes.
+Peter Balogh | 41:14
+Okay, good. What else did I miss? What did we discuss last time? Okay, this we have aligned... Group structure, we have aligned to the certification dashboard is for Oliver.
+Yeah, okay. Did I miss anything else for Friday? Okay, good.
+kelly_christopher | 41:54
+Don't you think anything that you...
+Peter Balogh | 41:55
+Okay, then I will prepare content. So tomorrow after work I will have some time so I will prepare this. I think we have everything on Confluence and with some AI help I can just spit out the content for this presentation and then we can have a review on Friday.
+Yeah, I think we will be ready.
+leila.lahham | 42:29
+Peter, is this like. Like, what kind of slides? Like, I didn't check, actually, what it was sent, but, is it local to you or is it, like, shared, like, if I.
+Peter Balogh | 42:42
+It's shape.
+leila.lahham | 42:42
+Yeah, but is it local on your PC or is it Google Drive or something? What did she send?
+Peter Balogh | 42:50
+Its one drive. It's Microsoft.
+leila.lahham | 42:51
+Okay, perfect. Just I'm asking because if I have time, I will go in and put some things, and I don't, you know, like so we can collaborate, all of us instead of.
+Peter Balogh | 42:59
+Okay, yes.
+leila.lahham | 43:01
+Yeah.
+kelly_christopher | 43:02
+And I'll. I'll fill out my slide as well.
+Peter Balogh | 43:09
+Maybe there's one thing because I can't wait. Okay, yes, I have my notes right in front of me, so maybe, but I can add one slide. So these are the things we were planning or what we were discussing last time.
+Right? So, we will need to include a minimal Discord demo. Yes, so agenda here, okay is okay, yes, okay, so this is what I will add. So what is about and then a stage one and stage two and stage one Rose and process and the UA context
+but we're asking, right? Groups were playing and then, yes, how to report and to report Marx and then a discor demo and then a pix nomination theme and feedback. Basically, this is what I was planning to add under this slide, right?
+kelly_christopher | 45:58
+The one thing we just need to add in as well is the breakout room or when they want to do their selective profiles.
+Peter Balogh | 46:19
+Creation, yes, okay, feedback and I think we need to discuss the NDA before we go into the Discord because on you will we will only let them in to Discord once they are done with that, right?
+leila.lahham | 46:46
+I'm sending them the NTA before the presentation.
+Peter Balogh | 47:00
+I don't... I mean, they already gave their addresses, so we will not do anything until the presentation with their data or with them.
+So I think we're covered. I don't think we need to send it beforehand.
+leila.lahham | 47:15
+Okay.
+Peter Balogh | 47:17
+It. It. It. It might be scary for them, you know? Suddenly somebody asks me to sign an ID. I think it's okay. They do it here, it's fine.
+And then we will let them as they fill out the fixed form.
+leila.lahham | 47:36
+Okay.
+Peter Balogh | 47:36
+Right.
+leila.lahham | 47:38
+And one more a question about their feedback.
+Peter Balogh | 47:39
+Okay.
+leila.lahham | 47:41
+Are we only accepting feedback for books, or are we accepting feedback on how to make this award better for the next one?
+Peter Balogh | 47:56
+Maybe we need to separate that. So feedback one on the award and feedback two on the... One day and ID.
+Maybe we will actually need two separate channels for this in this Discord because one is for reporting and the other one is for suggestions and... Yes, okay, good.
+kelly_christopher | 48:40
+Yeah, user experience or what have you... Yeah, okay.
+Peter Balogh | 48:50
+So I will add this basically tomorrow, but of course, later, any content you give is... I'm happy... We're all happy [Laughter] to have that.
+leila.lahham | 49:00
+I will work on the PDFs today on the walls. Just so you can look at them while you fill out the content.
+Peter Balogh | 49:06
+Okay, that's fine.
+leila.lahham | 49:07
+So you have them there, they will update to the Wix website to include the links the correct links as well. Today, that's...
+That's what I will promise I will do today. Tomorrow I see what I can do.
+kelly_christopher | 49:19
+It'll be tomorrow for me and I'll update Confluence with the new role with the new server for the U... I've already named one up, so I'll just fill that out.
+Peter Balogh | 49:22
+That's enough.
+kelly_christopher | 49:31
+I won't go through approvals for what I'll set up.
+Peter Balogh | 49:32
+Okay.
+kelly_christopher | 49:35
+I'll just put it all in to begin with. What I think will work is what we'll think will work. Then we can tweak and delete and remove and add and refine. Excuse me. Later on, if that's okay.
+Peter Balogh | 49:47
+Yes, okay, good.
+kelly_christopher | 49:50
+So YP, I'll update the server and create the documentation for it as well. Who I am.
+Peter Balogh | 50:00
+Kris, are you still in Europe here or...?
+kelly_christopher | 50:02
+Yes, we're here to around, I think July and then I might go back to Scotland, which is still out of Europe for a bit, but and then I'm probably.
+Peter Balogh | 50:05
+Okay, no, that's near the euro.
+kelly_christopher | 50:13
+Yeah, but I'm going to be... I hope we want to... We should have been, but anyway, that's another story, and then I'm actually going back to Australia, so we're going back around August, July, August.
+Peter Balogh | 50:29
+Okay. So when the time starts to become inconvenient for you, let us know, okay?
+kelly_christopher | 50:34
+No problem. I have that. Thank you.
+Peter Balogh | 50:38
+Okay. Okay, good. Okay, then, thank you, guys. Yeah, talk on Friday.
+kelly_christopher | 50:43
+No. Honest either.
+Peter Balogh | 50:44
+Okay, see you.
+kelly_christopher | 50:45
+Joe. To everybody.

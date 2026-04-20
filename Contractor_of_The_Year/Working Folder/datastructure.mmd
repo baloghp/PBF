@@ -1,0 +1,63 @@
+erDiagram
+    NOMINEES ||--o| COACHES : "mentored_by"
+    NOMINEES ||--o{ ASSESSMENTS : "technical_review"
+    NOMINEES ||--o{ JUDGE_REVIEWS : "final_adjudication"
+    NOMINEES ||--o| CUSTOMER_FEEDBACK : "customer_experience"
+    
+    NOMINATIONS {
+        string nomination_id PK
+        string title
+        string userId
+        string status
+        string company
+        date submissionDate
+        document mainNarrative
+        string exemplary
+        string impact
+        string lessons
+        document fileContractMatrix
+        document fileRaci
+        boolean publicationConsent
+        boolean retentionPolicy
+        boolean gdprCheck
+    
+    }
+
+    CUSTOMER_FEEDBACK {
+        string feedback_id PK
+        string nomination_id FK
+        int score_communication
+        int score_hr_aptitude
+        int score_safety_protocols
+        int score_documentation
+        int score_change_requests
+        int score_mgmt_attention
+        int score_execution_pace
+        string customer_comments
+    }
+
+    ASSESSMENTS {
+        string assessment_id PK
+        string nomination_id FK
+        string assessor_id
+        int d1_project_success
+        int d2_agility
+        int d3_commercial_model
+        int d4_legal_soundness
+        int d5_interface_governance
+        int d6_risk_management
+        int d7_people_dev
+        int d8_business_acumen
+        int d9_innovation
+        string technical_notes
+    }
+
+    JUDGE_REVIEWS {
+        string review_id PK
+        string nomination_id FK
+        string judge_id
+        int d1_to_d9_scores "Duplicate domains for final scoring"
+        boolean publish_as_case_study "Yes/No"
+        string final_remarks
+    }
+   

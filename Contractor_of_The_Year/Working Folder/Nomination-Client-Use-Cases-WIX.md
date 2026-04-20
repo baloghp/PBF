@@ -8,128 +8,20 @@
 
 ## Use Cases & Implementation
 
-### Access client assessment form
-**Goal:** Enable client evaluation of contractor performance.
+### Access client assessment form (no login; no token)
+**Goal:** Enable client evaluation of contractor performance with minimal friction.
 
-**WIX Implementation:**
-- Secure tokenized link (no login required)
-- Link sent via email to client contact(s)
-- Link contains unique token tied to nomination
-- Form accessible via public page (token-validated)
-- One-time or time-limited access
+**WIX Implementation (chosen):**
+- Client receives an email containing a link to the public assessment page.
+- The link includes `nominationId` and `customerId` as query-string parameters.
+- The assessment page validates that:
+  - Both records exist, and
+  - The `Customer_Feedback` record belongs to the same nominee as the nomination (same `_owner`).
+- If validation fails: show “invalid link” / “expired or incorrect link” message and do not load the form.
 
-**How-to / To-do:**
-1. **Create ClientAssessmentTokens Collection:**
-   - Go to **Database** → **Collections** → **+ New Collection**
-   - Name: "ClientAssessmentTokens"
-   - Add fields:
-     - `token` (Text, Unique) - Unique token for link
-     - `nominationId` (Reference to Nominations Collection)
-     - `clientEmail` (Email) - Client contact email
-     - `expirationDate` (Date) - Link expiration
-     - `used` (Boolean) - Whether form has been submitted
-     - `createdDate` (Date)
-     - `accessedDate` (Date) - First access timestamp
-
-2. **Create Token Generation Function (WIX Velo):**
-   - Create function: `generateClientAssessmentLink(nominationId, clientEmail)`
-   - Code:
-     ```javascript
-     import wixData from 'wix-data';
-     import { randomToken } from 'wix-crypto';
-     
-     export async function generateClientAssessmentLink(nominationId, clientEmail) {
-       const token = randomToken(32); // Generate secure random token
-       const expirationDate = new Date();
-       expirationDate.setDate(expirationDate.getDate() + 30); // 30 days validity
-       
-       const tokenRecord = {
-         token: token,
-         nominationId: nominationId,
-         clientEmail: clientEmail,
-         expirationDate: expirationDate,
-         used: false,
-         createdDate: new Date()
-       };
-       
-       const result = await wixData.insert("ClientAssessmentTokens", tokenRecord);
-       
-       // Generate link
-       const link = `https://yoursite.com/client-assessment/${token}`;
-       
-       return { token: token, link: link };
-     }
-     ```
-
-3. **Create Public Client Assessment Page:**
-   - Create page: "Client Assessment Form"
-   - Set as Dynamic Page: `/client-assessment/[token]`
-   - Set page permissions to "Public" (no login required)
-   - Add **Dataset** connected to ClientAssessmentTokens Collection
-   - Filter by token from URL parameter
-
-4. **Validate Token on Page Load:**
-   - In page code, validate token:
-     ```javascript
-     $w.onReady(async function () {
-       const token = $w("#url").query.token;
-       
-       if (!token) {
-         $w("#errorMessage").text = "Invalid link";
-         $w("#assessmentForm").hide();
-         return;
-       }
-       
-       const tokenData = await wixData.query("ClientAssessmentTokens")
-         .eq("token", token)
-         .find();
-       
-       if (tokenData.items.length === 0) {
-         $w("#errorMessage").text = "Invalid or expired link";
-         $w("#assessmentForm").hide();
-         return;
-       }
-       
-       const tokenRecord = tokenData.items[0];
-       
-       // Check expiration
-       if (new Date() > tokenRecord.expirationDate) {
-         $w("#errorMessage").text = "This link has expired. Please contact the nominee for a new link.";
-         $w("#assessmentForm").hide();
-         return;
-       }
-       
-       // Check if already used
-       if (tokenRecord.used) {
-         $w("#errorMessage").text = "This assessment has already been submitted.";
-         $w("#alreadySubmittedMessage").show();
-         $w("#assessmentForm").hide();
-         return;
-       }
-       
-       // Record access
-       await wixData.update("ClientAssessmentTokens", {_id: tokenRecord._id}, {
-         accessedDate: new Date()
-       });
-       
-       // Show form
-       $w("#assessmentForm").show();
-       $w("#nominationInfo").text = `Assessment for Nomination: ${tokenRecord.nominationId}`;
-     });
-     ```
-
-5. **Send Link to Client:**
-   - When Nominee Coach requests client assessment, call `generateClientAssessmentLink`
-   - Send email to client contact with link
-   - Email template: "Client Assessment Request"
-   - Include: link, deadline, instructions
-
-6. **Test:**
-   - Generate token for test nomination
-   - Verify link works and form displays
-   - Test expired token (set expiration in past)
-   - Test used token (set used = true)
-   - Verify invalid token shows error
+**Notes / Rationale:**
+- Tokenized links were intentionally discarded as unnecessary complexity for this stage.
+- Email delivery + ownership validation is considered sufficient for the operational risk level.
 
 ---
 
@@ -336,86 +228,17 @@
 
 **WIX Implementation:**
 - Final validation before submission
-- Save assessment to ClientAssessments Collection
-- Mark token as used
-- Update nomination with assessment score
+- Save assessment to the `Customer_Feedback` record referenced by `customerId`
+- Update nomination with assessment score (optional/if needed in Stage 1 reporting)
 - Lock form from further editing
 - Send confirmation to client and notify nominee/nominee coach
 
 **How-to / To-do:**
-1. **Create Submit Function (WIX Velo):**
-   - Create function: `submitClientAssessment(token, formData)`
-   - Code:
-     ```javascript
-     import wixData from 'wix-data';
-     
-     export async function submitClientAssessment(token, formData) {
-       // Get token record
-       const tokenData = await wixData.query("ClientAssessmentTokens")
-         .eq("token", token)
-         .find();
-       
-       if (tokenData.items.length === 0) {
-         throw new Error("Invalid token");
-       }
-       
-       const tokenRecord = tokenData.items[0];
-       
-       // Validate token not already used
-       if (tokenRecord.used) {
-         throw new Error("Assessment already submitted");
-       }
-       
-       // Calculate final scores
-       const totalScore = calculateTotalScore(formData);
-       const maxPossibleScore = calculateMaxPossibleScore(formData.weights);
-       const percentageAchieved = (totalScore / maxPossibleScore) * 100;
-       
-       // Save assessment
-       const assessment = {
-         tokenId: tokenRecord._id,
-         nominationId: tokenRecord.nominationId,
-         clientName: formData.clientName,
-         clientEmail: formData.clientEmail,
-         clientRole: formData.clientRole || "",
-         criterion1_Rating: formData.criterion1Rating,
-         criterion1_Weight: formData.weights[0],
-         criterion1_Score: formData.criterion1Score,
-         criterion1_EvidenceNotes: formData.criterion1EvidenceNotes || "",
-         // ... repeat for criteria 2-7
-         totalScore: totalScore,
-         maxPossibleScore: maxPossibleScore,
-         percentageAchieved: percentageAchieved,
-         submittedDate: new Date(),
-         signed: true,
-         signatureName: formData.signatureName,
-         signatureDate: new Date(),
-         signatureMethod: "Digital Confirmation",
-         consentEvaluation: formData.consentEvaluation,
-         consentPublication: formData.consentPublication
-       };
-       
-       const assessmentResult = await wixData.insert("ClientAssessments", assessment);
-       
-       // Mark token as used
-       await wixData.update("ClientAssessmentTokens", {_id: tokenRecord._id}, {
-         used: true
-       });
-       
-       // Update nomination with assessment score
-       await wixData.update("Nominations", {_id: tokenRecord.nominationId}, {
-         clientAssessmentScore: totalScore,
-         clientAssessmentPercent: percentageAchieved,
-         clientAssessmentCompleted: true,
-         clientAssessmentDate: new Date()
-       });
-       
-       // Send confirmation emails
-       // ... email notification code
-       
-       return assessmentResult;
-     }
-     ```
+1. **Submit flow (WIX Velo):**
+   - Use the existing `Customer_Feedback` record identified by `customerId`.
+   - Save the form fields into that record and set `evaluationStatus = 'SUBMITTED'`.
+   - (Optional) Update the nomination record with aggregated score fields for reporting.
+   - Prevent further edits once submitted (UI lock + backend check).
 
 2. **Add Submit Button:**
    - Add **Button**: "Submit Assessment"
@@ -453,35 +276,28 @@
 ## Nomination Client Portal Structure
 
 **Recommended Pages:**
-1. **Client Assessment Form** - Public page with token validation (no login required)
+1. **Client Assessment Form** - Public page with `nominationId` + `customerId` link validation (no login required)
 2. **Assessment Confirmation** - Thank you page after submission
 
 **WIX Components:**
-- Collections (ClientAssessmentTokens, ClientAssessments)
+- Collections (`Customer_Feedback`, and optionally `Nominations` for rollups)
 - Forms (evaluation form with 7 criteria)
-- Dynamic Pages (token-validated form page)
-- Velo (token generation, validation, calculations, submission)
+- Public page (query-string validated form page)
+- Velo (validation, calculations, save/submit)
 - Email Marketing (link sending, confirmations)
 
 ---
 
-## Security Considerations
+## Security Considerations (chosen approach)
 
-**Token Security:**
-- Use cryptographically secure random tokens (32+ characters)
-- Set expiration dates (e.g., 30 days)
-- One-time use tokens (mark as used after submission)
-- Validate token on every page load
-- Do not expose nomination details in URL (use token only)
+**Link validation:**
+- Link contains `nominationId` and `customerId`.
+- Page loads only if both exist and share the same nominee ownership (`_owner` match).
 
-**Access Control:**
-- No login required (public page with token validation)
-- Token must be valid, not expired, and not used
-- Form locked after submission
-- Secure token generation and storage
+**Access control:**
+- No login required (public page).
+- Form locked after submission (`evaluationStatus = 'SUBMITTED'`).
 
-**Data Privacy:**
-- Client assessment data stored securely
-- Only accessible via valid token
-- Consent captured for evaluation and publication
-- GDPR compliance considerations
+**Data privacy:**
+- Client assessment data stored in `Customer_Feedback`.
+- Consent captured for evaluation and publication (per form fields).
