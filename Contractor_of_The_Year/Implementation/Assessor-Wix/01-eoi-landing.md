@@ -1,24 +1,45 @@
 # Phase 1 — EOI landing (15 Aug)
 
-**Gate:** Public `/become-an-assessor` takes an application into `Assessors` and sends A1–A3.  
-**Back:** [Guide](../Assessor-EOI-Wix-Plan.md) · **Emails:** [04](04-emails.md) (A1–A3 only this phase)
+**Gate:** Public `/become-an-assessor` takes an application into `Assessors` and emails the applicant (A1) plus the admin team.  
+**Back:** [Guide](../Assessor-EOI-Wix-Plan.md) · **Email catalogue:** [04](04-emails.md)
 
-Reuse [UAT NDA Public](https://www.ittd.space/uat-nda) (`src/pages/UAT NDA Public.u1buo.js`). Layout and assets stay; copy and CTA change. Page code is empty today — most work is **Local Editor**, plus a small backend for verify.
+**Page:** `src/pages/Become an Assessor.u1buo.js` · **Slug:** `/become-an-assessor` · keep `/uat-nda` as redirect.
 
-**Slug:** `/become-an-assessor`. Keep `/uat-nda` as a redirect.
+**No automatic credential verification.** Form stores evidence; core team checks manually, then sets `verifiedBy` and `pipelineStatus`.
 
-## Kill on this page
+---
 
-- UAT volunteer copy (May–Jun window, synthetic/AI, Discord, roleplay)
-- “Continue to NDA” → `UAT NDA Document.gt426.js`
-- Coach walkthrough and any Nominee Coach mention
-- “Participating in UAT does not exclude you…”
+## How to use this file (order)
+
+Do the steps in order. Do not ask Cursor for code until **Step 3** is fully ticked.
+
+
+| Step  | What                                              | Who                               |
+| ----- | ------------------------------------------------- | --------------------------------- |
+| **1** | Page copy + CMS + form in Local Editor, then Sync | You                               |
+| **2** | Two Triggered Emails in Wix dashboard             | You                               |
+| **3** | Pre-code checklist (gate)                         | You                               |
+| **4** | Cursor writes page + backend code                 | Cursor (after Step 3)             |
+| **5** | Verify + run test scenarios                       | You (+ Cursor if something fails) |
+| **6** | Publish                                           | You                               |
+
+
+---
+
+## Step 1 — Local Editor (copy, CMS, form)
+
+### 1A. Kill UAT leftovers
+
+- UAT volunteer copy (May–Jun, synthetic/AI, Discord, roleplay)
+- "Continue to NDA" → `UAT NDA Document.gt426.js`
+- Coach walkthrough / Nominee Coach
+- "Participating in UAT does not exclude you…"
 
 Unpublish or noindex `UAT NDA Document` once nothing links to it.
 
-## Rewrite (one screen) — final copy
+### 1B. Locked marketing copy
 
-Lock this text in Local Editor (plain ASCII; keyboard characters only).
+Plain ASCII only.
 
 Somebody has to decide what "outstanding" means in contracted project delivery.
 
@@ -44,237 +65,301 @@ Expressions of interest close 15 October.
 
 Verification confirms your credential, but the seat is a decision the core team makes application by application.
 
-Link "Award homepage" to `ittd.space/pbf-pcoty`. Optional: Assessor Guide. Soft CTA for Foundation Workshop 31 Aug once the URL exists.
+Link Award homepage to `https://www.ittd.space/pbf-pcoty`. Optional: Assessor Guide. Soft CTA for Foundation Workshop 31 Aug once the URL exists.
 
-## CMS — `Assessors` (final field set)
+### 1C. CMS — `Assessors` (final fields)
 
-Export reference: `/home/peter/Downloads/Assessors (1).csv`. Do not create `AssessorEOI`. Admin `addStaff` already writes `title_fld`, `email`, `userId`. Assignment uses `userId` on `Nominations.assessors[]`.
+Export reference: `/home/peter/Downloads/Assessors (1).csv`. Do **not** create `AssessorEOI`.
 
-**System / existing — keep keys. Do not rename.**
-
-
-| CSV column                           | Wix key                         | Keep as                                               |
-| ------------------------------------ | ------------------------------- | ----------------------------------------------------- |
-| title_fld                            | `title_fld`                     | Display name (given + family). Admin search uses this |
-| ID                                   | `_id`                           | System                                                |
-| Created / Updated                    | `_createdDate` / `_updatedDate` | System                                                |
-| Owner                                | `_owner`                        | System                                                |
-| email                                | `email`                         | Upsert key                                            |
-| userId                               | `userId`                        | Member id. **Empty until invited**                    |
-| Published on site / Hidden from site | —                               | CMS visibility                                        |
-| Status                               | —                               | **Wix publish state only.** Never the pipeline        |
+**Keep / do not rename:** `title_fld`, `email`, `userId` (+ system fields). On EOI submit, `userId` is filled automatically when the email already matches a site member (`Members/PrivateMembersData.loginEmail`); otherwise it stays empty until invite.
 
 
-**EOI / seat fields (this phase) — locked to the export**
+| Wix key              | Type    | On public form? | Purpose                            |
+| -------------------- | ------- | --------------- | ---------------------------------- |
+| `givenName`          | text    | Yes             | Name                               |
+| `familyName`         | text    | Yes             | Name + manual PBP check            |
+| `linkedin`           | url     | Yes             | Outreach                           |
+| `credentialPmp`      | boolean | Yes             | Claims PMP                         |
+| `credentialPbp`      | boolean | Yes             | Claims PBP                         |
+| `pbpCandidateNumber` | text    | Yes if PBP      | PBP **Credential Number**          |
+| `credlyBadgeUrl`     | url     | Yes if PMP      | Public Credly badge URL            |
+| `pmiId`              | text    | Optional        | Record only                        |
+| `pipelineStatus`     | text    | No              | New / Waitlist / Declined / Active |
+| `verifiedBy`         | text    | No              | Who accepted the seat              |
 
 
-| CSV column         | Wix key              | Type    | Purpose                                             |
-| ------------------ | -------------------- | ------- | --------------------------------------------------- |
-| givenName          | `givenName`          | text    | Form + PBP `family_name` / Credly name match        |
-| familyName         | `familyName`         | text    | Form + PBP / Credly name match                      |
-| linkedin           | `linkedin`           | url     | Outreach                                            |
-| credentialPmp      | `credentialPmp`      | boolean | Gate: claims PMP                                    |
-| credentialPbp      | `credentialPbp`      | boolean | Gate: claims PBP                                    |
-| pbpCandidateNumber | `pbpCandidateNumber` | text    | PBP Credential Number (required if `credentialPbp`) |
-| credlyBadgeUrl     | `credlyBadgeUrl`     | url     | Credly public badge (required if `credentialPmp`)   |
-| pmiId              | `pmiId`              | text    | Optional record; not used to build Credly URLs      |
-| pipelineStatus     | `pipelineStatus`     | text    | New / Waitlist / Declined / Active (core-team seat) |
-| verifiedBy         | `verifiedBy`         | text    | Who accepted the seat (core-team name)              |
+At least one of `credentialPmp` / `credentialPbp` must be true. Defer `theoryStatus` / `calibration*` to [phase 3](03-calibration.md).
+
+**Manual check later (not in code):** PBP via [registry widget](https://cert.project-business.org/widget/certregistry); PMP via Credly URL. Then set `verifiedBy` + `pipelineStatus`.
+
+### 1D. Form build
+
+Do **not** use a CMS-connected Wix Form. Use inputs + `#btnEoiSubmit` (backend will upsert + send mail).
+
+**Not on the form:** `pipelineStatus`, `verifiedBy`, `userId`, `title_fld` (derived on submit).
+
+**Structure (below marketing copy):** intro line → `#boxEoiForm` → submit → `#textEoiError` (collapsed) → `#boxEoiThankYou` (collapsed).
+
+Intro: `Takes about three minutes. You will need your PMP Credly badge URL and/or PBP Credential Number.`
+
+**Element IDs (lock spelling):**
 
 
-Form rule: at least one of `credentialPmp` / `credentialPbp` must be true. "Both" = both checked.
+| Order | Label             | Element    | ID                         | CMS                  | Required   | Notes                  |
+| ----- | ----------------- | ---------- | -------------------------- | -------------------- | ---------- | ---------------------- |
+| 1     | Given name        | Text Input | `#inputGivenName`          | `givenName`          | Yes        |                        |
+| 2     | Family name       | Text Input | `#inputFamilyName`         | `familyName`         | Yes        |                        |
+| 3     | Email             | Text Input | `#inputEmail`              | `email`              | Yes        |                        |
+| 4     | LinkedIn          | Text Input | `#inputLinkedin`           | `linkedin`           | Yes        |                        |
+| 5     | PMP               | Checkbox   | `#checkboxCredentialPmp`   | `credentialPmp`      | One of 5/6 |                        |
+| 6     | PBP               | Checkbox   | `#checkboxCredentialPbp`   | `credentialPbp`      | One of 5/6 |                        |
+| 7     | Credential Number | Text Input | `#inputPbpCandidateNumber` | `pbpCandidateNumber` | If PBP     | Inside `#boxPbpFields` |
+| 8     | Credly badge URL  | Text Input | `#inputCredlyBadgeUrl`     | `credlyBadgeUrl`     | If PMP     | Inside `#boxPmpFields` |
+| 9     | PMI ID (optional) | Text Input | `#inputPmiId`              | `pmiId`              | No         | Inside `#boxPmpFields` |
+| 10    | Submit            | Button     | `#btnEoiSubmit`            | —                    | —          |                        |
+| 11    | Error             | Text       | `#textEoiError`            | —                    | —          | Start collapsed        |
+| 12    | Form wrap         | Box        | `#boxEoiForm`              | —                    | —          |                        |
+| 13    | PBP wrap          | Box        | `#boxPbpFields`            | —                    | —          | Start collapsed        |
+| 14    | PMP wrap          | Box        | `#boxPmpFields`            | —                    | —          | Start collapsed        |
+| 15    | Thank you         | Box        | `#boxEoiThankYou`          | —                    | —          | Start collapsed        |
 
-Defer `theoryStatus` and `calibration*` to [phase 3](03-calibration.md).
 
-**Submit:** upsert by **email**; set `title_fld` from given + family; leave `userId` and `verifiedBy` blank; `pipelineStatus = New`. Run credential verify in the backend for **A2/A3 routing only** (no verify status field on the row). No member account yet.
-
-## Form — Local Editor build (follow this)
-
-Do this on the EOI page in **Local Editor** (`npm run dev`). Do **not** use a Wix Form that writes straight to CMS. We need page inputs + a Submit button that will call a backend webMethod (upsert `Assessors` + verify + A1/A2/A3). Build the inputs now; wire the code after Sync.
-
-**Not on the public form:** `pipelineStatus`, `verifiedBy`, `userId`, `title_fld` (derived on submit from given + family).
-
-### 1. Page structure
-
-Under the locked marketing copy, add one section titled **Apply to be an assessor** (or keep your existing CTA heading).
-
-Suggested stack (top to bottom):
-
-1. Short intro line: `Takes about three minutes. You will need your PMP Credly badge URL and/or PBP Credential Number.`
-2. Form box (`#boxEoiForm`) — all inputs live here
-3. Submit button
-4. Error text (collapsed by default)
-5. Thank-you box (collapsed by default) — same page, no redirect
-
-After a successful submit, page code will collapse `#boxEoiForm` + submit button and expand `#boxEoiThankYou`. Do not send anyone to the NDA page.
-
-### 2. Element inventory (IDs are locked — use these exact IDs)
-
-Create each control, then set **ID** in the Properties panel to the value in the ID column. Spelling matters; Velo will use these strings.
-
-| Order | Label on page | Wix element | ID | Maps to CMS | Required | Notes |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | Given name | Text Input | `#inputGivenName` | `givenName` | Yes | Placeholder: `Given name` |
-| 2 | Family name | Text Input | `#inputFamilyName` | `familyName` | Yes | Placeholder: `Family name` (PBP registry uses this) |
-| 3 | Email | Text Input (email) | `#inputEmail` | `email` | Yes | Type: Email if available |
-| 4 | LinkedIn profile | Text Input | `#inputLinkedin` | `linkedin` | Yes | Placeholder: `https://www.linkedin.com/in/...` |
-| 5 | I hold PMP | Checkbox | `#checkboxCredentialPmp` | `credentialPmp` | At least one of 5/6 | Label: `PMP` |
-| 6 | I hold PBP | Checkbox | `#checkboxCredentialPbp` | `credentialPbp` | At least one of 5/6 | Label: `PBP` |
-| 7 | PBP Credential Number | Text Input | `#inputPbpCandidateNumber` | `pbpCandidateNumber` | If PBP checked | Inside `#boxPbpFields`. Label on page: `Credential Number` (PBP's term). CMS key stays `pbpCandidateNumber`. |
-| 8 | Credly PMP badge URL | Text Input | `#inputCredlyBadgeUrl` | `credlyBadgeUrl` | If PMP checked | Inside `#boxPmpFields`. Placeholder: `https://www.credly.com/badges/...` |
-| 9 | PMI ID (optional) | Text Input | `#inputPmiId` | `pmiId` | No | Inside `#boxPmpFields`. Helper: `Optional. Not used to look up Credly.` |
-| 10 | Submit | Button | `#btnEoiSubmit` | — | — | Label: `Submit application` |
-| 11 | Form error | Text | `#textEoiError` | — | — | Start **collapsed**. Red/error style. |
-| 12 | Form container | Box / Container | `#boxEoiForm` | — | — | Wrap inputs 1-9 + submit + error |
-| 13 | PBP fields box | Box / Container | `#boxPbpFields` | — | — | Wrap row 7 only. Start **collapsed**. |
-| 14 | PMP fields box | Box / Container | `#boxPmpFields` | — | — | Wrap rows 8-9. Start **collapsed**. |
-| 15 | Thank you | Box / Container | `#boxEoiThankYou` | — | — | Start **collapsed**. See copy below. |
-
-Optional helper texts (no special ID required unless you want them):
-
-- Next to credential checkboxes: `Select at least one. You can select both.`
-- Under Credly URL: `Paste the public badge link from Credly, not your PMI number.`
-- Under Credential Number: `As shown on your Project Business credential / the certification registry.`
-
-### 3. Conditional fields (Local Editor + later page code)
-
-**In Local Editor now:** put `#inputPbpCandidateNumber` inside `#boxPbpFields`, and `#inputCredlyBadgeUrl` + `#inputPmiId` inside `#boxPmpFields`. Collapse both boxes so a first paint without code still looks clean.
-
-**Page code (next step, after Sync)** will:
-
-- On `#checkboxCredentialPbp` change: expand `#boxPbpFields` when checked, collapse when unchecked (and clear the number if you want).
-- On `#checkboxCredentialPmp` change: expand `#boxPmpFields` when checked, collapse when unchecked.
-- On submit: if PBP checked and number empty → show error; if PMP checked and Credly URL empty → show error; if neither checked → show error.
-
-You can also set both boxes expanded always if you prefer a simpler first build; validation still enforces the rules.
-
-### 4. Validation rules (what Submit must enforce)
-
-| Rule | Message (put in `#textEoiError`) |
-| --- | --- |
-| Given name empty | `Please enter your given name.` |
-| Family name empty | `Please enter your family name.` |
-| Email empty or not an email | `Please enter a valid email address.` |
-| LinkedIn empty | `Please enter your LinkedIn profile URL.` |
-| Neither PMP nor PBP checked | `Select PMP, PBP, or both.` |
-| PBP checked, Credential Number empty | `Enter your PBP Credential Number.` |
-| PMP checked, Credly URL empty | `Paste your public Credly PMP badge URL.` |
-| Credly URL present but not a Credly badge link | `Use a Credly badge URL (credly.com/badges/...).` |
-
-Do not require login. Do not collect `pipelineStatus` or `verifiedBy` from the visitor.
-
-### 5. Thank-you box copy (`#boxEoiThankYou`)
+**Thank-you copy**
 
 Heading: `Thank you — we have your application.`
 
-Body:
-
 ```
-We will check your PMP and/or PBP details and email you next steps.
-
-Verification of your credential is automatic where we can. A seat on the Stage 1 panel is a core-team decision, application by application.
+We have emailed you a confirmation. The core team will check your PMP and/or PBP details and decide on a Stage 1 seat application by application.
 
 Expressions of interest close 15 October.
 ```
 
-Optional link back to award homepage: `https://www.ittd.space/pbf-pcoty`.
+**Validation messages (for later code):**
 
-### 6. What happens on Submit (for when code is wired)
 
-1. Disable `#btnEoiSubmit` (prevent double send).
-2. Clear / collapse `#textEoiError`.
-3. Read all inputs; run client-side validation above.
-4. Call backend `submitAssessorEoi({ ... })` with:
+| Rule                                  | `#textEoiError`                                                                |
+| ------------------------------------- | ------------------------------------------------------------------------------ |
+| Given name empty                      | `Please enter your given name.`                                                |
+| Family name empty                     | `Please enter your family name.`                                               |
+| Bad email                             | `Please enter a valid email address.`                                          |
+| LinkedIn empty                        | `Please enter your LinkedIn profile URL.`                                      |
+| LinkedIn not a LinkedIn URL           | `Please enter a valid LinkedIn profile URL (https://www.linkedin.com/in/...).` |
+| Neither credential                    | `Select PMP, PBP, or both.`                                                    |
+| PBP, no Credential Number             | `Enter your PBP Credential Number.`                                            |
+| PMP, no Credly URL                    | `Paste your public Credly PMP badge URL.`                                      |
+| Credly URL invalid / not a badge link | `Use a Credly badge URL (https://www.credly.com/badges/...).`                  |
+
+
+Sync Local Editor → git when the form looks right.
+
+---
+
+## Step 2 — Triggered Emails (dashboard)
+
+Create **two** templates before any Velo code. Backend will use `contacts.appendOrCreateContact` + `triggeredEmails.emailContact(emailId, ...)`.
+
+### How variables work (read this first)
+
+You are not typing a separate "parameter list" into a form. Wix Triggered Emails work like this:
+
+1. **In the email designer** you insert a **variable** into a text block (or the subject, where supported).
+2. That inserts a placeholder such as `{{givenName}}`. The name you give the variable is what code must pass later.
+3. You also set a **fallback** value (e.g. `there` for `Hi {{givenName}}` becomes `Hi there` if code forgets the variable).
+4. **Preview & Test** sends the email using **fallbacks**, not a form of real values. That is normal. You will not see a screen to type `givenName = Jane` in the designer test.
+5. **Real values** are filled only when code sends the email, e.g. `variables: { givenName: "Jane", ... }`. That happens after Step 4.
+
+**How to add a variable in the designer**
+
+1. Click into a text element in the email body (or subject if the UI allows variables there).
+2. Click **+ Add Variable** (sometimes under Personalize / Variables).
+3. **Variable name:** use the exact names from the tables below (`givenName`, `titleFld`, …). Spelling must match code later.
+4. **Fallback value:** something safe if the value is missing (e.g. `there`, `Applicant`, `-`).
+5. Click **Add**. The designer shows the placeholder; do not invent `{{...}}` by hand unless the UI already created it.
+
+If you cannot find **+ Add Variable**, make sure you are editing a **Triggered Email** (Developer / Triggered Emails), not a normal Email Marketing campaign. Campaigns do not take Velo `variables` the same way.
+
+**Email ID:** after save, copy the template's code ID (e.g. `assessorEoiReceived`). That string is what Velo passes as `emailId`. Wix also shows a code snippet per template with the variable keys — keep that for Cursor in Step 4.
+
+**What "test" means for Step 2**
+
+- Designer **Preview & Test** = layout + fallbacks look OK in your inbox. Enough for Step 3.
+- Full personalisation test = after Step 4 code, run scenario T5 (real `givenName` etc. from the form).
+
+### Where
+
+Site dashboard → **Marketing & SEO** / **CRM** / **Developer tools** → **Triggered Emails** (wording varies). Create each template; copy the **Email ID** so it matches the table below exactly. If Wix only gives a UUID, write it here and tell Cursor to use that string.
+
+### Templates
+
+
+| Email ID (lock)          | Audience   | Subject                                     |
+| ------------------------ | ---------- | ------------------------------------------- |
+| `assessorEoiReceived`    | Applicant  | We received your PCotY assessor application |
+| `assessorEoiAdminNotify` | Organisers | New PCotY assessor EOI: {{titleFld}}        |
+
+
+Do **not** create A2/A3 auto-verify emails for submit. Seat outcomes later: D1/D2 or B1 — see [04-emails.md](04-emails.md).
+
+### A1 — `assessorEoiReceived`
+
+**Variables:** `givenName`, `familyName`, `titleFld`, `SITE_URL`
+
+**Must say:** thanks; core team will check credential; seat not automatic; no login yet; closes 15 October.
 
 ```
-givenName, familyName, email, linkedin,
-credentialPmp, credentialPbp,
-pbpCandidateNumber, credlyBadgeUrl, pmiId
+Hi {{givenName}},
+
+Thank you for applying to be a Stage 1 assessor for the Project Contractor of the Year Award.
+
+We have your details. The core team will check your credential and decide on a seat application by application. You do not need a site login yet.
+
+Expressions of interest close 15 October.
+
+PCotY organisers
+{{SITE_URL}}
 ```
 
-5. Backend: upsert `Assessors` by `email`; set `title_fld = givenName + " " + familyName`; `pipelineStatus = "New"`; leave `userId` and `verifiedBy` blank; run PBP/PMP verify; send A1 then A2 or A3.
-6. On success: collapse `#boxEoiForm`, expand `#boxEoiThankYou`.
-7. On failure: expand `#textEoiError` with a short message (`Something went wrong. Please try again or email the organisers.`), re-enable the button.
+### A1-Admin — `assessorEoiAdminNotify`
 
-### 7. Layout and mobile checklist
+**Who receives it:** every Contact that has a specific **label** (tag) in Wix CRM. No hardcoded email list in code.
 
-- One column on mobile; given / family can sit side by side on desktop if the theme allows.
-- Checkbox labels large enough to tap.
-- Submit full-width on mobile.
-- No NDA button, no Discord, no coach links in this section.
-- Form sits **below** the locked marketing copy, not in the hero.
+**Set up the label (do this in Step 2)**
 
-### 8. After the form exists in Local Editor
+1. Dashboard → **Contacts** → **Labels** (or open any contact → Labels).
+2. Create (or reuse) the label with display name exactly: `**PCOTY-Core-Team**`.
+3. Note the label **key** Wix assigns (often `custom.pcoty_2027_core_team` or similar). Write the exact key here for Cursor if it differs:
+  - Label display name (locked): `PCOTY-Core-Team`
+  - Label key: __________________ (copy from Contacts → Labels after create)
+4. On each core-team Contact who must get every EOI, add label `PCOTY-Core-Team`.
+5. Backend (Step 4) will: find that label by display name (or use the key you wrote), `queryContacts().hasSome("info.labelKeys", [labelKey])`, then `emailContact` for each. If zero contacts have the label, log an error (do not fail the applicant upsert / A1).
 
-1. **Sync** design into `ittdspace`.
-2. Tell Cursor the form IDs are live — page code + `assessorEoi.web.js` get written next.
-3. Slug `/become-an-assessor` + `/uat-nda` redirect if not done yet.
-4. Create A1–A3 triggered emails ([04-emails.md](04-emails.md)) before go-live testing.
-
-### 9. Form done when
-
-- [ ] All IDs in the inventory exist and match spelling above
-- [ ] `#boxPbpFields` / `#boxPmpFields` / `#boxEoiThankYou` / `#textEoiError` start collapsed
-- [ ] No CMS-connected Wix Form writing a second collection
-- [ ] Mobile layout checked in Local Editor preview
-- [ ] Synced to git
-
-## Verification
-
-Call from a **Wix backend** webMethod. Browser CORS will block Oliver’s API.
-
-### PBP
-
-Widget: `https://cert.project-business.org/widget/certregistry`
+**Variables:** `titleFld`, `givenName`, `familyName`, `email`, `linkedin`, `credentialPmp`, `credentialPbp`, `pbpCandidateNumber`, `credlyBadgeUrl`, `pmiId`, `pipelineStatus`, `SITE_URL`
 
 ```
-GET https://cert.project-business.org/api/verify?family_name={family}&candidate_number={number}
+New assessor EOI (pipelineStatus: {{pipelineStatus}})
+
+Name: {{titleFld}}
+Email: {{email}}
+LinkedIn: {{linkedin}}
+
+PMP: {{credentialPmp}}
+Credly badge: {{credlyBadgeUrl}}
+PMI ID: {{pmiId}}
+
+PBP: {{credentialPbp}}
+Credential Number: {{pbpCandidateNumber}}
+
+Review in CMS (Assessors), check the credential, then set verifiedBy and pipelineStatus.
+{{SITE_URL}}
 ```
 
-Miss → `{ "found": false }`. Hit → `found`, `name`, `city`, `country`, `credentials[]` (`PBP` / `ACE` / `PBP Trainer`, `date_certified`).
+---
 
-Pass if `found` and `credentials` contains **PBP**. ACE-only is not the gate. Form must split given / family name. On the form, label the field **Credential Number** (PBP's term); CMS key and API query stay `pbpCandidateNumber` / `candidate_number`.
+## Step 3 — Pre-code checklist (gate)
 
-Ask Oliver (CORS **not** required for server-side). Copy:
+Tick **every** box before asking Cursor to generate code.
 
-> For assessor EOI we will check PBP the same way the public registry widget does: `GET https://cert.project-business.org/api/verify?family_name=…&candidate_number=…` from our Wix **server** (not the visitor’s browser), so we do not need CORS. Please confirm (1) we may call that URL from ittd.space, (2) the path and query params stay stable, (3) a miss keeps returning `{found:false}` and a hit includes `credentials[]` with `PBP`. Optional: if you prefer a dedicated key or allow-list, send that instead. We will not call it from the browser unless you add `Access-Control-Allow-Origin` for `https://www.ittd.space`.
+**Page / CMS / form**
+
+- [x] Copy locked; no UAT / NDA / coach / Discord leftovers
+- [x] Slug `/become-an-assessor`; `/uat-nda` redirects
+- [x] `UAT NDA Document` unpublished or noindex
+- [x] `Assessors` fields match Step 1C (no extra EOI collection)
+- [x] All form element IDs match Step 1D exactly
+- [x] `#boxPbpFields`, `#boxPmpFields`, `#textEoiError`, `#boxEoiThankYou` start collapsed
+- [x] Not a CMS-connected Wix Form
+- [x] Local Editor **Synced** to `ittdspace`
+- [x] Mobile layout checked in Local Editor
+
+**Emails**
+
+- [x] `assessorEoiReceived` exists; Email ID exact; variables added; ready to send
+- [x] `assessorEoiAdminNotify` exists; Email ID exact; variables added; ready to send
+- [x] Label `PCOTY-Core-Team` exists; at least one core-team Contact tagged; label key noted if needed
+- [x] Optional: Wix UI test-send of both templates to yourself passed
+
+**When all ticked:** ask Cursor to implement Step 4 (`assessorEoi.web.js` + `Become an Assessor.u1buo.js`).
+
+---
+
+## Step 4 — Code (Cursor; only after Step 3)
+
+Implement:
+
+1. `src/backend/assessorEoi.web.js` — `submitAssessorEoi`
+2. `src/pages/Become an Assessor.u1buo.js` — checkbox show/hide, validate, call backend, thank-you
+
+**Backend must:**
+
+- Upsert `Assessors` by `email`
+- Set `title_fld` from given + family
+- Set `pipelineStatus = New` on insert; leave `verifiedBy` blank
+- If `loginEmail` matches a site member (`Members/PrivateMembersData`), set `userId` to that member `_id`; otherwise leave `userId` empty until invite
+- Send `assessorEoiReceived` to applicant
+- Send `assessorEoiAdminNotify` to every Contact labeled `PCOTY-Core-Team`
+- **Not** call PBP or Credly APIs
+
+**Page must:**
+
+- Expand/collapse `#boxPbpFields` / `#boxPmpFields` from checkboxes
+- Client validation (Step 1D messages)
+- Disable submit while running; on success collapse form / expand thank-you; on failure show `#textEoiError`
+
+---
+
+## Step 5 — Verify and test (after code)
+
+### 5A. Smoke verify (before scenarios)
+
+- [ ] `npm run dev` / Local Editor loads the page without console errors on open
+- [ ] Checking PMP expands `#boxPmpFields`; unchecking collapses it
+- [ ] Checking PBP expands `#boxPbpFields`; unchecking collapses it
+- [ ] Empty submit shows an error; does not create a CMS row
+- [ ] Backend file exists and exports `submitAssessorEoi`
+
+### 5B. Test scenarios (must all pass)
+
+Use a real inbox you control for the applicant. Confirm at least one Contact with label `PCOTY-Core-Team` will receive admin mail. Check **Assessors** in CMS after each success case.
 
 
-
-### PMP
-
-The ID in `https://www.credly.com/badges/{uuid}` is Credly’s UUID, **not** the PMI number. You cannot build a Credly URL from a PMP ID.
-
-1. Require **Credly public badge URL** + given/family name. `pmiId` is optional.
-2. Parse `{uuid}` from `/badges/{uuid}` or `/public_url`.
-3. Fetch the public badge from the backend.
-4. Pass when issuer is PMI, template is PMP, and last name matches (case-insensitive). First name should match when present.
-5. No `country` field on `Assessors` — do not gate on Credly country.
-6. Private badge / bad URL / name mismatch → treat as pending or fail for **A2** (do not persist a verify status). Do not scrape the [PMI registry](https://www.pmi.org/certifications/certification-resources/registry).
-
-Expired PMP is acceptable ([28.07](../../Confluence/Meetings/277086209%20-%20Team%20Meeting%20-%2028.07.2026.md)) — ignore `expires_at`.
-
-**15 Aug:** PBP auto for A2/A3. PMP auto if they pasted a public URL; otherwise A2 (pending). Seat / `verifiedBy` stays core-team.
-
-Thank-you on the same page. Do not send people through the UAT NDA.
-
-## Emails this phase
-
-Wire **A1, A2, A3** only — see [04-emails.md](04-emails.md).
-
-## Test
-
-- [x] `/become-an-assessor` loads; `/uat-nda` redirects
-- [x] No NDA, no coach, no UAT Discord
-- [ ] Upsert `Assessors` by email (`userId` empty; `pipelineStatus = New`; `verifiedBy` empty)
-- [ ] At least one of `credentialPmp` / `credentialPbp`; PBP Credential Number + family name routes A2/A3 correctly
-- [ ] PMP with Credly URL routes A2/A3 correctly (pending or fail → A2)
-- [ ] A1 always; A2 or A3 after verify (no verify status field written)
-- [ ] No member login required
-- [ ] Mobile
+| #            | Scenario                                   | Steps                                                                                                        | Pass when                                                                                                                                                               |
+| ------------ | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| T1 - Passed  | Validation — blank form                    | Click Submit with nothing filled                                                                             | Error shown; no new/updated `Assessors` row; no emails                                                                                                                  |
+| T2 - Passed  | Validation — neither credential            | Fill name, email, LinkedIn; leave PMP/PBP unchecked                                                          | Error `Select PMP, PBP, or both.`; no CMS write                                                                                                                         |
+| T3 - Passed  | Validation — PBP without Credential Number | Check PBP only; leave Credential Number empty                                                                | Error about Credential Number; no CMS write                                                                                                                             |
+| T4 - Passed  | Validation — PMP without Credly URL        | Check PMP only; leave Credly empty                                                                           | Error about Credly URL; no CMS write                                                                                                                                    |
+| T5 - passed  | Happy path — PBP only                      | Valid given/family/email/LinkedIn; PBP + Credential Number; submit                                           | Thank-you shown; CMS row correct; `pipelineStatus=New`; `verifiedBy` empty; `title_fld` set; `userId` set if email is already a site member (else empty); A1 + A1-Admin |
+| T5b - passed | Existing member email                      | Submit EOI using a known member login email (e.g. [peter.balogh@ittd.space](mailto:peter.balogh@ittd.space)) | `Assessors.userId` equals that member's `_id`                                                                                                                           |
+| T6 - passed  | Happy path — PMP only                      | Same identity fields; PMP + Credly badge URL (+ optional PMI ID)                                             | Same as T5 for CMS/emails; PMP fields populated; PBP fields empty/false                                                                                                 |
+| T7 - passed  | Happy path — both                          | PMP + PBP both checked with both evidence fields                                                             | Both credential flags true; both evidence fields stored; both emails fire                                                                                               |
+| T8 - passed  | Upsert same email                          | Submit T5, then submit again with same email and changed LinkedIn or name                                    | One row for that email (update, not duplicate); emails fire again; `pipelineStatus` still New unless you changed it by hand                                             |
+| T9 - passed  | No login required                          | Submit while logged out                                                                                      | T5 still works                                                                                                                                                          |
+| T10 - passed | Mobile                                     | Repeat T5 on a phone width                                                                                   | Layout usable; submit + thank-you work                                                                                                                                  |
+| T11 - passed | No auto-verify                             | After T5, inspect network / backend                                                                          | No calls to `cert.project-business.org` or Credly from submit                                                                                                           |
+| T12 - passed | Manual seat path                           | In CMS, set `verifiedBy` and `pipelineStatus` to Active on a test row                                        | Saves cleanly; public form never wrote those fields                                                                                                                     |
 
 
+### 5C. Failures — what to check
+
+
+| Symptom                      | Check                                                                                              |
+| ---------------------------- | -------------------------------------------------------------------------------------------------- |
+| Thank-you never shows        | Browser console; element IDs; backend error                                                        |
+| CMS row missing              | Collection permissions; field keys; upsert by email                                                |
+| No A1 / no admin mail        | Triggered Email IDs; template published; contact created; spam; Contacts labeled `PCOTY-Core-Team` |
+| Wrong variable blank in mail | Variable names in template vs code                                                                 |
+
+
+---
+
+## Step 6 — Publish
+
+- [x] All Step 5B scenarios passed on Local Editor / preview
+- [x] Commit + push `main` inside `ittdspace/`
+- [x] `npx wix publish` **or** Publish in Local Editor (one source only)
+- [x] Live smoke: one real EOI to yourself on production
+- [x] Warm-list can receive `/become-an-assessor`
 
 ## Done when
 
-Published live. Warm-list people can be sent the URL.
+**Done (15 Aug 2026).** Live URL takes applications into `Assessors`, sends A1 + A1-Admin, fills `userId` when the email is already a member, and core team processes seats manually. Next: [phase 2](02-assessor-portal.md).

@@ -1,0 +1,289 @@
+/* PCoTY 2027 audience-guide print stylesheet */
+
+:root {
+  --burgundy: #8b1e2d;
+  --burgundy-dark: #48180d;
+  --burgundy-mid: #902f1a;
+  --ink: #282626;
+  --grey: #4a4a4a;
+  --muted: #5e5f68;
+  --rule: #e0e0e0;
+  --wash: #f7f4f4;
+  --salmon: #e59887;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Source Sans 3", "Open Sans", "Segoe UI", Calibri, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.45;
+  background: #fff;
+}
+
+.guide {
+  max-width: 180mm;
+  margin: 0 auto;
+}
+
+/* --- Letterhead --- */
+
+.guide > p:first-of-type {
+  text-align: center;
+  margin: 0 0 0.35em;
+}
+
+.guide > p:first-of-type img {
+  width: 132px;
+  height: auto;
+}
+
+h1 {
+  font-family: Cinzel, Palatino, "Palatino Linotype", Georgia, serif;
+  font-size: 18.5pt;
+  font-weight: 700;
+  color: var(--burgundy-dark);
+  text-align: center;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+  margin: 0.15em 0 0.25em;
+}
+
+h1 + p {
+  text-align: center;
+  color: var(--burgundy);
+  font-size: 11pt;
+  font-weight: 600;
+  margin: 0 0 0.2em;
+}
+
+h1 + p + p {
+  text-align: center;
+  color: var(--muted);
+  font-size: 10pt;
+  font-style: italic;
+  margin: 0 0 0.35em;
+}
+
+.guide > p {
+  text-align: center;
+}
+
+.guide > h2 ~ p,
+.guide > h2 ~ ul,
+.guide > h2 ~ ol,
+.guide > h2 ~ table {
+  text-align: left;
+}
+
+hr {
+  border: 0;
+  border-top: 1.5px solid var(--burgundy);
+  width: 42%;
+  margin: 0.9em auto 1.1em;
+}
+
+/* --- Headings --- */
+
+h2 {
+  font-family: Cinzel, Palatino, "Palatino Linotype", Georgia, serif;
+  font-size: 13pt;
+  font-weight: 700;
+  color: var(--burgundy);
+  letter-spacing: 0.03em;
+  margin: 1.35em 0 0.45em;
+  padding-bottom: 0.18em;
+  border-bottom: 1px solid var(--salmon);
+  page-break-after: avoid;
+}
+
+h3 {
+  font-family: "Source Sans 3", "Open Sans", "Segoe UI", Calibri, sans-serif;
+  font-size: 11pt;
+  font-weight: 700;
+  color: var(--burgundy-dark);
+  margin: 1em 0 0.3em;
+  page-break-after: avoid;
+}
+
+h2 + p,
+h3 + p,
+h2 + ul,
+h3 + ul,
+h2 + ol,
+h3 + ol,
+h2 + table,
+h3 + table {
+  page-break-before: avoid;
+}
+
+/* Contents list: compact, no bullets */
+
+h2#contents + ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.2em 0 0.6em;
+  columns: 2;
+  column-gap: 1.6em;
+  font-size: 10pt;
+}
+
+h2#contents + ul li {
+  break-inside: avoid;
+  padding: 0.12em 0 0.12em 0.9em;
+  position: relative;
+}
+
+h2#contents + ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 0.4em;
+  height: 0.4em;
+  background: var(--burgundy);
+  border-radius: 50%;
+}
+
+h2#contents + ul a {
+  border-bottom: none;
+  color: var(--ink);
+}
+
+h2#contents + ul a:hover {
+  color: var(--burgundy);
+}
+
+/* --- Body --- */
+
+p {
+  margin: 0 0 0.65em;
+}
+
+strong {
+  font-weight: 700;
+  color: var(--burgundy-dark);
+}
+
+a {
+  color: var(--burgundy);
+  text-decoration: none;
+  border-bottom: 0.6px solid var(--salmon);
+}
+
+ul,
+ol {
+  margin: 0.2em 0 0.8em;
+  padding-left: 1.25em;
+}
+
+li {
+  margin: 0.18em 0;
+}
+
+li > ul,
+li > ol {
+  margin: 0.15em 0 0.25em;
+}
+
+/* --- Tables --- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9pt;
+  line-height: 1.35;
+  margin: 0.5em 0 1em;
+  page-break-inside: auto;
+}
+
+thead {
+  display: table-header-group;
+}
+
+tr {
+  page-break-inside: avoid;
+}
+
+th {
+  background: var(--burgundy);
+  color: #fff;
+  font-weight: 600;
+  text-align: left;
+  padding: 5px 7px;
+  vertical-align: bottom;
+}
+
+td {
+  border-bottom: 1px solid var(--rule);
+  padding: 5px 7px;
+  vertical-align: top;
+}
+
+tbody tr:nth-child(even) td {
+  background: var(--wash);
+}
+
+/* Scoring tables: keep the first numeric column tight */
+th:first-child,
+td:first-child {
+  white-space: nowrap;
+}
+
+/* --- Checklist --- */
+
+input[type="checkbox"] {
+  margin-right: 0.35em;
+}
+
+/* --- Print --- */
+
+@page {
+  size: A4;
+  margin: 16mm 16mm 20mm 16mm;
+
+  @bottom-left {
+    content: "Project Business Foundation";
+    font-size: 8pt;
+    color: #4a4a4a;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  @bottom-center {
+    content: "PCoTY 2027 - " string(guide-label);
+    font-size: 8pt;
+    color: #4a4a4a;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  @bottom-right {
+    content: counter(page) " / " counter(pages);
+    font-size: 8pt;
+    color: #4a4a4a;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  a {
+    border-bottom: none;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
