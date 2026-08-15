@@ -1,0 +1,137 @@
+# WS4 — Award Operations
+
+- **Jira Epic:** [SCRUM-4](https://ittd.atlassian.net/browse/SCRUM-4)
+- **Status:** Draft v0.1
+- **Owner:** [TBD]
+- **Parent plan:** [Master Plan](../Master-Plan.md)
+
+> **Updated post-UAT Jun 2026 — Coach role removed (DR-002).** PM / Award Operations runs intake through shortlist; pre-screening agent + Comms notifications per [DR-002](https://ittd.atlassian.net/wiki/spaces/PBF/pages/245989377).
+
+> Run the core process reliably from submission to decision, including the platform that supports it.
+
+---
+
+## Objective
+
+Run the end-to-end evaluation (intake → Stage 1 → Stage 2 → decision) to dates on the already-live platform, with clear stages, gates, and milestones.
+
+## Scope
+
+- In scope: platform readiness verification, running the award to stages/milestones (intake → Stage 1 → Stage 2 → decision), categorization, status & notifications.
+- Out of scope: people recruitment/training (WS2), publication & ceremony (WS6), **IT-ops/SLAs (handled by WIX)**.
+
+## Stories
+
+| Story | Summary | Status | Notes (elaborate here) |
+|-------|---------|--------|------------------------|
+| [SCRUM-19](https://ittd.atlassian.net/browse/SCRUM-19) | Productionize platform (hardening, security, monitoring) | To Do | |
+| [SCRUM-20](https://ittd.atlassian.net/browse/SCRUM-20) | Stand up support/help desk | **Descoped** | Handled by WIX; admin tooling already built — recommend closing |
+| [SCRUM-21](https://ittd.atlassian.net/browse/SCRUM-21) | Run intake → Stage 1 → Stage 2 → decision | To Do | |
+
+## Key Deliverables
+
+- Verified, live platform (already UAT-proven; WIX-operated)
+- Award run to stages & milestones (intake → Stage 1 → Stage 2 → decision)
+- Categorization, status tracking & notifications
+
+## Dependencies
+
+- WS2 (people), WS5 (process gates), WS1 (timeline)
+
+---
+
+# Detailed Plan
+
+> Planned **backwards** from the [DR-001](../Decisions/DR-001-Cycle-Schedule.md) schedule. The platform is **already live (UAT-proven)**, so the focus is the run: nominations **Sep–Oct 2026**; intake **Oct**; Stage 1 **Oct–late Nov** (shortlist before mid-Dec); Stage 2 **mid-Jan 2027**; decision **late Jan**.
+>
+> **Jira note:** task codes below (e.g. `WS4-T01`) are **placeholders only** pending your review. We will sync to Jira once agreed (same process as WS2/WS3). Existing live stories: [SCRUM-19](https://ittd.atlassian.net/browse/SCRUM-19)–[SCRUM-21](https://ittd.atlassian.net/browse/SCRUM-21).
+
+## Status: platform already live (gate largely satisfied)
+
+The platform **and admin tooling are already live and proven in UAT** (`ittd.space/pbf-pcoty`), with the full implementation in `Contractor_of_The_Year/Implementation/` (admin dashboard, assessments/scores/assignments/customer-feedback dashboards, role admin, plus nomination/evaluation services). **Coach services to be removed before live cycle (DR-002).** The readiness gate is therefore **largely satisfied** — 4a is now light *verification*, not a build.
+
+WIX provides hosting, security, and platform operations, so there is **no separate IT-ops/SLA workstream** (see 4b — descoped).
+
+## Categorization note (per WS3 decision)
+
+All submissions start equal; **categories (Small/Medium/Large by customer-project headcount) are assigned during intake**, not at submission. Shortlisting is then done per category. Operations owns the category-assignment step (`WS4-T06`, Stage C).
+
+## Assets we already have (reuse, don't rebuild)
+
+- **Award platform** — `ittd.space/pbf-pcoty` (proven end-to-end in UAT)
+- **WIX implementation** — `Contractor_of_The_Year/Implementation/` + `Working Folder/WIX-Stage-1-Implementation-Guide.md`
+- **Use-case specs** — `Working Folder/System-Use-Cases-WIX.md`, `Admin-Use-Cases-WIX.md`, `Stage-1-Assessor-Form-Spec.md`, `Dashboard-Metrics-WIX.md`
+- **Process definitions** — [1.0 Submission & Intake](https://ittd.atlassian.net/wiki/spaces/PBF/pages/130514945), [2.0 Assessment](https://ittd.atlassian.net/wiki/spaces/PBF/pages/129204226), [3.0 Decision/Award](https://ittd.atlassian.net/wiki/spaces/PBF/pages/130547713)
+- **SLAs & metrics** — [SLA's and Metrics](https://ittd.atlassian.net/wiki/spaces/PBF/pages/117833739) (still has "X days" placeholders — finalised in WS1)
+- **Support channel** — Discord ([architecture](https://ittd.atlassian.net/wiki/spaces/PBF/pages/184025089), [UAT](https://ittd.atlassian.net/wiki/spaces/PBF/pages/205651971))
+
+---
+
+## Sub-track 4a — Platform Readiness: VERIFY (largely done)  ([SCRUM-19](https://ittd.atlassian.net/browse/SCRUM-19))
+*Already live & UAT-proven — light verification, not a build. Confirm before the run starts.*
+
+- `WS4-T01` ([SCRUM-73](https://ittd.atlassian.net/browse/SCRUM-73)) — **Confirm production promotion & domain** (UAT → live; SSL/backups handled by WIX)
+- `WS4-T02` ([SCRUM-74](https://ittd.atlassian.net/browse/SCRUM-74)) — **Confirm roles & access control** (nominee, assessor, judge, admin — **no coach role**; remove coach UI per DR-002)
+- `WS4-T03` ([SCRUM-75](https://ittd.atlassian.net/browse/SCRUM-75)) — **Pre-launch regression dry-run** (carry over any remaining UAT fixes; confirm submission form, scoring interfaces, notifications and dashboards work end-to-end)
+
+---
+
+## Sub-track 4b — DESCOPED (handled by WIX)  ([SCRUM-20](https://ittd.atlassian.net/browse/SCRUM-20) → close)
+
+We are **not an IT organisation**. WIX provides hosting, security, and platform operations, so there is **no dedicated IT-ops/SLA track**. The **admin dashboard and ops tooling already exist** in `Contractor_of_The_Year/Implementation/` (`pages/adminDashboard.js`, `public/custom-elements/overview-dashboard.js`, `assessments-/scores-/assignments-/customer-feedback-dashboard.js`, `public/roleAdmin.js`, plus `nomination`/`evaluation` services — **coach modules retired per DR-002**).
+
+Lightweight support during the cycle is folded into the run — a simple contact route via Discord/email, **no formal SLA**. **Recommend closing story [SCRUM-20](https://ittd.atlassian.net/browse/SCRUM-20) as won't-do.**
+
+---
+
+## Sub-track 4c — Running the Awards: Stages, Gates & Milestones  ([SCRUM-21](https://ittd.atlassian.net/browse/SCRUM-21))
+
+> This is the heart of WS4. The process is already defined (1.0 / 2.0 / 3.0) and practised in UAT, so the value here is **running it to dates with clear gates and milestones** — not re-describing it.
+
+### Milestone & gate map
+
+| Stage | Window | Quality gate | Milestone (done = ) |
+|-------|--------|--------------|---------------------|
+| A. Nominations open | early Sep 2026* | — | **M1: Launch live** |
+| B. Nominations close | early Oct 2026 | — | **M2: Submissions locked** |
+| C. Intake & categorization | Oct 2026 | Eligibility gate | **M3: All nominations validated & categorized** |
+| D. Stage 1 screening | Oct–late Nov 2026 | Shortlist gate | **M4: Shortlist locked (before mid-Dec)** |
+| E. Shortlist notifications | early–mid Dec 2026 | — | **M5: All applicants notified + feedback sent** |
+| — Christmas pause — | late Dec 2026 | — | (clean seam) |
+| F. Stage 2 prep | Dec–early Jan 2027 | COI/Quorum gate | **M6: Stage 2 ready (finalists + judges confirmed)** |
+| G. Stage 2 judging | mid-Jan 2027 | Winner gate | **M7: Winners selected** |
+| H. Decision & handoff | late Jan 2027 | Appeals gate | **M8: Decision finalized, handed to WS6** |
+
+\* Gate is already satisfied, so Stage A could begin earlier if WS2/WS3 are ready.
+
+### Run tasks
+- `WS4-T04` ([SCRUM-76](https://ittd.atlassian.net/browse/SCRUM-76)) — **Stage A — Open nominations & monitor** (coordinate with WS3 launch) → M1
+- `WS4-T05` ([SCRUM-77](https://ittd.atlassian.net/browse/SCRUM-77)) — **Stage B — Close nominations** (lock submissions at deadline) → M2
+- `WS4-T06` ([SCRUM-78](https://ittd.atlassian.net/browse/SCRUM-78)) — **Stage C — Intake, eligibility & categorize** (automated pre-screening within 24h + PM exceptions; eligibility screening; **assign category by customer-project headcount**; Comms sends missing-item notifications) → M3 *(Eligibility gate)*
+- `WS4-T07` ([SCRUM-79](https://ittd.atlassian.net/browse/SCRUM-79)) — **Stage D — Stage 1 screening** (**PM assigns ≥2 assessors** + COI/recusal; independent 0–5 scoring on the 9 criteria; PM moderates when >2 pts; rank per category; shortlist top N) → M4 *(Shortlist gate)*
+- `WS4-T08` ([SCRUM-80](https://ittd.atlassian.net/browse/SCRUM-80)) — **Stage E — Notify & give feedback** (**Communications Coordinator** sends shortlist / not-shortlisted notifications + feedback) → M5
+- `WS4-T09` ([SCRUM-81](https://ittd.atlassian.net/browse/SCRUM-81)) — **Stage F — Stage 2 prep** (finalist prep; schedule presentations around judge availability; judge COI verification — coordinate WS2) → M6 *(COI/Quorum gate)*
+- `WS4-T10` ([SCRUM-82](https://ittd.atlassian.net/browse/SCRUM-82)) — **Stage G — Stage 2 judging** (20-min presentation + 15-min Q&A; independent scoring; outlier moderation >2 pts; deliberation; consensus/moderated average; Oliver Lehmann deciding vote if stalemate) → M7 *(Winner gate)*
+- `WS4-T11` ([SCRUM-83](https://ittd.atlassian.net/browse/SCRUM-83)) — **Stage H — Record decision & hand off** (document decisions + rationale; appeals window; transfer winners to WS6) → M8 *(Appeals gate)*
+
+### Backward timeline
+| When | Stage / milestone |
+|------|-------------------|
+| (pre-run) | 4a verification (T01–T03) — light, platform already live |
+| early Sep 2026* | Stage A → **M1 Launch** |
+| early Oct 2026 | Stage B → **M2 Submissions locked** |
+| Oct 2026 | Stage C → **M3 Validated & categorized** |
+| Oct–late Nov 2026 | Stage D → **M4 Shortlist locked** |
+| early–mid Dec 2026 | Stage E → **M5 Applicants notified** |
+| Dec 2026–early Jan 2027 | Stage F → **M6 Stage 2 ready** |
+| mid-Jan 2027 | Stage G → **M7 Winners selected** |
+| late Jan 2027 | Stage H → **M8 Decision finalized + handoff to WS6** |
+
+---
+
+## Open Questions (rolled up)
+
+- [ ] Category-assignment rule confirmed (headcount thresholds: 1–25 / 26–100 / 101+)
+- [ ] Top N per category for the shortlist
+- [x] Ops owner per stage — **Project Manager / Award Operations (WS4)** per [Roles and RACI](https://ittd.atlassian.net/wiki/spaces/PBF/pages/117964816) and DR-002
+- [ ] Earliest feasible nomination-open date (gate already satisfied — could start sooner than Sep)

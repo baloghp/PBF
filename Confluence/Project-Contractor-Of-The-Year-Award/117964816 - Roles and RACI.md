@@ -1,37 +1,104 @@
 # Roles and RACI
 
 - Page ID: `117964816`
-- URL: `https://ittd.atlassian.net/wiki/spaces/PBF/pages/117964816`
+- URL: `https://ittd.atlassian.net/wiki/spaces/PBF/pages/117964816/Roles+and+RACI`
+- Confluence version: `2026-06-29T21:23:37.884Z`
 
 ## Body
 
+> **Updated post-UAT Jun 2026 — Coach role removed.** See [DR-002 — Drop Nominee Coach role (Post-UAT)](https://ittd.atlassian.net/wiki/spaces/PBF/pages/245989377).
+
 # Roles and RACI
 
-**Principle:** One team member assigned to each nominee at nomination time. This person guides the nominee through the entire process from submission to award.
+**Principle (post-UAT):** No Nominee Coach volunteer. **Automated pre-screening** handles deterministic intake checks. **Project Manager / Award Operations** runs assessor assignment, COI/quorum, moderation, and shortlist. **Communications Coordinator** sends nominee notifications. **Human assessors and judges** score all nominations.
+
+**Superseded design:** The former one-coach-per-nominee model is archived in the [Nominee Coach Guide (ARCHIVED)](https://ittd.atlassian.net/wiki/spaces/PBF/pages/130318339).
 
 ---
 
 ## Core Roles
 
-### Project Manager
+### Project Manager / Award Operations
 
-Overall accountability for program success, strategic oversight, role assignment, guidance documents, and block removal.
+**Accountability:** Overall program success, intake pipeline, Stage 1 operations through shortlist, and coordination into Stage 2
 
-### Nominee Coach
+**Key Tasks:**
 
-Single point of contact from submission through award; handles completeness checks, assessor coordination, notifications, and finalist preparation.
+* Final approval of winners (3.1)
+* Final deciding vote in stalemate (2.2)
+* Strategic oversight and block removal
+* **Configure and monitor pre-screening agent** (eligibility, completeness, attachments — not scoring)
+* **Handle intake exceptions** flagged by the agent (incomplete submissions, edge cases)
+* **Assign assessors** to nominations (balanced workload; ≥2 per nomination)
+* **Track COI declarations and recusals**; assign alternates; verify quorum
+* **Moderate inter-rater discrepancies** (>2 points from median)
+* **Calculate scores, rank by category, lock shortlist**
+* **Schedule Stage 2 presentations** with finalists and judging panel
+* **Create and maintain guidance documents** (Assessor, Judging Panel, Communications Coordinator)
+* Coordinate between roles when needed
 
-### Assessors (Stage 1)
+---
 
-Review nominations, score with the framework, provide evidence notes, and optionally support Stage 2 preparation.
+### Pre-screening agent (automated)
+
+**Responsibility:** First-pass intake validation only — **not evaluation**
+
+**Checks:**
+
+* Required fields and sections present
+* Evidence artifacts uploaded
+* Client Assessment Form linked
+* Eligibility rules (project type, completion window, etc.)
+* Attachment format / size constraints
+
+**Output:** Pass → Ready for assessor assignment · Fail → Missing-items list to nominee (via platform/Comms) · Flag → PM review for exceptions
+
+**Scope limit (DR-002):** Must **not** apply Evaluation Framework scores or shortlist decisions.
+
+---
+
+### Assessors (Volunteers — Stage 1)
+
+**Responsibility:** Stage 1 evaluation
+
+**Key Tasks:**
+
+* Review assigned nominations (2.1)
+* Check for COI and self-report immediately (2.1)
+* Verify eligibility and completeness at assessment time (2.1)
+* Score using Evaluation Framework (0–5 scale) (2.1)
+* Provide per-criterion comments and evidence notes (2.1)
+* Optional: help prepare nominees for Stage 2 if requested by **Project Manager** (not a separate coach role)
+
+---
 
 ### Judging Panel (Stage 2)
 
-Attends presentations, scores finalists, participates in outlier moderation, and selects winners.
+**Responsibility:** Final evaluation and winner selection
+
+**Key Tasks:**
+
+* Attend presentations (2.2)
+* Score finalists independently (2.2)
+* Ask questions during Q&A (2.2)
+* Participate in outlier moderation (2.2)
+* Deliberate on winners (2.2)
+
+---
 
 ### Communications Coordinator
 
-Owns communication strategy, templates, award publication, and post-award communications.
+**Responsibility:** Centralized communications and publications
+
+**Key Tasks:**
+
+* Coordinate overall communication strategy
+* **Own and send nominee notifications** (submission confirmation, missing items, shortlist, finalist, winner, feedback)
+* Generate award letters/certificates (3.2)
+* Prepare publication materials (3.2)
+* Publish award results on websites (3.2)
+* Handle post-award activities (3.2)
+* Maintain notification templates (Comms sends directly — no coach intermediary)
 
 ---
 
@@ -39,29 +106,118 @@ Owns communication strategy, templates, award publication, and post-award commun
 
 ### Applicant / Nominee
 
-Submits materials, works with assigned coach, presents if shortlisted.
+**Responsibility:** Submit nomination package
+
+**Key Tasks:**
+
+* Complete written submission (1.1)
+* Upload evidence artifacts (1.1)
+* Obtain Client Assessment Form (1.1)
+* Submit nomination (1.1)
+* Track status on the nomination platform
+* Contact **program support** (platform help / PMO inbox) for questions — not a volunteer coach
+* Prepare Stage 2 presentation if shortlisted (2.2), using platform guidance and Comms scheduling messages
+
+---
 
 ### Client Representative
 
-Completes and signs the Client Assessment Form.
+**Responsibility:** Complete Client Assessment Form
+
+**Key Tasks:**
+
+* Complete Client Assessment Form (1.1)
+* Rate criteria and calculate scores (1.1)
+* Sign and provide consent (1.1)
 
 ---
 
 ## RACI by Process Step
 
-* **1.1 Nomination Submission:** Responsible Applicant, Accountable Nominee Coach
-* **1.2 Intake and Initial Validation:** Responsible Nominee Coach, Accountable Project Manager
-* **2.1 Stage 1 Screening:** Responsible Assessors, Accountable Nominee Coach
-* **2.2 Stage 2 Judging:** Responsible Judging Panel, Accountable Project Manager
-* **3.1 Winner Selection/Notification:** Responsible Nominee Coach, Accountable Project Manager
-* **3.2 Award Publication:** Responsible Communications Coordinator, Accountable Project Manager
+### 1.1 Nomination Submission
+
+* **Responsible:** Applicant
+* **Accountable:** Project Manager
+* **Consulted:** Pre-screening agent (on submit — validation rules)
+* **Informed:** Project Manager
+
+### 1.2 Intake and Initial Validation
+
+* **Responsible:** Pre-screening agent (automated checks); Project Manager (exceptions)
+* **Accountable:** Project Manager
+* **Consulted:** Communications Coordinator (missing-item notifications)
+* **Informed:** Applicant
+
+### 2.1 Stage 1 – Independent Assessor Screening
+
+* **Responsible:** Assessors (scoring)
+* **Accountable:** Project Manager (assessor assignment, COI/quorum, moderation, shortlist lock)
+* **Consulted:** Assessors, Communications Coordinator (notification timing)
+* **Informed:** Applicant
+
+### 2.2 Stage 2 – Judging Panel
+
+* **Responsible:** Judging Panel
+* **Accountable:** Project Manager
+* **Consulted:** Communications Coordinator (scheduling comms), Assessors (optional prep support)
+* **Informed:** Applicant
+
+### 3.1 Winner Selection and Notification
+
+* **Responsible:** Communications Coordinator (send notifications)
+* **Accountable:** Project Manager
+* **Consulted:** Judging Panel, Assessors (feedback content for non-shortlisted)
+* **Informed:** Applicant
+
+### 3.2 Award Publication
+
+* **Responsible:** Communications Coordinator
+* **Accountable:** Project Manager
+* **Consulted:** Project Manager (finalist/winner materials)
+* **Informed:** Applicant, Public
 
 ---
 
-## Nominee Coach Assignment Model
+## Role Assignment (Small Team)
 
-Assignment ensures balanced distribution across Small, Medium, and Large nominee categories.
+**Core Team:**
+
+1. Project Manager / Award Operations (1 person)
+2. Communications Coordinator (1 person)
+
+**Plus Volunteers:**
+
+* 2–3 Assessors per nomination (Stage 1) — **minimum ≥2** required for quorum; assign a third when volunteer capacity allows
+* 3–5 Judging Panel members (Stage 2)
+
+**Automated:**
+
+* Pre-screening agent (intake only)
 
 ---
 
-_This model provides a personal, guided experience for each nominee while keeping responsibilities clear and accountable._
+## Project Manager — Guidance Documents
+
+**Required (active):**
+
+1. **Assessor Guide** — Evaluation Framework, scoring, COI procedures
+2. **Judging Panel Guide** — Presentation protocol, scoring, decision-making
+3. **Communications Coordinator Guide** — Notification templates, publication, embargo
+
+**Archived (superseded by DR-002):**
+
+* ~~Nominee Coach Guide~~ → [130318339 — ARCHIVED](https://ittd.atlassian.net/wiki/spaces/PBF/pages/130318339)
+
+---
+
+## Key Simplifications (post-UAT)
+
+1. **No per-nominee volunteer coach** — reduces recruitment burden; matches UAT learning
+2. **Agent + PM for intake** — deterministic checks automated; humans handle exceptions
+3. **PM owns Stage 1 operations** — assessor assignment, COI, moderation, shortlist (formerly scattered on coaches)
+4. **Comms owns nominee messages** — single voice; templates not delegated to coaches
+5. **Assessment stays human** — assessors and judges unchanged (DR-002)
+
+---
+
+_This model reflects_ [_DR-002 — Drop Nominee Coach role (Post-UAT)_](https://ittd.atlassian.net/wiki/spaces/PBF/pages/245989377)_. The Project Manager ensures roles have guidance and removes blocks quickly._

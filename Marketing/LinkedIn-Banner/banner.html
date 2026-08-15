@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PCOTY LinkedIn Showcase Cover — 1128×191</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    /* LinkedIn Showcase cover — exact export size */
+    .banner {
+      width: 1128px;
+      height: 191px;
+      background: linear-gradient(105deg, #8B2635 0%, #6B1D28 55%, #5A1822 100%);
+      display: flex;
+      align-items: center;
+      padding: 0 48px;
+      gap: 36px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Subtle depth — no photos */
+    .banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 120% at 85% 50%, rgba(255,255,255,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .seal {
+      flex-shrink: 0;
+      width: 130px;
+      height: 130px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .seal img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.25));
+    }
+
+    .text {
+      flex: 1;
+      color: #fff;
+      position: relative;
+      z-index: 1;
+      min-width: 0;
+    }
+
+    .title {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      line-height: 1.15;
+      margin-bottom: 6px;
+    }
+
+    .tagline {
+      font-size: 15px;
+      font-weight: 400;
+      color: #E8E8E8;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+
+    .date {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.85);
+      border-top: 1px solid rgba(255,255,255,0.25);
+      padding-top: 8px;
+      display: inline-block;
+    }
+
+    .pbf-mark {
+      position: absolute;
+      right: 40px;
+      bottom: 18px;
+      height: 28px;
+      opacity: 0.9;
+      z-index: 1;
+    }
+
+    /* Safe-zone guide (toggle off before export) */
+    .guides .safe-left,
+    .guides .safe-right {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 20%;
+      border: 1px dashed rgba(255,255,255,0.2);
+      pointer-events: none;
+      z-index: 2;
+    }
+    .guides .safe-left { left: 0; }
+    .guides .safe-right { right: 0; }
+  </style>
+</head>
+<body>
+  <div class="banner guides" id="banner">
+    <div class="safe-left" title="Mobile crop zone — keep critical content out"></div>
+    <div class="safe-right" title="Mobile crop zone"></div>
+
+    <div class="seal">
+      <img src="../UAT Certificate/logo.svg" alt="PCOTY Award Seal">
+    </div>
+
+    <div class="text">
+      <div class="title">Project Contractor of the Year Award</div>
+      <div class="tagline">Celebrating excellence in Project Business</div>
+      <div class="date">Nominations open · 1 September 2026</div>
+    </div>
+
+    <img class="pbf-mark" src="../UAT Certificate/PBF-Logo_wide_white_r_300.png" alt="PBF">
+  </div>
+
+  <script>
+    // Remove ?export=1 guides: banner.html?export=1
+    if (new URLSearchParams(location.search).get('export') === '1') {
+      document.querySelector('.banner').classList.remove('guides');
+    }
+  </script>
+</body>
+</html>

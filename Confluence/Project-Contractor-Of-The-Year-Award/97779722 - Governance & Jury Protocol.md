@@ -1,9 +1,12 @@
 # Governance & Jury Protocol
 
 - Page ID: `97779722`
-- URL: `https://ittd.atlassian.net/wiki/spaces/PBF/pages/97779722`
+- URL: `https://ittd.atlassian.net/wiki/spaces/PBF/pages/97779722/Governance+Jury+Protocol`
+- Confluence version: `2026-06-29T21:16:28.852Z`
 
 ## Body
+
+> **Updated post-UAT Jun 2026 — Coach role removed.** See [DR-002 — Drop Nominee Coach role (Post-UAT)](https://ittd.atlassian.net/wiki/spaces/PBF/pages/245989377).
 
 The following is a draft version it is still subject to change
 
@@ -17,7 +20,7 @@ The following is a draft version it is still subject to change
 
 ## Evaluation process (two stages)
 
-* Stage 1 – Volunteer screening: eligibility/completeness check; apply framework; shortlist
+* Stage 1 – Independent assessor screening: **eligibility/completeness confirmed at intake** (pre-screening agent + PM); apply evaluation framework; shortlist
 * Stage 2 – Jury presentation & Q&A: 20‑minute presentation + 15‑minute Q&A; rescoring; consensus or moderated average
 
 ## Finalist presentation & Q&A protocol

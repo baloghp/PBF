@@ -1,0 +1,139 @@
+# Team Meeting - 21.07.2026
+
+- Parent: [Meetings](108003329 - Meetings.md)
+- Page ID: `270401538`
+- URL: `https://ittd.atlassian.net/wiki/spaces/PBF/pages/270401538/Team+Meeting+-+21.07.2026`
+- Status: **Published to Confluence** (v1)
+- Prev: [14.07](263618571 - Team Meeting - 14.07.2026.md)
+
+## Body
+
+**Team meeting · Tue 21 Jul 2026 · 14:00 CEST · Chair: Peter Balogh** · Last: [14.07](https://ittd.atlassian.net/wiki/spaces/PBF/pages/263618571)
+
+> **Also today:** **UAT celebration 18:00 CET** — certificate live send-off ([deck](../../Contractor_of_The_Year/Working%20Folder/2026-07-12%20Sprint/UAT-Celebration-21-Jul-Slide-Deck.md)).
+
+**Countdown:** ~6 weeks to nominations open (**1 Sep 2026**).
+
+---
+
+## Since last meeting (14.07)
+
+* **UAT celebration:** Deck built + PDF exported ✅ · **18:00 CET** + invite sender confirmed ✅ · cert **send drill** ready for live call ✅
+* **Certificates:** Signature/logo transparent-PNG fix done ✅
+* **Homepage:** New core team cards added (Soban, Angel, Islam) · Coach copy removed (DR-002) · LinkedIn icons fixed ✅
+* **Comms campaign:** Draft owners assigned (participants · assessors · sponsors) ✅ · first LinkedIn post drafted + dated ✅ · Showcase follower build underway (Mon–Fri) ✅
+* **Recording:** Instructions sent (Kris) · video-drip email drafted + reviewed ✅
+* **Marketing sub-team:** Met **16 Jul** — visual identity, cadence & tooling decisions (see § Marketing sub-team report)
+* **Still open:** **Sponsor prospectus** (no owner, due today) · assessor cert gate (PBP/PMP) + UAT grandfathering · assessor target ratification
+
+---
+
+## Status
+
+| Item | Owner | Status |
+| --- | --- | --- |
+| UAT celebration + cert send (21 Jul) | Peter / Kris | ✅ Ready — live send-off tonight |
+| Cert signature/logo PNG fix | Oliver | ✅ Done |
+| Homepage core team cards + coach copy + icons | Peter | ✅ Done |
+| Comms draft owners (3 audiences) | Team | ✅ Assigned |
+| First LinkedIn post | Soban / Leila | ✅ Drafted + dated |
+| Showcase follower build | Islam / Soban | ✅ Underway (Mon–Fri) |
+| Recording instructions + video-drip | Kris / Peter | ✅ Sent / reviewed |
+| Marketing sub-team (visual identity, cadence, Figma) | Kris (accountable) | ✅ Met 16 Jul — report below |
+| **Sponsor prospectus (1-page PDF)** | **TBD** | 🔴 **Due 21 Jul — assign owner** |
+| Assessor target 50 recruit / ~25 active | Team | 🟡 Ratify + set EOI close **15 Oct** |
+| Assessor cert gate (PBP/PMP) + UAT grandfathering | Team | 🔴 Decide today |
+| Assessor comms owner | Kris (proposed) | 🟡 Confirm |
+| Coach removal + n8n pre-screen | Peter | 🔲 Parked — post-comms |
+
+---
+
+## Marketing sub-team report — 16 Jul 2026
+
+*Source: [Confluence — Marketing Meeting 07/16/2026](https://ittd.atlassian.net/wiki/spaces/PBF/pages/268894210) · [Gemini notes (offline)](../../Marketing/PCoTY%20Award%20-%20Marketing%20Team%20-%202026/07/16%2007:59%20EDT%20-%20Notes%20by%20Gemini.md)*
+*Attendees: Kris Lea (lead), Soban Ahmed, Leila Lahham · (Angel, Islam, Chris Kelly, Peter, Oliver — informed)*
+
+**Decisions (aligned):**
+
+- **Standardized visual identity** — pre-approved fonts, colours, layout templates for all assets
+- **Weekday-only posting** — LinkedIn Mon–Fri (higher traffic than weekends)
+- **Primary + backup posting roles** for the LinkedIn Showcase
+- **Branded video background** — grey fill, logo top-left; mandatory on team calls
+- **Bi-weekly countdown posts** with standardized layout
+
+**Strategy & production:**
+
+- Content in **3 segments** — anticipation · launch · FOMO — ~**21 short recordings** (one set per member)
+- **Tooling shift: Gemini/AI → Figma** for design control (aspect ratios, brand colours/fonts); Unsplash via plugin
+- **Channel:** LinkedIn Showcase first, then repost to personal profiles
+- **Cadence idea:** countdown imagery Tue/Thu · team recordings/photos Mon/Wed/Fri
+
+**Next steps (marketing):**
+
+- Draft the **media schedule** (themes + frequency) · produce recordings · organize assets in the Google folder
+- **Leila** — reformat posts in Figma (branding, remove watermarks) · get PBF logo (Oliver/Peter) · publish background file to Confluence
+- **Kris** — set up recurring marketing meetings · send recording guidance · **follow-up meeting Mon 20 Jul 07:00 Central** (incl. Islam + Chris Kelly)
+- **All** — submit content **topics** for flyers/posters
+
+**Flag for core team:** Soban cautioned against a **high nomination target** for cycle 1 — AI PM screens Stage 1, exceptions escalate to the human PM; unknown workload, so plan conservatively. *(Aligns with 14 Jul "no public cap" decision.)*
+
+**Live update (21 Jul):** _placeholder — add anything from the 20 Jul marketing follow-up before/at this meeting._
+
+---
+
+## Agenda (~50 min)
+
+### 0 · Welcome — 3 min
+
+### 1 · UAT celebration readiness (tonight 18:00) — 5 min
+* Final check: deck, invite, cert send order, recording consent
+
+### 2 · Sponsor prospectus — 10 min · *Peter*
+* **Assign owner today** · confirm 1-page, amplification-first tier table · target ready this week
+
+### 3 · Assessor recruitment — decisions — 12 min
+* **Ratify** 50 recruit / ~25 active · EOI close **15 Oct**
+* **Decide:** PBP/PMP **hard gate**? · **UAT-assessor grandfathering** without cert?
+* Confirm **Kris** as assessor comms owner
+
+### 4 · Marketing sub-team report — 10 min · *Kris*
+* Walk decisions above · media schedule status · topics request to core team
+* Core-team input on nomination-volume caution (Soban)
+
+### 5 · Comms campaign check — 7 min
+* Anticipation phase (14 Jul – 14 Aug) — first post live? follower build?
+
+### 6 · Wrap — 3 min
+* Actions captured · next meeting date
+
+---
+
+## Decisions to drive today
+
+- [ ] **Sponsor prospectus owner** + delivery date
+- [ ] **Assessor cert gate** — PBP/PMP required, or open with preference?
+- [ ] **UAT-assessor grandfathering** — yes/no
+- [ ] **Ratify** assessor target 50 / ~25 · EOI close 15 Oct
+- [ ] **Confirm** Kris as assessor comms owner
+
+---
+
+## Actions
+
+| Action | Owner | Due |
+| --- | --- | --- |
+|  |  |  |
+
+---
+
+## Outcomes
+
+### Decisions
+
+### Notes
+
+---
+
+## Links
+
+[14.07](https://ittd.atlassian.net/wiki/spaces/PBF/pages/263618571) · [Marketing Meeting 16.07](https://ittd.atlassian.net/wiki/spaces/PBF/pages/268894210) · [Sponsors](https://ittd.atlassian.net/wiki/spaces/PBF/pages/263553034) · [Assessor strategy](https://ittd.atlassian.net/wiki/spaces/PBF/pages/263618649) · [LinkedIn schedule](https://ittd.atlassian.net/wiki/spaces/PBF/pages/244875266) · [UAT celebration deck](../../Contractor_of_The_Year/Working%20Folder/2026-07-12%20Sprint/UAT-Celebration-21-Jul-Slide-Deck.md) · [Master Plan](https://ittd.atlassian.net/wiki/spaces/PBF/pages/231342084)

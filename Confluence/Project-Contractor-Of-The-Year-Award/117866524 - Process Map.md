@@ -1,9 +1,12 @@
 # Process Map
 
 - Page ID: `117866524`
-- URL: `https://ittd.atlassian.net/wiki/spaces/PBF/pages/117866524`
+- URL: `https://ittd.atlassian.net/wiki/spaces/PBF/pages/117866524/Process+Map`
+- Confluence version: `2026-06-29T21:19:21.359Z`
 
 ## Body
+
+> **Updated post-UAT Jun 2026 — Coach role removed.** See [DR-002 — Drop Nominee Coach role (Post-UAT)](https://ittd.atlassian.net/wiki/spaces/PBF/pages/245989377).
 
 # Process Map
 
@@ -11,7 +14,7 @@ Cover: Submission → Assessment → Award process. This page provides an overvi
 
 ## Overview
 
-This process map covers the complete lifecycle from Submission → Assessment → Award for the PBF Contractor of the Year program. The process follows a two-stage evaluation model with volunteer screening (Stage 1) and judging panel evaluation (Stage 2).
+This process map covers the complete lifecycle from Submission → Assessment → Award for the PBF Contractor of the Year program. The process follows a two-stage evaluation model with **independent assessor screening (Stage 1)** and **judging panel evaluation (Stage 2)**. Intake eligibility/completeness is handled by **automated pre-screening** before Stage 1.
 
 ---
 
@@ -22,7 +25,7 @@ flowchart TD
     A[Nominee Submits] --> B[Intake & Validation]
     B --> C{Eligible & Complete?}
     C -->|No| D[Request Completion/Reject]
-    C -->|Yes| E[Stage 1: Volunteer Screening]
+    C -->|Yes| E[Stage 1: Assessor Screening]
     E --> F{Meets Shortlist Criteria?}
     F -->|No| G[Provide Feedback]
     F -->|Yes| H[Stage 2: Judging Panel]
@@ -44,14 +47,14 @@ flowchart TD
 
 ### [1.0 Submission and Intake](https://ittd.atlassian.net/wiki/spaces/PBF/pages/130514945)
 
-Covers nomination submission, completeness checks, and eligibility validation.
+Covers nomination submission, **automated pre-screening**, and eligibility validation (PM handles exceptions).
 
 **Key sub-processes:**
 
 * 1.1 Nomination Submission
 * 1.2 Intake and Initial Validation
 
-**Key outputs:** Complete, eligible nominations ready for Stage 1 assessment
+**Key outputs:** Complete, eligible nominations ready for assessor assignment
 
 ---
 
@@ -61,7 +64,7 @@ Covers the two-stage evaluation process.
 
 **Key sub-processes:**
 
-* 2.1 Stage 1 – Volunteer Screening and Evaluation
+* 2.1 Stage 1 – Independent Assessor Screening and Evaluation
 * 2.2 Stage 2 – Judging Panel Presentation & Q&A
 
 **Key outputs:** Shortlisted nominees (Stage 1), Winners selected (Stage 2)
@@ -134,17 +137,17 @@ flowchart TD
 * **Eligibility Gate:** Meets eligibility criteria
 * **COI Gate:** No conflicts of interest in evaluation
 * **Quorum Gate:** Sufficient evaluators available after recusals
-* **Quality Gate:** Minimum 2-3 independent reviews completed
+* **Quality Gate:** Minimum **≥2** independent assessor reviews per nomination (target 3 when capacity allows)
 * **Documentation Gate:** All decisions documented with rationale
 
 ---
 
 ## Handoffs Between Phases
 
-1. **Intake → Stage 1:** Complete, eligible nominations assigned to assessors
-2. **Stage 1 → Stage 2:** Shortlisted nominations prepared for judging panel
-3. **Stage 2 → Decision:** Finalist scores and recommendations provided to Programme Owner
-4. **Decision → Award:** Approved winners provided to Communications Lead for publication
+1. **Intake → Stage 1:** PM assigns **≥2 assessors** per complete, eligible nomination
+2. **Stage 1 → Stage 2:** Shortlisted nominations prepared for judging panel; **Communications Coordinator** notifies applicants
+3. **Stage 2 → Decision:** Finalist scores and recommendations to **Project Manager**; Programme Owner sign-off on winners
+4. **Decision → Award:** **Communications Coordinator** publishes results (WS6 coordination)
 
 ---
 

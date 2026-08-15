@@ -1,9 +1,12 @@
 # Submission Package
 
 - Page ID: `98598913`
-- URL: `https://ittd.atlassian.net/wiki/spaces/PBF/pages/98598913`
+- URL: `https://ittd.atlassian.net/wiki/spaces/PBF/pages/98598913/Submission+Package`
+- Confluence version: `2026-06-29T21:22:11.630Z`
 
 ## Body
+
+> **Updated post-UAT Jun 2026 — Coach role removed.** See [DR-002 — Drop Nominee Coach role (Post-UAT)](https://ittd.atlassian.net/wiki/spaces/PBF/pages/245989377).
 
 # Submission Package
 
@@ -15,9 +18,9 @@ This page outlines the complete submission package required for the PBF Contract
 
 ## Overview
 
-When you submit your nomination, you will be assigned a **Nominee Coach** who will guide you through the entire process from submission to award. Your coach is your single point of contact for all questions and support.
+When you submit your nomination, the platform runs an **automated completeness and eligibility check**. You can track your status on your nominee dashboard. For questions, use **program support** via the nomination platform help channel (not a volunteer coach).
 
-**Platform:** Nominations are submitted via SurveyMonkey (forms can be embedded in ITTD and PBF websites).
+**Platform:** Nominations are submitted via the award platform (WIX; forms can be embedded on ITTD and PBF websites).
 
 ---
 
@@ -204,8 +207,6 @@ Before submitting, ensure you have:
 - [ ] People Development metric
 - [ ] Code of conduct acknowledgment
 - [ ] Integrity plan
-
-
 - [ ] Client Assessment Form completed and signed by client representative
 - [ ] Client Assessment Form total score and % entered in nomination form
 - [ ] Publication consent accepted
@@ -222,15 +223,15 @@ Before submitting, ensure you have:
     * Expected timeline for review
     * Link to track application status
     
-2. **Nominee Coach Assignment:** A Nominee Coach will be assigned to guide you through the process
-3. **Completeness Check:** Your coach will review your submission for completeness (within 24 hours)
-4. **Status Updates:** You can track your application status: Submitted → Under Review → Eligible/Ineligible → Shortlisted/Not Shortlisted → Finalist/Not Finalist → Winner/Not Winner
+2. **Automated pre-screening:** The platform checks completeness, eligibility, and required attachments (typically within 24 hours of submission)
+3. **Missing items:** If anything is incomplete, the platform flags gaps on your dashboard and **Communications Coordinator** sends a notification listing what's missing and the deadline to fix it
+4. **Status Updates:** Track on your dashboard: Submitted → Under Review → Eligible/Ineligible → Shortlisted/Not Shortlisted → Finalist/Not Finalist → Winner/Not Winner
 
 ---
 
 ## Support
 
-**Questions?** Contact your assigned Nominee Coach or reach out through the nomination platform.
+**Questions?** Use the nomination platform help channel or program support contact — there is no Nominee Coach volunteer for this cycle ([DR-002](https://ittd.atlassian.net/wiki/spaces/PBF/pages/245989377)).
 
 **Related Pages:**
 
@@ -241,4 +242,4 @@ Before submitting, ensure you have:
 
 ---
 
-_This submission package is aligned with the process map. For detailed process steps, see_ [_1.0 Submission and Intake_](https://ittd.atlassian.net/wiki/spaces/PBF/pages/130514945)_._
+_This submission package is aligned with the process map. For detailed process steps, see_ [_1.0 Submission and Intake_](https://ittd.atlassian.net/wiki/spaces/PBF/pages/130514945)_.

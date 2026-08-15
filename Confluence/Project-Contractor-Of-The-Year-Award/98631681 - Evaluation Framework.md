@@ -1,7 +1,8 @@
 # Evaluation Framework
 
 - Page ID: `98631681`
-- URL: `https://ittd.atlassian.net/wiki/spaces/PBF/pages/98631681`
+- URL: `https://ittd.atlassian.net/wiki/spaces/PBF/pages/98631681/Evaluation+Framework`
+- Confluence version: `2025-12-04T16:59:55.316Z`
 
 ## Body
 
@@ -67,8 +68,9 @@ This framework defines the criteria and scoring approach for evaluating PBF Cont
     * Reputational, ethical, and governance consistency across partner networks
     * Geopolitical and environmental resilience in multi-region operations
     
-
     Mitigation measures include contractual controls, audit rights, compliance monitoring, diversification, continuity planning, and crisis coordination mechanisms
+
+
 
 ### 7. People Development
 

@@ -1,6 +1,8 @@
 # RACI - Nominee Coach Model (KISS Approach)
 
-**Principle:** One team member assigned to each nominee at nomination time. This person guides the nominee through the entire process from submission to award.
+> **SUPERSEDED — ARCHIVED for audit only.** Replaced by post-UAT model in [DR-002 — Drop Nominee Coach role (Post-UAT)](https://ittd.atlassian.net/wiki/spaces/PBF/pages/245989377) and [Roles and RACI](https://ittd.atlassian.net/wiki/spaces/PBF/pages/117964816). **Do not use for the live P-CotY 2026 cycle.**
+
+**Principle (historical):** One team member assigned to each nominee at nomination time. This person guides the nominee through the entire process from submission to award.
 
 ---
 

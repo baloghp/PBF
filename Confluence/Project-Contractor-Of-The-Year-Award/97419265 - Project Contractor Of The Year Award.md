@@ -83,6 +83,7 @@ Based on analysis of successful business awards, the following factors distingui
 * [Governance & Jury Protocol (child page)](https://ittd.atlassian.net/wiki/spaces/PBF/pages/97779722)
 * [Process Map](https://ittd.atlassian.net/wiki/spaces/PBF/pages/117866524)
 * [Roles and RACI](https://ittd.atlassian.net/wiki/spaces/PBF/pages/117964816)
+* [Sponsors (WS7)](Sponsors/263553034 - Sponsors.md)
 
 ## Jira linkage
 

@@ -1,0 +1,89 @@
+# DR-002 — Drop Nominee Coach role (Post-UAT)
+
+- Page ID: `245989377`
+- URL: `https://ittd.atlassian.net/wiki/spaces/PBF/pages/245989377/DR-002+Drop+Nominee+Coach+role+Post-UAT`
+- Confluence version: `2026-06-29T21:27:25.108Z`
+
+## Body
+
+**Status:** Accepted    
+**Date:** 2026-06-16 (confirmed at team meeting; proposed 2026-06-12)    
+**Decision owner:** Programme Owner / Project Manager    
+**Affects:** WS2 (recruitment), WS3 (marketing), WS4 (operations), Process Map, Roles and RACI, Submission Package, Comms templates, WIX platform, public website copy
+
+---
+
+## Decision
+
+**Remove the Nominee Coach volunteer role** for the live P-CotY 2026 cycle and beyond.
+
+**Replace intake checking** with an **automated pre-screening agent** (n8n + platform rules) that validates:
+
+* Eligibility rules
+* Submission completeness
+* Required attachments / client assessment linkage
+
+The agent **must not score or judge** nominations. **Human assessors (Stage 1) and the judging panel (Stage 2) remain unchanged.**
+
+**Redistribute former coach duties** as follows:
+
+| Duty | New owner |
+| --- | --- |
+| Completeness / eligibility / attachments | Pre-screening agent (+ platform validation) |
+| Exception handling on intake | Project Manager / Award Operations (WS4) |
+| Assign assessors; track COI recusals; moderation; shortlist | **Project Manager / Award Operations (WS4)** |
+| Nominee notifications (shortlist, feedback, results) | **Communications Coordinator** (templates + send) |
+| Stage 2 scheduling & presentation prep comms | PM + Comms (self-serve guidance on platform; no volunteer coach) |
+| Nominee questions | Program support via nomination platform / PMO inbox |
+
+**Archive** the [Nominee Coach Guide (ARCHIVED)](https://ittd.atlassian.net/wiki/spaces/PBF/pages/130318339) — do not delete (audit trail).
+
+### Operational conventions (aligned across process pages)
+
+* **Missing-item notifications:** Pre-screening agent flags gaps → **Communications Coordinator** sends templated email (platform may update dashboard status in parallel).
+* **Assessor quorum:** **≥2** independent assessors per nomination (minimum); target **3** when volunteer capacity allows.
+* **Comms role title:** **Communications Coordinator** (not "Communications Lead").
+
+---
+
+## Context
+
+* UAT ran with Coach slots on the roster, but **no volunteer adopted the coach role in practice**; the coaching module was never exercised end-to-end.
+* Volunteers are scarce; adding a per-nominee human role created friction without UAT proof of value.
+* Platform + rules can automate deterministic intake checks; **assessment quality must stay human**.
+
+## Evidence & sources
+
+* [Team Meeting — 12.06.2026](https://ittd.atlassian.net/wiki/spaces/PBF/pages/233472001) — proposal to eliminate coach role; AI limited to completeness
+* [Team Meeting — 16.06.2026](https://ittd.atlassian.net/wiki/spaces/PBF/pages/238288897) — confirmed; doc + WIX cleanup assigned
+* [UAT Results Summary](https://ittd.atlassian.net/wiki/spaces/PBF/pages/241434625) — § Process & structural learnings #1 *(vault: Contractor_of_The_Year/UAT/UAT-Results-Summary.md)*
+* [Volunteer Thank-You and UAT Results](https://ittd.atlassian.net/wiki/spaces/PBF/pages/241467393) — volunteer-facing rationale
+
+## Options considered
+
+### Option A — Keep Nominee Coach (REJECTED)
+
+One volunteer coach per nominee from submission through award; personal guidance and operational hub.
+
+**Rejected because:** Untested in UAT; recruitment burden; duplicates what automation + PM ops can cover.
+
+### Option B — Drop Coach; agent + PM ops + Comms (CHOSEN)
+
+Automated pre-screen; PM/Award Operations runs assessor assignment and shortlist; Comms sends notifications.
+
+**Chosen because:** Matches UAT learning; preserves human assessment; reduces volunteer roles to what people actually do (assessor, judge).
+
+## Consequences
+
+* **WS2:** Recruit **Assessors + Judging Panel only** — drop coach recruitment, onboarding, and walkthroughs.
+* **WS4:** Implement/configure pre-screening agent; PM owns assessor assignment, COI/quorum, moderation, shortlist lock.
+* **WS3 / website:** Remove "dedicated Nominee Coach" copy; emphasize platform status dashboard + program support.
+* **WIX:** Remove coach dashboard, diary, assignment features before nominations open.
+* **Docs:** Update RACI, Submission Package, 1.0 Intake, Comms templates; banner affected pages; archive Coach Guide.
+
+## Open follow-ups
+
+- [ ] Configure n8n pre-screening agent scope sign-off (WS4)
+- [ ] Remove coach UI from WIX (Peter)
+- [ ] Update `ittd.space/pbf-pcoty` live site copy
+
