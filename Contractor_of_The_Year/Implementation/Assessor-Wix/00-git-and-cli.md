@@ -3,17 +3,19 @@
 **Gate:** `npx wix login` and `npm run dev` open the Local Editor.  
 **Back:** [Guide](../Assessor-EOI-Wix-Plan.md)
 
-The old method was: edit JS in this vault → paste into the Wix editor. That copy in `Contractor_of_The_Year/Implementation/` is gone. **Live code is `ittdspace/`**, already on GitHub. The PBF vault gitignores `/ittdspace/`, so site commits happen **inside** that folder, not in PBF.
+The old method was: edit JS in this vault → paste into the Wix editor. That copy in `Contractor_of_The_Year/Implementation/` is gone. **Live code is** `ittdspace/`, already on GitHub. The PBF vault gitignores `/ittdspace/`, so site commits happen **inside** that folder, not in PBF.
 
 ## What git holds vs the editor
 
-| In `ittdspace` (git) | Only in Wix (Local Editor / CMS / Programs) |
-| --- | --- |
-| `src/pages/*.js` | Layout, text, images, buttons, tabs |
-| `src/backend/*.web.js` | CMS collections + fields |
-| `src/public/*.js` | Member types / roles |
-| | Wix Forms, menus, slugs, SEO |
-| | Online Programs content |
+
+| In `ittdspace` (git)   | Only in Wix (Local Editor / CMS / Programs) |
+| ---------------------- | ------------------------------------------- |
+| `src/pages/*.js`       | Layout, text, images, buttons, tabs         |
+| `src/backend/*.web.js` | CMS collections + fields                    |
+| `src/public/*.js`      | Member types / roles                        |
+|                        | Wix Forms, menus, slugs, SEO                |
+|                        | Online Programs content                     |
+
 
 You cannot create or rename pages from Cursor. Create/rename in the Local Editor, then **Sync** so the `.js` filename updates. Do not rename page files in the IDE — Wix ignores the file and creates a stub.
 
@@ -21,20 +23,20 @@ You cannot create or rename pages from Cursor. Create/rename in the Local Editor
 
 ```bash
 cd /run/media/peter/WorkGames/Vaults/PBF/ittdspace
-npx wix login          # if `wix dev` fails (11 Aug: FailedToGetAuthToken)
+npx wix login          # only if `wix whoami` says not authenticated
 npm run dev            # Local Editor in the browser
 ```
 
 1. Code in Cursor under `ittdspace/src/…` — Local Editor hot-reloads it.
 2. Copy, layout, forms, CMS, Programs in the **Local Editor** / dashboard.
 3. Local Editor → **Sync** design changes into the repo.
-4. Commit and push **`main`** (the branch Wix tracks):
+4. Commit and push `main` (the branch Wix tracks):
 
 ```bash
 git add -A && git commit -m "…" && git push origin main
 ```
 
-5. Preview: `npx wix preview` · Live: `npx wix publish` (or Publish in Local Editor).
+1. Preview: `npx wix preview` · Live: `npx wix publish` (or Publish in Local Editor).
 
 Pushing `main` updates the site’s **code**. It does not publish the live site by itself.
 
@@ -49,6 +51,6 @@ Official: [Set up Git + CLI](https://dev.wix.com/docs/develop-websites/articles/
 
 ## Done when
 
-- [ ] `npm run dev` opens Local Editor
-- [ ] A trivial comment in a page file hot-reloads
-- [ ] `git status` in `ittdspace/` is clean after a test commit on a throwaway change (or discarded)
+- [x] `npm run dev` opens Local Editor
+- [x] A trivial comment in a page file hot-reloads
+- [x] `git status` in `ittdspace/` is clean after a test commit on a throwaway change (or discarded)

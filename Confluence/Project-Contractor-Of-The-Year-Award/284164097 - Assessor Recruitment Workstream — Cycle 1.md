@@ -40,8 +40,8 @@ Until 15 Aug: personal LinkedIn + tracker only. From 15 Aug: send warm contacts 
 
 | # | Oliver confirmation | Status |
 | --- | --- | --- |
-| O1 | Assessor credential on [cert.project-business.org](http://cert.project-business.org) | 🔴 |
-| O2 | Free/discounted PBP for completing assessors | 🔴 |
+| O1 | Assessor credential on [cert.project-business.org](http://cert.project-business.org) | 🟢 confirmed |
+| O2 | Free/discounted PBP for completing assessors | 🟢 confirmed |
 | O3 | Calibration via Events + Foundation Workshop access | 🔴 |
 | O4 | PBP registry / news blast | 🔴 |
 | O5 | PDU claim framing (org name on CCRS) | 🟡 |

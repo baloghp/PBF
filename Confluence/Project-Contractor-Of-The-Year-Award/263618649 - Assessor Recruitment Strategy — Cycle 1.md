@@ -44,9 +44,9 @@ UAT pool of 7: priority invite, same gate.
 
 ## Offer
 
-**Safe pitch (now):** ~6–8 h · remote · training · recognition / named visibility · case exposure · PMI Giving Back PDUs (6–8; claim text later).
+**Pitch (now, O1 + O2 confirmed):** ~6–8 h · remote · training · recognition / named visibility · case exposure · PMI Giving Back PDUs (6–8; claim text later) · verifiable assessor credential on cert.project-business.org · discounted PBP for completing assessors.
 
-**Full pitch (after Oliver OKs — see hub O1–O5):** + verifiable assessor credential · free/discounted PBP · calibration masterclass / Foundation Workshop access.
+**Still gated (see hub O3–O5):** calibration masterclass / Foundation Workshop access · PBP registry blast · final PDU claim framing.
 
 **Never promise:** payment · guaranteed Stage 2 judge seat · unconfirmed discounts.
 
@@ -84,7 +84,7 @@ Warm personal **now**. Public / mass only after hub go/no-go.
 
 ## EOI form fields (persona signals)
 
-Credential (+ #) · years / seniority · industry · why interested · how heard · calibration availability. (COI at assignment time — see [Platform Spec](284196865 - Stage 1 Assessor Platform Spec.md).)
+EOI fields (Wix `Assessors`): givenName · familyName · email · linkedin · credentialPmp · credentialPbp · pbpCandidateNumber · credlyBadgeUrl · pmiId · pipelineStatus · verifiedBy. (COI at assignment time — see [Platform Spec](284196865 - Stage 1 Assessor Platform Spec.md).)
 
 ---
 
