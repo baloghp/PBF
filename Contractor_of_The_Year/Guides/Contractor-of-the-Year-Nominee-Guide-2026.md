@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="../../Marketing/logo/Logo_transparent.png" alt="Project Contractor of the Year Award" width="160">
-</p>
+
 
 # Contractor of the Year Nominee Guide
 
@@ -18,6 +16,7 @@ Nominations open **1 September 2026** and close **31 October 2026**. The custome
 
 - [Introduction](#introduction)
 - [Eligibility](#eligibility)
+- [Integrity of the nominated work](#integrity-of-the-nominated-work)
 - [How the cycle works](#how-the-cycle-works)
 - [Submission process](#submission-process)
 - [Required narrative components](#required-narrative-components)
@@ -45,8 +44,19 @@ You can save a draft and return to it until you submit. Word counts below are **
 - **Timing:** completed in 2024-2025, or still running at nomination.
 - **Two-actor requirement:** a client representative must complete the customer evaluation. Without that form, the nomination is incomplete.
 - **Publication:** you accept publication of a short case profile if you are a winner or top-3 finalist.
+- **Integrity of the nominated work:** see below. This is an intake gate, not a score.
 
 Categories are assigned at intake from **headcount on customer projects** (not internal work or admin): Small 1-25, Medium 26-100, Large 101+. Shortlisting is per category.
+
+### Integrity of the nominated work
+
+**The award is for contracted delivery the profession can stand behind in public.** Do not nominate a project whose contracted purpose is weapons, combat operations, targeting, or other means of armed violence, or whose intended result may cause harm to civilians.
+
+- **Ineligible:** If the deliverable itself is a weapon system, munitions, combat or targeting capability, or work whose point is to enable violence or harm against civilians.
+- **Eligible:** civilian work, including for a defence or public-security client, when the deliverable is aid and recovery in a conflict-affected setting remain eligible.
+- **Unsure:** say so under Integrity in the project narrative. Intake decides. Assessors do not score this, and a defence client on the firm's books does not make the nomination fair game for attack.
+
+If the project is ineligible on this rule, do not submit it. There is no appeal into Stage 1.
 
 ---
 
@@ -84,7 +94,7 @@ Upload as a file. Cover:
 - **Outcomes.** How did results compare to that baseline?
 - **Governance.** Interface management and project oversight.
 - **Commercials.** Contract model, liquidity, and risk handling.
-- **Integrity.** Controls and ethical safeguards.
+- **Integrity.** Controls and ethical safeguards. If the project sits near defence, security, or a conflict-affected setting, state the contracted purpose plainly so intake can apply the eligibility rule.
 
 ### 2. What makes this exemplary? (up to 500 words)
 
@@ -166,6 +176,7 @@ Minimise personal data. GDPR applies to personal data, not company or project fa
 - [ ] Customer representative details entered (correct work email)
 - [ ] Customer warned that the evaluation email is coming
 - [ ] Publication consent accepted
+- [ ] Nominated project is not excluded under Integrity of the nominated work
 - [ ] Personal data minimised in every file
 
 ---
