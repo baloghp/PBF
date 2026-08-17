@@ -16,10 +16,10 @@ This framework defines the criteria and scoring approach for evaluating PBF Cont
 
 ## Scoring Scale and Aggregation
 
-* 0–5 scale per criterion
+* 1–10 scale per criterion (portal sliders: min 1, max 10, step 1)
 * Weights on 0–100 basis
 * Minimum two independent reviews per nomination
-* Moderated average calculated
+* Moderated average calculated (moderate when assessors differ by more than 4 points on a criterion)
 * Inter-rater reliability tracked
 
 ---
@@ -101,7 +101,7 @@ Evaluates:
 * **4:** Very Good – Significant innovation, industry-relevant, active knowledge sharing, replicable practices
 * **5:** Excellent – Groundbreaking approach, advances the profession, extensive knowledge sharing, highly replicable, case study worthy
 
-**Note:** Winners should typically score 4-5 on this criterion, demonstrating they did something uniquely valuable that others can learn from.
+**Note:** Winners should typically score 8-10 on this criterion, demonstrating they did something uniquely valuable that others can learn from.
 
 ---
 

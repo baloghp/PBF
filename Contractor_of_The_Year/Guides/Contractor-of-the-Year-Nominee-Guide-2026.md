@@ -54,7 +54,7 @@ Categories are assigned at intake from **headcount on customer projects** (not i
 
 1. **Submit** on the platform. Save as draft until you are ready.
 2. **Intake.** An automated check reviews eligibility, completeness, and attachments, usually within about a day. Missing items are flagged on your dashboard. Program support sends a templated note if something is still outstanding.
-3. **Stage 1.** At least two independent assessors score the packet on nine criteria (0-5).
+3. **Stage 1.** At least two independent assessors score the packet on nine criteria (1-10).
 4. **Stage 2.** If shortlisted, you present to the judging panel: 20 minutes plus 15 minutes of questions.
 5. **Award.** Winners and finalists are notified through the platform and program communications.
 

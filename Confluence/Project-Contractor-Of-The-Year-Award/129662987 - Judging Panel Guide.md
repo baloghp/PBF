@@ -12,7 +12,7 @@
 This guide covers Stage 2 judging expectations:
 
 * Attend finalist presentations and Q&A
-* Score all 9 criteria independently (0–5)
+* Score all 9 criteria independently (1–10)
 * Focus strongly on Criterion 9: Innovation & Industry Advancement
 * Participate in outlier moderation and final deliberation
 

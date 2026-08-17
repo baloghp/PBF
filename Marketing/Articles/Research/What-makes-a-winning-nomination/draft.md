@@ -66,5 +66,5 @@ If a name is already in your head, put it forward. Someone who told you the trut
 - Construction skew is now acknowledged in the intro rather than hidden.
 - "Okay. Easy, right?" removed — it's a verbatim example in the voice guide, which says use the style, don't quote the examples.
 - Feed cut (~220w): meeting + "who do we keep", nine names and questions only, then "the award doesn't exist for this meeting. It helps."
-- Do not publish the 0–5 scale or weights if asked in comments — stay at the questions.
+- Do not publish the weights if asked in comments — stay at the questions. Assessors score each criterion **1–10** on the portal (not a 0–5 scale).
 

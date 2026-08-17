@@ -14,10 +14,12 @@ Leave CMS `coachAssignedId` in place; **stop writing it**.
 Finish **Page A** completely (including publish or a clean Local Editor gate) before starting **Page B**.  
 On each page: do not ask Cursor for code until that page's **pre-code checklist** is fully ticked.
 
-| Page | What | Order |
-| --- | --- | --- |
-| **A** | Assessor portal (redo Coach Dashboard) | Prep → emails (if any) → checklist → code → test → publish |
-| **B** | Admin Dashboard (no coach + verify/activate) | Same pattern |
+
+| Page  | What                                         | Order                                                      |
+| ----- | -------------------------------------------- | ---------------------------------------------------------- |
+| **A** | Assessor portal (redo Coach Dashboard)       | Prep → emails (if any) → checklist → code → test → publish |
+| **B** | Admin Dashboard (no coach + verify/activate) | Same pattern                                               |
+
 
 ```mermaid
 flowchart LR
@@ -25,7 +27,11 @@ flowchart LR
   A5 --> B1[B prep] --> B2[B checklist] --> B3[B code] --> B4[B test] --> B5[B publish]
 ```
 
+
+
 ---
+
+
 
 # Page A — Assessor portal
 
@@ -34,6 +40,8 @@ flowchart LR
 **Page file (after Sync):** still `src/pages/Coach Dashboard.b7c5p.js` until/unless Wix renames the file on Sync — do not rename the `.js` in git by hand first.
 
 ---
+
+
 
 ## A1 — Prep (Local Editor + related pages)
 
@@ -44,34 +52,44 @@ Do this in Local Editor (`npm run dev`). Sync when the UI is right.
 1. Open **Coach Dashboard**.
 2. Rename page title to **Assessor Dashboard** (editor rename only).
 3. **Hide or delete** coach UI:
-   - `#boxCoachView`, `#coachTable`, `#searchCoach`
-   - Coach Diary tab and `#coachDiaryRichText`, `#saveDiaryBtn`, `#cbCOI`, `#dropdownCategory`
+  - `#boxCoachView`, `#coachTable`, `#searchCoach`
+  - Coach Diary tab and `#coachDiaryRichText`, `#saveDiaryBtn`, `#cbCOI`, `#dropdownCategory`
 4. **Keep:**
-   - `#assessorTable`, `#searchAssessor`
-   - Nomination tabs: packet + customers + assessment
-   - `#boxAssessmentContent`, scoring sliders, draft/submit
+  - `#assessorTable`, `#searchAssessor`
+  - Nomination tabs: packet + customers + assessment
+  - `#boxAssessmentContent`, scoring sliders, draft/submit
 5. Check mobile layout for the assessor table + assessment panel.
 6. **Sync** design into `ittdspace`.
+
+
 
 ### A1.2 Empty Assessor Dashboard page
 
 - Unpublish (or remove from menus) the empty **Assessor Dashboard** page so there is only **one** portal URL.
+
+
 
 ### A1.3 Homepage
 
 - Relabel `#btnCoach` to **Assessor** (button text in Local Editor).
 - Note for Cursor: show this button **only** for Assessor role (code change in Step A4).
 
+
+
 ### A1.4 Nominee Dashboard
 
 - Hide or delete `#coachText` / any "your coach" label in Local Editor if present.
 - Cursor will also strip `coachNameDisplay` in code.
+
+
 
 ### A1.5 CMS
 
 - **No new CMS fields** for Page A.
 - Confirm `Nominations.assessors[]` and live assessment storage still work as today.
 - Do **not** delete `coachAssignedId`.
+
+
 
 ### A1.6 Emails for Page A
 
@@ -81,36 +99,42 @@ Do this in Local Editor (`npm run dev`). Sync when the UI is right.
 
 ---
 
+
+
 ## A2 — Pre-code checklist (Page A gate)
 
 Tick all before asking Cursor for Page A code.
 
-- [ ] Coach Dashboard renamed to Assessor Dashboard in Local Editor
-- [ ] Coach table / diary / coach-only controls hidden or deleted
-- [ ] Assessor table + packet + customers + assessment still visible
-- [ ] Empty Assessor Dashboard unpublished / not linked
-- [ ] Homepage button label says Assessor
-- [ ] Nominee "your coach" UI hidden or noted for code
-- [ ] Local Editor **Synced** to `ittdspace`
-- [ ] Mobile check on portal page done
+- [x] Coach Dashboard renamed to Assessor Dashboard in Local Editor
+- [x] Coach table / diary / coach-only controls hidden or deleted
+- [x] Assessor table + packet + customers + assessment still visible
+- [x] Empty Assessor Dashboard unpublished / not linked
+- [x] Homepage button label says Assessor
+- [x] Nominee "your coach" UI hidden or noted for code
+- [x] Local Editor **Synced** to `ittdspace`
+- [x] Mobile check on portal page done
 
 **When all ticked:** ask Cursor to implement **Step A3**.
 
 ---
 
+
+
 ## A3 — Code (Cursor; only after A2)
 
 Strip coach; keep assessor scoring.
 
-| File | Change |
-| --- | --- |
-| `pages/Coach Dashboard.b7c5p.js` | Assessor-only; drop coach table, diary, `currentRoleView === 'COACH'` |
-| `backend/coach.web.js` | Keep `getAssessorNominations` + customer fetch; delete diary / coach COI / coach-gated rollup |
-| `public/coachDiaryPanel.js`, `public/diaryTemplate.js` | Delete |
-| `pages/Contractor Of The Year Award.z9t1g.js` | `#btnCoach` only for Assessor |
-| `pages/Nominee Dashboard.myj3i.js` + `backend/nomination.web.js` | Remove coach display |
-| `backend/multiRole.web.js` | Drop `Coaches` query and `"Nominee Coach"` |
-| `public/cycleConfig.js` | Remove `'Nominee Coach'` from `STAFF_ROLES` |
+
+| File                                                             | Change                                                                                        |
+| ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `pages/Coach Dashboard.b7c5p.js`                                 | Assessor-only; drop coach table, diary, `currentRoleView === 'COACH'`                         |
+| `backend/coach.web.js`                                           | Keep `getAssessorNominations` + customer fetch; delete diary / coach COI / coach-gated rollup |
+| `public/coachDiaryPanel.js`, `public/diaryTemplate.js`           | Delete                                                                                        |
+| `pages/Contractor Of The Year Award.z9t1g.js`                    | `#btnCoach` only for Assessor                                                                 |
+| `pages/Nominee Dashboard.myj3i.js` + `backend/nomination.web.js` | Remove coach display                                                                          |
+| `backend/multiRole.web.js`                                       | Drop `Coaches` query and `"Nominee Coach"`                                                    |
+| `public/cycleConfig.js`                                          | Remove `'Nominee Coach'` from `STAFF_ROLES`                                                   |
+
 
 Optional later rename: `coach.web.js` → `assessor.web.js` (can be a follow-up commit).
 
@@ -118,35 +142,49 @@ Do **not** rebuild the assessment form. Do **not** implement Admin EOI queue her
 
 ---
 
+
+
 ## A4 — Verify and test (Page A)
+
+
 
 ### A4.1 Smoke
 
-- [ ] Portal loads for a test Assessor member without console errors
-- [ ] No coach table / diary visible
-- [ ] Homepage shows Assessor (not Coach) for Assessor role; hidden for pure nominees
-- [ ] Nominee dashboard has no "your coach"
+- [x] Portal loads for a test Assessor member without console errors
+- [x] No coach table / diary visible
+- [x] Homepage shows Assessor (not Coach) for Assessor role; hidden for pure nominees
+- [x] Nominee dashboard has no "your coach"
+
+
 
 ### A4.2 Scenarios
 
-| # | Scenario | Steps | Pass when |
-| --- | --- | --- | --- |
-| A-T1 | Assessor sees assignments | Log in as test assessor with ≥1 nom in `assessors[]` | Rows in `#assessorTable` |
-| A-T2 | Packet read-only | Open a nomination | Packet + customers visible; no nominee edit controls |
-| A-T3 | Draft + submit | Score, save draft, submit | Draft persists; submit locks as today |
-| A-T4 | No coach path | Attempt any former coach-only control | Gone or inert |
-| A-T5 | Role gate | Log in without Assessor role | No Assessor homepage button / no portal access as designed |
-| A-T6 | Mobile | Repeat A-T1–A-T3 on narrow width | Usable |
+
+| #             | Scenario                  | Steps                                                | Pass when                                                  |
+| ------------- | ------------------------- | ---------------------------------------------------- | ---------------------------------------------------------- |
+| A-T1 - Passed | Assessor sees assignments | Log in as test assessor with ≥1 nom in `assessors[]` | Rows in `#assessorTable`                                   |
+| A-T2 - Passed | Packet read-only          | Open a nomination                                    | Packet + customers visible; no nominee edit controls       |
+| A-T3 - Passed | Draft + submit            | Score, save draft, submit                            | Draft persists; submit locks as today                      |
+| A-T4 - Passed | No coach path             | Attempt any former coach-only control                | Gone or inert                                              |
+| A-T5 - Passed | Role gate                 | Log in without Assessor role                         | No Assessor homepage button / no portal access as designed |
+| A-T6          | Desktop-only gate         | Open any dashboard on phone/tablet                   | Redirects to `/DesktopOnly`                                |
+
+
+
 
 ### A4.3 Failures
 
-| Symptom | Check |
-| --- | --- |
-| Empty table | `userId` on Assessors vs `Nominations.assessors[]`; `getAssessorNominations` |
-| Coach UI still shows | Local Editor leftover elements; page code still toggling COACH |
-| Wrong homepage button | `multiRole` / `Contractor Of The Year Award` role checks |
+
+| Symptom               | Check                                                                        |
+| --------------------- | ---------------------------------------------------------------------------- |
+| Empty table           | `userId` on Assessors vs `Nominations.assessors[]`; `getAssessorNominations` |
+| Coach UI still shows  | Local Editor leftover elements; page code still toggling COACH               |
+| Wrong homepage button | `multiRole` / `Contractor Of The Year Award` role checks                     |
+
 
 ---
+
+
 
 ## A5 — Publish (Page A)
 
@@ -159,174 +197,384 @@ Do **not** rebuild the assessment form. Do **not** implement Admin EOI queue her
 
 ---
 
+
+
 # Page B — Admin Dashboard
 
-**Goal:** Admin has no coach tools. Admin can review Phase 1 EOI rows on `Assessors`, set Waitlist/Declined/Active, set `verifiedBy`, and link `userId` (member invite or existing member). Assignment UI assigns **assessors only**.
+**Goal:** Admin has **two sections only**: (1) Assessors EOI master–detail — Activate (verifier + member invite) or Reject; (2) Nomination assignment — assign **Active** assessors only (no coach).
+
+The old **Role assignment** block (member search → Add Coach / Add Assessor → staff tables) is **removed**. Assessors enter via Phase 1 EOI; Admin activates them here (creates/links member + stores verifier) before they can be assigned to nominations.
 
 **Page file:** `src/pages/Admin Dashboard.nufxl.js` (confirm name after Sync).
 
 ---
 
+
+
 ## B1 — Prep (Local Editor + CMS + emails)
 
-### B1.1 Remove coach from Admin UI
 
-1. Hide/delete Coaches table, `#searchCoaches`, `#addCoachBtn`, `#deleteCoachBtn`.
-2. On Assignments: hide/delete `#coachDropdown` and any coach column/labels.
-3. Keep: member search, Add Assessor (existing-member path), Assessors staff table if still useful, nomination assign for assessors.
-4. Sync when layout is clean.
 
-### B1.2 CMS
+### B1.1 Screen model (two sections)
+
+```
+┌──────────────────────────────────────────────────────────────────────────┐
+│ ADMIN DASHBOARD                                                          │
+├──────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│ ═══ 1. ASSESSORS (EOI pipeline) ═══════════════════════════════════════ │
+│                                                                          │
+│  ┌─ LIST ──────────────────┐  ┌─ DETAIL #boxEoiDetail ────────────────┐ │
+│  │ #searchEoiAssessors     │  │ (collapsed until row selected)        │ │
+│  │                         │  │                                      │ │
+│  │ #eoiAssessorsTable      │  │ #textEoiGivenName  #textEoiFamilyName│ │
+│  │  Name | Email | Status  │  │ #textEoiEmail                        │ │
+│  │                         │  │ #btnEoiLinkedin                      │ │
+│  │ #introEoiSelect         │  │                                      │ │
+│  │ “Select an applicant”   │  │ Credentials (read-only)              │ │
+│  │ (when nothing selected) │  │  #cbEoiPmp  #cbEoiPbp (disabled)     │ │
+│  └─────────────────────────┘  │  #textPBPCredentialNumber            │ │
+│                               │  #btnEoiCredly  #textEoiPmiId        │ │
+│                               │                                      │ │
+│                               │ Seat                                 │ │
+│                               │  #textEoiStatus                      │ │
+│                               │  #textEoiCalibrationStatus           │ │
+│                               │                                      │ │
+│                               │  #btnEoiActivate  #btnEoiReject      │ │
+│                               └──────────────────────────────────────┘ │
+│                                                                          │
+│ ═══ 2. NOMINATION ASSIGNMENTS ═════════════════════════════════════════ │
+│                                                                          │
+│  #searchNominations                                                      │
+│  #nominationsTable                                                       │
+│                                                                          │
+│  #assignmentBox (collapsed until nomination row selected)                │
+│    #detailProjectName  #detailCompany  #detailNominee                    │
+│    #assessorTags          ← options = Active assessors with userId only  │
+│    #saveAssignmentsBtn                                                   │
+│    (NO #coachDropdown)                                                   │
+│                                                                          │
+│  (KPIs / custom elements below can stay as they are)                     │
+└──────────────────────────────────────────────────────────────────────────┘
+```
+
+```mermaid
+flowchart TB
+  subgraph S1[Section 1 — Assessors EOI]
+    Search["#searchEoiAssessors"]
+    Table["#eoiAssessorsTable\nName · Email · Status"]
+    Intro["#introEoiSelect"]
+    Detail["#boxEoiDetail\nActivate / Reject"]
+    Search --> Table
+    Table -->|row select| Detail
+    Table -.->|none selected| Intro
+  end
+
+  subgraph S2[Section 2 — Nomination assign]
+    NomSearch["#searchNominations"]
+    NomTable["#nominationsTable"]
+    Box["#assignmentBox\n#assessorTags + #saveAssignmentsBtn"]
+    NomSearch --> NomTable
+    NomTable -->|row select| Box
+  end
+
+  S1 -->|"only Active + userId"| S2
+```
+
+
+
+**Product rule:** **Activate** does seat intake: credential accepted → `verifiedBy` + `Active` → create/link site member (`userId`) → `calibrationStatus = Not started` (if empty) → send activation email. **Calibration is tracked only** (`#textEoiCalibrationStatus`) — it does **not** block assignment or scoring. Section 2 `#assessorTags` = `Active` + `userId`. **Reject** ends the pipeline (`Declined`). No Waitlist on this screen.
+
+### B1.2 Remove old Role + coach UI
+
+Delete or hide in Local Editor:
+
+
+| Remove                    | IDs                                                                            |
+| ------------------------- | ------------------------------------------------------------------------------ |
+| Coach staff               | `#addCoachBtn`, `#searchCoaches`, `#coachesTable`, `#deleteCoachBtn`           |
+| Coach on assignments      | `#coachDropdown` (+ any coach labels)                                          |
+| Old Role → Assessor staff | `#assessorsTable`, `#searchAssessors`, `#addAssessorBtn`, `#deleteAssessorBtn` |
+| Old member → role triad   | `#memberSearchInput`, `#searchMembersBtn`, `#memberSearchResultsTable`         |
+
+
+**Keep for Section 2:** `#searchNominations`, `#nominationsTable`, `#assignmentBox`, `#detailProjectName`, `#detailCompany`, `#detailNominee`, `#assessorTags`, `#saveAssignmentsBtn`.
+
+### B1.3 CMS
 
 - **No new collection.** Reuse `Assessors` from Phase 1.
 - Confirm fields exist: `pipelineStatus`, `verifiedBy`, `userId`, evidence fields (`givenName`, `familyName`, `linkedin`, `credentialPmp`, `credentialPbp`, `pbpCandidateNumber`, `credlyBadgeUrl`, `pmiId`, `title_fld`, `email`).
-- Optional: add CMS choices/list for `pipelineStatus` values `New` / `Waitlist` / `Declined` / `Active` if that helps Admin (not required for code).
-- Do **not** delete `coachAssignedId` or `Coaches` collection mid-cycle (code simply stops using them).
+- **Add now (if missing) for Page B UI + Phase 3:** `calibrationStatus` (text) — values: `Not started` / `In progress` / `Passed` / `Failed` (same as [03-calibration.md](03-calibration.md)).
+- Optional later (Phase 3): `calibrationMode`, `calibrationAt`, `calibrationScores`, `theoryStatus`.
+- `pipelineStatus` on this screen: `New` / `Active` / `Declined` (`Waitlist` may remain unused).
+- Do **not** delete `coachAssignedId` or `Coaches` collection mid-cycle (code stops using them).
 
-### B1.3 New Admin UI — EOI / pipeline panel
 
-Build in Local Editor on Admin Dashboard (IDs locked for Cursor):
 
-| Control | ID | Notes |
-| --- | --- | --- |
-| Pipeline table | `#eoiAssessorsTable` | Columns: title, email, pipelineStatus, PMP, PBP, Credential Number, Credly URL, LinkedIn, userId, verifiedBy |
-| Search | `#searchEoiAssessors` | Filter name/email/status |
-| Activate | `#btnEoiActivate` | Active + verifiedBy + ensure userId |
-| Waitlist | `#btnEoiWaitlist` | pipelineStatus = Waitlist |
-| Decline | `#btnEoiDecline` | pipelineStatus = Declined |
-| Link member (optional) | `#btnEoiLinkMember` | If you keep member search: attach selected member `_id` to row `userId` without second Assessors insert |
-| Status / error text | `#textEoiAdminStatus` | Collapsed by default |
+### B1.4 Section 1 — EOI master–detail (build in Editor)
 
-**Activate rules (product)**
+On load / no selection: show `#introEoiSelect`, collapse `#boxEoiDetail`.  
+On row select: collapse intro, expand detail, fill fields, enable action buttons.  
+Evidence is **read-only** — Admin reviews offline; does not edit EOI fields here.
 
-1. Admin checked credential offline (PBP registry / Credly).
-2. `verifiedBy` = current admin display name (or typed once).
-3. `pipelineStatus = Active`.
-4. If `userId` empty: send **Wix member invite (B1)** to their email, then link `userId` when they exist — or link an existing member from search onto **this** row (never insert a duplicate `Assessors` row for the same email).
+#### Locked element IDs — list
 
-Seat flow:
+
+| Control      | ID                    | Notes                                                                                                                                             |
+| ------------ | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Search       | `#searchEoiAssessors` | Filter name / email / status                                                                                                                      |
+| Table        | `#eoiAssessorsTable`  | Manage Table field keys (must match CMS / row objects): **Name** → `title_fld`, **Email** → `email`, **Status** → `pipelineStatus` (not `status`) |
+| Empty prompt | `#introEoiSelect`     | e.g. “Select an applicant in the list”                                                                                                            |
+
+
+
+
+#### Locked element IDs — detail
+
+
+| Control               | ID                          | CMS / notes                                                                 |
+| --------------------- | --------------------------- | --------------------------------------------------------------------------- |
+| Detail box            | `#boxEoiDetail`             | Collapsed until row selected                                                |
+| Given name            | `#textEoiGivenName`         | `givenName`                                                                 |
+| Family name           | `#textEoiFamilyName`        | `familyName`                                                                |
+| Email                 | `#textEoiEmail`             | `email`                                                                     |
+| LinkedIn              | `#btnEoiLinkedin`           | Button; `.link` = `linkedin`                                                |
+| PMP                   | `#cbEoiPmp`                 | Disabled checkbox; `credentialPmp`                                          |
+| PBP                   | `#cbEoiPbp`                 | Disabled checkbox; `credentialPbp`                                          |
+| PBP Credential Number | `#textPBPCredentialNumber`  | `pbpCandidateNumber`                                                        |
+| Credly                | `#btnEoiCredly`             | Button; `.link` = `credlyBadgeUrl`                                          |
+| PMI ID                | `#textEoiPmiId`             | `pmiId`                                                                     |
+| Status                | `#textEoiStatus`            | Read-only `pipelineStatus` (New / Active / Declined)                        |
+| Calibration           | `#textEoiCalibrationStatus` | Read-only `calibrationStatus` (Not started / In progress / Passed / Failed) |
+| Activate              | `#btnEoiActivate`           | Active + verifier + member create/link + calibration Not started + email    |
+| Reject                | `#btnEoiReject`             | `pipelineStatus=Declined` + decline email                                   |
+
+
+**Not on this screen:** `#textEoiTitle`, `#textEoiUserId`, `#textEoiVerifiedBy`, `#textEoiAdminStatus`, `#btnEoiMakeMember`, Waitlist.
+
+#### Seat / calibration display
+
+
+| ID                          | CMS                 | Purpose                                                                                        |
+| --------------------------- | ------------------- | ---------------------------------------------------------------------------------------------- |
+| `#textEoiStatus`            | `pipelineStatus`    | Seat intake: New vs Active vs Declined                                                         |
+| `#textEoiCalibrationStatus` | `calibrationStatus` | Tracking only (Not started → … → Passed/Failed). Does **not** gate scoring or `#assessorTags`. |
+
+
+`userId` and `verifiedBy` stay in **CMS** (set on Activate) but are **not** shown on the Admin UI. Errors / success use the **Alert** lightbox.
+
+#### Two actions (product)
+
+
+| Button                         | Does                                                                                                                                                                                                                                                                                                                         |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Activate** `#btnEoiActivate` | Credential OK. Set `pipelineStatus=Active`, `verifiedBy` = logged-in admin display name. Find-or-create **site member** for row `email`, set `userId`. Set `calibrationStatus = Not started` if empty. Send `assessorSeatActivated` (activated + invite/set-password; calibration available later but optional for scoring). |
+| **Reject** `#btnEoiReject`     | Set `pipelineStatus=Declined`; send `assessorSeatDeclined`. Do **not** create a member.                                                                                                                                                                                                                                      |
+
 
 ```mermaid
 flowchart LR
-  New[New] --> Review[Admin reviews evidence]
-  Review --> Active[Active + verifiedBy]
-  Review --> Waitlist[Waitlist]
-  Review --> Declined[Declined]
-  Active --> Invite[B1 Wix invite if needed]
-  Invite --> UserId[userId set]
+  New[New EOI / Contact] --> Activate[Activate]
+  Activate --> Active[Active + verifiedBy + userId]
+  Activate --> Cal[calibrationStatus Not started]
+  Activate --> Email[assessorSeatActivated email]
+  Activate --> Invite[Member invite / set-password]
+  New --> Reject[Reject / Declined]
+  Active --> Tags[Appears in #assessorTags — can score]
+  Cal -.->|tracked only| Phase3[Phase 3 updates status]
 ```
 
-### B1.4 Emails (create before Page B code)
+
+
+
+
+#### Activate — member create/link (inside the same click)
+
+Phase 1 created a **Contact**. Activate turns them into (or links) a **Member**:
+
+1. Look up member by `loginEmail` = row `email`. If found → set `userId`.
+2. If not found → register/invite via Members backend (e.g. register + `sendSetPasswordEmail`) → set `userId`.
+3. Persist Active + `verifiedBy`; set `calibrationStatus = Not started` if empty; then send `assessorSeatActivated` (activation + invite/set-password; mention calibration as recommended tracking, not a scoring lock).
+4. Fallback: if invite API fails, still set Active + `verifiedBy` if desired, and show an **Alert** telling Admin to finish invite in **Wix Dashboard → Members**, then re-open the row to confirm `userId` linked (or a small “Refresh member link” later — not required for B1).
+
+
+
+### B1.5 Emails (create before Page B code)
 
 Use **Developer Tools → Triggered Emails** (same as Phase 1: **+ Add Variable**, not Contact-only Personalize).
 
-| Email ID (lock) | When | Audience | Subject |
-| --- | --- | --- | --- |
-| `assessorSeatActivated` | Admin clicks Activate | Applicant | You are accepted as a PCotY Stage 1 assessor candidate |
-| `assessorSeatWaitlist` | Admin clicks Waitlist | Applicant | PCotY assessor application — waitlist |
-| `assessorSeatDeclined` | Admin clicks Decline | Applicant | PCotY assessor application — not this cycle |
 
-**B1 (login invite)** = Wix Members invite UI / flow — not one of these three templates.  
-**C1–C5** (assignment / reminders / submit / COI) = **after** Page B assign path works; not a Page B coding gate unless you explicitly expand scope.
+| Email ID (lock)         | When                  | Audience  | Subject                                       |
+| ----------------------- | --------------------- | --------- | --------------------------------------------- |
+| `assessorSeatActivated` | Admin clicks Activate | Applicant | You are activated as a PCotY Stage 1 assessor |
+| `assessorSeatDeclined`  | Admin clicks Reject   | Applicant | PCotY assessor application — not this cycle   |
 
-#### `assessorSeatActivated` variables
 
-`givenName`, `familyName`, `titleFld`, `SITE_URL`
+**Waitlist** email = deferred. **C1–C5** = after assign path works.
 
-Must say: accepted pending calibration/account steps; if no login yet they will get a Wix invite; seat/calibration details come next; plain ASCII.
-
-#### `assessorSeatWaitlist` / `assessorSeatDeclined` variables
-
-`givenName`, `familyName`, `titleFld`, `SITE_URL`
-
-Must say: waitlist vs not this cycle; no false hope; thank you.
+**Fallbacks:** `givenName` → `there`; `SITE_URL` → `https://www.ittd.space` (or your live award URL).
 
 Write Email IDs here if Wix assigns UUIDs instead: __________________
 
-### B1.5 Sync
+#### `assessorSeatActivated`
 
-Local Editor **Sync** after coach UI removed and EOI panel elements exist.
+**Variables:** `givenName`, `familyName`, `SITE_URL`
+
+**Must say:** activated; separate Wix invite / set-password may follow; how to log in; Assessor portal; calibration may come later but is not a blocker to scoring; plain ASCII.
+
+```
+Hi {{givenName}},
+
+You have been activated as a Stage 1 assessor for the Project Contractor of the Year Award.
+
+If you do not already have a login for our site, you will receive a separate Wix email to set your password or accept the member invitation. Use that email first, then sign in.
+
+After you can log in, open the Assessor dashboard from the award site to see nominations assigned to you and submit scores when scoring is open.
+
+We may also ask you to complete a short calibration exercise so the panel marks to a shared standard. That helps consistency. It is tracked for the programme; it does not block you from scoring once you are assigned.
+
+If the invite email does not arrive within a day, check spam or contact the organisers.
+
+PCotY organisers
+{{SITE_URL}}
+```
+
+
+
+#### `assessorSeatDeclined`
+
+**Variables:** `givenName`, `familyName`, `SITE_URL`
+
+**Must say:** not this cycle; thank you; no false hope; plain ASCII.
+
+```
+Hi {{givenName}},
+
+Thank you for applying to be a Stage 1 assessor for the Project Contractor of the Year Award.
+
+We will not be offering you an assessor seat for this cycle. This is not a judgement of your overall experience. Seats are limited and we have to balance the panel for the nominations we expect.
+
+We appreciate the time you took to apply.
+
+PCotY organisers
+{{SITE_URL}}
+```
+
+
+
+### B1.6 Sync
+
+Local Editor **Sync** after: old Role/coach UI removed, Section 1 EOI elements exist (IDs above), Section 2 kept without `#coachDropdown`.
 
 ---
 
+
+
 ## B2 — Pre-code checklist (Page B gate)
 
-- [ ] Coach Admin UI gone (tables/buttons/dropdown)
-- [ ] `#eoiAssessorsTable` + Activate / Waitlist / Decline (+ search) exist with locked IDs
-- [ ] `Assessors` CMS fields confirmed (no new EOI collection)
-- [ ] Three Triggered Emails created; IDs match (or UUIDs noted)
-- [ ] Know how you will invite members (Wix B1) when `userId` empty
-- [ ] Local Editor **Synced**
+- [x] Old Role + coach UI removed (IDs in B1.2)
+- [x] Section 1 EOI master–detail built with locked IDs (B1.4) — Activate / Reject only
+- [x] Section 2 nomination assign kept; `#coachDropdown` gone; `#assessorTags` ready
+- [x] `Assessors` CMS: evidence + pipeline fields; `calibrationStatus` **added** (Not started / In progress / Passed / Failed)
+- [x] Section 1 shows `#textEoiStatus` and `#textEoiCalibrationStatus`
+- [x] Two Triggered Emails created (`assessorSeatActivated`, `assessorSeatDeclined`); IDs match or UUIDs noted
+- [x] Local Editor **Synced**
 
 **When all ticked:** ask Cursor to implement **Step B3**.
 
 ---
 
+
+
 ## B3 — Code (Cursor; only after B2)
 
-### B3.1 Kill coach on Admin / assignments / dashboards
 
-| File | Change |
-| --- | --- |
-| `public/roleAdmin.js` + `backend/admin.web.js` | Drop Coaches add/delete/cascade UI usage |
-| `public/assignmentsAdmin.js` + `backend/assignments.web.js` | Drop coach dropdown / `coachAssignedId` writes |
-| `backend/dashboard.web.js` + assignment custom element | Drop coach workload / `needsCoachAssigned` |
 
-### B3.2 EOI pipeline
+### B3.1 Kill coach + old Role admin
 
-| Piece | Behaviour |
-| --- | --- |
-| `backend/assessorPipeline.web.js` (or extend `admin.web.js`) | `listEoiAssessors`, `setAssessorPipelineStatus`, `linkAssessorMember` |
-| Admin page + `public/assessorPipelineAdmin.js` (new) | Load table; Activate / Waitlist / Decline; send the three emails; link member without duplicate rows |
 
-On Activate: set `pipelineStatus=Active`, set `verifiedBy`, send `assessorSeatActivated`, then guide/link `userId`.  
-On Waitlist/Decline: set status, send matching email; do not set Active.
+| File                                                        | Change                                                                                            |
+| ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `public/roleAdmin.js` + `backend/admin.web.js`              | Remove or replace: Coaches + old Add Assessor staff path; EOI pipeline owns Assessors             |
+| `public/assignmentsAdmin.js` + `backend/assignments.web.js` | No coach dropdown / no `coachAssignedId` writes; `#assessorTags` options = Active + `userId` only |
+| `backend/dashboard.web.js` + assignment custom element      | Drop coach workload / `needsCoachAssigned`                                                        |
+
+
+
+
+### B3.2 EOI pipeline (Section 1)
+
+
+| Piece                                                        | Behaviour                                                                            |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| `backend/assessorPipeline.web.js` (or extend `admin.web.js`) | `listEoiAssessors`, `activateAssessor` (member + verifier + email), `rejectAssessor` |
+| Admin page + `public/assessorPipelineAdmin.js` (new)         | Master–detail; Activate / Reject; no duplicate rows                                  |
+
+
+- **Activate:** `pipelineStatus=Active`, `verifiedBy` = current admin, find-or-create member + set `userId`, set `calibrationStatus=Not started` if empty, send `assessorSeatActivated`.
+- **Reject:** `pipelineStatus=Declined`, send `assessorSeatDeclined` (no member create).  
+- After Activate: refresh assignable assessor options for Section 2.
 
 ---
+
+
 
 ## B4 — Verify and test (Page B)
 
+
+
 ### B4.1 Smoke
 
-- [ ] Admin loads; no coach controls
-- [ ] EOI table lists Phase 1 applicants
-- [ ] Assignments UI has no coach dropdown
+- [ ] Admin loads; no coach / old Role controls
+- [ ] Section 1 EOI master–detail lists applicants; detail shows evidence (`#cbEoiPmp` / `#cbEoiPbp` / `#btnEoiLinkedin` / `#textPBPCredentialNumber`)
+- [ ] Section 2 has no `#coachDropdown`; `#assessorTags` only Active + `userId`
+
+
 
 ### B4.2 Scenarios
 
-| # | Scenario | Steps | Pass when |
-| --- | --- | --- | --- |
-| B-T1 | List EOI | Open Admin pipeline | Rows with New + evidence fields |
-| B-T2 | Activate + existing member | Activate a row whose email already has `userId` | Active; verifiedBy set; `assessorSeatActivated` received; userId unchanged/correct |
-| B-T3 | Activate + no member | Activate row with empty userId | Active + email; then Wix invite + link userId (manual step OK if documented) |
-| B-T4 | Waitlist | Click Waitlist | Status Waitlist; waitlist email |
-| B-T5 | Decline | Click Decline | Status Declined; decline email |
-| B-T6 | No duplicate Assessors | Link member to existing EOI email | Still one row for that email |
-| B-T7 | Assign assessors only | Assign nomination | Only assessor multi-select; no coach write to `coachAssignedId` |
+
+| #    | Scenario                   | Steps                                   | Pass when                                                                                         |
+| ---- | -------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| B-T1 | List EOI                   | Open Admin pipeline                     | Rows with New + evidence in detail                                                                |
+| B-T2 | Activate (existing member) | Activate email that already has a login | Active; `verifiedBy` set; `userId` linked; `calibrationStatus=Not started`; activation email sent |
+| B-T3 | Activate (new member)      | Activate email with no login yet        | Same + member invite/set-password; email explains invite; calibration tracked Not started         |
+| B-T4 | Reject                     | Click Reject                            | Declined; decline email; no member created                                                        |
+| B-T5 | Assign Active only         | Assign nomination; confirm tags         | Only Active+userId; no coach write to `coachAssignedId`                                           |
+
+
+
 
 ### B4.3 Failures
 
-| Symptom | Check |
-| --- | --- |
-| Empty EOI table | Collection permissions; field keys; query |
-| Email not sent | Triggered Email ID; contact created; template published |
-| Duplicate Assessors row | Activate/link must update by `_id` / email, not blind `addStaff` insert |
+
+| Symptom                 | Check                                                                               |
+| ----------------------- | ----------------------------------------------------------------------------------- |
+| Empty EOI table         | Collection permissions; field keys; query                                           |
+| Email not sent          | Triggered Email ID; contact created; template published                             |
+| Duplicate Assessors row | Activate must update by `_id` / email, not blind insert                             |
+| Member invite failed    | Alert lightbox; Dashboard Members fallback; retry / re-open row to confirm `userId` |
+
 
 ---
+
+
 
 ## B5 — Publish (Page B)
 
 - [ ] B4 scenarios passed
 - [ ] Commit + push `main`
 - [ ] Publish
-- [ ] Live smoke: Activate one test EOI on production
+- [ ] Live smoke: Activate one test EOI on production (member + email)
 
-**Page B done when:** Admin can take EOI → Active/Waitlist/Declined with emails; no coach assignment anywhere.
+**Page B done when:** Admin can Activate (verifier + member + email) or Reject; no coach assignment anywhere.
 
 ---
+
+
 
 ## Phase 2 done when
 
 Page A and Page B both published. Empty assessor page unpublished. Coach role not shown to members. Admin owns verify/activate and assessor-only assign.
 
-**Deferred (same programme, later):** C1–C5 assignment emails; full COI lightbox enforcement if not already solid; Phase 3 calibration roster gate before real Stage 1 assignment volume.
+**Deferred (same programme, later):** C1–C5 assignment emails; full COI lightbox enforcement if not already solid; Phase 3 calibration tracking (exam/status) — does not gate scoring or assignment.

@@ -40,7 +40,7 @@
 
 1. Acknowledge (optional) → `status = Acknowledged`, date. Optional: request extension → notify **organisers**.
 2. **COI (mandatory)** — see below.
-3. Score criteria 1–9 (0–5).
+3. Score criteria 1–9 (1–10).
 4. Justification (required) + evidence notes (optional) per criterion.
 5. Review & submit → lock; notify organisers.
 

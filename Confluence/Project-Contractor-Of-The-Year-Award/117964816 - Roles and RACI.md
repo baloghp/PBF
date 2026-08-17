@@ -66,7 +66,7 @@
 * Review assigned nominations (2.1)
 * Check for COI and self-report immediately (2.1)
 * Verify eligibility and completeness at assessment time (2.1)
-* Score using Evaluation Framework (0–5 scale) (2.1)
+* Score using Evaluation Framework (1–10 scale) (2.1)
 * Provide per-criterion comments and evidence notes (2.1)
 * Optional: help prepare nominees for Stage 2 if requested by **Project Manager** (not a separate coach role)
 

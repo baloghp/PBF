@@ -35,7 +35,7 @@ One-time: `pip install markdown weasyprint`. Print stylesheet: `pdf-style.css` (
 The Word files were converted, then aligned to the live PCoTY 2027 cycle:
 
 - **No Nominee Coach.** Intake is automated pre-screen plus program support ([DR-002](../Program-Plan/Decisions/DR-002-Drop-Nominee-Coach.md)).
-- **Assessors and judges score 0-5**, not 0-10. Customer evaluation stays **0-10 with weights** (max 550).
+- **Assessors and judges score 1-10** (portal sliders: min 1, max 10, step 1). Customer evaluation stays **0-10 with weights** (max 550). Do not convert one scale into the other.
 - **Customer form** is a unique link emailed to the client representative. The nominee does not fill it in or upload it.
 - **Narrative word counts are ceilings**, not targets.
 - **Evidence list** matches the [Submission Package](../../Confluence/Project-Contractor-Of-The-Year-Award/98598913%20-%20Submission%20Package.md) (contract matrix, interface RACI, people-development metric, code of conduct, integrity plan).

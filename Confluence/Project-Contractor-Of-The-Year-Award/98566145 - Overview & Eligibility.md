@@ -60,7 +60,7 @@ Categories are based on **headcount in customer projects** (not including intern
 
 ### Stage 1 – Independent assessor screening
 
-* Apply the [Evaluation Framework](https://ittd.atlassian.net/wiki/spaces/PBF/pages/98631681) (0–5 scale); **minimum ≥2 assessors** per nomination (target 3 when capacity allows).
+* Apply the [Evaluation Framework](https://ittd.atlassian.net/wiki/spaces/PBF/pages/98631681) (1–10 scale); **minimum ≥2 assessors** per nomination (target 3 when capacity allows).
 * PM moderates inter-rater discrepancies; rank and shortlist top N per category.
 * **Communications Coordinator** notifies all applicants (shortlisted / not shortlisted) and sends feedback to non-shortlisted nominees.
 

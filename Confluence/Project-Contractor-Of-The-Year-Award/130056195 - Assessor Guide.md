@@ -17,7 +17,7 @@
 
 ## Your job
 
-Independently score assigned nominations on **9 criteria (0–5)** with justification comments. Finish by the deadline.
+Independently score assigned nominations on **9 criteria (1–10)** with justification comments. Finish by the deadline.
 
 **You do:** COI confirm · read the packet · score · comment · submit.  
 **You do not:** eligibility/completeness checks (Admins gate that) · coach nominees · share scores with nominees.
@@ -30,14 +30,18 @@ There is **no Nominee Coach**. Questions → organisers / Admin.
 
 ## Scale
 
+Portal sliders: **minimum 1, maximum 10, step 1**.
+
 | Score | Meaning |
 | --- | --- |
-| 0 | Not demonstrated / missing evidence |
-| 1 | Poor |
-| 2 | Fair |
-| 3 | Good |
-| 4 | Very good |
-| 5 | Excellent |
+| 1 | Not demonstrated / missing evidence |
+| 2 | Poor |
+| 3–4 | Fair |
+| 5–6 | Good |
+| 7–8 | Very good |
+| 9–10 | Excellent |
+
+Nine criteria, **90** maximum from one assessor. Moderates when two scores differ by **more than 4 points** on a criterion.
 
 ---
 
@@ -53,7 +57,7 @@ There is **no Nominee Coach**. Questions → organisers / Admin.
 | 6 | Risk Management (Cross-Corporate) | Cross-party financial, ops, IP, cyber, regulatory, reputational, geopolitical risks + mitigations | Risks identified and mitigated across the interface? |
 | 7 | People Development | Investment as % of profit: 0 / 0–5 / 5%+; training/certs evidence | Real investment with delivery impact? |
 | 8 | Team & Business Acumen | Leadership; customer vs profit balance; code of conduct; anti-corruption; transparency | Integrity and leadership under pressure? |
-| 9 | **Innovation & Industry Advancement** | Novelty; industry contribution; knowledge sharing; case-study worth | Would we publish this? Winners typically **4–5** here. |
+| 9 | **Innovation & Industry Advancement** | Novelty; industry contribution; knowledge sharing; case-study worth | Would we publish this? Winners typically **8–10** here. |
 
 ---
 

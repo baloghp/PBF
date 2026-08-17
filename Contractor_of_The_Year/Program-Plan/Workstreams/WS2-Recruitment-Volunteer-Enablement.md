@@ -141,7 +141,7 @@ Secure and prepare enough qualified, calibrated **assessors and judges** to run 
 
 ### Materials to produce / adapt
 - `WS2-T18` ([SCRUM-48](https://ittd.atlassian.net/browse/SCRUM-48)) — **Onboarding pack** (welcome, process overview, key dates) — adapt from existing guides above
-- `WS2-T19` ([SCRUM-49](https://ittd.atlassian.net/browse/SCRUM-49)) — **Calibration deck + practice nomination** (everyone scores the same sample, compare, align on the 0–5 framework)
+- `WS2-T19` ([SCRUM-49](https://ittd.atlassian.net/browse/SCRUM-49)) — **Calibration deck + practice nomination** (everyone scores the same sample, compare, align on the 1–10 framework)
 - `WS2-T20` ([SCRUM-50](https://ittd.atlassian.net/browse/SCRUM-50)) — **Platform training** (reuse `ittd.space/uat-nda` walkthroughs)
 - `WS2-T21` ([SCRUM-54](https://ittd.atlassian.net/browse/SCRUM-54)) — **COI declaration form** (from WS5 COI policy) + tracking log
 - `WS2-T22` ([SCRUM-51](https://ittd.atlassian.net/browse/SCRUM-51)) — **Comms cadence templates** (reminders, thank-yous, retention nudges)

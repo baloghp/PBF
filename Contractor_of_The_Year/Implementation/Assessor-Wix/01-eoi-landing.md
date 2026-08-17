@@ -3,7 +3,8 @@
 **Gate:** Public `/become-an-assessor` takes an application into `Assessors` and emails the applicant (A1) plus the admin team.  
 **Back:** [Guide](../Assessor-EOI-Wix-Plan.md) · **Email catalogue:** [04](04-emails.md)
 
-**Page:** `src/pages/Become an Assessor.u1buo.js` · **Slug:** `/become-an-assessor` · keep `/uat-nda` as redirect.
+**Page:** `src/pages/Become an Assessor.u1buo.js` · **Slug:** `/become-an-assessor` · keep `/uat-nda` as redirect.  
+**Homepage CTA:** award page `Contractor Of The Year Award.z9t1g.js` — `#btnBecomeAssessor` below countdown → `/become-an-assessor`.
 
 **No automatic credential verification.** Form stores evidence; core team checks manually, then sets `verifiedBy` and `pipelineStatus`.
 
@@ -26,7 +27,11 @@ Do the steps in order. Do not ask Cursor for code until **Step 3** is fully tick
 
 ---
 
+
+
 ## Step 1 — Local Editor (copy, CMS, form)
+
+
 
 ### 1A. Kill UAT leftovers
 
@@ -96,7 +101,7 @@ At least one of `credentialPmp` / `credentialPbp` must be true. Defer `theorySta
 
 Do **not** use a CMS-connected Wix Form. Use inputs + `#btnEoiSubmit` (backend will upsert + send mail).
 
-**Not on the form:** `pipelineStatus`, `verifiedBy`, `userId`, `title_fld` (derived on submit).
+**Not on the form (and not stored from CoC):** `pipelineStatus`, `verifiedBy`, `userId`, `title_fld` (derived on submit). Code of Conduct is **required to submit** but **not** written to `Assessors`.
 
 **Structure (below marketing copy):** intro line → `#boxEoiForm` → submit → `#textEoiError` (collapsed) → `#boxEoiThankYou` (collapsed).
 
@@ -105,24 +110,31 @@ Intro: `Takes about three minutes. You will need your PMP Credly badge URL and/o
 **Element IDs (lock spelling):**
 
 
-| Order | Label             | Element    | ID                         | CMS                  | Required   | Notes                  |
-| ----- | ----------------- | ---------- | -------------------------- | -------------------- | ---------- | ---------------------- |
-| 1     | Given name        | Text Input | `#inputGivenName`          | `givenName`          | Yes        |                        |
-| 2     | Family name       | Text Input | `#inputFamilyName`         | `familyName`         | Yes        |                        |
-| 3     | Email             | Text Input | `#inputEmail`              | `email`              | Yes        |                        |
-| 4     | LinkedIn          | Text Input | `#inputLinkedin`           | `linkedin`           | Yes        |                        |
-| 5     | PMP               | Checkbox   | `#checkboxCredentialPmp`   | `credentialPmp`      | One of 5/6 |                        |
-| 6     | PBP               | Checkbox   | `#checkboxCredentialPbp`   | `credentialPbp`      | One of 5/6 |                        |
-| 7     | Credential Number | Text Input | `#inputPbpCandidateNumber` | `pbpCandidateNumber` | If PBP     | Inside `#boxPbpFields` |
-| 8     | Credly badge URL  | Text Input | `#inputCredlyBadgeUrl`     | `credlyBadgeUrl`     | If PMP     | Inside `#boxPmpFields` |
-| 9     | PMI ID (optional) | Text Input | `#inputPmiId`              | `pmiId`              | No         | Inside `#boxPmpFields` |
-| 10    | Submit            | Button     | `#btnEoiSubmit`            | —                    | —          |                        |
-| 11    | Error             | Text       | `#textEoiError`            | —                    | —          | Start collapsed        |
-| 12    | Form wrap         | Box        | `#boxEoiForm`              | —                    | —          |                        |
-| 13    | PBP wrap          | Box        | `#boxPbpFields`            | —                    | —          | Start collapsed        |
-| 14    | PMP wrap          | Box        | `#boxPmpFields`            | —                    | —          | Start collapsed        |
-| 15    | Thank you         | Box        | `#boxEoiThankYou`          | —                    | —          | Start collapsed        |
+| Order | Label             | Element    | ID                         | CMS                  | Required   | Notes                                                                               |
+| ----- | ----------------- | ---------- | -------------------------- | -------------------- | ---------- | ----------------------------------------------------------------------------------- |
+| 1     | Given name        | Text Input | `#inputGivenName`          | `givenName`          | Yes        |                                                                                     |
+| 2     | Family name       | Text Input | `#inputFamilyName`         | `familyName`         | Yes        |                                                                                     |
+| 3     | Email             | Text Input | `#inputEmail`              | `email`              | Yes        |                                                                                     |
+| 4     | Code of Conduct   | Checkbox   | `#checkboxCodeOfConduct`   | —                    | Yes        | Label: `I agree to the PBF Code of Conduct` (link in label). **Not stored in CMS.** |
+| 5     | LinkedIn          | Text Input | `#inputLinkedin`           | `linkedin`           | Yes        |                                                                                     |
+| 6     | PMP               | Checkbox   | `#checkboxCredentialPmp`   | `credentialPmp`      | One of 6/7 |                                                                                     |
+| 7     | PBP               | Checkbox   | `#checkboxCredentialPbp`   | `credentialPbp`      | One of 6/7 |                                                                                     |
+| 8     | Credential Number | Text Input | `#inputPbpCandidateNumber` | `pbpCandidateNumber` | If PBP     | Inside `#boxPbpFields`                                                              |
+| 9     | Credly badge URL  | Text Input | `#inputCredlyBadgeUrl`     | `credlyBadgeUrl`     | If PMP     | Inside `#boxPmpFields`                                                              |
+| 10    | PMI ID (optional) | Text Input | `#inputPmiId`              | `pmiId`              | No         | Inside `#boxPmpFields`                                                              |
+| 11    | Submit            | Button     | `#btnEoiSubmit`            | —                    | —          |                                                                                     |
+| 12    | Error             | Text       | `#textEoiError`            | —                    | —          | Start collapsed                                                                     |
+| 13    | Form wrap         | Box        | `#boxEoiForm`              | —                    | —          |                                                                                     |
+| 14    | PBP wrap          | Box        | `#boxPbpFields`            | —                    | —          | Start collapsed                                                                     |
+| 15    | PMP wrap          | Box        | `#boxPmpFields`            | —                    | —          | Start collapsed                                                                     |
+| 16    | Thank you         | Box        | `#boxEoiThankYou`          | —                    | —          | Start collapsed                                                                     |
 
+
+**Code of Conduct (Oliver)**
+
+- Set the checkbox ID in Properties to exactly: `checkboxCodeOfConduct` (Velo: `#checkboxCodeOfConduct`).
+- Keep the hyperlink on "PBF Code of Conduct" in the label.
+- No new CMS field. Client (+ backend) must reject submit if unchecked.
 
 **Thank-you copy**
 
@@ -142,6 +154,7 @@ Expressions of interest close 15 October.
 | Given name empty                      | `Please enter your given name.`                                                |
 | Family name empty                     | `Please enter your family name.`                                               |
 | Bad email                             | `Please enter a valid email address.`                                          |
+| Code of Conduct unchecked             | `Please agree to the PBF Code of Conduct.`                                     |
 | LinkedIn empty                        | `Please enter your LinkedIn profile URL.`                                      |
 | LinkedIn not a LinkedIn URL           | `Please enter a valid LinkedIn profile URL (https://www.linkedin.com/in/...).` |
 | Neither credential                    | `Select PMP, PBP, or both.`                                                    |
@@ -150,9 +163,25 @@ Expressions of interest close 15 October.
 | Credly URL invalid / not a badge link | `Use a Credly badge URL (https://www.credly.com/badges/...).`                  |
 
 
-Sync Local Editor → git when the form looks right.
+Sync Local Editor → git when the form looks right (including CoC ID set).
+
+### 1E. Award homepage — Become an Assessor button (Phase 1 add-on)
+
+On **Contractor Of The Year Award** (the page with the nominations countdown):
+
+1. Add a Button **below** `#countdownBox` (visible to everyone; not login-gated).
+2. Label: `Become an Assessor` (or your preferred wording).
+3. Set element ID exactly: **`btnBecomeAssessor`** → `#btnBecomeAssessor`.
+4. Do **not** put it inside a collapsed-only staff box. Keep it public.
+5. Sync.
+
+Code (already in `Contractor Of The Year Award.z9t1g.js`) expands the button and navigates to `/become-an-assessor`. Optional: you can also set the button link in the Editor to `/become-an-assessor`; code covers click either way.
+
+Visible during the countdown period (before 1 Sep) and after — independent of `#mainActionBtn`.
 
 ---
+
+
 
 ## Step 2 — Triggered Emails (dashboard)
 
@@ -184,6 +213,8 @@ If you cannot find **+ Add Variable**, make sure you are editing a **Triggered E
 
 - Designer **Preview & Test** = layout + fallbacks look OK in your inbox. Enough for Step 3.
 - Full personalisation test = after Step 4 code, run scenario T5 (real `givenName` etc. from the form).
+
+
 
 ### Where
 
@@ -218,6 +249,8 @@ Expressions of interest close 15 October.
 PCotY organisers
 {{SITE_URL}}
 ```
+
+
 
 ### A1-Admin — `assessorEoiAdminNotify`
 
@@ -255,6 +288,8 @@ Review in CMS (Assessors), check the credential, then set verifiedBy and pipelin
 
 ---
 
+
+
 ## Step 3 — Pre-code checklist (gate)
 
 Tick **every** box before asking Cursor to generate code.
@@ -282,6 +317,8 @@ Tick **every** box before asking Cursor to generate code.
 
 ---
 
+
+
 ## Step 4 — Code (Cursor; only after Step 3)
 
 Implement:
@@ -302,41 +339,52 @@ Implement:
 **Page must:**
 
 - Expand/collapse `#boxPbpFields` / `#boxPmpFields` from checkboxes
-- Client validation (Step 1D messages)
+- Client validation (Step 1D messages), including `#checkboxCodeOfConduct` required (not sent to CMS)
+- Backend also rejects if `codeOfConductAccepted` is not true (defense in depth; still do not persist it)
 - Disable submit while running; on success collapse form / expand thank-you; on failure show `#textEoiError`
 
 ---
 
+
+
 ## Step 5 — Verify and test (after code)
+
+
 
 ### 5A. Smoke verify (before scenarios)
 
-- [ ] `npm run dev` / Local Editor loads the page without console errors on open
-- [ ] Checking PMP expands `#boxPmpFields`; unchecking collapses it
-- [ ] Checking PBP expands `#boxPbpFields`; unchecking collapses it
-- [ ] Empty submit shows an error; does not create a CMS row
-- [ ] Backend file exists and exports `submitAssessorEoi`
+- [x] `npm run dev` / Local Editor loads the page without console errors on open
+- [x] Checking PMP expands `#boxPmpFields`; unchecking collapses it
+- [x] Checking PBP expands `#boxPbpFields`; unchecking collapses it
+- [x] Empty submit shows an error; does not create a CMS row
+- [x] Backend file exists and exports `submitAssessorEoi`
+
+
 
 ### 5B. Test scenarios (must all pass)
 
 Use a real inbox you control for the applicant. Confirm at least one Contact with label `PCOTY-Core-Team` will receive admin mail. Check **Assessors** in CMS after each success case.
 
 
-| #            | Scenario                                   | Steps                                                                                                        | Pass when                                                                                                                                                               |
-| ------------ | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| T1 - Passed  | Validation — blank form                    | Click Submit with nothing filled                                                                             | Error shown; no new/updated `Assessors` row; no emails                                                                                                                  |
-| T2 - Passed  | Validation — neither credential            | Fill name, email, LinkedIn; leave PMP/PBP unchecked                                                          | Error `Select PMP, PBP, or both.`; no CMS write                                                                                                                         |
-| T3 - Passed  | Validation — PBP without Credential Number | Check PBP only; leave Credential Number empty                                                                | Error about Credential Number; no CMS write                                                                                                                             |
-| T4 - Passed  | Validation — PMP without Credly URL        | Check PMP only; leave Credly empty                                                                           | Error about Credly URL; no CMS write                                                                                                                                    |
-| T5 - passed  | Happy path — PBP only                      | Valid given/family/email/LinkedIn; PBP + Credential Number; submit                                           | Thank-you shown; CMS row correct; `pipelineStatus=New`; `verifiedBy` empty; `title_fld` set; `userId` set if email is already a site member (else empty); A1 + A1-Admin |
-| T5b - passed | Existing member email                      | Submit EOI using a known member login email (e.g. [peter.balogh@ittd.space](mailto:peter.balogh@ittd.space)) | `Assessors.userId` equals that member's `_id`                                                                                                                           |
-| T6 - passed  | Happy path — PMP only                      | Same identity fields; PMP + Credly badge URL (+ optional PMI ID)                                             | Same as T5 for CMS/emails; PMP fields populated; PBP fields empty/false                                                                                                 |
-| T7 - passed  | Happy path — both                          | PMP + PBP both checked with both evidence fields                                                             | Both credential flags true; both evidence fields stored; both emails fire                                                                                               |
-| T8 - passed  | Upsert same email                          | Submit T5, then submit again with same email and changed LinkedIn or name                                    | One row for that email (update, not duplicate); emails fire again; `pipelineStatus` still New unless you changed it by hand                                             |
-| T9 - passed  | No login required                          | Submit while logged out                                                                                      | T5 still works                                                                                                                                                          |
-| T10 - passed | Mobile                                     | Repeat T5 on a phone width                                                                                   | Layout usable; submit + thank-you work                                                                                                                                  |
-| T11 - passed | No auto-verify                             | After T5, inspect network / backend                                                                          | No calls to `cert.project-business.org` or Credly from submit                                                                                                           |
-| T12 - passed | Manual seat path                           | In CMS, set `verifiedBy` and `pipelineStatus` to Active on a test row                                        | Saves cleanly; public form never wrote those fields                                                                                                                     |
+| #            | Scenario                                   | Steps                                                                                                        | Pass when                                                                                                                                                                                            |
+| ------------ | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| T1 - Passed  | Validation — blank form                    | Click Submit with nothing filled                                                                             | Error shown; no new/updated `Assessors` row; no emails                                                                                                                                               |
+| T2 - Passed  | Validation — neither credential            | Fill name, email, LinkedIn; leave PMP/PBP unchecked                                                          | Error `Select PMP, PBP, or both.`; no CMS write                                                                                                                                                      |
+| T3 - Passed  | Validation — PBP without Credential Number | Check PBP only; leave Credential Number empty                                                                | Error about Credential Number; no CMS write                                                                                                                                                          |
+| T4 - Passed  | Validation — PMP without Credly URL        | Check PMP only; leave Credly empty                                                                           | Error about Credly URL; no CMS write                                                                                                                                                                 |
+| T4c          | Validation — Code of Conduct               | Fill an otherwise valid form; leave `#checkboxCodeOfConduct` unchecked                                       | Error `Please agree to the PBF Code of Conduct.`; no CMS write                                                                                                                                       |
+| T5 - passed  | Happy path — PBP only                      | Valid fields **including CoC checked**; PBP + Credential Number; submit                                      | Thank-you shown; CMS row correct; `pipelineStatus=New`; `verifiedBy` empty; `title_fld` set; `userId` set if email is already a site member (else empty); A1 + A1-Admin; **no CoC field on the row** |
+| T5b - passed | Existing member email                      | Submit EOI using a known member login email (e.g. [peter.balogh@ittd.space](mailto:peter.balogh@ittd.space)) | `Assessors.userId` equals that member's `_id`                                                                                                                                                        |
+| T6 - passed  | Happy path — PMP only                      | Same identity fields; PMP + Credly badge URL (+ optional PMI ID)                                             | Same as T5 for CMS/emails; PMP fields populated; PBP fields empty/false                                                                                                                              |
+| T7 - passed  | Happy path — both                          | PMP + PBP both checked with both evidence fields                                                             | Both credential flags true; both evidence fields stored; both emails fire                                                                                                                            |
+| T8 - passed  | Upsert same email                          | Submit T5, then submit again with same email and changed LinkedIn or name                                    | One row for that email (update, not duplicate); emails fire again; `pipelineStatus` still New unless you changed it by hand                                                                          |
+| T9 - passed  | No login required                          | Submit while logged out                                                                                      | T5 still works                                                                                                                                                                                       |
+| T10 - passed | Mobile                                     | Repeat T5 on a phone width                                                                                   | Layout usable; submit + thank-you work                                                                                                                                                               |
+| T11 - passed | No auto-verify                             | After T5, inspect network / backend                                                                          | No calls to `cert.project-business.org` or Credly from submit                                                                                                                                        |
+| T12 - passed | Manual seat path | In CMS, set `verifiedBy` and `pipelineStatus` to Active on a test row | Saves cleanly; public form never wrote those fields |
+| T13 | Homepage Become an Assessor CTA | On award homepage, click `#btnBecomeAssessor` below countdown | Goes to `/become-an-assessor`; works while countdown is visible (before 1 Sep) |
+
+
 
 
 ### 5C. Failures — what to check
@@ -352,6 +400,8 @@ Use a real inbox you control for the applicant. Confirm at least one Contact wit
 
 ---
 
+
+
 ## Step 6 — Publish
 
 - [x] All Step 5B scenarios passed on Local Editor / preview
@@ -359,6 +409,8 @@ Use a real inbox you control for the applicant. Confirm at least one Contact wit
 - [x] `npx wix publish` **or** Publish in Local Editor (one source only)
 - [x] Live smoke: one real EOI to yourself on production
 - [x] Warm-list can receive `/become-an-assessor`
+
+
 
 ## Done when
 

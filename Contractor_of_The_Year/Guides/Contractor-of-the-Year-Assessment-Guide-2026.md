@@ -31,13 +31,13 @@ This is the Evaluation Framework for the Project Contractor of the Year (PCoTY) 
 
 The cycle looks for contractors who move **beyond competence toward excellence**: not only fulfilling the contract, but transforming practice through novel approaches, pioneering techniques, and measurable impact others can learn from.
 
-Customer evaluation is separate. Clients score seven operational dimensions on a **0-10 weighted scale**. You score the **nine award criteria on a 0-5 scale**. Do not convert one into the other.
+Customer evaluation is separate. Clients score seven operational dimensions on a **0-10 weighted scale**. You score the **nine award criteria on a 1-10 scale** (same range as the portal sliders). Do not convert one into the other.
 
 ---
 
 ## Your job
 
-Independently score assigned nominations on **nine criteria (0-5)** with a justification on each. Finish by the deadline.
+Independently score assigned nominations on **nine criteria (1-10)** with a justification on each. Finish by the deadline.
 
 **You do:** confirm conflict of interest, read the packet (and the customer evaluation if it is available to you), score, comment, submit.
 
@@ -51,18 +51,22 @@ There is **no Nominee Coach**. Questions go to organisers or admin.
 
 ## Scoring scale
 
+Sliders on the Assessor Dashboard and Calibration Exam are **minimum 1, maximum 10, step 1**.
+
 | Score | Meaning |
 | --- | --- |
-| 0 | Not demonstrated / missing evidence |
-| 1 | Poor |
-| 2 | Fair |
-| 3 | Good |
-| 4 | Very good |
-| 5 | Excellent |
+| 1 | Not demonstrated / missing evidence |
+| 2 | Poor |
+| 3-4 | Fair |
+| 5-6 | Good |
+| 7-8 | Very good |
+| 9-10 | Excellent |
 
-Nine criteria, 5 maximum each. **45 is the highest** a nomination can receive from one assessor or judge.
+Nine criteria, 10 maximum each. **90 is the highest** a nomination can receive from one assessor or judge.
 
-At least **two independent reviews** per nomination (target three when capacity allows). If two assessors differ by **more than 2 points** on a criterion, the Project Manager moderates. Discuss evidence, not ego.
+At least **two independent reviews** per nomination (target three when capacity allows). If two assessors differ by **more than 4 points** on a criterion, the Project Manager moderates. Discuss evidence, not ego.
+
+1 is not a moral judgement. It means the packet did not show it. 5-6 is solid professional work. 9-10 is exceptional and evidenced. Do not save 10 for "someone else". If the evidence is there, give it.
 
 ---
 
@@ -74,19 +78,23 @@ Score each one. A comment is required.
 | --- | --- | --- | --- |
 | 1 | Project Success (outcomes) | Delivery vs baseline; benefits; handover; measurable impact and transformation | Did they deliver? What lasting impact? |
 | 2 | Agility and Adaptability | Change control; fit to the contracting model (including T&M cash and visibility) | How did they handle change without chaos? |
-| 3 | Commercial Model (liquidity) | Price realism; milestones; advances and retentions; liquidity on both sides | Fair cash flow for both parties? |
+| 3 | Commercial Model (liquidity) | Price realism; milestones; advances and retentions; liquidity on both sides; supply-chain payment | Fair cash flow for both parties? Was the price real? |
 | 4 | Legal Soundness | Law and jurisdiction; warranty and liability; privity; fit to the collaboration model | Complete, enforceable, suited to the model? |
 | 5 | Interface and Governance | Customer-contractor boundary; escalation; decision rights | Clear boundary and working governance? |
 | 6 | Risk Management (cross-corporate) | Cross-party financial, ops, IP, cyber, regulatory, reputational, geopolitical risks and mitigations | Risks identified and mitigated across the interface? |
 | 7 | People Development | Investment as % of profit: 0 / 0-5 / 5%+; training and certification evidence | Real investment with delivery impact? |
-| 8 | Team and Business Acumen | Leadership; customer vs profit balance; code of conduct; anti-corruption; transparency | Integrity and leadership under pressure? |
-| 9 | **Innovation and Industry Advancement** | Novelty; industry contribution; knowledge sharing; case-study worth | Would we publish this? Winners typically **4-5** here. |
+| 8 | Team and Business Acumen | Leadership; candour; initiative; customer vs profit balance; code of conduct; anti-corruption; transparency | Integrity and leadership under pressure? |
+| 9 | **Innovation and Industry Advancement** | Novelty; industry contribution; knowledge sharing; case-study worth | Would we publish this? Winners typically **8-10** here. |
 
 ### Notes on selected criteria
 
 **Agility (2), T&M contracts.** Consider billing frequency vs contractor cash-flow needs, rate transparency, client cost visibility, and whether change control stays compatible with the project objectives.
 
+**Commercial model (3).** Price realism and whether money reached the people doing the work. A lowball bid is not a discount; it is a wild-card invoice you have not received yet. Overpricing is the same problem later. Fragile supply-chain payment is a commercial failure, not only a procurement footnote.
+
 **People development (7).** Categories are 0%, 0-5%, or 5%+ of net income or profit invested in staff development (technical, organisational, or commercial). Higher investment usually correlates with better delivery and a more capable customer relationship. A 0% with no other evidence of development is a red flag, not a neutral score.
+
+**Team and business acumen (8).** Candour (raising what would turn green to amber) and initiative (bringing a better way, not only executing the ticket) sit beside integrity and leadership.
 
 **Innovation (9).** This is the filter that distinguishes winners from competent performers. High scores on delivery or legal soundness are not enough.
 
@@ -98,14 +106,14 @@ Use these descriptors when scoring Innovation and Industry Advancement:
 
 | Score | Descriptor |
 | --- | --- |
-| 0 | Not demonstrated / missing evidence |
-| 1 | Poor. Standard approach, no innovation, no industry contribution |
-| 2 | Fair. Some novel elements, minor improvements, limited knowledge sharing |
-| 3 | Good. Solid innovation, some industry relevance, basic knowledge sharing |
-| 4 | Very good. Significant innovation, industry-relevant, active knowledge sharing, replicable practices |
-| 5 | Excellent. Groundbreaking approach, advances the profession, extensive knowledge sharing, highly replicable, case-study worthy |
+| 1 | Not demonstrated / missing evidence |
+| 2 | Poor. Standard approach, no innovation, no industry contribution |
+| 3-4 | Fair. Some novel elements, minor improvements, limited knowledge sharing |
+| 5-6 | Good. Solid innovation, some industry relevance, basic knowledge sharing |
+| 7-8 | Very good. Significant innovation, industry-relevant, active knowledge sharing, replicable practices |
+| 9-10 | Excellent. Groundbreaking approach, advances the profession, extensive knowledge sharing, highly replicable, case-study worthy |
 
-Winners typically score **4-5** on this criterion. A 5 is only for work that is groundbreaking or that advances the profession.
+Winners typically score **8-10** on this criterion. A 10 is only for work that is groundbreaking or that advances the profession.
 
 ---
 
@@ -127,7 +135,7 @@ Silence in the packet is not neutral. If you find nothing for a criterion, recor
 
 1. Confirm no conflict of interest.
 2. Read the nomination packet (narrative, artifacts, and customer evaluation if shown).
-3. Score criteria 1-9 (0-5) with a comment on each.
+3. Score criteria 1-9 (1-10) with a comment on each.
 4. Submit by the deadline.
 
 You may be asked to join **moderation** if scores diverge. Do not share scores with nominees. Refer them to the organisers.
@@ -143,9 +151,9 @@ Shortlisted nominees present **20 minutes** plus **15 minutes of questions**.
 Judges:
 
 - Attend the presentation and Q&A.
-- **Rescore all nine criteria independently (0-5)**, with strong attention to Criterion 9.
+- **Rescore all nine criteria independently (1-10)**, with strong attention to Criterion 9.
 - Use the customer evaluation and the Q&A as input, not as a substitute for their own scores.
-- Join outlier moderation (difference of more than 2 points) and final deliberation.
+- Join outlier moderation (difference of more than 4 points) and final deliberation.
 
 Consensus or a moderated average determines winners. In a stalemate, Oliver F. Lehmann has the deciding vote.
 
