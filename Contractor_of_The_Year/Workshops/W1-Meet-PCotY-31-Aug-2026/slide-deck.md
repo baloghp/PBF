@@ -165,7 +165,8 @@ If you remember one thing from the "why": we are not looking for the cleanest pr
 - You acted as an independent contractor for a paying client, under contract.
 - Completed in 2024-2025, or still running at nomination.
 - The client representative must complete their own evaluation. No form, no nomination.
-- Winners and top-3 finalists accept a short case profile being published.
+- Overall winner, category first places, and the other named places accept a short case profile being published.
+- You may submit **more than one nomination**. Each is a distinct project. That is how one nominator multiplies their chances.
 
 **Speaker notes:**
 
@@ -187,20 +188,21 @@ The client form is the gate people underestimate. Come back to that on slide 10.
 
 **On slide:**
 
-- Assigned at intake, from headcount on **customer** projects (not internal, not admin)
-- Small: 1-25
-- Medium: 26-100
-- Large: 101+
-- Shortlisting is per category
+- Assigned at **intake**, from headcount on **customer** projects (not internal, not admin)
+- Small: 1-25 · Medium: 26-100 · Large: 101+
+- Stage 1 ranks **inside** the category. Stage 2 does **not** assign categories.
+- Titles: **one overall** winner, **three places in each** category
 - Boundaries can move if the actual submissions cluster oddly. Fair comparison is the point.
 
 **Speaker notes:**
 
-You do not pick a category on the form to game a weaker pool. Intake assigns it.
+You do not pick a category on the form to game a weaker pool. Intake assigns it. The panel in January does not invent a bucket for you.
 
 A freelance specialist and a 400-person contracting firm can both be excellent. They should not be ranked against each other on organisational muscle.
 
-One line, then move: if you are nominating, count the people who work on customer projects, not the whole payroll.
+Three places per category means first, second, and third in Small, Medium, and Large. One of those people is also the overall Project Contractor of the Year. If a category is thin, we leave places empty. We do not invent winners.
+
+One line, then move: if you are nominating, count the people who work on customer projects, not the whole payroll. And if you have two real projects, enter both.
 
 **Time box:** 2 minutes.
 
@@ -294,11 +296,11 @@ Do not promise a ceremony date. Late January is the window.
 
 **On slide:**
 
-1. **Intake.** Eligibility and completeness. Does not score quality.
-2. **Stage 1.** Independent assessors. Nine criteria, 1-10. At least two people per nomination.
-3. **Stage 2.** Shortlist presents to a judging panel. 20 minutes plus 15 minutes of questions. Panel rescores the same nine.
+1. **Intake.** Eligibility and completeness. Assigns Small / Medium / Large. Does not score quality.
+2. **Stage 1.** Independent assessors. Nine criteria, 1-10. At least two people per nomination. Ranked **inside the category**.
+3. **Stage 2.** Shortlist presents to a judging panel. 20 minutes plus 15 minutes of questions. Panel rescores the same nine. Names **three places per category** and **one overall** winner. Does not assign categories.
 
-No volunteer coach. Questions go to program support. Status lives on the dashboard.
+No volunteer coach. Questions go to program support. Status lives on the dashboard. You may enter more than one project.
 
 **Speaker notes:**
 
@@ -400,13 +402,17 @@ You may be asked into a short moderation call if two readers diverge. Discuss ev
 **On slide:**
 
 - 20 minute presentation, 15 minutes of questions, online
+- You are already in a category. The panel does not move you.
 - Judges rescore all nine, with hard attention on Criterion 9
+- They name three places per category, then one overall winner
 - Client sheet and Q&A inform the scores. They do not replace them.
 - Presentations may be recorded and published, with consent
 
 **Speaker notes:**
 
 Short. Most people on this call will never present here. Nominees need to know it exists so they do not treat Stage 1 as the whole award.
+
+The overall title is one person. The category places are nine seats in theory. Thin categories stay thin. We do not pad.
 
 W2 will go deeper on "what the panel actually asks."
 

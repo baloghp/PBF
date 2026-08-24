@@ -48,7 +48,7 @@ Generate enough high-quality nominations across all categories to make the award
 
 `WS3-T01` (**single overall nomination target**) is the keystone: it sets WS2's recruitment targets (how many coaches/assessors), Stage 1 workload, and shortlist size. Decide this first.
 
-> **Targeting decision (2026-06-05):** We do **not** target or segment by category. **All submissions start at the same level; categories (Small/Medium/Large by customer-project headcount) are assigned/rolled up *after* submission.** Therefore marketing uses **one target audience and one overall nomination goal**, not per-category goals.
+> **Targeting decision (2026-06-05, locked by DR-003):** We do **not** target or segment by category. **All submissions start at the same level; categories (Small/Medium/Large by customer-project headcount) are assigned at intake, not at Stage 2.** Marketing uses **one target audience and one overall nomination goal**, not per-category goals. A nominator may enter **more than one project** — that is an intended volume lever, not an exception.
 
 ## Funnel logic (how this engine works)
 

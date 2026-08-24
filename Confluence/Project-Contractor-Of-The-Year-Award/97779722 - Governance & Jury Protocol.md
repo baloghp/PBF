@@ -6,7 +6,7 @@
 
 ## Body
 
-> **Updated post-UAT Jun 2026 — Coach role removed.** See [DR-002 — Drop Nominee Coach role (Post-UAT)](https://ittd.atlassian.net/wiki/spaces/PBF/pages/245989377).
+> **Updated post-UAT Jun 2026 — Coach role removed.** See [DR-002 — Drop Nominee Coach role (Post-UAT)](https://ittd.atlassian.net/wiki/spaces/PBF/pages/245989377). Multiple nominations and winner set: [DR-003](https://ittd.atlassian.net/wiki/spaces/PBF/pages/301105153).
 
 The following is a draft version it is still subject to change
 
@@ -20,8 +20,8 @@ The following is a draft version it is still subject to change
 
 ## Evaluation process (two stages)
 
-* Stage 1 – Independent assessor screening: **eligibility/completeness confirmed at intake** (pre-screening agent + PM); apply evaluation framework; shortlist
-* Stage 2 – Jury presentation & Q&A: 20‑minute presentation + 15‑minute Q&A; rescoring; consensus or moderated average
+* Stage 1 – Independent assessor screening: **eligibility/completeness confirmed and category assigned at intake** (pre-screening agent + PM); apply evaluation framework; shortlist **per category**
+* Stage 2 – Jury presentation & Q&A: 20‑minute presentation + 15‑minute Q&A; rescoring; name **three places per category** and **one overall** winner; consensus or moderated average. Stage 2 does **not** assign categories.
 
 ## Finalist presentation & Q&A protocol
 
@@ -32,6 +32,6 @@ The following is a draft version it is still subject to change
 ## Publication and Recognition
 
 * **Publication venues:** Award results and case stories will be published on **both the ITTD website and the PBF website**, framed as a cooperation between ITTD and the Project Business Foundation
-* **Publication content:** Short case stories for the Contractor of the Year winner and top 3 finalists (subject to publication consent)
+* **Publication content:** Short case stories for the overall Project Contractor of the Year, category first places, and remaining category places as capacity allows (subject to publication consent)
 * **Consent requirements:** All publication consents must be obtained before publishing any case stories or presentation recordings
 * **Presentation recordings:** Stage 2 presentations may be recorded (with consent) and published for educational/promotional purposes

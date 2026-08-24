@@ -25,13 +25,13 @@ The Project Contractor of the Year Award is about to open its first public cycle
 
 Most awards in project work celebrate the manager on the customer side. The contractor who delivered the work is usually a footnote. Project Contractor of the Year exists to name that other half of the relationship: contracted delivery across a customer-contractor boundary, scored on evidence, not reputation.
 
-This first-cycle workshop is for people who might nominate a contractor, complete a client evaluation, or sit as a Stage 1 assessor.
+This first-cycle workshop is for people who might nominate a contractor (including more than one project), complete a client evaluation, or sit as a Stage 1 assessor.
 
 In one hour we will cover:
 
 1. Why the award exists, and what "excellence" means here (not just a finished job).
 2. Who can be nominated, what the packet looks like, and why the client's own evaluation is required.
-3. How the cycle runs: nominations 1 September to 31 October, Stage 1 screening, Stage 2 presentation to the panel, winners in January 2027.
+3. How the cycle runs: nominations 1 September to 31 October (you may enter more than one project), Stage 1 screening by category, Stage 2 presentation to the panel, one overall winner plus three places per category, winners in January 2027.
 4. The assessor job: PMP or PBP, a short calibration, 3-5 nominations scored remotely in November and December.
 
 Bring a name. If you already know a contractor whose work should be on the table, this hour will tell you what to do next. If you hold PMP or PBP and might assess, bring that too.
@@ -107,6 +107,7 @@ Please check:
 - 11 Aug team meeting (content agreed with Oliver)
 - [Overview and Eligibility](../../Confluence/Project-Contractor-Of-The-Year-Award/98566145%20-%20Overview%20%26%20Eligibility.md)
 - [DR-001 cycle schedule](../../Program-Plan/Decisions/DR-001-Cycle-Schedule.md)
+- [DR-003 multiple nominations and winner set](../../Program-Plan/Decisions/DR-003-Multiple-Nominations-and-Winner-Set.md)
 - [Nominee Guide](../../Guides/Contractor-of-the-Year-Nominee-Guide-2026.md)
 - [Assessment Guide](../../Guides/Contractor-of-the-Year-Assessment-Guide-2026.md)
 - [EOI landing copy](../../Implementation/Assessor-Wix/01-eoi-landing.md)

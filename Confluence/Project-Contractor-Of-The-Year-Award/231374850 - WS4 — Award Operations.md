@@ -60,9 +60,9 @@ The platform **and admin tooling are already live and proven in UAT** (`ittd.spa
 
 WIX provides hosting, security, and platform operations, so there is **no separate IT-ops/SLA workstream** (see 4b — descoped).
 
-## Categorization note (per WS3 decision)
+## Categorization note (per WS3 decision; locked by DR-003)
 
-All submissions start equal; **categories (Small/Medium/Large by customer-project headcount) are assigned during intake**, not at submission. Shortlisting is then done per category. Operations owns the category-assignment step (`WS4-T06`, Stage C).
+All submissions start equal; **categories (Small/Medium/Large by customer-project headcount) are assigned during intake**, not at submission and **not at Stage 2**. Stage 1 shortlisting is per category. Stage 2 names **three places per category** plus **one overall** winner. Operations owns the category-assignment step (`WS4-T06`, Stage C). A nominator may submit **multiple nominations** (distinct projects) from the same account.
 
 ## Assets we already have (reuse, don't rebuild)
 

@@ -6,13 +6,13 @@
 
 ## Body
 
-> **Updated post-UAT Jun 2026 — Coach role removed.** See [DR-002 — Drop Nominee Coach role (Post-UAT)](https://ittd.atlassian.net/wiki/spaces/PBF/pages/245989377).
+> **Updated post-UAT Jun 2026 — Coach role removed.** See [DR-002 — Drop Nominee Coach role (Post-UAT)](https://ittd.atlassian.net/wiki/spaces/PBF/pages/245989377). Multiple nominations and winner set: [DR-003](https://ittd.atlassian.net/wiki/spaces/PBF/pages/301105153) (20 Aug 2026).
 
 # Contractor of the Year — Award Master Plan
 
 **Status:** Draft v0.1 — subject to change    
 **Owner:** \[Programme Owner / PM — TBD\]    
-**Last updated:** 2026-06-29
+**Last updated:** 2026-08-20
 
 > Single source of truth for running the **first live (post-UAT) Contractor of the Year award cycle**. This plan organises the program into workstreams, defines owners and deliverables, and maps everything to a master timeline (Jira Epic **PBF-17**).
 
@@ -69,7 +69,8 @@
 - [ ] Ceremony format: virtual vs in-person
 - [ ] SLA values (replace "X days" placeholders)
 - [ ] Appeals process finalisation
-- [ ] Number of categories / shortlist size (N per category)
+- [x] Winner set — **one overall + three places per category**; categories at intake (DR-003)
+- [ ] Stage 2 shortlist size (N per category into the panel) — distinct from the three named places (DR-003)
 - [ ] Judge shortlist & confirmation
 - [ ] Budget envelope & sponsorship tiers
 - [ ] Workstream owners (fill all \[TBD\])
@@ -99,6 +100,7 @@ Created 2026-06-05 on board: [https://ittd.atlassian.net/jira/software/projects/
 * [Project Overview](https://ittd.atlassian.net/wiki/spaces/PBF/pages/97419265)
 * [Process Map](https://ittd.atlassian.net/wiki/spaces/PBF/pages/117866524)
 * [DR-002 — Drop Nominee Coach role (Post-UAT)](https://ittd.atlassian.net/wiki/spaces/PBF/pages/245989377)
+* [DR-003 — Multiple nominations per nominator; overall + category places](https://ittd.atlassian.net/wiki/spaces/PBF/pages/301105153)
 * [Roles and RACI](https://ittd.atlassian.net/wiki/spaces/PBF/pages/117964816)
 * [Governance & Jury Protocol](https://ittd.atlassian.net/wiki/spaces/PBF/pages/97779722)
 * [Overview & Eligibility](https://ittd.atlassian.net/wiki/spaces/PBF/pages/98566145)

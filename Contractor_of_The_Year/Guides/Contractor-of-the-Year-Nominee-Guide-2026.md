@@ -34,7 +34,7 @@ This guide covers what you need to prepare a complete, checkable nomination for 
 
 The award looks for contractors who move beyond competence toward excellence: not only fulfilling the contract, but leaving a result others in the profession can learn from.
 
-You can save a draft and return to it until you submit. Word counts below are **ceilings, not targets**. Nobody scores extra for filling them.
+You can save a draft and return to it until you submit. **You may submit more than one nomination** from the same account — each must be a distinct project, with its own packet and client evaluation. That is how one nominator multiplies their chances. Word counts below are **ceilings, not targets**. Nobody scores extra for filling them.
 
 ---
 
@@ -43,10 +43,11 @@ You can save a draft and return to it until you submit. Word counts below are **
 - **Project type:** a cross-corporate customer-contractor project, in any industry, where you acted as an independent contractor for a paying client under contract.
 - **Timing:** completed in 2024-2025, or still running at nomination.
 - **Two-actor requirement:** a client representative must complete the customer evaluation. Without that form, the nomination is incomplete.
-- **Publication:** you accept publication of a short case profile if you are a winner or top-3 finalist.
+- **Publication:** you accept publication of a short case profile if you are the overall winner, a category first place, or one of the three recognised places in your category.
 - **Integrity of the nominated work:** see below. This is an intake gate, not a score.
+- **Multiple nominations:** one nominator may enter more than one project. Same contracted engagement cannot be entered twice.
 
-Categories are assigned at intake from **headcount on customer projects** (not internal work or admin): Small 1-25, Medium 26-100, Large 101+. Shortlisting is per category.
+Categories are assigned at **intake** from **headcount on customer projects** (not internal work or admin): Small 1-25, Medium 26-100, Large 101+. You do not pick a category. Stage 1 ranks within category. Stage 2 names **three places per category** and **one overall** Project Contractor of the Year. Categories are not assigned at Stage 2.
 
 ### Integrity of the nominated work
 
@@ -62,11 +63,11 @@ If the project is ineligible on this rule, do not submit it. There is no appeal 
 
 ## How the cycle works
 
-1. **Submit** on the platform. Save as draft until you are ready.
-2. **Intake.** An automated check reviews eligibility, completeness, and attachments, usually within about a day. Missing items are flagged on your dashboard. Program support sends a templated note if something is still outstanding.
-3. **Stage 1.** At least two independent assessors score the packet on nine criteria (1-10).
-4. **Stage 2.** If shortlisted, you present to the judging panel: 20 minutes plus 15 minutes of questions.
-5. **Award.** Winners and finalists are notified through the platform and program communications.
+1. **Submit** on the platform. Save as draft until you are ready. Start another nomination from the same account if you have a second distinct project.
+2. **Intake.** An automated check reviews eligibility, completeness, and attachments, usually within about a day. Missing items are flagged on your dashboard. Program support sends a templated note if something is still outstanding. **Category is assigned here.**
+3. **Stage 1.** At least two independent assessors score the packet on nine criteria (1-10). Ranking and shortlist are **per category**.
+4. **Stage 2.** If shortlisted, you present to the judging panel: 20 minutes plus 15 minutes of questions. The panel names three places per category and one overall winner.
+5. **Award.** Overall winner, category places, and remaining finalists are notified through the platform and program communications.
 
 There is **no Nominee Coach** for this cycle. Track status on your dashboard. Questions go to program support through the platform help channel.
 
@@ -74,7 +75,7 @@ There is **no Nominee Coach** for this cycle. Track status on your dashboard. Qu
 
 ## Submission process
 
-1. **Sign up** at [ittd.space/pbf-pcoty](https://www.ittd.space/pbf-pcoty) and start a nomination.
+1. **Sign up** at [ittd.space/pbf-pcoty](https://www.ittd.space/pbf-pcoty) and start a nomination. You can start further nominations from the dashboard; each is a separate project.
 2. **Build the packet.** Write the four narrative sections, upload the evidence files, and enter your customer representative's details.
 3. **Customer evaluation.** We email your client a unique link. They complete their own form. You cannot fill it in, forward the link, or upload it on their behalf. Warn them it is coming, and that it is due by **31 October**.
 4. **Submit** before the close. You can edit until you click Submit.

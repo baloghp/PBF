@@ -52,9 +52,9 @@ The platform **and admin tooling are already live and proven in UAT** (`ittd.spa
 
 WIX provides hosting, security, and platform operations, so there is **no separate IT-ops/SLA workstream** (see 4b — descoped).
 
-## Categorization note (per WS3 decision)
+## Categorization note (per WS3 decision; locked by [DR-003](../Decisions/DR-003-Multiple-Nominations-and-Winner-Set.md))
 
-All submissions start equal; **categories (Small/Medium/Large by customer-project headcount) are assigned during intake**, not at submission. Shortlisting is then done per category. Operations owns the category-assignment step (`WS4-T06`, Stage C).
+All submissions start equal; **categories (Small/Medium/Large by customer-project headcount) are assigned during intake**, not at submission and **not at Stage 2**. Stage 1 shortlisting is per category. Stage 2 names **three places per category** plus **one overall** winner. Operations owns the category-assignment step (`WS4-T06`, Stage C). A nominator may submit **multiple nominations** (distinct projects) from the same account.
 
 ## Assets we already have (reuse, don't rebuild)
 
@@ -71,7 +71,7 @@ All submissions start equal; **categories (Small/Medium/Large by customer-projec
 *Already live & UAT-proven — light verification, not a build. Confirm before the run starts.*
 
 - `WS4-T01` ([SCRUM-73](https://ittd.atlassian.net/browse/SCRUM-73)) — **Confirm production promotion & domain** (UAT → live; SSL/backups handled by WIX)
-- `WS4-T02` ([SCRUM-74](https://ittd.atlassian.net/browse/SCRUM-74)) — **Confirm roles & access control** (nominee, assessor, judge, admin — **no coach role**; remove coach UI per DR-002)
+- `WS4-T02` ([SCRUM-74](https://ittd.atlassian.net/browse/SCRUM-74)) — **Confirm roles & access control** (nominee, assessor, judge, admin — **no coach role**; remove coach UI per DR-002; **Start new nomination** remains available after the first packet — DR-003)
 - `WS4-T03` ([SCRUM-75](https://ittd.atlassian.net/browse/SCRUM-75)) — **Pre-launch regression dry-run** (carry over any remaining UAT fixes; confirm submission form, scoring interfaces, notifications and dashboards work end-to-end)
 
 ---
@@ -111,7 +111,7 @@ Lightweight support during the cycle is folded into the run — a simple contact
 - `WS4-T07` ([SCRUM-79](https://ittd.atlassian.net/browse/SCRUM-79)) — **Stage D — Stage 1 screening** (**PM assigns ≥2 assessors** + COI/recusal; independent 1–10 scoring on the 9 criteria; PM moderates when >4 pts; rank per category; shortlist top N) → M4 *(Shortlist gate)*
 - `WS4-T08` ([SCRUM-80](https://ittd.atlassian.net/browse/SCRUM-80)) — **Stage E — Notify & give feedback** (**Communications Coordinator** sends shortlist / not-shortlisted notifications + feedback) → M5
 - `WS4-T09` ([SCRUM-81](https://ittd.atlassian.net/browse/SCRUM-81)) — **Stage F — Stage 2 prep** (finalist prep; schedule presentations around judge availability; judge COI verification — coordinate WS2) → M6 *(COI/Quorum gate)*
-- `WS4-T10` ([SCRUM-82](https://ittd.atlassian.net/browse/SCRUM-82)) — **Stage G — Stage 2 judging** (20-min presentation + 15-min Q&A; independent scoring; outlier moderation >2 pts; deliberation; consensus/moderated average; Oliver Lehmann deciding vote if stalemate) → M7 *(Winner gate)*
+- `WS4-T10` ([SCRUM-82](https://ittd.atlassian.net/browse/SCRUM-82)) — **Stage G — Stage 2 judging** (20-min presentation + 15-min Q&A; independent scoring; outlier moderation >2 pts; deliberation; name **three places per category** + **one overall** winner; Oliver Lehmann deciding vote if stalemate) → M7 *(Winner gate)*
 - `WS4-T11` ([SCRUM-83](https://ittd.atlassian.net/browse/SCRUM-83)) — **Stage H — Record decision & hand off** (document decisions + rationale; appeals window; transfer winners to WS6) → M8 *(Appeals gate)*
 
 ### Backward timeline
@@ -131,7 +131,9 @@ Lightweight support during the cycle is folded into the run — a simple contact
 
 ## Open Questions (rolled up)
 
-- [ ] Category-assignment rule confirmed (headcount thresholds: 1–25 / 26–100 / 101+)
-- [ ] Top N per category for the shortlist
+- [x] Category-assignment rule confirmed (headcount thresholds: 1–25 / 26–100 / 101+) — assigned at **intake**, not Stage 2 ([DR-003](../Decisions/DR-003-Multiple-Nominations-and-Winner-Set.md))
+- [ ] Top N per category for the Stage 2 shortlist (how many present — distinct from the three named places)
+- [x] Winner set — one overall + three places per category (DR-003)
+- [ ] Platform: multiple nominations per member account (DR-003)
 - [x] Ops owner per stage — **Project Manager / Award Operations (WS4)** per [Roles and RACI](https://ittd.atlassian.net/wiki/spaces/PBF/pages/117964816) and DR-002
 - [ ] Earliest feasible nomination-open date (gate already satisfied — could start sooner than Sep)
