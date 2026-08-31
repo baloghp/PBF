@@ -48,7 +48,7 @@ One member, many nominations. Each row is a distinct project.
 | Action     | Who                                 | Behaviour                                                                                                                                      |
 | ---------- | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | **List**   | Hub                                 | All of this member's packets: title, company, status                                                                                           |
-| **Create** | `#startNominationBtn`               | Insert a new `DRAFT`. Open it. Never reuse an existing row.                                                                                    |
+| **Create** | `#startNominationBtn`               | Show an empty form only — **no CMS row** until the user clicks **Save draft**. Never reuse an existing row.                                    |
 | **Read**   | Table row click                     | Load that `_id` into the existing form                                                                                                         |
 | **Update** | `#saveDraftBtn` / `#submitFinalBtn` | Save **that** `_id` only. Submitted stays locked.                                                                                              |
 | **Delete** | `#deleteNominationBtn`              | **Drafts only.** Confirm in the existing **Alert** lightbox, then remove the row and its customer rows. Submitted cannot be deleted this pass. |
@@ -96,7 +96,8 @@ Assessor dashboard shape: list on top (always), form below (collapsed until a ro
 ```mermaid
 flowchart TB
   Search["#searchMyNominations"] --> Table["#myNominationsTable"]
-  Start["#startNominationBtn"] --> Create[new DRAFT]
+  Start["#startNominationBtn"] --> EmptyForm[empty form, no _id]
+  EmptyForm -->|Save draft| Create[insert DRAFT row]
   Create --> Form
   Table -->|row select| Form["#editBox"]
   Table -.->|none selected| Intro["#introBox"]
@@ -228,9 +229,10 @@ Do not start this until the checklist is ticked.
 ### 4A. Backend (`src/backend/nomination.web.js`, `customer.web.js`)
 
 - `getMyNominations()` — all rows for `_owner`, newest first
-- `createDraftNomination()` — **always insert**; never return an existing row
+- `getMyNomineeDisplayName()` — member display name for the empty form
+- `createDraftNomination()` — legacy helper; **dashboard does not call it**
 - `getMyNomination(nominationId)` — that `_id`, ownership check
-- `saveNomination(data, isFinal, nominationId)` — update **that** `_id` only
+- `saveNomination(data, isFinal, nominationId)` — if `nominationId` is missing, **insert** on save draft only; otherwise update **that** `_id`
 - `deleteDraftNomination(nominationId)` — refuse if not `DRAFT`; delete that nomination and `Customer_Feedback` rows with that `nominationId`
 - Customers: `getMyCustomers(nominationId)` / `addCustomer(data, nominationId)` write and filter `nominationId`
 - Submit emails: only customers for **that** nomination (legacy: owner-only rows only if this member still has a single packet)
@@ -241,7 +243,8 @@ Do not start this until the checklist is ticked.
 
 - On load: **do not** auto-create a draft
 - Show list; collapse `#editBox` until row select or Start
-- Start → insert → select the new row → expand form
+- Start → show empty form only (no CMS row, no `_id`)
+- First **Save draft** → insert → row appears in list; `#deleteNominationBtn` and **Add customer** enabled
 - Row select → load that `_id` (draft editable, submitted locked as today)
 - Save/submit pass `loadedNomination._id`
 - Delete draft → Alert confirm → list refresh, form collapses
@@ -278,7 +281,8 @@ Do not start this until the checklist is ticked.
 
 - [ ] Dashboard opens with **no** surprise extra draft in CMS
 - [ ] Empty list: intro + **Start nomination**; form collapsed
-- [ ] Start creates **one** new `Nominations` row (`DRAFT`) and opens the form
+- [ ] Start shows the form but **does not** create a CMS row
+- [ ] First **Save draft** creates **one** new `Nominations` row (`DRAFT`)
 - [ ] Refresh does **not** create another row
 - [ ] Table shows title / company / status for each row
 
@@ -298,7 +302,7 @@ Do not start this until the checklist is ticked.
 | N-T7  | No delete on submitted     | Open submitted A                                                       | `#deleteNominationBtn` hidden; cannot delete                                 |
 | N-T8  | Search                     | Type part of title A                                                   | Table shows A, not B                                                         |
 | N-T9  | Award CTA                  | Log in as nominee; open award page; click main CTA                     | Label **Your nominations**; lands on the list                                |
-| N-T10 | First-time member          | Member with Nominee role and zero rows                                 | Empty list; Start creates the first draft (same as today, but only on click) |
+| N-T10 | First-time member          | Member with Nominee role and zero rows                                 | Empty list; Start shows form only; first Save draft creates the row          |
 
 
 
@@ -309,7 +313,8 @@ Do not start this until the checklist is ticked.
 | Symptom                           | Check                                                                         |
 | --------------------------------- | ----------------------------------------------------------------------------- |
 | Table empty but CMS has rows      | Column field keys `title` / `company` / `status`; `_owner` on the rows        |
-| Start reopens the same draft      | `createDraftNomination` still has the old “if existing, return it” branch     |
+| Start creates a CMS row immediately | Dashboard still calls `createDraftNomination` on Start                        |
+| Submit without saving first         | Frontend should block; backend rejects insert on final submit               |
 | Saving A overwrites B             | `saveNomination` still queries by `_owner` instead of `_id`                   |
 | Clients appear on both packets    | `nominationId` missing on `Customer_Feedback` or not passed from the lightbox |
 | `$w is not a function` / ID error | Step 1 IDs not on the page or not Synced                                      |

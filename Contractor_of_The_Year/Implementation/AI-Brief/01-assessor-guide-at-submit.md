@@ -106,11 +106,10 @@ Use **one shared backend function** for both paths so the payload and signature 
 
 It should:
 
-1. Load the `Nominations` row; refuse unless status is **SUBMITTED**.
+1. Load the `Nominations` row by id.
 2. Build the same JSON as [golden-packet-webhook.json](n8n/fixtures/golden-packet-webhook.json).
-3. Set `aiBriefStatus = 'queued'` (optionally clear `aiBrief` / `aiBriefAt` on re-run).
-4. `fetch` n8n webhook; await **202 only**.
-5. On failure → `aiBriefStatus = 'failed'`. Return `{ ok, status }` to caller.
+3. `fetch` n8n webhook; await **202 only**. **Do not** write `aiBriefStatus` / clear brief on enqueue (Wix `update` replaces the whole item — a partial patch wipes the packet).
+4. On failure → return `{ ok: false }` to caller; leave CMS unchanged. Nominee submit still succeeds.
 
 ### Path A — automatic (final submit)
 
@@ -202,12 +201,8 @@ On failure n8n sends `"status": "failed"` and `"error": "…"` (no `markdown`).
 ### Handler must
 
 1. Verify `X-PBF-Signature` and `X-PBF-Timestamp` (±300 s window).
-2. Load `Nominations` row by `nominationId`.
-3. Refuse if status is not `SUBMITTED`.
-4. Patch:
-  - `ready` → `aiBrief = markdown`, `aiBriefAt = now`, `aiBriefStatus = 'ready'`
-  - `failed` → `aiBriefStatus = 'failed'`
-5. Return **200** JSON `{ ok: true }`.
+2. `wixData.get` the nomination, merge brief fields onto the full row, then `update` — if `markdown` present → `aiBrief` + `aiBriefAt`; set `aiBriefStatus` from body `status` (default `ready` when markdown sent). Never pass a partial object to `update`.
+3. Return **200** JSON `{ ok: true }`. No DRAFT/SUBMITTED checks.
 
 ---
 
