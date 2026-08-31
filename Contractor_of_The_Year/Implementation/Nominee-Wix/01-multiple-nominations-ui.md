@@ -12,43 +12,55 @@ The `Nominations` collection already allows many rows per `_owner`. This work is
 
 ---
 
+
+
 ## How to use this file (order)
 
 Do not ask Cursor for code until **Step 3** is fully ticked.
 
-| Step | What | Who |
-| --- | --- | --- |
-| **1** | Layout + IDs + CMS field in Local Editor, then Sync | You |
-| **2** | Align IDs (this file) | You + Cursor in chat if anything clashes |
-| **3** | Pre-code checklist | You |
-| **4** | Cursor writes page + backend | Cursor (after Step 3) |
-| **5** | Test scenarios | You (+ Cursor if something fails) |
-| **6** | Publish | You |
+
+| Step  | What                                                | Who                                      |
+| ----- | --------------------------------------------------- | ---------------------------------------- |
+| **1** | Layout + IDs + CMS field in Local Editor, then Sync | You                                      |
+| **2** | Align IDs (this file)                               | You + Cursor in chat if anything clashes |
+| **3** | Pre-code checklist                                  | You                                      |
+| **4** | Cursor writes page + backend                        | Cursor (after Step 3)                    |
+| **5** | Test scenarios                                      | You (+ Cursor if something fails)        |
+| **6** | Publish                                             | You                                      |
+
 
 ```mermaid
 flowchart LR
   S1[1 Editor] --> S2[2 Align IDs] --> S3[3 Checklist] --> S4[4 Code] --> S5[5 Test] --> S6[6 Publish]
 ```
 
+
+
 ---
+
+
 
 ## Product (locked)
 
 One member, many nominations. Each row is a distinct project.
 
-| Action | Who | Behaviour |
-| --- | --- | --- |
-| **List** | Hub | All of this member's packets: title, company, status |
-| **Create** | `#startNominationBtn` | Insert a new `DRAFT`. Open it. Never reuse an existing row. |
-| **Read** | Table row click | Load that `_id` into the existing form |
-| **Update** | `#saveDraftBtn` / `#submitFinalBtn` | Save **that** `_id` only. Submitted stays locked. |
-| **Delete** | `#deleteNominationBtn` | **Drafts only.** Confirm in the existing **Alert** lightbox, then remove the row and its customer rows. Submitted cannot be deleted this pass. |
+
+| Action     | Who                                 | Behaviour                                                                                                                                      |
+| ---------- | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **List**   | Hub                                 | All of this member's packets: title, company, status                                                                                           |
+| **Create** | `#startNominationBtn`               | Insert a new `DRAFT`. Open it. Never reuse an existing row.                                                                                    |
+| **Read**   | Table row click                     | Load that `_id` into the existing form                                                                                                         |
+| **Update** | `#saveDraftBtn` / `#submitFinalBtn` | Save **that** `_id` only. Submitted stays locked.                                                                                              |
+| **Delete** | `#deleteNominationBtn`              | **Drafts only.** Confirm in the existing **Alert** lightbox, then remove the row and its customer rows. Submitted cannot be deleted this pass. |
+
 
 **Out of this pass:** withdraw of a submitted packet, new Triggered Emails, category assignment UI, award-page layout (label only, in code).
 
 **Clients:** each customer row belongs to **one** nomination. Add `nominationId` on `Customer_Feedback` (Step 1C). The Add Customer lightbox stays; Cursor will pass the open nomination's `_id` via lightbox context.
 
 ---
+
+
 
 ## Screen model
 
@@ -90,9 +102,13 @@ flowchart TB
   Table -.->|none selected| Intro["#introBox"]
 ```
 
+
+
 `#loadingBox` stays as today (first paint only).
 
 ---
+
+
 
 ## Step 1 — Local Editor
 
@@ -102,17 +118,19 @@ Do this in Local Editor (`cd ittdspace && npm run dev`). **Sync** when the UI is
 
 These IDs already exist and the form still uses them.
 
-| Role | IDs |
-| --- | --- |
-| Shell | `#loadingBox`, `#introBox`, `#editBox`, `#errorMsg` |
-| Start | `#startNominationBtn` |
-| Core fields | `#titleInput`, `#companyInput`, `#statusText`, `#ownerText` |
-| Narrative | `#richTextBoxExamplary`, `#richTextBoxImpact`, `#richTextBoxLessons` |
-| Consents | `#gdprCheckbox`, `#retentionCheckbox`, `#publicationCheckbox` |
-| Files | `#uploadNarrative`, `#viewNarrativeBtn`, `#deleteNarrativeBtn`, `#uploadContractMatrix`, `#viewContractBtn`, `#deleteContractBtn`, `#uploadRACI`, `#viewRaciBtn`, `#deleteRaciBtn` |
-| Customers | `#customerTable`, `#addCustomerBtn`, `#deleteCustomerBtn` |
-| Save | `#saveDraftBtn`, `#submitFinalBtn` |
-| Lightbox | **AddCustomerPopup** (unchanged in Editor) · **Alert** (reuse for delete confirm) |
+
+| Role        | IDs                                                                                                                                                                                |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Shell       | `#loadingBox`, `#introBox`, `#editBox`, `#errorMsg`                                                                                                                                |
+| Start       | `#startNominationBtn`                                                                                                                                                              |
+| Core fields | `#titleInput`, `#companyInput`, `#statusText`, `#ownerText`                                                                                                                        |
+| Narrative   | `#richTextBoxExamplary`, `#richTextBoxImpact`, `#richTextBoxLessons`                                                                                                               |
+| Consents    | `#gdprCheckbox`, `#retentionCheckbox`, `#publicationCheckbox`                                                                                                                      |
+| Files       | `#uploadNarrative`, `#viewNarrativeBtn`, `#deleteNarrativeBtn`, `#uploadContractMatrix`, `#viewContractBtn`, `#deleteContractBtn`, `#uploadRACI`, `#viewRaciBtn`, `#deleteRaciBtn` |
+| Customers   | `#customerTable`, `#addCustomerBtn`, `#deleteCustomerBtn`                                                                                                                          |
+| Save        | `#saveDraftBtn`, `#submitFinalBtn`                                                                                                                                                 |
+| Lightbox    | **AddCustomerPopup** (unchanged in Editor) · **Alert** (reuse for delete confirm)                                                                                                  |
+
 
 Hide or delete `#coachText` if it is still on the page (DR-002). Cursor will not write to it.
 
@@ -121,33 +139,35 @@ Hide or delete `#coachText` if it is still on the page (DR-002). Cursor will not
 Put the list **above** `#editBox`. Copy the Assessor table look if that is faster than inventing a new one.
 
 
-| Control | ID | Notes |
-| --- | --- | --- |
-| Search | `#searchMyNominations` | Filter title / company / status. Same idea as `#searchAssessor`. |
-| Table | `#myNominationsTable` | **Not** `#customerTable`. Do not reuse the client table for the list. |
-| Delete draft | `#deleteNominationBtn` | Inside `#editBox`. Label: **Delete draft**. |
+| Control      | ID                     | Notes                                                                 |
+| ------------ | ---------------------- | --------------------------------------------------------------------- |
+| Search       | `#searchMyNominations` | Filter title / company / status. Same idea as `#searchAssessor`.      |
+| Table        | `#myNominationsTable`  | **Not** `#customerTable`. Do not reuse the client table for the list. |
+| Delete draft | `#deleteNominationBtn` | Inside `#editBox`. Label: **Delete draft**.                           |
 
 
 **Table columns** — Manage Table **field keys must match** the row objects Cursor will send:
 
+
 | Column header (Editor text) | Field key |
-| --- | --- |
-| Title | `title` |
-| Company | `company` |
-| Status | `status` |
+| --------------------------- | --------- |
+| Title                       | `title`   |
+| Company                     | `company` |
+| Status                      | `status`  |
+
 
 Empty title in CMS is fine; Cursor will send `title` as `"(Untitled draft)"` for display so the row is still clickable.
 
-**`#introBox` copy** (Editor): *Select a nomination in the list, or start another.*  
-**`#startNominationBtn` label** (Editor default): *Start another nomination*  
+`#introBox` **copy** (Editor): *Select a nomination in the list, or start another.*  
+`#startNominationBtn` **label** (Editor default): *Start another nomination*  
 (Code will set *Start nomination* when the list is empty.)
 
 Do **not** put `#startNominationBtn` inside `#editBox`. It belongs with the list so it stays visible while a form is open.
 
 ### 1C. CMS
 
-- **`Nominations`:** no new fields. Do not add a unique index on `_owner`.
-- **`Customer_Feedback`:** add **`nominationId`** (Text). Stores the parent `Nominations._id`. Not a Reference field (keeps Editor setup simple). Existing UAT rows can stay empty; Cursor will treat empty + “this member has only one packet” as legacy.
+- `Nominations`**:** no new fields. Do not add a unique index on `_owner`.
+- `Customer_Feedback`**:** add `nominationId` (Text). Stores the parent `Nominations._id`. Not a Reference field (keeps Editor setup simple). Existing UAT rows can stay empty; Cursor will treat empty + “this member has only one packet” as legacy.
 
 Collection permissions stay as they are (backend uses `suppressAuth` after an ownership check).
 
@@ -161,39 +181,45 @@ Local Editor → **Sync** so `ittdspace` sees the new elements. Confirm in Curso
 
 ---
 
+
+
 ## Step 2 — Align IDs
 
 If you could not use an ID above, write the real ID here before code. Otherwise leave this table blank.
 
 
-| Planned | Actual (if different) |
-| --- | --- |
-| `#myNominationsTable` | |
-| `#searchMyNominations` | |
-| `#deleteNominationBtn` | |
-| `Customer_Feedback.nominationId` | |
+| Planned                          | Actual (if different) |
+| -------------------------------- | --------------------- |
+| `#myNominationsTable`            |                       |
+| `#searchMyNominations`           |                       |
+| `#deleteNominationBtn`           |                       |
+| `Customer_Feedback.nominationId` |                       |
 
 
 ---
+
+
 
 ## Step 3 — Pre-code checklist (gate)
 
 Tick all before asking Cursor for Step 4.
 
-- [ ] List sits above the form: `#searchMyNominations` + `#myNominationsTable` + `#startNominationBtn`
-- [ ] Table column field keys are `title`, `company`, `status`
-- [ ] `#editBox` still contains the existing form IDs (1A)
-- [ ] `#deleteNominationBtn` is on the form, not on the list
-- [ ] `#startNominationBtn` is **not** inside `#editBox`
-- [ ] `#introBox` copy updated
-- [ ] `#coachText` gone or hidden
-- [ ] `Customer_Feedback.nominationId` exists in CMS
-- [ ] Local Editor **Synced** to `ittdspace`
-- [ ] Desktop layout checked (page is already desktop-gated)
+- [x] List sits above the form: `#searchMyNominations` + `#myNominationsTable` + `#startNominationBtn`
+- [x] Table column field keys are `title`, `company`, `status`
+- [x] `#editBox` still contains the existing form IDs (1A)
+- [x] `#deleteNominationBtn` is on the form, not on the list
+- [x] `#startNominationBtn` is **not** inside `#editBox`
+- [x] `#introBox` copy updated
+- [x] `#coachText` gone or hidden
+- [x] `Customer_Feedback.nominationId` exists in CMS
+- [x] Local Editor **Synced** to `ittdspace`
+- [x] Desktop layout checked (page is already desktop-gated)
 
 **When all ticked:** ask Cursor to implement **Step 4**.
 
 ---
+
+
 
 ## Step 4 — Cursor (after Step 3)
 
@@ -209,6 +235,8 @@ Do not start this until the checklist is ticked.
 - Customers: `getMyCustomers(nominationId)` / `addCustomer(data, nominationId)` write and filter `nominationId`
 - Submit emails: only customers for **that** nomination (legacy: owner-only rows only if this member still has a single packet)
 
+
+
 ### 4B. Nominee Dashboard page
 
 - On load: **do not** auto-create a draft
@@ -220,13 +248,19 @@ Do not start this until the checklist is ticked.
 - Search filters the list locally (same pattern as `NominationTableManager`)
 - Add Customer lightbox: pass `{ nominationId }` as context
 
+
+
 ### 4C. Award page
 
 - Nominee logged in: `#mainActionBtn` label **Your nominations** → `/nominee-dashboard`
 
+
+
 ### 4D. Assessor customers (small)
 
 - `getNomineeCustomerFeedback` / `loadCustomerCards` filter by `nominationId` when opening a packet so two projects from the same firm do not mix on the assessor Customers tab.
+
+
 
 ### 4E. Leave alone
 
@@ -234,7 +268,11 @@ Do not start this until the checklist is ticked.
 
 ---
 
+
+
 ## Step 5 — Verify and test (after code)
+
+
 
 ### 5A. Smoke
 
@@ -244,36 +282,43 @@ Do not start this until the checklist is ticked.
 - [ ] Refresh does **not** create another row
 - [ ] Table shows title / company / status for each row
 
+
+
 ### 5B. Scenarios
 
 
-| # | Scenario | Steps | Pass when |
-| --- | --- | --- | --- |
-| N-T1 | Create two | Start, fill title A, save draft. Start again, fill title B, save draft | CMS has two rows for you; table shows A and B |
-| N-T2 | Open the other | Click A in the table | Form shows A's title, not B |
-| N-T3 | Save does not clobber | With A open, change title, save. Open B | B unchanged |
-| N-T4 | Submit locks one | Submit A (files + consents + client as today). Open B | A locked; B still a draft |
-| N-T5 | Clients stay on the packet | On A add client X. On B add client Y | A's table has X only; B's has Y only; both rows have `nominationId` set |
-| N-T6 | Delete draft | Open B (draft). Delete draft. Confirm in Alert | B gone from CMS and table; A still there; form back to intro |
-| N-T7 | No delete on submitted | Open submitted A | `#deleteNominationBtn` hidden; cannot delete |
-| N-T8 | Search | Type part of title A | Table shows A, not B |
-| N-T9 | Award CTA | Log in as nominee; open award page; click main CTA | Label **Your nominations**; lands on the list |
-| N-T10 | First-time member | Member with Nominee role and zero rows | Empty list; Start creates the first draft (same as today, but only on click) |
+| #     | Scenario                   | Steps                                                                  | Pass when                                                                    |
+| ----- | -------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| N-T1  | Create two                 | Start, fill title A, save draft. Start again, fill title B, save draft | CMS has two rows for you; table shows A and B                                |
+| N-T2  | Open the other             | Click A in the table                                                   | Form shows A's title, not B                                                  |
+| N-T3  | Save does not clobber      | With A open, change title, save. Open B                                | B unchanged                                                                  |
+| N-T4  | Submit locks one           | Submit A (files + consents + client as today). Open B                  | A locked; B still a draft                                                    |
+| N-T5  | Clients stay on the packet | On A add client X. On B add client Y                                   | A's table has X only; B's has Y only; both rows have `nominationId` set      |
+| N-T6  | Delete draft               | Open B (draft). Delete draft. Confirm in Alert                         | B gone from CMS and table; A still there; form back to intro                 |
+| N-T7  | No delete on submitted     | Open submitted A                                                       | `#deleteNominationBtn` hidden; cannot delete                                 |
+| N-T8  | Search                     | Type part of title A                                                   | Table shows A, not B                                                         |
+| N-T9  | Award CTA                  | Log in as nominee; open award page; click main CTA                     | Label **Your nominations**; lands on the list                                |
+| N-T10 | First-time member          | Member with Nominee role and zero rows                                 | Empty list; Start creates the first draft (same as today, but only on click) |
+
+
 
 
 ### 5C. Failures — what to check
 
 
-| Symptom | Check |
-| --- | --- |
-| Table empty but CMS has rows | Column field keys `title` / `company` / `status`; `_owner` on the rows |
-| Start reopens the same draft | `createDraftNomination` still has the old “if existing, return it” branch |
-| Saving A overwrites B | `saveNomination` still queries by `_owner` instead of `_id` |
-| Clients appear on both packets | `nominationId` missing on `Customer_Feedback` or not passed from the lightbox |
-| `$w is not a function` / ID error | Step 1 IDs not on the page or not Synced |
-| Extra drafts on every refresh | Auto-create on load not removed |
+| Symptom                           | Check                                                                         |
+| --------------------------------- | ----------------------------------------------------------------------------- |
+| Table empty but CMS has rows      | Column field keys `title` / `company` / `status`; `_owner` on the rows        |
+| Start reopens the same draft      | `createDraftNomination` still has the old “if existing, return it” branch     |
+| Saving A overwrites B             | `saveNomination` still queries by `_owner` instead of `_id`                   |
+| Clients appear on both packets    | `nominationId` missing on `Customer_Feedback` or not passed from the lightbox |
+| `$w is not a function` / ID error | Step 1 IDs not on the page or not Synced                                      |
+| Extra drafts on every refresh     | Auto-create on load not removed                                               |
+
 
 ---
+
+
 
 ## Step 6 — Publish
 
@@ -284,9 +329,12 @@ Do not start this until the checklist is ticked.
 
 ---
 
+
+
 ## Notes for Cursor (do not do until Step 3)
 
 - Work in `ittdspace/`, not the PBF vault copy.
 - Reuse `public/nominationSelectionTable.js` if the search API fits; make search optional rather than requiring a new class if that is simpler.
 - `public/nominationView.js` is unused by the live dashboard; update it only if something still imports it, otherwise leave it.
 - Do not create pages from the IDE.
+

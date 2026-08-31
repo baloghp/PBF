@@ -1,9 +1,9 @@
 # Brief: "What nominees need to prepare" (backlog #8)
 
 - **Series:** How to win (owner: Peter)
-- **Post date:** Wed 26 Aug 2026 - **Phase:** Launch (nominations open 1 Sep)
+- **Post date:** Fri 28 Aug 2026 (slipped from Wed 26) - **Phase:** Launch (nominations open 1 Sep)
 - **Channel:** Peter's profile, PCOTY page reshare
-- **Role in series:** the 17 Aug post named the nine questions a nomination has to answer. This one is the practical follow-through: what you actually have to produce, and which parts you cannot produce in a hurry.
+- **Role in series:** the 17 Aug post named the nine questions a nomination has to answer, as a personal vendor-review scene. That tone got good feedback. This one is the practical follow-through in the same voice: you already have a name, so what does the file actually have to do, and which parts you cannot produce in a hurry.
 - **Pre-announced:** the 14 Aug post's cross-reference stub already promised "next in How to win: what nominees need to prepare (#8)", so this is owed to readers.
 - **Co-assignment:** the marketing backlog lists #8 as "Peter / Kris". Confirm with Kris that he isn't drafting it too.
 
@@ -56,7 +56,7 @@ Primary: identify the client contact and warn them the email is coming. Secondar
 
 ## Cross-reference stub
 
-TODO before publishing. Natural pointer: Oliver's "Bidding and tendering with integrity" (24 Aug, two days earlier). Tag him.
+Previous post by implication (the nine, the keep-or-drop meeting). Oliver only if the Monday 31 Aug workshop line stays and the Events URL is live. Do not tag him for "Bidding and tendering": that 24 Aug slot was recast and the draft never went out.
 
 ## Out of scope (owned by others)
 
@@ -71,8 +71,9 @@ TODO before publishing. Natural pointer: Oliver's "Bidding and tendering with in
 - Do **not** publish the 0-5 scale, weights, or the people-development percentage bands
 - Do **not** promise a Nominee Coach. [DR-002](../../../Confluence/Project-Contractor-Of-The-Year-Award/245989377%20-%20DR-002%20—%20Drop%20Nominee%20Coach%20role%20(Post-UAT).md) dropped the role for this cycle; support is the platform help channel
 - Public link must be `ittd.space/pbf-pcoty`, never a Confluence URL
-- **Dependency, 12 days out:** the public-facing requirements list has to exist on the award page by 26 Aug, or this post's CTA has nowhere to send people
+- Long-form, same meeting-scene voice as 17 Aug. First two lines must earn "...see more."
+- Word counts and client-form flow should match the [Nominee Guide](../../../Contractor_of_The_Year/Guides/Contractor-of-the-Year-Nominee-Guide-2026.md) (ceilings; we email the unique link; due 31 Oct)
 
 ## Open question
 
-The submission package is still marked "Draft - Subject to change". If any word counts or artifacts change between now and 26 Aug, this post is wrong in public. Worth asking whether the requirements are frozen for cycle 1 before publishing.
+The Confluence submission package is still marked "Draft - Subject to change". The nominee guide is the public source of truth for this post. If a ceiling or the client flow moves before Friday, fix the draft before it goes live.

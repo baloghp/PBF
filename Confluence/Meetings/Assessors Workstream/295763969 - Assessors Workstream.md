@@ -13,3 +13,5 @@ Index page for the assessor workstream's meeting notes (child of the main Meetin
 | Date | Page | Offline |
 | --- | --- | --- |
 | 17 Aug 2026 | [Meeting - 17.08.2026](https://ittd.atlassian.net/wiki/spaces/PBF/pages/295895041) | [295895041 - Meeting - 17.08.2026.md](295895041 - Meeting - 17.08.2026.md) |
+
+Related (not a meeting): [Reach Out Communications](../../Project-Contractor-Of-The-Year-Award/298483713 - Reach Out Communications (Email & LinkedIn) - Assessors Recruitment.md) — Soban, 18 Aug.

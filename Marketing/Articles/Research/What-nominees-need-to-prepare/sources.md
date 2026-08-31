@@ -47,7 +47,7 @@ The four prose limits add up to 3,100 words, but **do not present that as a work
 
 ## 2. The record-keeping problem (researched, then cut from the post)
 
-> **Not used in v4.** This was the spine of v1 and a single paragraph in v3. Cut because the post's argument is now mechanical, and three statistics were carrying one point. Kept in full because it is verified, and because the **17%** benefits-realisation figure is the designated fallback if the post ever reads thin: use it alone, next to the "6-12 months after handover" clause. Also a ready-made spine for a future post on why nobody can evidence their own best project.
+> **v5 uses the 17% only.** The 81% / 39% pairing stays out. The 17% sits next to the 6-12 month clause, as one research line in a personal long-form piece. The rest of this section remains a ready-made spine for a future post on why nobody can evidence their own best project.
 
 **Lessons are captured once, then lost.** PMI conference paper, *Business Benefits: the value of lessons learned* (n = 45 project managers, public and private sector): **89%** of lessons learned are captured **at the end** of projects, and only **31%** of respondents said their organisation has a database or system to store them for future use. About **87%** did lessons-learned activities only in a post-project review. A separate study cited there found **44%** had some way to apply lessons in planning future projects.
 
@@ -140,6 +140,6 @@ Both are right, at different levels, and the post must not send people into a wa
 
 ## Continuity
 
-- 7 Aug: three quiet stories. 14 Aug: the deciding question (C9). 17 Aug: the nine questions. **26 Aug: what producing that answer actually costs.**
+- 7 Aug: three quiet stories. 14 Aug: the deciding question (C9). 17 Aug: the nine questions. **28 Aug: what producing that answer actually costs**, in the same meeting-scene voice.
 - Shared vocabulary: Project Business, the seller side, fair risk-sharing.
 - Do not retell Mustang / Pfizer / Grumman, or re-explain the nine criteria.
