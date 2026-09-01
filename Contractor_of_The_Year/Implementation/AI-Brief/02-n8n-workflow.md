@@ -599,8 +599,10 @@ function extractLlmText(j) {
 
 function stripModelBanner(text) {
   const t = String(text).trim();
-  const m = t.match(/^[\s\S]*?(##\s*Packet\s+[Ss]napshot[\s\S]*)$/);
-  return m ? m[1].trim() : t;
+  // Model often emits title + disclaimer + metadata before the real body.
+  // Keep from the first Packet Snapshot heading (optional "1." numbering).
+  const m = t.match(/##\s*(?:\d+\.\s*)?Packet\s+[Ss]napshot[\s\S]*$/);
+  return m ? m[0].trim() : t;
 }
 
 const src = $('Static prompts').first().json;
@@ -637,7 +639,7 @@ Use `$input.first().json` and `$('…').first().json` in this mode. Do not use `
 
 Connect **8 → 9**. Execute the **whole workflow**. Copy `markdown` into a `.md` file and read it. If you would show it to an assessor, Part A is done.
 
-**Do not add n8n’s Markdown→HTML node.** It mangles tables and leaves artifacts. Wix converts markdown when writing or rendering `#richTextBoxAiBrief`.
+**Do not add n8n’s Markdown→HTML node.** It mangles tables and leaves artifacts. Wix converts markdown when rendering `#richTextBoxAiBrief`. **Wix RichTextBox does not support HTML tables** — Wix rewrites GFM pipe-tables into bullet lists on render (`Item — Status`).
 
 ---
 

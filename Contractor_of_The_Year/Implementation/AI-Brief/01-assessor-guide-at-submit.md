@@ -218,7 +218,7 @@ When a nomination is loaded, code sets `.value` from stored markdown (converted 
 
 ### Re-run button (`#btnRunAIBriefAgain`)
 
-Outside Tabs. On click: fire-and-forget `runAiBriefAgain(nominationId)` (backend POST to n8n; no wait for result). Button shows **AI brief request sent** for 30s, then returns to **Run AI brief**. No polling — reopen the nomination later to see the brief in `#richTextBoxAiBrief` once n8n write-back completes.
+Outside Tabs. On click: fire-and-forget `runAiBriefAgain(nominationId)` (backend POST to n8n; no wait for result). **One click per page load** — button stays disabled with label **Request sent — refresh in 3–5 min**, and an Alert tells the assessor to refresh in about 3–5 minutes. A full page refresh unlocks the button again. No polling.
 
 **Never** copy brief text into scoring sliders. Sliders remain assessor-only.
 
