@@ -43,18 +43,20 @@ Ready-to-upload PDFs (and markdown sources): [artifacts/](artifacts/).
 | `packet.fileRaci` | `#viewRaciBtn` link |
 | `packet.customers[]` | `#customerRepeater` (from JSON, not CMS) |
 
-## Key scores (starter)
+## Key scores (2026-09-13, Assessment Guide 1–10)
 
-| Field | Suggested |
-| --- | --- |
-| `projectSuccessScore` | 5 |
-| `agilityAdaptabilityScore` | 4 |
-| `commercialModelScore` | 5 |
-| `legalSoundnessScore` | 4 |
-| `interfaceGovernanceScore` | 4 |
-| `riskManagementScore` | 4 |
-| `peopleDevelopmentScore` | 5 |
-| `teamBusinessAcumenScore` | 5 |
-| `innovationAdvancementScore` | 5 |
+Total **71 / 90**. Pass = every score within ±`passTolerance` of the key. `keyReasons` are shown in the exam **Alert lightbox after Submit** (not on the scoring form).
+
+| Field | Key | Why not higher / lower |
+| --- | --- | --- |
+| `projectSuccessScore` | 9 | Outcomes vs baseline are excellent; not 10 (self-asserted, no audit attached) |
+| `agilityAdaptabilityScore` | 7 | Agile process present; almost no real change story |
+| `commercialModelScore` | 9 | Outcome + equity + liquidity is the packet’s strength; not 10 (messy equity line, heavy advance) |
+| `legalSoundnessScore` | 7 | Sample clauses + English law; not a closed contract |
+| `interfaceGovernanceScore` | 7 | RACI works except dual-A on architecture |
+| `riskManagementScore` | 7 | Broad register; generic mitigations |
+| `peopleDevelopmentScore` | 8 | 15% of profit is top band; thin curriculum evidence |
+| `teamBusinessAcumenScore` | 8 | Integrity controls are real; no hard pressure test |
+| `innovationAdvancementScore` | 9 | Case-study worthy sharing; not a proven breakthrough 10 |
 
 Pass = every score within ±`passTolerance` of the key.

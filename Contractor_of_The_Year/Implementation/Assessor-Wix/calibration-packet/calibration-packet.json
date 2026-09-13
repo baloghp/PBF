@@ -38,16 +38,27 @@
     ]
   },
   "key": {
-    "projectSuccessScore": 10,
-    "agilityAdaptabilityScore": 8,
-    "commercialModelScore": 10,
-    "legalSoundnessScore": 8,
-    "interfaceGovernanceScore": 8,
-    "riskManagementScore": 8,
-    "peopleDevelopmentScore": 10,
-    "teamBusinessAcumenScore": 10,
-    "innovationAdvancementScore": 10
+    "projectSuccessScore": 9,
+    "agilityAdaptabilityScore": 7,
+    "commercialModelScore": 9,
+    "legalSoundnessScore": 7,
+    "interfaceGovernanceScore": 7,
+    "riskManagementScore": 7,
+    "peopleDevelopmentScore": 8,
+    "teamBusinessAcumenScore": 8,
+    "innovationAdvancementScore": 9
+  },
+  "keyReasons": {
+    "projectSuccessScore": "9 — Excellent evidenced outcomes vs a clear baseline: all stated KPIs met or beaten, 7.5 vs 8 months, 95% of budget, 6- and 12-month sustainment, COO comment matches. Not 10: every figure is self-asserted in a fictional packet; savings audit is named but not attached; 600% growth is enabled, not solely caused.",
+    "agilityAdaptabilityScore": "7 — Very good agile machinery (backlog, sprints, steering for scope). Weak as a change story: almost no real change events, trade-offs, or recovery from disruption. Ahead of schedule is not the same as handling change without chaos. Outcome contract, not T&M, so cash-visibility test is lighter.",
+    "commercialModelScore": "9 — Strongest part of the packet. Mix of 25% advance, 40% milestones, 20% outcome on audited savings, 10% retention, plus 2% equity with a 3-year vest is a real liquidity and incentive design. Subcontractor matrix shows how cash reaches specialists. Not 10: 25% advance is heavy for the client; equity vs the 5% contract line is slightly messy; outcome formula is simple and capped.",
+    "legalSoundnessScore": "7 — English law and courts, IP split, SLA/warranty, liability caps, mediation then arbitration, GDPR/AI advisor on the matrix. Still a sample note, not an executed contract. Dual Accountable on architecture in the RACI is a privity/decision-rights smell. Enough to be sound, not closed-book excellent.",
+    "interfaceGovernanceScore": "7 — Usable RACI, steering group, escalation path, and split of business vs technical ownership. Fail the RACI test on architecture (Client CTO and Contractor CTO both Accountable). Daily standups and joint incident response are good. Clear boundary with one dual-A defect.",
+    "riskManagementScore": "7 — Cross-party register covering finance, ops, IP, cyber, regulatory, reputation, with owners and bi-weekly review. Mitigations are mostly generic (AWS, NDA, insurance). Geopolitical is a one-line export check. Independent savings audit is claimed, not evidenced. Competent, not distinctive.",
+    "peopleDevelopmentScore": "8 — 15% of profit is in the top 5%+ band and 120 operations staff trained, with a training partner on the matrix. Thin on named certifications, curricula, or contractor-side development beyond delivery training. Investment is real; development quality is lightly shown.",
+    "teamBusinessAcumenScore": "8 — Integrity pack is explicit: cross-corporate code of conduct, gift cap, competitive quotes, equity disclosed to both boards, candour via documented decisions. Customer narrative is strongly positive. Ignore the 4–5 customer slider numbers as an unconverted 1–5 leftover (packet also cites 91/100). Not 10: little evidence of pressure, amber-raising, or a hard integrity test.",
+    "innovationAdvancementScore": "9 — Passes the case-study test: outcome-plus-equity commercial model, multi-objective optimisation, blogs, OSS, conferences, template reused by other startups. Criterion 9 wants 8–10 for winners. Not 10: novelty claims are unbenchmarked (proprietary AI, 10x scale) and typical of a glowing packet rather than a proven profession-level breakthrough."
   },
   "fileUploadNotes": "File URLs filled 2026-08-16 (Wix usrfiles). 01=narrative, 02=contract matrix, 03=RACI.",
-  "notes": "Never insert into Nominations or Customer_Feedback CMS. Backend imports this JSON only. Do not put under public/. Calibration is always online — no calibrationMode field. Scores are 1-10 (portal slider range). Starter key remapped from prior 0-5 draft (×2); Angel/Peter still confirm."
+  "notes": "Never insert into Nominations or Customer_Feedback CMS. Backend imports this JSON only. Do not put under public/. Calibration is always online — no calibrationMode field. Scores are 1-10 (portal slider range). Key scored 2026-09-13 against the Assessment Guide. keyReasons are shown in the exam result Alert after Submit (not before). Pass = each score within ±passTolerance of key."
 }
