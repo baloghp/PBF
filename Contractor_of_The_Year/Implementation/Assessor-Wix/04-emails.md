@@ -22,8 +22,11 @@ sequenceDiagram
         Mail-->>A: B2 Welcome — theory then exam
         alt Online
             A->>Portal: Complete Program (theory)
-            A->>Portal: Calibration exam (duplicate form)
-            Portal-->>Mail: B4 You are on the roster
+            Mail-->>A: B5 Thanks — optional calibration exercise
+            opt They open the exam
+                A->>Portal: Calibration exam (duplicate form)
+                Portal-->>Mail: B4 You are on the roster
+            end
         else Live session
             A->>Portal: Attend / marked present
             Portal-->>Mail: B4 You are on the roster
@@ -47,6 +50,7 @@ No email for browsing the EOI page, ticking COI, or saving a draft.
 | B2 | `userId` set | Welcome — complete theory then the calibration exam | Auto | 3 |
 | B3 | Theory or exam not done, ~7 days | Reminder: calibration is required before scoring | Auto | 3 |
 | B4 | Calibration Passed | You are on the Stage 1 roster | Auto | 3 |
+| B5 | Theory program complete | Thank you for completing the PCotY assessor program | Auto (`assessorTheoryComplete`) | 3 |
 | C1 | Admin assigns nomination(s) | You have been assigned nominations (deadline …) | Auto | 2 |
 | C2 | 7 days before deadline, not submitted | Reminder: assessment due … | Auto | 2 |
 | C3 | Past deadline, not submitted | Overdue: please submit or tell us you cannot | Auto + organisers | 2 |
@@ -66,9 +70,10 @@ From: PCotY organisers.
 | A2 | What failed (PBP number / Credly URL / name); how to reply or resubmit |
 | A3 | Verified; wait for account invite; calibration comes after login |
 | B1 | Wix set-password link |
-| B2 | Program URL then exam URL; both required before scoring |
+| B2 | Program URL then exam URL; tracked, recommended, not a scoring lock |
 | B3 | Same links; they cannot be assigned until done |
 | B4 | They are on the roster; wait for C1 |
+| B5 | Thanks for finishing the program; calibration exercise is optional; exam URL |
 | C1 | Count, deadline, portal link; COI if conflict |
 | C2 / C3 | Deadline; portal link; reply if they cannot finish |
 | C4 | Locked; do not share scores with nominees |

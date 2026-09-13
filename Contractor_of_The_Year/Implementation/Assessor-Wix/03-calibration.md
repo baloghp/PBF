@@ -763,7 +763,7 @@ Dashboard → **Automations** → **+ Create** → Start from scratch.
 3. Body params: **Entire payload** (not Custom)
 4. No secret header / body field needed
 
-The endpoint reads **`contact.email`** and sets that row’s `Assessors.theoryStatus = Complete`.
+The endpoint reads **`contact.email`**, sets that row’s `Assessors.theoryStatus = Complete`, and on first completion sends **B5** `assessorTheoryComplete` (thanks + optional exam link).
 
 **Smoke test:**
 
@@ -793,6 +793,34 @@ Wire when Program URL + `/calibration-exam` both exist. Catalogue: [04](04-email
 | B2  | Member activated / ready for theory | Yes, after URLs exist. Must include Program URL then exam URL. Copy in 04 still says both are “required before scoring” — **change that sentence** to: tracked, recommended, not a scoring lock. |
 | B3  | Reminder ~7 days                    | **Defer.** 04 still says they cannot be assigned until done. That contradicts Phase 2. Do not send B3 until the copy is fixed.                                                                   |
 | B4  | `calibrationStatus = Passed`        | Optional in C4 (Triggered Email), or send later.                                                                                                                                                 |
+| B5  | Theory program complete             | **Yes.** Triggered Email `assessorTheoryComplete`. Wired in `theoryComplete`. Create + publish the template before testing.                                                                      |
+
+#### B5 — `assessorTheoryComplete`
+
+Create in **Developer Tools → Triggered Emails**. Email ID must be exactly `assessorTheoryComplete`.
+
+**Subject:** Thank you for completing the PCotY assessor program
+
+**Variables:** `givenName` (fallback `there`), `familyName`, `SITE_URL` (fallback `https://www.ittd.space`), `EXAM_URL` (fallback `https://www.ittd.space/calibration-exam`)
+
+**Must say:** thanks for finishing the program; calibration exercise is optional and does not block scoring; here is the exam link; plain ASCII.
+
+```
+Hi {{givenName}},
+
+Thank you for completing the PCotY assessor program.
+
+The calibration exercise is optional. It is a short practice score against a sample nomination so the panel marks to a shared standard. It does not block you from scoring.
+
+If you have not done it yet, open it here (you must be logged in):
+
+{{EXAM_URL}}
+
+PCotY organisers
+{{SITE_URL}}
+```
+
+Does not send again if `theoryStatus` is already Complete. To retest: set that field back to `Not started` (or empty) in CMS, then complete the Program or POST `/_functions/theoryComplete`.
 
 
 B1 stays the native Wix member invite from Activate. Do not duplicate it here.
