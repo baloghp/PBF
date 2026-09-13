@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 # Restore remotes (if wiped by Cursor agent sandbox) and push main.
-# Run from a normal host terminal — not the Cursor agent shell.
+# ittdspace always git add -A first (code + wix.config.json UI version) so
+# Local Editor Save is on GitHub before `wix publish` Remote.
 #
 # Usage:
 #   bash scripts/git-push-both.sh
-#   # or copy-paste the blocks below one repo at a time
+#   bash scripts/ittdspace-sync-github.sh "Your ittdspace message."
 
 set -euo pipefail
 
 PBF_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-ITTDspace="$PBF_ROOT/ittdspace"
 
 ensure_origin() {
   local repo="$1"
@@ -21,16 +21,13 @@ ensure_origin() {
   git -C "$repo" remote -v
 }
 
-echo "=== PBF vault ==="
+echo "=== PBF vault (push only; commit separately) ==="
 ensure_origin "$PBF_ROOT" "https://github.com/baloghp/PBF.git"
 git -C "$PBF_ROOT" status -sb
 git -C "$PBF_ROOT" push -u origin main
 
 echo
-echo "=== ittdspace ==="
-ensure_origin "$ITTDspace" "https://github.com/baloghp/ittdspace.git"
-git -C "$ITTDspace" status -sb
-git -C "$ITTDspace" push -u origin main
+bash "$PBF_ROOT/scripts/ittdspace-sync-github.sh"
 
 echo
 echo "Done."
