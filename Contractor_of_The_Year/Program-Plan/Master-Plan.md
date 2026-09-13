@@ -168,8 +168,8 @@
 - [ ] Ceremony format: virtual vs in-person
 - [ ] SLA values (replace "X days" placeholders)
 - [ ] Appeals process finalisation
-- [x] Winner set — **one overall + three places per category**; categories at intake (DR-003)
-- [ ] Stage 2 shortlist size (N per category into the panel) — distinct from the three named places (DR-003)
+- [x] Winner set — **four awards** (Overall + Small + Medium + Large); shared-merit Stage 1 and Stage 2; categories at intake as labels (DR-003 amended 2026-09-09)
+- [ ] Stage 2 shortlist size (N from the shared Stage 1 field into the panel) — distinct from the four awards (DR-003)
 - [ ] Judge shortlist & confirmation
 - [ ] Budget envelope & sponsorship tiers
 - [ ] Workstream owners (fill all [TBD])
@@ -196,7 +196,7 @@ Created 2026-06-05 on board: https://ittd.atlassian.net/jira/software/projects/S
 
 - [DR-001 — Award Cycle Schedule: Stage 2 in January (P-CotY 2026)](Decisions/DR-001-Cycle-Schedule.md) — *Accepted 2026-06-05*
 - [DR-002 — Drop Nominee Coach role (Post-UAT)](Decisions/DR-002-Drop-Nominee-Coach.md) — *Accepted 2026-06-16*
-- [DR-003 — Multiple nominations per nominator; overall + category places](Decisions/DR-003-Multiple-Nominations-and-Winner-Set.md) — *Accepted 2026-08-20*
+- [DR-003 — Multiple nominations per nominator; overall + category awards](Decisions/DR-003-Multiple-Nominations-and-Winner-Set.md) — *Accepted 2026-08-20; amended 2026-09-09*
 
 ---
 

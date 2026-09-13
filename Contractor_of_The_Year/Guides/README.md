@@ -6,6 +6,7 @@ Working markdown for the three PCoTY 2027 audience guides. Word exports in this 
 | --- | --- | --- |
 | [Nominee Guide](Contractor-of-the-Year-Nominee-Guide-2026.md) | Nominees preparing a submission | `Contractor-of-the-Year-Nominee-Guide-2026.md` |
 | [Customer Guide](Contractor-of-the-Year-Customer-Guide-2026.md) | Client representatives completing the customer evaluation | `Contractor-of-the-Year-Customer-Guide-2026.md` |
+| [Customer reference email template](Customer-Reference-Notification-Email-Template.md) | Nominators — warn the client before the evaluation email arrives | `Customer-Reference-Notification-Email-Template.md` |
 | [Assessment Guide](Contractor-of-the-Year-Assessment-Guide-2026.md) | Stage 1 assessors and Stage 2 judges | `Contractor-of-the-Year-Assessment-Guide-2026.md` |
 
 Platform: [ittd.space/pbf-pcoty](https://www.ittd.space/pbf-pcoty)

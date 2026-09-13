@@ -146,7 +146,7 @@ Intake has already checked eligibility and completeness. You are scoring quality
 
 ## Stage 2: judging panel
 
-Shortlisted nominees present **20 minutes** plus **15 minutes of questions**. They arrive **already in a category** (assigned at intake). The panel does not re-bucket them.
+Shortlisted nominees present **20 minutes** plus **15 minutes of questions**. They arrive **already carrying a category label** (assigned at intake for the award title). The panel does not re-bucket them. Scoring is the same for every shortlisted project.
 
 Judges:
 
@@ -154,9 +154,9 @@ Judges:
 - **Rescore all nine criteria independently (1-10)**, with strong attention to Criterion 9.
 - Use the customer evaluation and the Q&A as input, not as a substitute for their own scores.
 - Join outlier moderation (difference of more than 4 points) and final deliberation.
-- Name **three places per category** (Small, Medium, Large) and **one overall** Project Contractor of the Year from the Stage 2 field (normally also a category first place). Empty places stay empty if the field is thin.
+- Name **four awards** from the Stage 2 field: **one overall** Project Contractor of the Year, plus **one** Small, **one** Medium, and **one** Large category award. Dual title is allowed. Empty category awards stay empty if the field is thin.
 
-Consensus or a moderated average determines those places. In a stalemate, Oliver F. Lehmann has the deciding vote.
+Consensus or a moderated average determines those awards. In a stalemate, Oliver F. Lehmann has the deciding vote.
 
 Presentations may be recorded and published, subject to consent.
 

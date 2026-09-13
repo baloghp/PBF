@@ -43,11 +43,11 @@ You can save a draft and return to it until you submit. **You may submit more th
 - **Project type:** a cross-corporate customer-contractor project, in any industry, where you acted as an independent contractor for a paying client under contract.
 - **Timing:** completed in 2024-2025, or still running at nomination.
 - **Two-actor requirement:** a client representative must complete the customer evaluation. Without that form, the nomination is incomplete.
-- **Publication:** you accept publication of a short case profile if you are the overall winner, a category first place, or one of the three recognised places in your category.
+- **Publication:** you accept publication of a short case profile if you win one of the **four awards** (Overall, Small, Medium, or Large).
 - **Integrity of the nominated work:** see below. This is an intake gate, not a score.
 - **Multiple nominations:** one nominator may enter more than one project. Same contracted engagement cannot be entered twice.
 
-Categories are assigned at **intake** from **headcount on customer projects** (not internal work or admin): Small 1-25, Medium 26-100, Large 101+. You do not pick a category. Stage 1 ranks within category. Stage 2 names **three places per category** and **one overall** Project Contractor of the Year. Categories are not assigned at Stage 2.
+Categories are assigned at **intake** from **headcount on customer projects** (not internal work or admin): Small 1-25, Medium 26-100, Large 101+. You do not pick a category. The label is for the category award title only. Stage 1 and Stage 2 score **every** nomination the same way. The panel names **four awards**: Overall, Small, Medium, and Large. Categories are not assigned at Stage 2. Dual title is allowed.
 
 ### Integrity of the nominated work
 
@@ -65,9 +65,9 @@ If the project is ineligible on this rule, do not submit it. There is no appeal 
 
 1. **Submit** on the platform. Save as draft until you are ready. Start another nomination from the same account if you have a second distinct project.
 2. **Intake.** An automated check reviews eligibility, completeness, and attachments, usually within about a day. Missing items are flagged on your dashboard. Program support sends a templated note if something is still outstanding. **Category is assigned here.**
-3. **Stage 1.** At least two independent assessors score the packet on nine criteria (1-10). Ranking and shortlist are **per category**.
-4. **Stage 2.** If shortlisted, you present to the judging panel: 20 minutes plus 15 minutes of questions. The panel names three places per category and one overall winner.
-5. **Award.** Overall winner, category places, and remaining finalists are notified through the platform and program communications.
+3. **Stage 1.** At least two independent assessors score the packet on nine criteria (1-10). **One shared field** — same judgement for every project. Shortlist is from that field.
+4. **Stage 2.** If shortlisted, you present to the judging panel: 20 minutes plus 15 minutes of questions. The panel names **four awards**: Overall, Small, Medium, Large.
+5. **Award.** The four award winners (and shortlisted finalists as communications allow) are notified through the platform and program communications.
 
 There is **no Nominee Coach** for this cycle. Track status on your dashboard. Questions go to program support through the platform help channel.
 
@@ -138,7 +138,7 @@ Upload these artifacts to back the narrative. Anonymise personal data (see GDPR 
 The client's view is a scored part of the nomination, not a reference letter.
 
 1. Enter the customer representative's **work email** in the nomination. A wrong address fails silently: the link goes nowhere and nobody is told, including you.
-2. Tell them the email is coming, who it is from, and that it is not phishing.
+2. Tell them the email is coming, who it is from, and that it is not phishing. Use the [customer reference notification template](Customer-Reference-Notification-Email-Template.md) if helpful.
 3. They receive a unique link and rate **seven criteria on a 0-10 scale**, with weights. They add evidence notes for high or low scores and sign publication consent.
 4. Their form must be in by **31 October**, the same close as yours.
 

@@ -69,8 +69,8 @@
 - [ ] Ceremony format: virtual vs in-person
 - [ ] SLA values (replace "X days" placeholders)
 - [ ] Appeals process finalisation
-- [x] Winner set — **one overall + three places per category**; categories at intake (DR-003)
-- [ ] Stage 2 shortlist size (N per category into the panel) — distinct from the three named places (DR-003)
+- [x] Winner set — **four awards** (Overall + Small + Medium + Large); shared-merit Stage 1 and Stage 2; categories at intake as labels (DR-003 amended 2026-09-09)
+- [ ] Stage 2 shortlist size (N from the shared Stage 1 field into the panel) — distinct from the four awards (DR-003)
 - [ ] Judge shortlist & confirmation
 - [ ] Budget envelope & sponsorship tiers
 - [ ] Workstream owners (fill all \[TBD\])
@@ -100,7 +100,7 @@ Created 2026-06-05 on board: [https://ittd.atlassian.net/jira/software/projects/
 * [Project Overview](https://ittd.atlassian.net/wiki/spaces/PBF/pages/97419265)
 * [Process Map](https://ittd.atlassian.net/wiki/spaces/PBF/pages/117866524)
 * [DR-002 — Drop Nominee Coach role (Post-UAT)](https://ittd.atlassian.net/wiki/spaces/PBF/pages/245989377)
-* [DR-003 — Multiple nominations per nominator; overall + category places](https://ittd.atlassian.net/wiki/spaces/PBF/pages/301105153)
+* [DR-003 — Multiple nominations per nominator; overall + category awards](https://ittd.atlassian.net/wiki/spaces/PBF/pages/301105153) — *Accepted 2026-08-20; amended 2026-09-09*
 * [Roles and RACI](https://ittd.atlassian.net/wiki/spaces/PBF/pages/117964816)
 * [Governance & Jury Protocol](https://ittd.atlassian.net/wiki/spaces/PBF/pages/97779722)
 * [Overview & Eligibility](https://ittd.atlassian.net/wiki/spaces/PBF/pages/98566145)

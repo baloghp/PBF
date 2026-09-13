@@ -29,5 +29,6 @@ One subfolder per article, named after the post. Each contains:
 | 4 | [Bidding and tendering with integrity](Bidding-and-Tendering-with-Integrity/brief.md) | 24 Aug | 🟡 Draft v1 — **slot taken over from Oliver, tell him**. Cash half only; lowest-bid economics stays his (12 Oct) |
 | 5 | [What nominees need to prepare](What-nominees-need-to-prepare/brief.md) | last week | ✅ Published (do not rerun) |
 | 6 | [They were difficult](They-were-difficult/brief.md) | 28 Aug | 🟡 Draft v1 — personal sequel to 17 Aug; candour / "difficult"; not a how-to |
-| 7 | What judges actually look for | 14 Sep | ⚠️ Re-angle needed — collides with 14 + 17 Aug. Suggest Stage 2 / live panel, and it trails the W2 workshop on 16 Sep |
-| 8 | Evidence that strengthens a nomination | 23 Sep | 🔲 Backlog — split from nominee-prep: that post says what the file must do, this one shows claim vs evidence |
+| 7 | [A seal you cannot write yourself](A-seal-you-cannot-write-yourself/brief.md) | 4 Sep | 🟡 Draft v1 — contractor side; judgement process as marketing seal; Launch CTA |
+| 8 | What judges actually look for | 14 Sep | ⚠️ Re-angle needed — collides with 14 + 17 Aug. Suggest Stage 2 / live panel, and it trails the W2 workshop on 16 Sep |
+| 9 | Evidence that strengthens a nomination | 23 Sep | 🔲 Backlog — split from nominee-prep: that post says what the file must do, this one shows claim vs evidence |

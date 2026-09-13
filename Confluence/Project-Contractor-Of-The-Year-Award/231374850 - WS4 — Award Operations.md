@@ -62,7 +62,7 @@ WIX provides hosting, security, and platform operations, so there is **no separa
 
 ## Categorization note (per WS3 decision; locked by DR-003)
 
-All submissions start equal; **categories (Small/Medium/Large by customer-project headcount) are assigned during intake**, not at submission and **not at Stage 2**. Stage 1 shortlisting is per category. Stage 2 names **three places per category** plus **one overall** winner. Operations owns the category-assignment step (`WS4-T06`, Stage C). A nominator may submit **multiple nominations** (distinct projects) from the same account.
+All submissions start equal; **categories (Small/Medium/Large by customer-project headcount) are assigned during intake**, not at submission and **not at Stage 2**, as a **label for the category award title**. Stage 1 and Stage 2 score **one shared field**. Stage 2 names **four awards**: Overall, Small, Medium, Large. Operations owns the category-assignment step (`WS4-T06`, Stage C). A nominator may submit **multiple nominations** (distinct projects) from the same account.
 
 ## Assets we already have (reuse, don't rebuild)
 
@@ -118,10 +118,10 @@ Lightweight support during the cycle is folded into the run — a simple contact
 * `WS4-T04` ([SCRUM-76](https://ittd.atlassian.net/browse/SCRUM-76)) — **Stage A — Open nominations & monitor** (coordinate with WS3 launch) → M1
 * `WS4-T05` ([SCRUM-77](https://ittd.atlassian.net/browse/SCRUM-77)) — **Stage B — Close nominations** (lock submissions at deadline) → M2
 * `WS4-T06` ([SCRUM-78](https://ittd.atlassian.net/browse/SCRUM-78)) — **Stage C — Intake, eligibility & categorize** (automated pre-screening within 24h + PM exceptions; eligibility screening; **assign category by customer-project headcount**; Comms sends missing-item notifications) → M3 _(Eligibility gate)_
-* `WS4-T07` ([SCRUM-79](https://ittd.atlassian.net/browse/SCRUM-79)) — **Stage D — Stage 1 screening** (**PM assigns ≥2 assessors** + COI/recusal; independent 1–10 scoring on the 9 criteria; PM moderates when >4 pts; rank per category; shortlist top N) → M4 _(Shortlist gate)_
+* `WS4-T07` ([SCRUM-79](https://ittd.atlassian.net/browse/SCRUM-79)) — **Stage D — Stage 1 screening** (**PM assigns ≥2 assessors** + COI/recusal; independent 1–10 scoring on the 9 criteria in **one shared field**; PM moderates when >4 pts; shortlist top N from the shared field) → M4 _(Shortlist gate)_
 * `WS4-T08` ([SCRUM-80](https://ittd.atlassian.net/browse/SCRUM-80)) — **Stage E — Notify & give feedback** (**Communications Coordinator** sends shortlist / not-shortlisted notifications + feedback) → M5
 * `WS4-T09` ([SCRUM-81](https://ittd.atlassian.net/browse/SCRUM-81)) — **Stage F — Stage 2 prep** (finalist prep; schedule presentations around judge availability; judge COI verification — coordinate WS2) → M6 _(COI/Quorum gate)_
-* `WS4-T10` ([SCRUM-82](https://ittd.atlassian.net/browse/SCRUM-82)) — **Stage G — Stage 2 judging** (20-min presentation + 15-min Q&A; independent scoring; outlier moderation >2 pts; deliberation; consensus/moderated average; Oliver Lehmann deciding vote if stalemate) → M7 _(Winner gate)_
+* `WS4-T10` ([SCRUM-82](https://ittd.atlassian.net/browse/SCRUM-82)) — **Stage G — Stage 2 judging** (20-min presentation + 15-min Q&A; independent scoring on the same nine for every finalist; outlier moderation >2 pts; deliberation; name **four awards**: Overall + Small + Medium + Large; Oliver Lehmann deciding vote if stalemate) → M7 _(Winner gate)_
 * `WS4-T11` ([SCRUM-83](https://ittd.atlassian.net/browse/SCRUM-83)) — **Stage H — Record decision & hand off** (document decisions + rationale; appeals window; transfer winners to WS6) → M8 _(Appeals gate)_
 
 ### Backward timeline
@@ -143,6 +143,7 @@ Lightweight support during the cycle is folded into the run — a simple contact
 ## Open Questions (rolled up)
 
 - [ ] Category-assignment rule confirmed (headcount thresholds: 1–25 / 26–100 / 101+)
-- [ ] Top N per category for the shortlist
+- [ ] Top N from the shared Stage 1 field for the shortlist
+- [x] Winner set — four awards: Overall + Small + Medium + Large (DR-003 amended 2026-09-09)
 - [x] Ops owner per stage — **Project Manager / Award Operations (WS4)** per [Roles and RACI](https://ittd.atlassian.net/wiki/spaces/PBF/pages/117964816) and DR-002
 - [ ] Earliest feasible nomination-open date (gate already satisfied — could start sooner than Sep)

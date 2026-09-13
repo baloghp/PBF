@@ -63,7 +63,7 @@ The rules already exist, distributed across Confluence. Validation = confirm the
 | Standard T&C element | Where it lives today | OK? |
 |----------------------|----------------------|-----|
 | Eligibility & entry rules | [Overview & Eligibility](https://ittd.atlassian.net/wiki/spaces/PBF/pages/98566145) (project type, 2-yr window, two-actor requirement, **multiple nominations per nominator** — DR-003) | validate |
-| Categories & assignment | [Overview & Eligibility](https://ittd.atlassian.net/wiki/spaces/PBF/pages/98566145) (headcount bands; **assigned at intake**; winner set: overall + 3 places per category — DR-003) | validate (confirm 1–25 / 26–100 / 101+) |
+| Categories & assignment | [Overview & Eligibility](https://ittd.atlassian.net/wiki/spaces/PBF/pages/98566145) (headcount bands; **assigned at intake** as award labels; winner set: four awards — Overall + S/M/L; shared-merit judging — DR-003 amended 2026-09-09) | validate (confirm 1–25 / 26–100 / 101+) |
 | What to submit | [Submission Package](https://ittd.atlassian.net/wiki/spaces/PBF/pages/98598913), [1.0 Submission & Intake](https://ittd.atlassian.net/wiki/spaces/PBF/pages/130514945) | validate |
 | Judging criteria & process | [Evaluation Framework](https://ittd.atlassian.net/wiki/spaces/PBF/pages/98631681), [Governance & Jury Protocol](https://ittd.atlassian.net/wiki/spaces/PBF/pages/97779722) | validate |
 | Fairness / COI / recusal | [Governance & Jury Protocol](https://ittd.atlassian.net/wiki/spaces/PBF/pages/97779722) → COI Policy link | **confirm COI Policy page exists & is filled** |

@@ -1,0 +1,38 @@
+Dear [Customer first name / title + surname],
+
+I am preparing a nomination for [Project name] for the Project Contractor of the
+Year 2027 award, run by the Project Business Foundation (PBF).
+
+As part of the submission, I have named you as the customer representative for
+this project. The award requires an independent customer evaluation — your
+perspective is a formal part of the nomination, not a reference letter we can
+supply ourselves.
+
+What happens next:
+
+1. I enter your work email address on the nomination platform.
+2. PBF sends you a separate email with a unique link to your evaluation form.
+   I do not receive that link and cannot complete the form for you.
+3. You rate the contractor on seven criteria (0–10 scale, with short notes where
+   scores are very high or very low) and confirm publication consent.
+4. The form must be completed by 31 October 2026 — the same close date as
+   nominations.
+
+I am writing now so the message from PBF does not catch you off guard or look
+like phishing. If you receive an evaluation request and were not expecting it,
+please contact me before opening any links.
+
+Please reply to confirm:
+
+- [Work email address] is still the best address to reach you at.
+- You are willing to act as the customer representative for this nomination.
+- [Optional: anyone else we should copy or loop in, e.g. procurement or PMO]
+
+Thank you for your support. I appreciate the time.
+
+Best regards,
+
+[Your name]
+[Your role]
+[Your company]
+[Your phone — optional]

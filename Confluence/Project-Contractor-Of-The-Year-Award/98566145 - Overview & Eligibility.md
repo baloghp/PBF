@@ -6,7 +6,7 @@
 
 ## Body
 
-> **Updated post-UAT Jun 2026 — Coach role removed.** See [DR-002 — Drop Nominee Coach role (Post-UAT)](https://ittd.atlassian.net/wiki/spaces/PBF/pages/245989377). Multiple nominations and winner set: [DR-003](https://ittd.atlassian.net/wiki/spaces/PBF/pages/301105153) (20 Aug 2026).
+> **Updated post-UAT Jun 2026 — Coach role removed.** See [DR-002 — Drop Nominee Coach role (Post-UAT)](https://ittd.atlassian.net/wiki/spaces/PBF/pages/245989377). Multiple nominations and winner set: [DR-003](https://ittd.atlassian.net/wiki/spaces/PBF/pages/301105153) (20 Aug 2026; **amended 9 Sep 2026** — shared-merit judging; four awards).
 
 The following is a draft version it is still subject to change
 
@@ -34,22 +34,22 @@ This page summarizes the program design and who can apply.
 * **Intake:** automated pre-screening checks eligibility and completeness within ~24 hours of submission; **Project Manager / Award Operations** handles exceptions **and assigns category**. Missing items are flagged on your dashboard; **Communications Coordinator** sends templated notifications (see DR-002).
 * **Nominee support:** track status on the platform dashboard; questions via **program support** / PMO inbox — **no Nominee Coach** volunteer for this cycle.
 * **Two evaluation phases:**
-    * **Stage 1** — independent **assessor** screening and scoring (Evaluation Framework, ≥2 assessors per nomination); **rank and shortlist per category**;
-    * **Stage 2** — shortlisted finalists present to the **judging panel** (20‑minute presentation + 15‑minute Q&A, re‑scoring). Panel names **three places per category** and **one overall** Project Contractor of the Year. Stage 2 does **not** assign categories.
+    * **Stage 1** — independent **assessor** screening and scoring (Evaluation Framework, ≥2 assessors per nomination); **one shared field** — same nine criteria for every nomination; shortlist top N from that field;
+    * **Stage 2** — shortlisted finalists present to the **judging panel** (20‑minute presentation + 15‑minute Q&A, re‑scoring). Panel names **four awards**: **Overall**, **Small**, **Medium**, and **Large**. Stage 2 does **not** assign categories.
 
 ---
 
 ## Categories
 
-Categories are based on **headcount in customer projects** (not including internal projects, administration, or bookkeeping). Categories are **assigned during intake** (not at submission, and **not at Stage 2**). Stage 1 shortlisting is per category. Stage 2 names the places and the overall winner; it does not re-bucket nominations.
+Categories are based on **headcount in customer projects** (not including internal projects, administration, or bookkeeping). Categories are **assigned during intake** (not at submission, and **not at Stage 2**) as a **label for the category award title**, not as a separate scoring track. Stage 1 and Stage 2 judge every project the same way. Stage 2 names the four awards; it does not re-bucket nominations.
 
 * **Small organizations (1–25 people in customer projects):** freelancers, solo practitioners, small teams.
 * **Medium organizations (26–100 people in customer projects):** scaling organizations with emerging formalization.
 * **Large organizations (101+ people in customer projects):** established operations with structured governance.
 
-**Winner set (DR-003):** **one overall** Project Contractor of the Year, **plus three recognised places in each category**. Empty places stay empty if the field is thin. The overall winner is named from the Stage 2 field (normally also a category first place).
+**Winner set (DR-003, amended 9 Sep 2026):** **four awards** — **one overall** Project Contractor of the Year, plus **one award in each category** (Small, Medium, Large). Dual title is allowed. Empty category awards stay empty if the field is thin.
 
-**Note:** Category boundaries may be adjusted based on actual submission patterns. The goal is fair comparison within similar organizational scales.
+**Note:** Category boundaries may be adjusted based on actual submission patterns. The goal is a fair headcount label for the three category titles.
 
 ---
 
@@ -65,16 +65,16 @@ Categories are based on **headcount in customer projects** (not including intern
 ### Stage 1 – Independent assessor screening
 
 * Apply the [Evaluation Framework](https://ittd.atlassian.net/wiki/spaces/PBF/pages/98631681) (1–10 scale); **minimum ≥2 assessors** per nomination (target 3 when capacity allows).
-* PM moderates inter-rater discrepancies; rank and shortlist top N per category (N is how many present at Stage 2 — distinct from the three named places).
+* PM moderates inter-rater discrepancies; shortlist top N from the **shared** Stage 1 field (N is how many present at Stage 2 — an operations setting, distinct from the four awards).
 * **Communications Coordinator** notifies all applicants (shortlisted / not shortlisted) and sends feedback to non-shortlisted nominees.
 
 ### Stage 2 – Judging Panel Presentation & Q&A
 
-* Shortlisted nominees deliver a 20‑minute online presentation + 15‑minute Q&A to the selected jury. They arrive **already categorised**.
+* Shortlisted nominees deliver a 20‑minute online presentation + 15‑minute Q&A to the selected jury. They arrive **already categorised** (intake label only). Same nine criteria for every shortlisted project.
 * Presentations may be recorded and published by PBF (subject to consent).
 * Jury composition: high‑profile experts with relevant domain mix; COI/recusal enforced.
 * Jurors rescore using the same framework; client sheet and Q&A inform deliberation.
-* Panel names **three places per category** and **one overall** winner. Consensus or moderated average. (Stalemate: @Oliver F. Lehmann has the deciding vote.) Stage 2 does **not** assign categories.
+* Panel names **four awards**: Overall, Small, Medium, Large. Dual title allowed. Consensus or moderated average. (Stalemate: @Oliver F. Lehmann has the deciding vote.) Stage 2 does **not** assign categories.
 
 ---
 
