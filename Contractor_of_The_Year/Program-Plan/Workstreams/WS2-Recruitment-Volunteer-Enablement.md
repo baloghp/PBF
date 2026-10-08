@@ -47,7 +47,7 @@ Secure and prepare enough qualified, calibrated **assessors and judges** to run 
 
 # Detailed Plan
 
-> Planned **backwards** from the [DR-001](../Decisions/DR-001-Cycle-Schedule.md) schedule: Stage 1 screening **Nov–Dec 2026** (shortlist before year-end), Stage 2 judging **mid-Jan 2027**.
+> Planned **backwards** from [DR-004](../Decisions/DR-004-Deadline-Change.md): assessor EOI closes **15 Nov 2026**; nominations close **30 Nov**; Stage 1 screening and finalist decision run in December, with finalists announced **20 Dec**. Stage 2 remains scheduled for mid-Jan 2027 (confirmed in R7).
 >
 > **Jira:** synced 2026-06-05. Tasks below are Subtasks under stories [SCRUM-12](https://ittd.atlassian.net/browse/SCRUM-12)–[SCRUM-15](https://ittd.atlassian.net/browse/SCRUM-15) (Epic [SCRUM-2](https://ittd.atlassian.net/browse/SCRUM-2)). Keys are linked per task.
 
@@ -55,7 +55,7 @@ Secure and prepare enough qualified, calibrated **assessors and judges** to run 
 
 | Track | Must be ready by | Lead time | Why |
 |-------|------------------|-----------|-----|
-| **Assessors** | Stage 1 start (**early Nov 2026**) | Medium | ≥2 independent assessors per nomination; PM assigns from confirmed roster |
+| **Assessors** | Stage 1 start (**Dec 2026; exact date in R4**) | Medium | ≥2 independent assessors per nomination; PM assigns from confirmed roster |
 | **Judges** | Stage 2 (**mid-Jan 2027**) | **Long** | High-profile people book months ahead; calibrate early Jan |
 
 > **Dropped:** Nominee Coach recruitment (was needed at nominations open Sep 2026) — intake is automated pre-screen + PM exceptions ([DR-002](../Decisions/DR-002-Drop-Nominee-Coach.md)).
@@ -74,7 +74,7 @@ Secure and prepare enough qualified, calibrated **assessors and judges** to run 
 ## Sub-track 2a — Assessors (Stage 1)  ([SCRUM-12](https://ittd.atlassian.net/browse/SCRUM-12))
 
 **Cycle 1 ops hub:** [Assessor Recruitment Workstream — Cycle 1](https://ittd.atlassian.net/wiki/spaces/PBF/pages/284164097) · offline `Confluence/.../284164097 - Assessor Recruitment Workstream — Cycle 1.md`  
-**Strategy:** [Assessor Recruitment Strategy — Cycle 1](https://ittd.atlassian.net/wiki/spaces/PBF/pages/263618649) — **50 recruit / ~25 active** · **PBP or PMP** required · applications close **15 Oct 2026**.
+**Strategy:** [Assessor Recruitment Strategy — Cycle 1](https://ittd.atlassian.net/wiki/spaces/PBF/pages/263618649) — **50 recruit / ~25 active** · **PBP or PMP** required · applications close **15 Nov 2026** per DR-004. Update the linked recruitment materials under R12.
 
 ### Materials to produce
 - ~~`WS2-T01` Coach role description~~ — **cancelled** (DR-002)
@@ -94,8 +94,8 @@ Secure and prepare enough qualified, calibrated **assessors and judges** to run 
 |------|------|
 | Jun–Jul 2026 | Produce role descriptions, application form, comms pack (T02–T05) |
 | Jul–Aug 2026 | Open volunteer call; warm-list outreach (T06–T08) |
-| **15 Oct 2026** | Close applications; select & confirm assessor roster (T09) |
-| late Oct 2026 | Assessors onboarded + calibrated ahead of Stage 1 (Nov–Dec) |
+| **15 Nov 2026** | Close applications (T09); confirm close time and review capacity (R5) |
+| By Stage 1 scoring start in Dec 2026 | Verify credentials, confirm roster, onboard and calibrate assessors; exact dates set in R4/R5 |
 
 ### Open questions
 - [x] Target #assessors — **50 recruit / ~25 active** (link WS3 qualified target ~45)

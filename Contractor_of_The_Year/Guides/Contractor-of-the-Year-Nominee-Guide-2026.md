@@ -1,5 +1,9 @@
 
 
+<p align="center">
+  <img src="../../Marketing/logo/Logo_transparent.png" alt="Project Contractor of the Year Award" width="160">
+</p>
+
 # Contractor of the Year Nominee Guide
 
 **Nomination and submission guide for the Project Contractor of the Year (PCoTY) Award 2027**
@@ -8,7 +12,7 @@ For contractors preparing a nomination.
 
 **Apply:** [ittd.space/pbf-pcoty](https://www.ittd.space/pbf-pcoty)
 
-Nominations open **1 September 2026** and close **31 October 2026**. The customer evaluation closes on the same date.
+Nominations open **1 September 2026** and close **30 November 2026**. The customer evaluation closes on the same date.
 
 ---
 
@@ -77,7 +81,7 @@ There is **no Nominee Coach** for this cycle. Track status on your dashboard. Qu
 
 1. **Sign up** at [ittd.space/pbf-pcoty](https://www.ittd.space/pbf-pcoty) and start a nomination. You can start further nominations from the dashboard; each is a separate project.
 2. **Build the packet.** Write the four narrative sections, upload the evidence files, and enter your customer representative's details.
-3. **Customer evaluation.** We email your client a unique link. They complete their own form. You cannot fill it in, forward the link, or upload it on their behalf. Warn them it is coming, and that it is due by **31 October**.
+3. **Customer evaluation.** We email your client a unique link. They complete their own form. You cannot fill it in, forward the link, or upload it on their behalf. Warn them it is coming, and that it is due by **30 November**.
 4. **Submit** before the close. You can edit until you click Submit.
 5. If you pass Stage 1, prepare the presentation and Q&A for the panel.
 
@@ -140,7 +144,7 @@ The client's view is a scored part of the nomination, not a reference letter.
 1. Enter the customer representative's **work email** in the nomination. A wrong address fails silently: the link goes nowhere and nobody is told, including you.
 2. Tell them the email is coming, who it is from, and that it is not phishing. Use the [customer reference notification template](Customer-Reference-Notification-Email-Template.md) if helpful.
 3. They receive a unique link and rate **seven criteria on a 0-10 scale**, with weights. They add evidence notes for high or low scores and sign publication consent.
-4. Their form must be in by **31 October**, the same close as yours.
+4. Their form must be in by **30 November**, the same close as yours.
 
 Pick someone who still works there and still answers email.
 

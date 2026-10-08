@@ -2,7 +2,7 @@
 
 - **Series:** 🏆 *How to win* (owner: Peter)
 - **Post date:** suggested Wed 14 Oct 2026, in place of "Common nomination mistakes" (a mistakes list fights the voice guide)
-- **Phase:** FOMO / close. CTA = nominate before **31 October**
+- **Phase:** FOMO / close. CTA = nominate before **30 November**
 - **Channel:** Peter's profile → PCOTY page reshare
 - **Format:** **short LinkedIn post, about 200 words.** Not an article. No "...see more" cliffhanger needed, no disclaimer paragraph, no process walkthrough
 
@@ -20,7 +20,7 @@ The previous drafts in this folder (a long-form piece on knowledge vs years vs a
 
 ## CTA
 
-One line. Nominations close **31 October**, at ittd.space/pbf-pcoty.
+One line. Nominations close **30 November**, at ittd.space/pbf-pcoty.
 
 ## Cross-reference stub
 

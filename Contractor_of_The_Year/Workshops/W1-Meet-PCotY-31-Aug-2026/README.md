@@ -9,6 +9,8 @@
 **Platform:** PBF Events — [cert.project-business.org/dashboard?sec=events](https://cert.project-business.org/dashboard?sec=events)  
 **Deck:** [slide-deck.md](slide-deck.md)
 
+> **Historical schedule note (2026-10-04):** This workshop was prepared before DR-004. Its original 31 October nomination and 15 October assessor dates are historical; the current dates are nominations **30 November 2026**, assessor EOI **15 November 2026**, and finalists **20 December 2026**. See [DR-004](../../Program-Plan/Decisions/DR-004-Deadline-Change.md).
+
 Agreed with Oliver on 11 Aug: why the award exists, who we expect as nominations, how the two stages work, then the assessor job and the offer. One workshop, not a series.
 
 **Winner set (DR-003 amended 2026-09-09):** Stage 1 and Stage 2 score **one shared field**. Judges name **four awards** — Overall, Small, Medium, Large. Category is an intake label only.

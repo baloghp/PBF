@@ -49,7 +49,7 @@ The first is the email address, and it has to be right, because getting it wrong
 
 The second is the warning. An unannounced email asking somebody to rate a supplier through a link is indistinguishable from phishing, and their IT department will agree with me. So tell your client it is coming, who it is from, and roughly when. Pick someone who still works there and still answers email.
 
-And it has to be in by the closing date, the same as everything else. Nominations close 31 October. The client form closes with them.
+And it has to be in by the closing date, the same as everything else. Nominations close 30 November. The client form closes with them.
 
 Which means that deadline is not really yours. It belongs to somebody at another company who does not yet know they are on your critical path. Anyone who has tried to get a customer case study approved knows the shape of this. Casey Hibbard, who does this for a living, says she has seen sign-off take anywhere from an hour to a year. It depends whose desk it lands on. None of those desks are yours.
 
@@ -63,7 +63,7 @@ That is the file. Not a brochure. Not a word count.
 
 I wrote earlier that a nomination which stands up to the nine is roughly what I want on the table before we sign the next SOW. This is how you build it. The words are the easy part. The client is not.
 
-Nominations open 1 September and close 31 October, at ittd.space/pbf-pcoty.
+Nominations open 1 September and close 30 November, at ittd.space/pbf-pcoty.
 
 Start with the call to your client. The words can wait. They are the only part entirely under your control.
 

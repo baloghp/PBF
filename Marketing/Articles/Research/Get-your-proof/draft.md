@@ -22,7 +22,7 @@ You do not have to win for this to be useful. You walk away with an account of t
 On time proves the project landed.
 Get your proof that your project was exceptional.
 
-Nominations close 31 October. Register and nominate at ittd.space/pbf-pcoty
+Nominations close 30 November. Register and nominate at ittd.space/pbf-pcoty
 
 #ProjectContractorOfTheYear #ProjectBusiness #PCOTY2027
 
@@ -44,6 +44,6 @@ Footage searches are in `brief.md`.
 - **Do not collapse the two shorts.** This one never mentions certificates, PMP, or "you know how." That film already ran, or is about to.
 - **Process is three facts, no mechanics.** One real project, two assessors who do not work for you, client link the contractor cannot touch. No nine criteria, no scale, no weights. "Would we publish this" stays in the August piece; here it is "something the rest of us should learn from."
 - **Disclaimer is a clause,** "and I help run it".
-- **CTA matches the end card:** Register and nominate, then the URL. Close date stays in the post so the feed has it even when the video does not say 31 October.
+- **CTA matches the end card:** Register and nominate, then the URL. Close date stays in the post so the feed has it even when the video does not say 30 November.
 - **No emoji.** Three hashtags. `#PCOTY2027`, same call as the certificate short.
 - Verify before publish: `rg -n '[^\x00-\x7F]' "Marketing/Articles/Research/Get-your-proof/draft.md"`

@@ -41,6 +41,6 @@
 
 ## Comms cadence
 
-* Anticipation **15 Jul – 14 Aug** · Launch **15 Aug – 15 Sep** · FOMO **15 Sep – 31 Oct**
+* Anticipation **15 Jul – 14 Aug** · Launch **15 Aug – 15 Sep** · FOMO **15 Sep – 30 Nov**
 
 See [Marketing LinkedIn: PCOTY articles](244875266 - Marketing LinkedIn- PCOTY articles.md) for post drafts.

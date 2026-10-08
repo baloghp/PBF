@@ -8,6 +8,8 @@
 
 **Source for Slide 2:** [Volunteer Thank-You & UAT Results](../../UAT/Volunteer-Thank-You-and-UAT-Results.md) — *What you were testing*.
 
+> **Historical schedule note (2026-10-04):** This deck preserves the dates presented at the July UAT celebration. The current schedule is nominations close **30 November 2026**, finalists announced **20 December 2026**, and assessor EOI closes **15 November 2026** per [DR-004](../../Program-Plan/Decisions/DR-004-Deadline-Change.md).
+
 ---
 
 ## Slide 1 — Welcome

@@ -74,7 +74,7 @@ Secure and prepare enough qualified, calibrated **assessors and judges** to run 
 
 ## Sub-track 2a — Assessors (Stage 1)  ([SCRUM-12](https://ittd.atlassian.net/browse/SCRUM-12))
 
-**Cycle 1 ops hub:** [Assessor Recruitment Workstream — Cycle 1](284164097 - Assessor Recruitment Workstream — Cycle 1.md) · **Strategy:** [Assessor Recruitment Strategy — Cycle 1](263618649 - Assessor Recruitment Strategy — Cycle 1.md) — **50 recruit / ~25 active** · **PBP or PMP** required · applications close **15 Oct 2026**.
+**Cycle 1 ops hub:** [Assessor Recruitment Workstream — Cycle 1](284164097 - Assessor Recruitment Workstream — Cycle 1.md) · **Strategy:** [Assessor Recruitment Strategy — Cycle 1](263618649 - Assessor Recruitment Strategy — Cycle 1.md) — **50 recruit / ~25 active** · **PBP or PMP** required · applications close **15 Nov 2026** per DR-004.
 
 ### Materials to produce
 
@@ -97,8 +97,8 @@ Secure and prepare enough qualified, calibrated **assessors and judges** to run 
 | --- | --- |
 | Jun–Jul 2026 | Produce role descriptions, application form, comms pack (T02–T05) |
 | Jul–Aug 2026 | Open volunteer call; warm-list outreach (T06–T08) |
-| **15 Oct 2026** | Close applications; select & confirm assessor roster (T09) |
-| late Oct 2026 | Assessors onboarded + calibrated ahead of Stage 1 (Nov–Dec) |
+| **15 Nov 2026** | Close applications (T09) |
+| Before Stage 1 scoring in Dec | Confirm, onboard, and calibrate assessors; exact dates/capacity under R5 |
 
 ### Open questions
 

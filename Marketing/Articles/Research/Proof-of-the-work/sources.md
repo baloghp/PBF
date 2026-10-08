@@ -45,4 +45,4 @@ Only if a long-form version is ever revived. Both papers agree years of experien
 
 ## Award facts used in the post
 
-All already public in the 4 Sep draft and the W1 deck: organisers cannot enter; at least two assessors read each nomination independently; the assessor gate is a PMP or PBP verified against the registry; the client rates the work through a link the contractor never sees and cannot fill in; nominations close 31 October at ittd.space/pbf-pcoty.
+Already public in the 4 Sep draft and the W1 deck: organisers cannot enter; at least two assessors read each nomination independently; the assessor gate is a PMP or PBP verified against the registry; the client rates the work through a link the contractor never sees and cannot fill in; nominations now close 30 November at ittd.space/pbf-pcoty.

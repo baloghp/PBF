@@ -51,7 +51,7 @@ There is a contractor I keep thinking about. Not the difficult one. The quiet on
 
 If that firm is yours, or if you are still the one rewriting the case study at midnight because the adjectives will not hold, that is the point of walking in.
 
-Nominations are open now and close 31 October, at ittd.space/pbf-pcoty. Put a project through. Or ask the client who still answers your email to put your name forward. The PDF can wait. The seal cannot write itself.
+Nominations are open now and close 30 November, at ittd.space/pbf-pcoty. Put a project through. Or ask the client who still answers your email to put your name forward. The PDF can wait. The seal cannot write itself.
 
 #ProjectContractorOfTheYear #ProjectBusiness #PCOTY2027
 

@@ -1,11 +1,13 @@
 # DR-001 — Award Cycle Schedule: Stage 2 in January (P-CotY 2026)
 
-- **Status:** Accepted
+- **Status:** Superseded for cycle dates by [DR-004](DR-004-Deadline-Change.md) (2026-10-04)
 - **Date:** 2026-06-05
-- **Updated:** 2026-08-11 — Stage 1 window clarified to **Nov–Dec**; assessor EOI closes **15 Oct** (assessing after nomination close)
+- **Updated:** 2026-10-04 — schedule dates superseded by DR-004; original decision retained as historical record
 - **Decision owner:** [Programme Owner — TBD]
 - **Affects:** WS1 (PMO timeline), WS2 (recruitment), WS3 (marketing), WS4 (operations), WS6 (ceremony), WS7 (sponsorship)
 - **Parent plan:** [Master Plan](../Master-Plan.md)
+
+> **Schedule superseded:** Use [DR-004](DR-004-Deadline-Change.md) for the current 2026 nomination, assessor EOI, and finalist dates. The January Stage 2 decision remains, subject to the feasibility review in R7.
 
 ---
 

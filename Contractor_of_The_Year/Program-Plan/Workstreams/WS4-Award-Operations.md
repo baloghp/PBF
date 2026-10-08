@@ -42,7 +42,7 @@ Run the end-to-end evaluation (intake → Stage 1 → Stage 2 → decision) to d
 
 # Detailed Plan
 
-> Planned **backwards** from the [DR-001](../Decisions/DR-001-Cycle-Schedule.md) schedule. The platform is **already live (UAT-proven)**, so the focus is the run: nominations **Sep–Oct 2026**; intake **Oct**; Stage 1 **Oct–late Nov** (shortlist before mid-Dec); Stage 2 **mid-Jan 2027**; decision **late Jan**.
+> Planned **backwards** from [DR-004](../Decisions/DR-004-Deadline-Change.md). The platform is **already live (UAT-proven)**, so the focus is the run: nominations close **30 Nov 2026**; intake and Stage 1 screening run in December; finalists are announced **20 Dec**. Stage 2 is scheduled for **mid-Jan 2027** and decision/ceremony for **late Jan–Feb 2027** (confirmed in R7). The detailed intake-to-announcement critical path is R4.
 >
 > **Jira note:** task codes below (e.g. `WS4-T01`) are **placeholders only** pending your review. We will sync to Jira once agreed (same process as WS2/WS3). Existing live stories: [SCRUM-19](https://ittd.atlassian.net/browse/SCRUM-19)–[SCRUM-21](https://ittd.atlassian.net/browse/SCRUM-21).
 
@@ -93,12 +93,12 @@ Lightweight support during the cycle is folded into the run — a simple contact
 | Stage | Window | Quality gate | Milestone (done = ) |
 |-------|--------|--------------|---------------------|
 | A. Nominations open | early Sep 2026* | — | **M1: Launch live** |
-| B. Nominations close | early Oct 2026 | — | **M2: Submissions locked** |
-| C. Intake & categorization | Oct 2026 | Eligibility gate | **M3: All nominations validated & categorized** |
-| D. Stage 1 screening | Oct–late Nov 2026 | Shortlist gate | **M4: Shortlist locked (before mid-Dec)** |
-| E. Shortlist notifications | early–mid Dec 2026 | — | **M5: All applicants notified + feedback sent** |
-| — Christmas pause — | late Dec 2026 | — | (clean seam) |
-| F. Stage 2 prep | Dec–early Jan 2027 | COI/Quorum gate | **M6: Stage 2 ready (finalists + judges confirmed)** |
+| B. Nominations close | **30 Nov 2026** | — | **M2: Submissions locked** |
+| C. Intake & categorization | **1–3 Dec 2026** | Eligibility gate | **M3: All nominations validated & categorized** |
+| D. Stage 1 screening | **4–13 Dec 2026**; moderate 14–16 Dec | Shortlist gate | **M4: Shortlist approved by 17 Dec** |
+| E. Finalist announcement | **20 Dec 2026** | — | **M5: Finalists announced on the public timeline** |
+| December / holiday coverage | Through the 20 Dec announcement | — | Coverage confirmed (R6); no clean-pause assumption |
+| F. Stage 2 prep | Late Dec 2026–early Jan 2027 | COI/Quorum gate | **M6: Stage 2 ready (finalists + judges confirmed)** |
 | G. Stage 2 judging | mid-Jan 2027 | Winner gate | **M7: Winners selected** |
 | H. Decision & handoff | late Jan 2027 | Appeals gate | **M8: Decision finalized, handed to WS6** |
 
@@ -119,11 +119,12 @@ Lightweight support during the cycle is folded into the run — a simple contact
 |------|-------------------|
 | (pre-run) | 4a verification (T01–T03) — light, platform already live |
 | early Sep 2026* | Stage A → **M1 Launch** |
-| early Oct 2026 | Stage B → **M2 Submissions locked** |
-| Oct 2026 | Stage C → **M3 Validated & categorized** |
-| Oct–late Nov 2026 | Stage D → **M4 Shortlist locked** |
-| early–mid Dec 2026 | Stage E → **M5 Applicants notified** |
-| Dec 2026–early Jan 2027 | Stage F → **M6 Stage 2 ready** |
+| **30 Nov 2026** | Stage B → **M2 Submissions locked** |
+| **1–3 Dec 2026** | Stage C → **M3 Validated & categorized** |
+| **4–16 Dec 2026** | Stage D → **M4 Scoring and moderation** |
+| **17 Dec 2026** | Shortlist approval |
+| **20 Dec 2026** | Stage E → **M5 Finalists announced** |
+| Late Dec 2026–early Jan 2027 | Stage F → **M6 Stage 2 ready** |
 | mid-Jan 2027 | Stage G → **M7 Winners selected** |
 | late Jan 2027 | Stage H → **M8 Decision finalized + handoff to WS6** |
 

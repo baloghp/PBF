@@ -30,8 +30,8 @@
 | 10 | Nominations are open | Launch | Leila | CTA post — 1 Sep |
 | 11 | Category explainer (Small / Medium / Large) | Launch | Leila | From [award page design](../Award-Main-Page-Design.md) |
 | 12 | Client role in nominations | Launch | Oliver | Customer validation angle |
-| 13 | 30 days left to nominate | FOMO | Leila | — |
-| 14 | Final week — submit now | FOMO | Leila | — |
+| 13 | 60 days left to nominate (1 Oct) | FOMO | Leila | — |
+| 14 | Submit now; deadline 30 Nov | FOMO | Leila | — |
 | 15 | Winner sponsor shout-out | Post-close | TBD | Only if sponsor signed |
 
 ---

@@ -32,7 +32,7 @@
 **Shared messages (all tiers)**
 
 - Recognises **contractor–client project excellence** (Project Business), not generic “PM of the year”.
-- **Nominations 1 Sep – 31 Oct 2026** → winners **Feb 2027**.
+- **Nominations 1 Sep – 30 Nov 2026** → finalists **20 Dec 2026** → winners **Feb 2027** (R7 confirmed 2026-10-04).
 - Partners **never** influence who wins; support is **not required** to nominate or win.
 - Wording: **Supported by** / **Amplification partner** — not product endorsement.
 - Documentation (confirmation, email, SOW) → [Partnership legalities & confirmation](263520298 - Partnership legalities & confirmation.md).
@@ -202,11 +202,11 @@ Thanks,
 
 ### 2.6 Tier 2 — Internal nomination nudge *(alternative to LinkedIn)*
 
-**Subject:** `Consider nominating — Project Contractor of the Year (closes 31 Oct)`
+**Subject:** `Consider nominating — Project Contractor of the Year (closes 30 Nov)`
 
 Hi colleagues,
 
-The **Project Contractor of the Year Award** is open for nominations until **31 October 2026**. It recognises excellence in **contractor–client project delivery** (Project Business).
+The **Project Contractor of the Year Award** is open for nominations until **30 November 2026**. It recognises excellence in **contractor–client project delivery** (Project Business).
 
 If we have a project from the last two years that went beyond standard delivery, please consider nominating:
 
@@ -281,12 +281,12 @@ Partners adapt; must link nomination site + tag Showcase + disclose relationship
 ### Mid-campaign (~mid Oct)
 
 > Halfway through the nomination window for **Project Contractor of the Year** — celebrating projects that go beyond competence to real impact.  
-> Nominate by 31 Oct: [ittd.space/pbf-pcoty](https://www.ittd.space/pbf-pcoty)  
+> Nominate by 30 Nov: [ittd.space/pbf-pcoty](https://www.ittd.space/pbf-pcoty)
 > #PCOTY2026 · @Project Contractor of the Year Award
 
-### Countdown *(optional, ~25 Oct)*
+### Countdown *(optional, ~23 Nov)*
 
-> Last weeks to nominate for **Project Contractor of the Year 2026** — winners announced Feb 2027.  
+> Final days to nominate for **Project Contractor of the Year 2026** — nominations close 30 Nov; finalists announced 20 Dec.  
 > [ittd.space/pbf-pcoty](https://www.ittd.space/pbf-pcoty) · #PCOTY2026
 
 ---
@@ -296,12 +296,12 @@ Partners adapt; must link nomination site + tag Showcase + disclose relationship
 ### Welcome new partner
 
 > We're pleased to welcome **[Partner]** as an **Amplification partner** for the Project Contractor of the Year Award 2026.  
-> Nominations open **1 Sep – 31 Oct** → [ittd.space/pbf-pcoty](https://www.ittd.space/pbf-pcoty)  
+> Nominations open **1 Sep – 30 Nov** → [ittd.space/pbf-pcoty](https://www.ittd.space/pbf-pcoty)
 > #PCOTY2026 #ProjectBusiness
 
 ### FOMO (name-check)
 
-> **[Partner]** is helping spread the word — nominations close **31 Oct**. Know a contractor–client project that deserves recognition?  
+> **[Partner]** is helping spread the word — nominations close **30 Nov**. Know a contractor–client project that deserves recognition?  
 > [ittd.space/pbf-pcoty](https://www.ittd.space/pbf-pcoty)
 
 ### Winner / prize courtesy (Tier 2)
@@ -312,7 +312,7 @@ Partners adapt; must link nomination site + tag Showcase + disclose relationship
 ### Community supporter thank-you (Tier 4)
 
 > Thank you to **[Supporter]** and our community supporters for helping spread the word during nomination season.  
-> Nominations close **31 Oct** → [ittd.space/pbf-pcoty](https://www.ittd.space/pbf-pcoty) · #PCOTY2026
+> Nominations close **30 Nov** → [ittd.space/pbf-pcoty](https://www.ittd.space/pbf-pcoty) · #PCOTY2026
 
 ---
 

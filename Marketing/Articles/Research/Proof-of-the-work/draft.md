@@ -21,7 +21,7 @@ Title or no title, you walk away with something you could not have written: an a
 
 Your certificate says you know how. This says you did it.
 
-Nominations close 31 October. ittd.space/pbf-pcoty
+Nominations close 30 November. ittd.space/pbf-pcoty
 
 #ProjectContractorOfTheYear #ProjectBusiness #PCOTY2027
 

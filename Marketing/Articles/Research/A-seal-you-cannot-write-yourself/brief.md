@@ -25,7 +25,7 @@ Self-written excellence is cheap. What holds in the next RFP is proof that went 
 
 ## CTA
 
-Put a project through. Or ask the client who still answers your email to put your name forward. Nominations open now, close **31 October**, at ittd.space/pbf-pcoty.
+Put a project through. Or ask the client who still answers your email to put your name forward. Nominations open now, close **30 November**, at ittd.space/pbf-pcoty.
 
 **Do not** push the postponed workshop as primary CTA (slipped from 4 Sep toward ~11 Sep).
 

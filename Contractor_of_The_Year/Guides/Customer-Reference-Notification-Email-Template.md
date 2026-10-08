@@ -6,7 +6,7 @@ Send this **before** you enter the customer representative on your nomination (o
 
 **Platform:** [ittd.space/pbf-pcoty](https://www.ittd.space/pbf-pcoty)  
 **Customer guide (optional link for them):** [Contractor-of-the-Year-Customer-Guide-2026.md](Contractor-of-the-Year-Customer-Guide-2026.md)  
-**Deadline:** customer evaluation and nomination both close **31 October 2026**.
+**Deadline:** customer evaluation and nomination both close **30 November 2026**.
 
 ---
 
@@ -47,7 +47,7 @@ What happens next:
    I do not receive that link and cannot complete the form for you.
 3. You rate the contractor on seven criteria (0–10 scale, with short notes where
    scores are very high or very low) and confirm publication consent.
-4. The form must be completed by 31 October 2026 — the same close date as
+4. The form must be completed by 30 November 2026 — the same close date as
    nominations.
 
 I am writing now so the message from PBF does not catch you off guard or look
@@ -80,7 +80,7 @@ Use when you have already spoken and only need a written heads-up:
 Hi [Name] — quick note: I am nominating [Project name] for Project Contractor
 of the Year 2027. I will list you as customer representative. PBF will email you
 a unique evaluation link to [work email]. Please watch for it (may look unfamiliar).
-Due 31 Oct. I cannot fill it in for you. OK to use that address? Thanks — [Your name]
+Due 30 Nov. I cannot fill it in for you. OK to use that address? Thanks — [Your name]
 ```
 
 ---

@@ -66,9 +66,9 @@ If you work in project contracting or know someone who does, take a moment to ex
 | Date | Event | Details |
 | --- | --- | --- |
 | 1 Sept 2026 | Nominations Open | Start your nomination and create your account |
-| 31 Oct 2026 | Submission Deadline | Final date to submit all materials (including client evaluation) |
-| 30 Nov 2026 | Finalists Announced | Shortlisted nominees notified; all applicants receive feedback |
-| Dec 2026 – Early Jan 2027 | Preparation Pause | Finalists prepare Stage 2 presentations; judging panel confirmed (not a public milestone) |
+| 30 Nov 2026 | Submission Deadline | Final date to submit all materials (including client evaluation) |
+| 20 Dec 2026 | Finalists Announced | Public timeline milestone; Stage 2 preparation follows |
+| 21 Dec 2026 – early Jan 2027 | Finalist preparation | Finalists prepare Stage 2 presentations; judge availability and holiday coverage subject to confirmation |
 | 24–30 Jan 2027 | Stage 2 Presentations | Finalists present to the judging panel (virtual) |
 | 15 Feb 2027 | Winners Announced | Award ceremony and publication (exact date TBD, e.g., 28 Jan 2027) |
 

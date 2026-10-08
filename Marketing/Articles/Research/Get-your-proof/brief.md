@@ -2,7 +2,7 @@
 
 - **Series:** 🏆 *How to win* (owner: Peter)
 - **Post date:** suggested Wed 21 Oct 2026, after the certificate short ([Proof of the work](../Proof-of-the-work/brief.md), 14 Oct). Can move earlier once that one has run. Must be out before nominations close.
-- **Phase:** FOMO / close. CTA = register and nominate before **31 October**
+- **Phase:** FOMO / close. CTA = register and nominate before **30 November**
 - **Channel:** Peter's profile → PCOTY page reshare
 - **Format:** **short LinkedIn post, about 200 words, plus a 2-beat video.** Same shape as the PMP short. Not an article.
 
@@ -32,7 +32,7 @@ End card is the logo, not stock.
 
 ## CTA
 
-One line. Nominations close **31 October**. Register and nominate at ittd.space/pbf-pcoty.
+One line. Nominations close **30 November**. Register and nominate at ittd.space/pbf-pcoty.
 
 ## Cross-reference stub
 

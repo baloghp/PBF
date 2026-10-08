@@ -5,6 +5,8 @@
 **Audience:** nominees (and people who will nominate) · assessor candidates  
 **Listing and run of show:** [README.md](README.md)
 
+> **Historical schedule note (2026-10-04):** This deck records the timeline presented at the 31 August workshop. Its original 31 October nomination and 15 October assessor dates are superseded by DR-004: nominations close 30 November, assessor EOI closes 15 November, and finalists are announced 20 December 2026.
+
 Build these as slides. Keep the "On slide" lines short. The notes are spoken, not extra bullets.
 
 Visual: PCotY seal, burgundy `#48180D`, keyboard-safe punctuation only.

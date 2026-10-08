@@ -68,7 +68,7 @@ Hero + mechanics + a few craft posts + provocations (2–3/week):
 
 ## FOMO shortlist — PCOTY page (15 Sep → 3 Oct)
 
-- **#13 30 days left** · **#14 Final week** · CK *The Cost of Not Speaking the Same Language* · Oliver *Cost-of-inaction p2* ("the contractor nobody nominates")
+- **#13 60 days left (1 Oct)** · **#14 submit now (26 Oct)** · close countdown continues through 30 Nov · CK *The Cost of Not Speaking the Same Language* · Oliver *Cost-of-inaction p2* ("the contractor nobody nominates")
 
 ---
 

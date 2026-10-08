@@ -19,7 +19,7 @@ Volunteer-run programme — **no cash sponsorship** in cycle 1. Partners contrib
 
 **Not in scope:** cash grants or reimbursements to individuals · sponsors influencing nominations/assessment/winners · product endorsement (use **Supported by** / **Prize courtesy of** only).
 
-**Cycle context (DR-001):** nominations **1 Sep – 31 Oct 2026** · finalists **30 Nov** · winners **Feb 2027** (virtual default unless Tier 1 enables in-person).
+**Cycle context (DR-004):** nominations **1 Sep – 30 Nov 2026** · finalists announced **20 Dec** · winners **Feb 2027** (R7 confirmed 2026-10-04; virtual default unless Tier 1 enables in-person).
 
 ---
 

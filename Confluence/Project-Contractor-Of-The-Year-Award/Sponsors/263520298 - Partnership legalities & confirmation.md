@@ -186,7 +186,7 @@ The Partner acknowledges that the Award is operated by a **volunteer programme t
 | Field | Agreed value |
 | --- | --- |
 | **Tier** | [Founding / Prize / Amplification partner] |
-| **Cycle** | P-CotY 2026 — nominations 1 Sep – 31 Oct 2026; winners Feb 2027 |
+| **Cycle** | P-CotY 2026 — nominations 1 Sep – 30 Nov 2026; finalists 20 Dec 2026; winners Feb 2027 (R7 confirmed 2026-10-04) |
 | **In-kind description** | [e.g. 3 LinkedIn posts + logo files / category prize / ceremony scope] |
 | **Fair value (estimate)** | €[X] — informational only, not a payment obligation |
 | **Partner deliverable dates** | Post 1: by [date] · Post 2: by [date] · Post 3: by [date] · Prize delivery: within 30 days of winner announcement · Ceremony: [dates] |

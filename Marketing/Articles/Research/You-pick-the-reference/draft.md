@@ -19,7 +19,7 @@ You pick the reference.
 The buyer calls someone else.
 Get a rating you did not coach.
 
-Nominations close 31 October. Register and nominate at ittd.space/pbf-pcoty
+Nominations close 30 November. Register and nominate at ittd.space/pbf-pcoty
 
 #ProjectContractorOfTheYear #ProjectBusiness #PCOTY2027
 

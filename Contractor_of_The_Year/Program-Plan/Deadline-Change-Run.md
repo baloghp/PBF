@@ -2,16 +2,16 @@
 
 **Purpose:** Coordinate the change to the P-CotY 2026 nomination deadline and finalist announcement across operations, platform, communications, and project plans.
 
-**Run status:** Not started  
-**Decision:** Nominations close **30 November 2026**; finalists are announced **20 December 2026**.  
-**Decision date / owner:** [add]  
+**Run status:** In progress — local document updates complete; human sign-offs and publishing/export steps remain.
+**Decision:** Nominations close **30 November 2026**; finalists are announced **20 December 2026**.
+**Decision date / owner:** [add]
 **Run coordinator:** [add]
 
 ## Working Assumptions
 
 - The nomination and client evaluation deadlines both move from **31 October to 30 November 2026**.
 - The finalist announcement moves from **30 November to 20 December 2026**.
-- Assessor expressions of interest still close **15 October 2026** unless separately changed.
+- Assessor expressions of interest close **15 November 2026**.
 - Stage 2 presentations, winner announcement, and ceremony dates remain as currently published until their feasibility review is complete.
 - Historical meeting records remain unchanged. Record the superseding decision in the decision log and current source documents.
 
@@ -19,43 +19,51 @@
 
 Use `[ ]` for not started, `[-]` for in progress, and `[x]` for complete. Add owner, date, and evidence in the Notes column as work is done.
 
-| ID | Status | Action / completion evidence | Lead | Notes |
-|---|---|---|---|---|
-| R1 | [ ] | Confirm the announcement scope: public finalist names, private finalist notifications, applicant outcomes/feedback, or a combination. Define what is published and what is sent privately. | TBD | Needed before revising comms and privacy copy. |
-| R2 | [ ] | Confirm the schedule assumptions above, including whether 15 Oct assessor EOI cutoff and the January/February milestones remain unchanged. | TBD | Escalate any date change as a separate decision. |
-| R3 | [ ] | Add a dated decision record that supersedes the 31 Oct / 30 Nov schedule. Record rationale, decision owner, effective date, and affected workstreams. | TBD | Start from [DR-001](Decisions/DR-001-Cycle-Schedule.md). The 1 Sep meeting notes reaffirmed 31 Oct; preserve that history and link the new decision. |
-| R4 | [ ] | Rebuild the critical path from 30 Nov to 20 Dec: intake, eligibility, assessor assignment, scoring, moderation, shortlist approval, notification, and feedback. Assign dates and owners with contingency. | WS1 / WS4 | Only 20 calendar days separate the two public milestones. |
-| R5 | [ ] | Confirm assessor capacity and turnaround against the revised critical path; check assessor onboarding/calibration and escalation coverage. | WS2 / WS4 | The assessor EOI cutoff remains 15 Oct under current assumptions. |
-| R6 | [ ] | Confirm December volunteer/approver availability, support coverage, and finalist preparation expectations around the holiday period. | WS1 / WS2 / WS4 | Resolve whether work is expected during the Christmas break. |
-| R7 | [ ] | Revalidate January Stage 2 presentation dates, judge availability, finalist preparation time, winner announcement, and ceremony/publication date. Record any resulting decision. | WS2 / WS4 / WS6 | Existing plans cite late January presentations and 15 Feb winners; do not move these silently. |
-| R8 | [ ] | Check the live platform configuration: nomination close timestamp/time zone, customer-form close, form lock behavior, countdown, reminders, confirmation messages, and admin reporting. Test the full flow. | WS4 | Verify production settings; docs alone do not prove the live deadline. |
-| R9 | [ ] | Update nomination and client-facing source materials, including the same-date client evaluation rule and any post-deadline language. | WS4 / WS5 | Include [Nominee Guide](../Guides/Contractor-of-the-Year-Nominee-Guide-2026.md), [Customer Guide](../Guides/Contractor-of-the-Year-Customer-Guide-2026.md), and [Customer Reference Email](../Guides/Customer-Reference-Notification-Email-Template.md). |
-| R10 | [ ] | Update the marketing plan and remaining campaign assets to run through November; revise close countdowns, final-call posts, close-day post, and post-close transition. | WS3 | Start from [Content Series Flow](../Working%20Folder/2026-07-12%20Sprint/Content-Series-Flow.md) and [LinkedIn Showcase Strategy](../Working%20Folder/2026-07-12%20Sprint/LinkedIn-Showcase-Strategy.md). Check queued/published items separately. |
-| R11 | [ ] | Update external communications and partner materials: website, LinkedIn, email templates, press copy, sponsor/partner pages, and any already-issued invitations. | WS3 / WS6 / WS7 | Include the [LinkedIn announcement draft](../../Confluence/Project-Contractor-Of-The-Year-Award/247201797%20-%20LinkedIn%20Draft%20%E2%80%94%20Navigating%20Complexity%20%28Chris%20Kelly%29.md) and sponsor messaging. |
-| R12 | [ ] | Update maintained project-plan mirrors and workshop/UAT materials; regenerate or republish derived copies after source updates. | WS1 / document owners | Includes Confluence master/workstream pages, W1 materials, UAT timeline, and any published snapshots. Keep meeting minutes historical. |
-| R13 | [ ] | Run a repository-wide date search for old nomination and finalist dates; classify each remaining match as historical, intentionally unchanged, or requiring an update. | WS1 / document owners | Record search date and exceptions below. |
-| R14 | [ ] | Publish the corrected public timeline and verify consistency across website, platform, social channels, and participant materials. | WS3 / WS4 | Do this after R1–R12 decisions and changes are approved. |
-| R15 | [ ] | Close the run: capture completed checks, unresolved risks, owners, and links to final decision and published timeline. | Run coordinator | — |
+| ID  | Status | Action / completion evidence                                                                                                                                                                                | Lead                  | Notes                                                                                                                                                                                                                                                |
+| --- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| R1  | [x]    | Confirm scope: this is a change to the overall public timeline milestone. No personal communications have been sent, so no individual date-change notification is needed.                                   | User confirmed        | Future finalist/applicant communications follow the updated program schedule; no separate postponement notice is required.                                                                                                                           |
+| R2  | [x] | Confirm the assessor EOI cutoff moves to **15 November 2026**. | User confirmed | Sunday date and 15-day intake gap are recorded; operational capacity and coverage confirmed in R5–R6. |
+| R3  | [x] | Record the revised dates in [DR-004](Decisions/DR-004-Deadline-Change.md), mark prior schedule dates superseded, and align current plans. | User confirmed | Historical meeting notes remain unchanged; DR-004 still needs a named owner. |
+| R4  | [x] | Set the dated intake-to-finalist path and escalation gates in DR-004 and WS4. | WS1 / WS4 | Confirmed baseline: 1–3 Dec intake/assignment; 4–13 Dec scoring; 14–16 Dec moderation; 17 Dec approval; 18 Dec readiness; 20 Dec announcement. |
+| R5  | [x] | Confirm assessor capacity and turnaround; check onboarding/calibration and escalation coverage. | WS2 / WS4 | Confirmed by user on 2026-10-04. |
+| R6  | [x] | Confirm December volunteer/approver availability, support coverage, and finalist preparation expectations. | WS1 / WS2 / WS4 | Confirmed by user on 2026-10-04, including coverage for the Sunday 20 Dec milestone and holiday-period work. |
+| R7  | [x] | Revalidate Stage 2, judge availability, finalist preparation time, winner date, and ceremony/publication date. | WS2 / WS4 / WS6 | Confirmed by user on 2026-10-04; January/February schedule retained. |
+| R8  | [x] | Public website timeline and deadline changes completed. | User confirmed | No website edits made from this workspace. Backend settings/form-lock behavior were not independently tested here. |
+| R9  | [x] | Update nominee/client source guides and templates, including the synchronized customer-evaluation deadline. | Copilot | Local files updated. |
+| R10 | [-] | Extend local campaign plans and reusable copy through November; add proposed close reminders and corrected countdowns. | WS3 | Plans/copy updated; November placements and owners still need WS3 approval. Live scheduling/queued posts cannot be checked here. |
+| R11 | [x] | Update reusable LinkedIn and partner/sponsor communications with revised dates. | Copilot | Local drafts/templates updated. Public websites are user-confirmed; no individual date-change notices are needed. |
+| R12 | [-] | Update local Confluence source Markdown, checked-in publish snapshots, assessor pages, UAT summary, historical deck annotations, and maintained campaign material. | WS1 / document owners | Local sources/snapshots updated. Remote Confluence publishing not performed. PDFs remain stale: system Python lacks `markdown`; local Marked parser worked, but LibreOffice PDF conversion fails with `no valid pipe path found` in this environment. |
+| R13 | [x] | Sweep repository date references and classify remaining old-date matches. | Copilot | Current reusable sources updated; historical and intentionally preserved references listed below. |
+| R14 | [x] | Corrected public timeline published and verified. | User confirmed | No website edits made from this workspace. |
+| R15 | [ ]    | Close the run: capture completed checks, unresolved risks, owners, and links to final decision and published timeline.                                                                                      | Run coordinator       | —                                                                                                                                                                                                                                                   |
 
 ## Critical-Path Review
 
 Build the detailed dated plan in R4. At minimum, account for:
 
 1. **30 Nov:** nomination and client evaluation close; lock new submissions.
-2. **1–20 Dec:** intake/eligibility, assessor scoring, moderation, shortlist approval, applicant outcomes, and finalist notifications/publication.
-3. **20 Dec:** finalist milestone; this falls on a Sunday in 2026. Confirm whether the announcement is intentionally on Sunday or whether the team means the preceding business day.
-4. **After 20 Dec:** finalist preparation, judge coordination, Stage 2, winner decision, ceremony, and publication, subject to R7.
+2. **1–3 Dec:** intake, eligibility exceptions, assessor assignment, and COI checks.
+3. **4–13 Dec:** independent Stage 1 scoring; check capacity at midpoint and reassign non-responsive assignments to reserves.
+4. **14–16 Dec:** moderate scores and resolve outstanding cases; escalate unresolved eligibility/COI issues to WS4.
+5. **17 Dec:** approve shortlist; **18 Dec:** complete release-readiness checks; **20 Dec:** announce finalists.
+6. **After 20 Dec:** finalist preparation, judge coordination, Stage 2, winner decision, ceremony, and publication on the schedule confirmed in R7.
+
+**Calendar note:** 20 Dec 2026 is a Sunday. R6 must confirm who will staff or pre-schedule the announcement and provide support coverage.
 
 Do not assume the current “clean Christmas pause” remains achievable. The revised dates put the announcement immediately before the holiday period and compress Stage 1 after nominations close.
 
 ## Search Exceptions / Notes
 
 | Date checked | Search or review | Historical / unchanged matches | Follow-up |
-|---|---|---|---|
-| — | — | — | — |
+| ------------ | ---------------- | ------------------------------ | --------- |
+| 2026-10-04 | Repository Markdown sweep for 31 Oct / 31 October, 30 Nov / 30 November, and 15 Oct / 15 October | DR-001 retains its original schedule but is marked superseded; the sent assessor warm-list email retains the text actually sent; June–September meeting notes, July sprint decisions/prep, archived material, and the delivered W1/UAT decks preserve historical dates. Decks now carry supersession notes. `voice-style-guide.md` uses 31 Oct only as a generic formatting example. | No remaining active reusable local copy found in the searched current guides, partner templates, content plans, or Confluence source pages. Remote publish still required. |
+| 2026-10-04 | Audience-guide PDF export | Existing PDFs still reflect prior Markdown content; the source Markdown files are updated. | The exporter was run with the locally bundled Marked parser, but LibreOffice conversion failed with `no valid pipe path found`, including with an isolated profile and `/tmp`. Retry the documented exporter where LibreOffice can initialize normally. |
+| 2026-10-04 | Confluence publication | Workspace Markdown and checked-in `.publish` snapshots updated. | Publish through the authorized Confluence workflow; credentials/API access were not available in this session. |
 
 ## Change Log
 
-| Date | Update | By |
-|---|---|---|
-| 2026-10-04 | Created execution run from the deadline-change impact review. | Copilot |
+| Date       | Update                                                                                                              | By      |
+| ---------- | ------------------------------------------------------------------------------------------------------------------- | ------- |
+| 2026-10-04 | Created execution run from the deadline-change impact review.                                                       | Copilot |
+| 2026-10-04 | Completed R3: added DR-004, marked prior schedule dates superseded, and aligned current master, WS2, and WS4 plans. | Copilot |
+| 2026-10-04 | Updated participant guides, recruitment/content/sponsor sources, Confluence sources and local snapshots; annotated historical decks; completed repository date sweep. | Copilot |

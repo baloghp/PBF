@@ -14,7 +14,7 @@ Source notes and the internal rubric: [What the jury looks for — sources](../W
 
 ## Award facts used in the post
 
-All already public in the 4 Sep draft and the certificate short: at least two assessors read each nomination independently; the client rates the work through a link the contractor never sees and cannot fill in; nominations close 31 October at ittd.space/pbf-pcoty. "I help run it" is the disclaimer.
+Already public in the 4 Sep draft and the certificate short: at least two assessors read each nomination independently; the client rates the work through a link the contractor never sees and cannot fill in; nominations now close 30 November at ittd.space/pbf-pcoty. "I help run it" is the disclaimer.
 
 ## Held back
 

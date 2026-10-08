@@ -24,7 +24,7 @@ Nobody is counting your words. The limits are maximums. What the file has to do 
 3. **Feeds all nine criteria.** Every criterion is scored separately. Nothing in the file on how the money moved or who decided at the boundary is a gap in the file, not the project. Silence is not neutral.
 4. **Proves exceptional, not competent.** If the file could describe any well-run project in the sector, it is not finished.
 
-Then the dependency, deliberately kept outside the four, because it is the only item the nominee cannot do themselves: **we email the client representative a unique link.** The nominee never sees it and cannot forward, complete or upload it, and **the form is due by the 31 October close**. So the nominee owns exactly two things: the correct email address, and making sure their client responds.
+Then the dependency, deliberately kept outside the four, because it is the only item the nominee cannot do themselves: **we email the client representative a unique link.** The nominee never sees it and cannot forward, complete or upload it, and **the form is due by the 30 November close**. So the nominee owns exactly two things: the correct email address, and making sure their client responds.
 
 That is where the CTA comes from. A wrong address fails silently, an unannounced rating request looks like phishing, and the closing date really belongs to somebody at another company.
 
@@ -41,7 +41,7 @@ From [Submission Package](../../../Confluence/Project-Contractor-Of-The-Year-Awa
 | Impact | 300 words: quantified outcomes, transformation evidence, what remains 6-12 months later, ROI |
 | Lessons | 300 words: what you learned, how you are sharing it, replicability |
 | Artifacts | Draft contract matrix, customer-contractor interface RACI, people-development percentage, code of conduct acknowledgment, integrity plan |
-| Client | Client Assessment Form: **we email the client rep a unique link**; they rate 7 criteria, sign, consent to publication. **Due by the 31 Oct close.** Nominee supplies the email address and chases the response |
+| Client | Client Assessment Form: **we email the client rep a unique link**; they rate 7 criteria, sign, consent to publication. **Due by the 30 Nov close.** Nominee supplies the email address and chases the response |
 | Consent | Publication consent for a short case profile |
 
 **The split that makes the post:** everything above the Client row is yours to write. The Client row is on somebody else's calendar.
@@ -50,9 +50,9 @@ From [Submission Package](../../../Confluence/Project-Contractor-Of-The-Year-Awa
 
 ## CTA
 
-Primary: identify the client contact and warn them the email is coming. Secondary: submit early, because the completeness check only helps while there is calendar left, and the client form is a hard gate at the 31 October close.
+Primary: identify the client contact and warn them the email is coming. Secondary: submit early, because the completeness check only helps while there is calendar left, and the client form is a hard gate at the 30 November close.
 
-**Do not imply anything can be fixed after 31 October.**
+**Do not imply anything can be fixed after 30 November.**
 
 ## Cross-reference stub
 
@@ -72,7 +72,7 @@ Previous post by implication (the nine, the keep-or-drop meeting). Oliver only i
 - Do **not** promise a Nominee Coach. [DR-002](../../../Confluence/Project-Contractor-Of-The-Year-Award/245989377%20-%20DR-002%20—%20Drop%20Nominee%20Coach%20role%20(Post-UAT).md) dropped the role for this cycle; support is the platform help channel
 - Public link must be `ittd.space/pbf-pcoty`, never a Confluence URL
 - Long-form, same meeting-scene voice as 17 Aug. First two lines must earn "...see more."
-- Word counts and client-form flow should match the [Nominee Guide](../../../Contractor_of_The_Year/Guides/Contractor-of-the-Year-Nominee-Guide-2026.md) (ceilings; we email the unique link; due 31 Oct)
+- Word counts and client-form flow should match the [Nominee Guide](../../../Contractor_of_The_Year/Guides/Contractor-of-the-Year-Nominee-Guide-2026.md) (ceilings; we email the unique link; due 30 Nov)
 
 ## Open question
 

@@ -21,7 +21,7 @@ Your RFP is done by AI. Competently.
 You still lack the proof.
 Get double proof, by your client and professionals.
 
-Nominations close 31 October. Register and nominate at ittd.space/pbf-pcoty
+Nominations close 30 November. Register and nominate at ittd.space/pbf-pcoty
 
 #ProjectContractorOfTheYear #ProjectBusiness #PCOTY2027
 

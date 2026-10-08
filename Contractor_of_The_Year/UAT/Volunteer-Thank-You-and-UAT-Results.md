@@ -125,8 +125,8 @@ Because of UAT, we are moving from test to **first live cycle**. Public mileston
 | Date | Milestone |
 | --- | --- |
 | **1 September 2026** | Nominations open |
-| **31 October 2026** | Submission deadline |
-| **30 November 2026** | Finalists announced |
+| **30 November 2026** | Submission deadline |
+| **20 December 2026** | Finalists announced |
 | **Last week of January 2027** | Stage 2 presentations (virtual) |
 | **15 February 2027** | Winners announced |
 

@@ -72,7 +72,7 @@ The four prose limits add up to 3,100 words, but **do not present that as a work
 - **We email the client representative** a **unique link** to the evaluation form
 - **Nobody else receives or knows that link.** The nominee cannot see it, forward it, complete it, or upload the result on the client's behalf
 - Therefore the nominee's job is to **supply the correct contact email** and to **make sure the client responds**
-- **The form must be completed by the nomination closing date**, 31 October 2026. It is not a post-close item
+- **The form must be completed by the nomination closing date**, 30 November 2026. It is not a post-close item
 
 **Three consequences the post uses:**
 

@@ -1,8 +1,8 @@
 # Brief — "Double proof"
 
 - **Series:** 🏆 *How to win* (owner: Peter)
-- **Post date:** suggested Wed 28 Oct 2026, after [Get your proof](../Get-your-proof/brief.md) on 21 Oct. Last short before nominations close on 31 Oct. Can move earlier.
-- **Phase:** FOMO / close. CTA = register and nominate before **31 October**
+- **Post date:** suggested Wed 28 Oct 2026, after [Get your proof](../Get-your-proof/brief.md) on 21 Oct. Use as an October campaign post; nomination close is now 30 Nov.
+- **Phase:** FOMO / close. CTA = register and nominate before **30 November**
 - **Channel:** Peter's profile → PCOTY page reshare
 - **Format:** **short LinkedIn post, plus a 3-beat video.** The three lines are the story. Not an article.
 
@@ -33,7 +33,7 @@ Beat 3: two short cuts under the one line. `business video call` for the client,
 
 ## CTA
 
-One line. Nominations close **31 October**. Register and nominate at ittd.space/pbf-pcoty.
+One line. Nominations close **30 November**. Register and nominate at ittd.space/pbf-pcoty.
 
 ## Cross-reference stub
 

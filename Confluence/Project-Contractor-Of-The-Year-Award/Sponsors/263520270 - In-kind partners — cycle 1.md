@@ -28,7 +28,7 @@ Volunteer-run programme — **no cash sponsorship** in cycle 1. Partners contrib
 
 **Not in scope:** cash grants or reimbursements to individuals · sponsors influencing nominations/assessment/winners · product endorsement (use **Supported by** / **Prize courtesy of** only).
 
-**Cycle context (DR-001):** nominations **1 Sep – 31 Oct 2026** · finalists **30 Nov** · winners **Feb 2027** — **fully virtual ceremony (cycle 1)**.
+**Cycle context (DR-004):** nominations **1 Sep – 30 Nov 2026** · finalists announced **20 Dec** · winners **Feb 2027** (R7 confirmed 2026-10-04) — **fully virtual ceremony (cycle 1)**.
 
 **15 Jul decision:** Drop **Founding** and **external Prize** tiers for cycle 1. Focus outreach on **Amplification** (+ Community / Services as needed). Oliver may pursue **press/media** (e.g. PM Welt) opportunistically — not a formal tier.
 

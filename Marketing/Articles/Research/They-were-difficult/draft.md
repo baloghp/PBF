@@ -37,7 +37,7 @@ Project Contractor of the Year is not a prize for being pleasant, and it is not 
 
 If you have a name like that, you already know it. They are the ones still in your inbox, and not in any case study.
 
-Nominations open 1 September and close 31 October, at ittd.space/pbf-pcoty. Put the name forward.
+Nominations open 1 September and close 30 November, at ittd.space/pbf-pcoty. Put the name forward.
 
 #ProjectContractorOfTheYear #ProjectBusiness #PCOTY2026
 

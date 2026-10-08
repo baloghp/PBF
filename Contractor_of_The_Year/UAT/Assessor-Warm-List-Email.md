@@ -1,6 +1,7 @@
-# UAT warm list — assessor ask (send)
+# UAT warm list — assessor ask (sent historical record)
 
 **Status:** Sent · **Date:** 13 September 2026  
+**Historical note (2026-10-04):** This email was sent before the deadline change and stated the former 15 October EOI close. Do not edit this sent record. Use **15 November 2026** in all future assessor recruitment materials and replies.  
 **Why now:** Award site and assessor path are live. This was outstanding from the 1 Sep / 8 Sep team meetings.  
 **Strategy:** P0 UAT insiders — *You helped build it — now help judge it* ([Assessor Recruitment Strategy](../Working%20Folder/2026-07-12%20Sprint/Assessor-Recruitment-Strategy.md)).  
 **Hard gate:** PMP or PBP. No UAT grandfathering.

@@ -19,8 +19,8 @@ Recruit **50** PBP®/PMP® volunteers → **~25 active** (+5 reserve) for Stage 
 | 15 Aug+ | ≥15 EOI |
 | 1 Sep | ≥30 EOI |
 | 15 Sep | ≥40 EOI |
-| **15 Oct close** | **50 verified** |
-| 30 Oct | **~25** roster |
+| **15 Nov close** | **50 verified** |
+| By Stage 1 scoring start | **~25** roster; date to confirm against R5 |
 
 Funnel: Awareness → EOI → Cert verify → Confirm + COI → Calibration → Active.
 

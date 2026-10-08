@@ -20,7 +20,7 @@ The Showcase is the **public face of PCOTY on LinkedIn** — not a second websit
 
 **Success metrics (cycle 1):**
 
-| Metric | Target (by 31 Oct) |
+| Metric | Target (by 30 Nov) |
 | --- | --- |
 | Followers | 200+ |
 | Nomination page visits from LinkedIn | Track via UTM / Wix analytics |
@@ -110,8 +110,8 @@ Presented by the **Project Business Foundation** · Guided by **Oliver F. Lehman
 | Milestone | Date |
 | --- | --- |
 | Nominations open | **1 Sep 2026** |
-| Submission deadline | **31 Oct 2026** |
-| Finalists announced | **30 Nov 2026** |
+| Submission deadline | **30 Nov 2026** |
+| Finalists announced | **20 Dec 2026** |
 | Stage 2 presentations | **24–30 Jan 2027** |
 | Winners announced | **15 Feb 2027** |
 
@@ -163,7 +163,7 @@ Aligned with [07 Jul comms cadence](../../Confluence/Meetings/258637826 - Team M
 | --- | --- | --- | --- | --- |
 | **Anticipation** | 15 Jul – 14 Aug | Build followers; educate | Welcome/pinned, Soban ✅, Leila industry (fixed images), Oliver thought piece, timeline graphic | 1–2 / week |
 | **Launch** | 15 Aug – 15 Sep | Drive nominations | “Nominations open”, eligibility checklist, category explainer, assessor CTA, client role | 2–3 / week |
-| **FOMO** | 15 Sep – 31 Oct | Close strong | Countdown posts, “last week”, social proof (UAT/volunteer quotes) | 1–2 / week |
+| **FOMO** | 15 Sep – 30 Nov | Close strong | Countdown posts, “last week”, social proof (UAT/volunteer quotes) | 1–2 / week |
 | **Post-close** | Nov 2026+ | Maintain interest | Finalist teasers (when ready), sponsor thanks, behind-the-scenes | As needed |
 
 ### Content pillars (rotate)

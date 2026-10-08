@@ -48,7 +48,7 @@ You are not asked to score the nine assessor criteria. Those sit with Stage 1 as
 
 1. The nominee enters your **work email** on their nomination.
 2. PBF emails you a **unique link** to your evaluation form. The nominee does not receive that link and cannot complete the form for you.
-3. Complete the form by **31 October 2026**, the same close as nominations.
+3. Complete the form by **30 November 2026**, the same close as nominations.
 
 An unannounced rating request can look like phishing. The nominee should have warned you that this email is coming. If you were not expecting it, confirm with the contractor before opening the link.
 

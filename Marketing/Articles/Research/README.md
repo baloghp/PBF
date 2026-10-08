@@ -15,7 +15,7 @@ One subfolder per article, named after the post. Each contains:
 ## Guardrails (every article)
 
 - Write in **[Peter's voice](../Guides/voice-style-guide.md)** — question/observation open, research + concrete story, framework not steps, forward-looking close.
-- Respect the **phase CTA** (Anticipation = follow/save date · Launch = nominate · FOMO = submit before 31 Oct).
+- Respect the **phase CTA** (Anticipation = follow/save date · Launch = nominate · FOMO = submit before 30 Nov).
 - End with a **cross-reference stub** to a sibling series (per the [Content Flow plan](../../../Confluence/Project-Contractor-Of-The-Year-Award/278560769%20-%20PCotY%20Content%20Flow%20—%20Owned%20Series%20&%20Monthly%20Workshops.md)).
 - LinkedIn length: ~150–250 words. One data point / one story. Max 1–2 emoji, 3–4 hashtags.
 

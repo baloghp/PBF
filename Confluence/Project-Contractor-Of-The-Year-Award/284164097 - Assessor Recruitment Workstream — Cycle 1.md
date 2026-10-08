@@ -24,9 +24,9 @@
 | --- | --- | --- |
 | EOI platform **test** | **11 Aug** | Peter |
 | EOI platform **go-live** | **15 Aug** | Peter |
-| Application **close** | **15 Oct** | — |
-| Roster confirmed | **30 Oct** | — |
-| Stage 1 scoring | Nov – Dec | — |
+| Application **close** | **15 Nov 2026** | — |
+| Roster confirmed | Before Stage 1 scoring; date to confirm under R5 | — |
+| Stage 1 scoring | Dec 2026; detailed dates per DR-004 / R4 | — |
 
 Until 15 Aug: personal LinkedIn + tracker only. From 15 Aug: send warm contacts the EOI link.
 

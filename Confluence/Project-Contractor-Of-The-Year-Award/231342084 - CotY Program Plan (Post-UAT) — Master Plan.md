@@ -45,17 +45,17 @@
 
 ## 3. High-Level Timeline
 
-**Cycle shape per DR-001: "P-CotY 2026" with Stage 1 in 2026 and Stage 2 + ceremony in late January 2027 (holiday seam after the shortlist).**
+**Cycle shape per DR-004: "P-CotY 2026" with nominations closing 30 Nov, finalists announced 20 Dec, and Stage 2 + ceremony in Jan/Feb 2027 (R7 confirmed 2026-10-04). The former pre-Christmas shortlist/clean-pause assumption no longer applies.**
 
 | Phase | Indicative window | Lead workstreams |
 | --- | --- | --- |
 | Setup & readiness | Jun–Aug 2026 | WS1, WS4, WS5 |
-| Recruit & enable volunteers/judges | Jun–Oct 2026 (assessor EOI closes **15 Oct**) | WS2 |
+| Recruit & enable volunteers/judges | Jun–Nov 2026 (assessor EOI closes **15 Nov**) | WS2 |
 | Sponsorship drive | Jun 2026 → ongoing | WS7 |
-| Nomination window (open → close) | Sep → 31 Oct 2026 | WS3, WS4 |
-| Intake & eligibility | Oct–Nov 2026 | WS4 |
-| Stage 1 — volunteer screening / shortlist | Nov–Dec 2026 (shortlist before year-end) | WS4, WS2 |
-| — Christmas break (clean pause) — | late Dec 2026 | — |
+| Nomination window (open → close) | 1 Sep → 30 Nov 2026 | WS3, WS4 |
+| Intake & eligibility | After close, late Nov–Dec 2026 | WS4 |
+| Stage 1 — volunteer screening / shortlist | Dec 2026; finalists announced 20 Dec | WS4, WS2 |
+| December / holiday coverage | Through 20 Dec; availability plan pending R6 | WS1, WS2, WS4 |
 | Stage 2 — judging panel & Q&A | mid-Jan 2027 | WS2, WS4 |
 | Decision & notifications | late Jan 2027 | WS4, WS5 |
 | Ceremony & publication | late Jan 2027 | WS6 |
@@ -65,7 +65,7 @@
 
 ## 4. Open Decisions (program-wide)
 
-- [ ] Nomination window dates & full cycle calendar
+- [x] Nomination, assessor EOI, and finalist milestone dates — set by DR-004; detailed critical path and feasibility tracked in R4–R7
 - [ ] Ceremony format: virtual vs in-person
 - [ ] SLA values (replace "X days" placeholders)
 - [ ] Appeals process finalisation

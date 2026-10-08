@@ -66,7 +66,7 @@ Then you score them against nine published criteria, alongside peers who do the 
 - PDUs under PMI Giving Back for the hours you volunteer. We send the claim guidance when you join.
 - Named recognition as a Cycle 1 Stage 1 assessor. Yours to post on LinkedIn.
 
-Expressions of interest close 15 October.
+Expressions of interest close 15 November.
 
 Verification confirms your credential, but the seat is a decision the core team makes application by application.
 
@@ -143,7 +143,7 @@ Heading: `Thank you — we have your application.`
 ```
 We have emailed you a confirmation. The core team will check your PMP and/or PBP details and decide on a Stage 1 seat application by application.
 
-Expressions of interest close 15 October.
+Expressions of interest close 15 November.
 ```
 
 **Validation messages (for later code):**
@@ -235,7 +235,7 @@ Do **not** create A2/A3 auto-verify emails for submit. Seat outcomes later: D1/D
 
 **Variables:** `givenName`, `familyName`, `titleFld`, `SITE_URL`
 
-**Must say:** thanks; core team will check credential; seat not automatic; no login yet; closes 15 October.
+**Must say:** thanks; core team will check credential; seat not automatic; no login yet; closes 15 November.
 
 ```
 Hi {{givenName}},
@@ -244,7 +244,7 @@ Thank you for applying to be a Stage 1 assessor for the Project Contractor of th
 
 We have your details. The core team will check your credential and decide on a seat application by application. You do not need a site login yet.
 
-Expressions of interest close 15 October.
+Expressions of interest close 15 November.
 
 PCotY organisers
 {{SITE_URL}}

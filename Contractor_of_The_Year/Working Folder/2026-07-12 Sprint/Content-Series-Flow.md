@@ -30,7 +30,7 @@ Source: [Marketing calendar](../../../Confluence/Project-Contractor-Of-The-Year-
 | --- | --- | --- | --- |
 | **Aug — Anticipation** | *What the award stands for* | **W1 — 31 Aug / 1 Sep: "Meet PCotY"** (2 sessions for time zones) | Follow · save the date |
 | **Sep — Launch** | *How to participate & win* | **W2 — mid-Sep: "How to nominate & what judges look for"** | Nominate · apply as assessor |
-| **Oct — FOMO / close** | *The stakes & the craft* | **W3 — early Oct: "The craft of great contracting"** | Submit before 31 Oct |
+| **Oct–Nov — FOMO / close** | *The stakes & the craft* | **W3 — early Oct: "The craft of great contracting"** | Submit before 30 Nov |
 
 **Workshop rhythm:** promote 2 weeks ahead (owner posts point to it) → run it → post recap + 2–3 clips the following week. Each workshop is the culmination of the month's series, and its clips fuel the next month.
 
@@ -63,9 +63,9 @@ Source: [Marketing calendar](../../../Confluence/Project-Contractor-Of-The-Year-
 
 ---
 
-## 6. Illustrative calendar (through the 31 Oct close)
+## 6. Illustrative calendar (through the 30 Nov close)
 
-🟢 = milestone · ⏳ = countdown. *Countdown flips on 1 Sep: before = days until nominations open; after = days until 31 Oct close.*
+🟢 = milestone · ⏳ = countdown. *Countdown flips on 1 Sep: before = days until nominations open; after = days until 30 Nov close.*
 
 ### August — *What the award stands for*
 
@@ -96,7 +96,7 @@ Source: [Marketing calendar](../../../Confluence/Project-Contractor-Of-The-Year-
 | **31 Aug** | Mon | Oliver | 🎤 W1A "Meet PCotY" + timeline reveal (#7) | 🎤🎨 |
 | **1 Sep** | Tue | Oliver/Leila | 🎤 W1B + 🟢 Nominations OPEN (#10) | 🎤🎨 |
 | 2 Sep | Wed | Kris | W1 recap + clips · assessor teaser | 🤝 |
-| 3 Sep | Thu | Leila | Countdown (→ 31 Oct) | ⏳ |
+| 3 Sep | Thu | Leila | Countdown (→ 30 Nov) | ⏳ |
 | 4 Sep | Fri | Leila | Category explainer S/M/L (#11) | 🎨 |
 | 7 Sep | Mon | Kris | Call for assessor volunteers (#9) | 🤝 |
 | 9 Sep | Wed | Islam | PMO discipline = predictable delivery (what clients actually reward) | 🤖 |
@@ -111,11 +111,11 @@ Source: [Marketing calendar](../../../Confluence/Project-Contractor-Of-The-Year-
 | 28 Sep | Mon | Oliver | The cost of picking the wrong contractor | 🎯 |
 | 30 Sep | Wed | Kris | Winner-worthy behaviours | 🤝 |
 
-### October — *The stakes & the craft* (close 31 Oct)
+### October — *The stakes & the craft* (campaign continues through close 30 Nov)
 
 | Date | Day | Owner | Post | Series |
 | --- | --- | --- | --- | --- |
-| 1 Oct | Thu | Leila | 🟢 Countdown — 30 days left (#13) | ⏳ |
+| 1 Oct | Thu | Leila | 🟢 Countdown — 60 days left (#13) | ⏳ |
 | 2 Oct | Fri | Angel | The Push-Back Decision — when a great contractor says no | 🧭 |
 | 5 Oct | Mon | Oliver | Risk distribution across the customer–contractor line | 🎯 |
 | 6 Oct | Tue | Leila | Countdown + 🟢 W3 promo | ⏳ |
@@ -127,11 +127,21 @@ Source: [Marketing calendar](../../../Confluence/Project-Contractor-Of-The-Year-
 | 19 Oct | Mon | Kris | Professionalization on the contractor side (PBP) | 🤝 |
 | 21 Oct | Wed | Oliver | Treating contractors as interchangeable — the price | 🎯 |
 | 23 Oct | Fri | Kris | "Best contractor you worked with — in one sentence" | 🤝 |
-| 26 Oct | Mon | Leila | Final week — submit now (#14) | 🎨 |
-| 28 Oct | Wed | Peter | Last call: submit in 30 minutes | 🏆 |
+| 26 Oct | Mon | Leila | Submit now; the deadline is 30 Nov (#14) | 🎨 |
+| 28 Oct | Wed | Peter | How to submit a complete nomination | 🏆 |
 | 30 Oct | Fri | Oliver | The contractor nobody nominates | 🎯 |
-| **31 Oct** | Sat | Leila | 🟢 Nominations CLOSED — thank you | 🎨 |
 
-**Post-close (Nov):** pivot to Stage 1 / assessor calibration; hold #15 winner sponsor shout-out for when a sponsor signs; recycle the 3 workshop recordings into evergreen clips.
+### November — *Final month / close 30 Nov*
 
-> **Fix upstream:** this uses the real **31 Oct** close; the marketing calendar's cadence table still says "15 Sep – 3 Oct".
+The nomination campaign remains active through 30 Nov. The following close reminders are proposed extensions, not confirmed placements; assign owners and check against the live marketing calendar before scheduling.
+
+| Date | Day | Owner | Post | Series |
+|---|---|---|---|---|
+| 2 Nov | Mon | TBD | November extension: nominations still open; client evaluation due 30 Nov | 🎨 |
+| 9 Nov | Mon | TBD | What a complete nomination needs; prompt client follow-up | 🏆 |
+| 16 Nov | Mon | TBD | Two weeks to close; reminder for nominee and client form | ⏳ |
+| 23 Nov | Mon | TBD | Final week to submit; client evaluation closes with nomination | ⏳ |
+| 27 Nov | Fri | TBD | Final weekend reminder; deadline and link | 🎯 |
+| **30 Nov** | Mon | TBD | 🟢 Nominations and customer evaluations CLOSED — thank you | 🎨 |
+
+**Post-close (Dec):** pivot to intake, assessor scoring, and the 20 Dec finalist announcement. Hold #15 winner sponsor shout-out until a sponsor signs; recycle the three workshop recordings into evergreen clips.

@@ -1,8 +1,8 @@
 # Brief — "You pick the reference"
 
 - **Series:** 🏆 *How to win* (owner: Peter)
-- **Post date:** close window, slot open. 14, 21 and 28 Oct are already the other three shorts. This one can take any remaining day before **31 October**, or run as the video if the feed is full.
-- **Phase:** FOMO / close. CTA = register and nominate before **31 October**
+- **Post date:** close window, slot open. 14, 21 and 28 Oct are already the other three shorts. This can run in the extended close campaign before **30 November**, or as the video if the feed is full.
+- **Phase:** FOMO / close. CTA = register and nominate before **30 November**
 - **Channel:** Peter's profile → PCOTY page reshare
 - **Format:** **short LinkedIn post, plus a 3-beat video.** Same family as the certificate short. Not an article.
 
@@ -35,7 +35,7 @@ Skip celebration, handshakes, and a scripted testimonial read off a page.
 
 ## CTA
 
-One line. Nominations close **31 October**. Register and nominate at ittd.space/pbf-pcoty.
+One line. Nominations close **30 November**. Register and nominate at ittd.space/pbf-pcoty.
 
 ## Cross-reference stub
 

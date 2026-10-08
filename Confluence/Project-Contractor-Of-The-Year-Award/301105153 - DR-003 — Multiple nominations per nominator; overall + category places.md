@@ -9,6 +9,8 @@
 - **Parent plan:** [Master Plan](231342084 - CotY Program Plan (Post-UAT) — Master Plan.md)
 - **Vault canonical:** [DR-003](../../Contractor_of_The_Year/Program-Plan/Decisions/DR-003-Multiple-Nominations-and-Winner-Set.md)
 
+> **Schedule note (2026-10-04):** Nomination and finalist dates in this record are superseded by [DR-004 — Deadline Change](../../Contractor_of_The_Year/Program-Plan/Decisions/DR-004-Deadline-Change.md). The multiple-nomination and four-award rules below remain in force.
+
 ---
 
 ## Decision
@@ -51,9 +53,9 @@ Winner language was still soft: category winners, an overall title "if applicabl
 
 - A logged-in nominator can **start another nomination** while drafts or submitted packets already exist.
 - **One project, one nomination.** Do not resubmit the same contracted engagement under a second reference.
-- Each nomination needs its **own** client evaluation (unique link, same 31 Oct close).
+- Each nomination needs its **own** client evaluation (unique link, same close date as the nomination; current date per DR-004).
 - Headcount category is an **organisation** attribute. Several nominations from the same firm will usually carry the **same** category label.
-- No published cap per nominator. The public constraint remains the **1 Sep – 31 Oct 2026** window (15 Jul: no "first 100" cap).
+- No published cap per nominator. The public constraint remains the **1 Sep – 30 Nov 2026** window per DR-004 (15 Jul: no "first 100" cap).
 
 ### Categories and winners
 
